@@ -1,1 +1,2684 @@
-{"current":{"heading_color":"#1c1b1b","bar_color":"#eb161e","text_color":"#000000","text_light_color":"#6c6c6c","link_color":"#a4a4a4","background":"#eeeeee","light_background":"#ffffff","product_on_sale_color":"#f94c43","button_background":"#1c1b1b","button_text_color":"#ffffff","header_background":"#ffffff","header_heading_color":"#1c1b1b","header_light_color":"#ffffff","footer_background":"#ffffff","footer_heading_color":"#1c1b1b","footer_text_color":"#6a6a6a","navigation_background":"#eb161e","navigation_text_color":"#ffffff","newsletter_popup_background":"#1c1b1b","newsletter_popup_text_color":"#ffffff","secondary_elements_background":"#1c1b1b","secondary_elements_text_color":"#ffffff","heading_font":"montserrat_n5","heading_size":"small","uppercase_heading":true,"text_font":"nunito_sans_n4","base_text_font_size":14,"currency_conversion_enabled":false,"currency_conversion_round_amounts":true,"currency_conversion_supported_currencies":"USD CAD EUR GBP","currency_conversion_money_format":"money_format","show_page_transition":true,"show_button_transition":true,"show_image_zooming":true,"show_element_staggering":true,"search_mode":"product,article","product_show_price_on_hover":true,"product_show_secondary_image":false,"product_info_alignment":"center","product_image_size":"natural","product_list_horizontal_spacing":"medium","product_list_vertical_spacing":"small","cart_type":"drawer","cart_enable_notes":true,"cart_show_free_shipping_threshold":false,"cart_free_shipping_threshold":"50","share_image":"","social_facebook":"https:\/\/www.facebook.com\/CBMDhealth","social_twitter":"https:\/\/twitter.com\/CBMDhealth","social_pinterest":"","social_instagram":"https:\/\/www.instagram.com\/cbmdhealth\/","social_vimeo":"","social_tumblr":"","social_youtube":"","social_linkedin":"https:\/\/www.linkedin.com\/company\/38105495\/admin\/","social_snapchat":"","social_fancy":"","favicon":"shopify:\/\/shop_images\/cbmd-favicon.jpg","checkout_header_image":"","checkout_logo_image":"","checkout_logo_position":"center","checkout_logo_size":"small","checkout_body_background_image":"","checkout_body_background_color":"#ffffff","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#efefef","checkout_heading_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'","checkout_body_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'","checkout_accent_color":"#1c1b1b","checkout_button_color":"#1c1b1b","checkout_error_color":"#e32c2b","sidebar_color":"#eb161e","sections":{"sidebar-menu":{"type":"sidebar-menu","settings":{"primary_menu":"navigation","secondary_menu":"","show_social_media":true}},"announcement":{"type":"announcement","settings":{"enable_bar":false,"home_page_only":false,"background":"#000000","text_color":"#ffffff","content":"Announce something here","link":""}},"header":{"type":"header","blocks":{"1586287763421":{"type":"mega_menu","settings":{"navigation_mega_menu":"education","push_1_image":"shopify:\/\/shop_images\/cbmd-nav-our-mission_2x_91ac9627-e209-423b-9d29-f04c35ecc8ce.jpg","push_1_heading":"Our mission","push_1_subheading":"Our mission","push_1_url":"shopify:\/\/pages\/our-mission","push_2_image":"shopify:\/\/shop_images\/cbmd-nav-our-science_2x_54b29c3e-c3fb-4a66-836f-e8c7fcb07319.jpg","push_2_heading":"Our science","push_2_subheading":"Users arriving on this page are expecting to learn the company purpose and vision.","push_2_url":"shopify:\/\/pages\/our-science"}},"1586288058086":{"type":"mega_menu","settings":{"navigation_mega_menu":"products","push_1_image":"shopify:\/\/shop_images\/908bde91ad33d586ec47f405c2643f9c.jpeg","push_1_heading":"Overview","push_1_subheading":"","push_1_url":"shopify:\/\/pages\/overview","push_2_image":"","push_2_heading":"Shop All","push_2_subheading":"","push_2_url":""}}},"block_order":["1586287763421","1586288058086"],"settings":{"use_sticky_header":true,"logo":"shopify:\/\/shop_images\/cbmd-logo-white.png","logo_max_width":100,"mobile_logo_max_width":85,"navigation_menu":"navigation","navigation_style":"inline","show_icons":false,"enable_transparent_header":false,"enable_transparent_header_collection":false,"show_transparent_header_border":true,"transparent_text_color":"#ffffff","transparent_logo":""}},"footer":{"type":"footer","blocks":{"footer-1":{"type":"links","settings":{"menu":"products"}},"1585764898128":{"type":"links","settings":{"menu":"about"}},"1585795412306":{"type":"text","settings":{"show_social_media":true}}},"block_order":["footer-1","1585764898128","1585795412306"],"settings":{"show_payment_methods":true,"cmbd_logo":"shopify:\/\/shop_images\/cbmd-logo-black.png","cannabiomed_logo":"shopify:\/\/shop_images\/cannabiomed-logo.png","cannabiomed_description":"CBMD is proud to be in partnership with:","newsletter_title":"Get the latest","newsletter_content":"<p>Your data will not be distributed or sold.<\/p>","copyright":"These statements have not been evaluated by the Food & Drug Administration. These products are not intended to diagnose, treat, cure or prevent any disease.<br>\nThe information provided on this site is not to be considered medical advice, and is not intended to replace consultation with a qualified medical professional, nor does it establish a doctor-patient relationship.","terms_of_use":"shopify:\/\/policies\/terms-of-service","policy":"shopify:\/\/policies\/privacy-policy"}},"collection-template":{"type":"collection-template","settings":{"show_collection_info":true,"show_collection_image":false,"apply_overlay":true,"show_color_swatch":false,"show_vendor":false,"collection_image_size":"normal","show_sort_by":true,"show_layout_switch":false,"toolbar_position":"bottom","filter_position":"sidebar","filter_mode":"tag","show_filter_color_swatch":true,"filter_menu":"","grid_items_per_page":16,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"recently-viewed-products":{"type":"recently-viewed-products","settings":{"show_section":true,"title":"Recently viewed","show_product_info":true,"show_vendor":false,"show_color_swatch":false}},"collection-footer":{"type":"collection-footer","settings":{"show_section":false,"image":"","text_color":"#ffffff","apply_overlay":true,"title":"Our story","content":"<p>Add your own custom content to explain your processes...<\/p>"}},"product-template":{"type":"product-template","settings":{"show_share_buttons":true,"show_vendor":true,"show_sku":false,"description_below_add_to_cart":false,"selector_mode":"dropdown","show_color_swatch":false,"show_color_carousel":false,"show_quantity_selector":true,"show_inventory_quantity":false,"inventory_quantity_threshold":3,"show_price_in_button":false,"show_payment_button":true,"image_size":"large","stack_images":true,"show_thumbnails":false,"enable_image_zoom":true,"enable_video_looping":false,"tab_page_1_handle":"","tab_page_2_handle":"","reviews_enabled":false,"featured_image_size":"large"}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"heading":"You may also like","show_product_info":true,"show_vendor":false,"show_color_swatch":false}},"popup":{"type":"popup","settings":{"show_popup":false,"show_only_on_index":false,"show_only_for_visitors":false,"show_only_once":false,"title":"Popup","content":"<p>You can use this popup to display some useful information to your customers.<\/p>","show_newsletter":true,"apparition_delay":6}},"1585562300015":{"type":"banner","settings":{"banner_background":"shopify:\/\/shop_images\/hero-1920.png","foreground_style":"side_image","foreground_position":"right","sidebar_background":"#eb161e","banner_title":"Formulated by physicians, made for you.<span>™<\/span>","banner_text":"Be assured. We bring science to CBD. The same integrity we apply every day in our medical practice is here in our products.","button_link":"shopify:\/\/pages\/overview","button_text":"See our CBD","is_small_background":false}},"featured-collections":{"type":"featured-collections","blocks":{"featured-collection-0":{"type":"collection","settings":{"collection":"","title":"","grid_items_count":8,"button_text":"View all products"}}},"block_order":["featured-collection-0"],"settings":{"title":"Featured collection","layout_mode":"grid","show_product_info":true,"show_vendor":false,"show_color_swatch":false,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"banner":{"type":"banner","settings":{"banner_background":"shopify:\/\/shop_images\/cbmd-our-mission-hero_2x_d79c4424-2b70-49ab-adb7-be4f88c01d26.png","foreground_style":"full_image","foreground_position":"right","sidebar_background":"#eb161e","banner_title":"The MD in our name is no accident.","banner_text":"We’re deliberate in all we do. From caring for our patients, to examining how consumer products impact our patients, and knowing why potency and dosing matter. CBMD™ is governed by medical science.","button_link":"","button_text":"See our CBD","is_small_background":false}},"1586335607840":{"type":"cbmd-stats","blocks":{"1586335607840-0":{"type":"collection","settings":{"subheading":"1 in 12","content":"Fraction of products that contain the CBD concentration listed on the label."}},"1586335607840-1":{"type":"collection","settings":{"subheading":"69%","content":"Amount of products whose CBD content is not accurately represented on the label."}},"1586335607840-2":{"type":"collection","settings":{"subheading":"21%","content":"Percentage of tested CBD products with undisclosed THC content, some as high as 6.43mg\/mL."}}},"block_order":["1586335607840-0","1586335607840-1","1586335607840-2"],"settings":{"background_color":"#ffffff","highlight_heading":"The current problem","highlight_title":"There’s no real standard when <br>it comes to CBD.","highlight_description":"The demand for CBD is soaring, and in the absence of research and oversight, CBD products go largely unregulated - putting a supply of mislabeled, ineffective, and potentially unsafe products into the hands of consumers.","action_style":"link","action_title":"How we're different","action_link":"shopify:\/\/pages\/our-mission"}},"1586335792900":{"type":"cbmd-highlight-image","settings":{"background_color":"#ffffff","highlight_style":"left_image","highlight_image":"shopify:\/\/shop_images\/cbmd-a-better-solution_2x_2c58fc90-6d70-4afc-bec1-91afa41eb795.jpg","highlight_video":"","highlight_heading":"A better solution","highlight_title":"Intelligent care. <br>Uncommon insight.","highlight_description":"As physicians, we take a different approach to CBD. Our formulations are developed to provide a more transparent option for those who value scientific rigor. We mind the details, select ingredients deliberately, and leave nothing to chance. With CBMD™, you know exactly what you’re getting—the truth.","action_style":"link","action_title":"See the science","action_link":"shopify:\/\/pages\/our-science","action_text":"\/pages\/our-science"}},"1586335866753":{"type":"cbmd-slider","blocks":{"1586335890983":{"type":"item","settings":{"product_name":"RAW","product_sub_name":"Simply CBD","sub_heading":"Formulated for","product_description":"Customization, Chronic pain,<br>\nInflammation, Cognition","picture":"shopify:\/\/shop_images\/RAW_Caps_66e97574-76e0-4469-b3bc-ec45c4ec2247.png","picture_hover":"shopify:\/\/shop_images\/cbmd-types_2x_59097ba7-ff1b-4d1b-a6eb-42a0a2dcbf43.jpg","button_name":"Learn more","button_link":"shopify:\/\/pages\/overview"}},"1586335919175":{"type":"item","settings":{"product_name":"PMT","product_sub_name":"Pain Support","sub_heading":"Formulated for","product_description":"Chronic pain, Stiffness,<br>\nInflammation, Migraines","picture":"shopify:\/\/shop_images\/PMT_Tincture_5d189c1b-b5df-4c3c-9bc1-6a2fc1b42ec6.png","picture_hover":"shopify:\/\/shop_images\/cbmd-cannabidiol_2x_33464af0-1a7c-4f77-8169-1202b392f9f6.jpg","button_name":"Learn more","button_link":"shopify:\/\/pages\/overview"}},"1586335942797":{"type":"item","settings":{"product_name":"PSY","product_sub_name":"Mind Balance","sub_heading":"Formulated for","product_description":"Anxiety, Depression,<br>\nInsomnia, Jet lag","picture":"shopify:\/\/shop_images\/PSY_Anx_Caps_7cc6d2ca-635d-46e7-932b-b01d4b5e42ee.png","picture_hover":"shopify:\/\/shop_images\/cbmd-dosing_2x_7cfbf35c-f124-4217-b1ad-4938ec5fe846.jpg","button_name":"Learn more","button_link":"shopify:\/\/pages\/overview"}},"1586335962046":{"type":"item","settings":{"product_name":"DRM","product_sub_name":"Skin Restore","sub_heading":"Formulated for","product_description":"Dryness, Inflammation,<br>\nSkin texture, Aging","picture":"shopify:\/\/shop_images\/DRM_Tincture_f4786484-5602-4912-b34a-cae6fabc2637.png","picture_hover":"shopify:\/\/shop_images\/cbmd-bioavailability_2x_6921f7cf-524e-4752-be7b-e14ce93db2e5.jpg","button_name":"Learn more","button_link":"shopify:\/\/pages\/overview"}}},"block_order":["1586335890983","1586335919175","1586335942797","1586335962046"],"settings":{"background_color":"#ffffff","highlight_heading":"Our products"}},"1586336977121":{"type":"cbmd-providers","blocks":{"1587202716538":{"type":"item","settings":{"provider_name":"Fady Elias, MD","provider_title":"<p>Orthopedic Surgery<\/p>","provider_description":"When patients ask me about CBD, I tell them the truth. That some of it is probably unsafe and some may be fine, but without appropriate clinical research my ability to provide responsible recommendations is impeded.","picture":"shopify:\/\/shop_images\/cbmd-dr-fady-elias.jpg"}},"1586336999879":{"type":"item","settings":{"provider_name":"Jay Lieberman, MD","provider_title":"<p>Pediatrics and Infectious Disease<\/p>","provider_description":"As physicians, we want to know that our patients get what they think they’re getting with supplements. Lack of transparency in concentration alone puts them at risk for dangerous side effects or interactions with medicines also prescribed to them.","picture":"shopify:\/\/shop_images\/cbmd-dr-jay-leibermam.jpg"}},"1586337058744":{"type":"item","settings":{"provider_name":"Matt Iorio, MD","provider_title":"<p>Plastic\/Reconstructive Extremity Microsurgery<\/p>","provider_description":"There is an increasing amount of evidence based medicine and clinical studies on cannabidiol (CBD), and it is our intention at CBMD to create the most scientifically structured and efficacious CBD products currently available.","picture":"shopify:\/\/shop_images\/cbmd-dr-matt-iorio_2x_06cbb25f-a763-49b4-ac5d-814fbad420df.jpg"}},"1586337106367":{"type":"item","settings":{"provider_name":"Mitchel Goldman, MD","provider_title":"<p>Dermatology and Cosmetic Surgery<\/p>","provider_description":"With CBD, we are seeing an incredibly high demand but, unfortunately, there does not appear to be a sufficient regulatory framework. It really underscores the importance of ensuring the integrity of the product you are getting.","picture":"shopify:\/\/shop_images\/cbmd-dr-mitchel-goldman_2x_28f9dcff-e879-426a-ac9b-0708afb119f9.jpg"}}},"block_order":["1587202716538","1586336999879","1586337058744","1586337106367"],"settings":{"background_color":"#ffffff","highlight_heading":"Healthcare providers and CBD"}},"1586337176858":{"type":"cbmd-highlight-image","settings":{"background_color":"#ffffff","highlight_style":"right_image","highlight_image":"shopify:\/\/shop_images\/cbmd-get-in-touch_2x_d6e5428e-9ac3-4344-ba1c-e36a9f5a5593.jpg","highlight_video":"","highlight_heading":"Get in touch.","highlight_title":"A new conversation.","highlight_description":"Healthcare providers are in a unique position to support patients and facilitate smart decisions around the safety of the products they use.","action_style":"button","action_title":"Talk with us","action_link":"","action_text":"\/pages\/contact"}},"1586337244488":{"type":"cbmd-multilinks","blocks":{"1586337253724":{"type":"item","settings":{"link_title":"Discover the difference.","link_sub_title":"Explore products","link_image":"shopify:\/\/shop_images\/cbmd-benefits-3col_2x_204f1646-5daf-4623-831f-89cf68caa1e6.jpg","button_link":"shopify:\/\/pages\/overview"}},"1586337284472":{"type":"item","settings":{"link_title":"What we know about CBD.","link_sub_title":"Get the truth","link_image":"shopify:\/\/shop_images\/cbmd-products-3col_2x_d4674b34-d8f4-4c94-8deb-df10c859e1af.jpg","button_link":"shopify:\/\/pages\/our-science"}},"1586337320743":{"type":"item","settings":{"link_title":"Why we exist.","link_sub_title":"Explore our mission and vision","link_image":"shopify:\/\/shop_images\/cbmd-mission-vision-3col_2x_4322b878-bd44-4a37-9657-1234a874768b.jpg","button_link":"shopify:\/\/pages\/our-mission"}}},"block_order":["1586337253724","1586337284472","1586337320743"],"settings":{"background_color":"#ffffff"}},"cbmd-stats":{"type":"cbmd-stats","blocks":{"1586337695897":{"type":"collection","settings":{"subheading":"85+","content":"years of combined experience"}},"1586337709803":{"type":"collection","settings":{"subheading":"1000+","content":"peer-reviewed medical publications"}},"1586337721938":{"type":"collection","settings":{"subheading":"350K+","content":"patients under our care"}}},"block_order":["1586337695897","1586337709803","1586337721938"],"settings":{"background_color":"#ffffff","highlight_heading":"Our philosophy","highlight_title":"First do no harm.","highlight_description":"We took an oath. Our commitment to responsibility, accountability, and patient outcomes is here in our products. With a focus on quality, efficacy and safety we’re taking everything we know and applying it to provide quality products that consumers and healthcare providers can trust.","action_style":"link","action_title":"Learn more","action_link":""}},"cbmd-highlight-image-1":{"type":"cbmd-highlight-image-1","settings":{"background_color":"#ffffff","highlight_style":"right_image","highlight_image":"shopify:\/\/shop_images\/cbmd-a-clear-vision_2x_91d468cc-48b2-41fc-9020-9c5f585c7bfd.jpg","highlight_video":"https:\/\/cdn.shopify.com\/s\/files\/1\/0321\/8472\/9739\/files\/cbmd-find-your-cbd.mp4?v=1585816723","highlight_heading":"Our vision","highlight_title":"To reveal the full potential of responsible CBD.","highlight_description":"CBMD™ takes a different approach, built on scientific expertise and clinical insight. CBMD™ traces the overlooked steps in CBD’s path to market, to realize a quality, medical-grade line of products.","action_style":"button","action_title":"See our products","action_link":"shopify:\/\/pages\/overview"}},"cbmd-highlight-image":{"type":"cbmd-highlight-image","settings":{"background_color":"#ffffff","highlight_style":"left_image","highlight_image":"shopify:\/\/shop_images\/8f79b1aa8843dc28c6980b1f98e4b76c.jpeg","highlight_video":"https:\/\/cdn.shopify.com\/s\/files\/1\/0321\/8472\/9739\/files\/cbmd-a-different-mission_af9dfb4c-0b74-47e4-a9c1-af3172a3be4e.mp4?v=1586918025","highlight_heading":"Our mission","highlight_title":"We eliminate confusion and illuminate the facts.","highlight_description":"Every day we work to view CBD through the lens of science, infuse the conversation with knowledge, impart an evidence-based approach to the industry, and develop quality CBD options.","action_style":"link","action_title":"Learn more","action_link":"","action_text":""}},"cbmd-slider-circle":{"type":"cbmd-slider-circle","blocks":{"1586338131660":{"type":"item","settings":{"product_name":"Formulation","product_sub_name":"01","product_description":"Our medical experience, our scientific approach, and high-quality CBD come together in our proprietary formulas, developed to optimally address individual needs.","picture":"shopify:\/\/shop_images\/cbmd-our-process-1-sourcing_2x_03a89135-614f-49ad-8a31-190e1651cb7d.jpg"}},"1586338238115":{"type":"item","settings":{"product_name":"Sourcing","product_sub_name":"02","product_description":"With exacting standards for quality, purity, safety, and efficacy, we evaluate each ingredient independently, and select optimal pairings to achieve the desired goal.","picture":"shopify:\/\/shop_images\/cbmd-our-process-2-formulation_2x_2a281331-5c13-458d-a894-044e95797c39.jpg"}},"1586338273488":{"type":"item","settings":{"product_name":"Testing","product_sub_name":"03","product_description":"Our products undergo rigorous testing and evaluation for potency, allergens, and harmful interactions. This transparent methodology helps empower informed decisions.","picture":"shopify:\/\/shop_images\/cbmd-our-process-3-testing_2x_17128447-06cf-45de-b3a0-e2c45964a2d4.jpg"}},"1586338302636":{"type":"item","settings":{"product_name":"Refinement","product_sub_name":"04","product_description":"We continuously evaluate our formulations through emergent research and customer-based controlled studies, applying the data to build upon our scientific foundation and elevate our product standards.","picture":"shopify:\/\/shop_images\/cbmd-our-process-4-refinement_2x_dd72b593-67cd-4d7c-8e45-4901d1b31f39.jpg"}}},"block_order":["1586338131660","1586338238115","1586338273488","1586338302636"],"settings":{"background_color":"#ffffff","section_heading":"Our process","section_title":"A higher degree <br>of care."}},"1586352869270":{"type":"cbmd-video","settings":{"background_color":"#ffffff","highlight_video":"https:\/\/cdn.shopify.com\/s\/files\/1\/0321\/8472\/9739\/files\/cbmd-find-your-cbd.mp4?v=1585816723","highlight_video_mobile":"https:\/\/cdn.shopify.com\/s\/files\/1\/0321\/8472\/9739\/files\/cbmd-find-your-cbd.webm?v=1587123194","highlight_heading":"Find your CBD","highlight_title":"What’s right for you?","highlight_description":"In order to choose what’s best for your body and mind, you’ve got to be informed. We can help. CBMD™ gives you access to all the latest news, research, and information.","action_name":"","action_link":"","autoplay":true,"subscriber":true}},"cbmd-video":{"type":"cbmd-video","settings":{"background_color":"#ffffff","highlight_video":"https:\/\/cdn.shopify.com\/s\/files\/1\/0321\/8472\/9739\/files\/cbmd-our-science-med.mp4?v=1586394762","highlight_video_mobile":"","highlight_heading":"Our science","highlight_title":"Truth. <br>\nNot trends.","highlight_description":"Our team of physicians is guided by a medical ethos. That translates to evidence-based decisions, quality ingredients, and transparent development. Where we see unanswered questions, unsubstantiated claims, consumer confusion, and a medical community that is only partially engaged, we lead with what we know, understand, and believe in: science.","action_name":"Stay informed","action_link":"shopify:\/\/pages\/our-science","autoplay":false,"subscriber":false}},"cbmd-highlight-image-2":{"type":"cbmd-highlight-image-2","settings":{"background_color":"#ffffff","highlight_style":"right_image","highlight_image":"shopify:\/\/shop_images\/cbmd-healthcare-provider_2x_d3b1da20-9703-4f8e-b187-14d56bd7be8c.jpg","highlight_video":"https:\/\/cdn.shopify.com\/s\/files\/1\/0321\/8472\/9739\/files\/cbmd-find-your-cbd.mp4?v=1585816723","highlight_heading":"Know more","highlight_title":"Are you a healthcare provider?","highlight_description":"Like us, you want what’s best for your patients. If you have questions about the science of our products or want to learn more about partnering with CBMD™ on customized formulations, let us know.","action_style":"button","action_title":"Get in touch","action_link":"\/pages\/contact"}},"cbmd-multilinks":{"type":"cbmd-multilinks","blocks":{"1586366036027":{"type":"item","settings":{"link_title":"Discover the difference.","link_sub_title":"Explore products","link_image":"shopify:\/\/shop_images\/cbmd-benefits-2col_2x_c03e4f42-eb70-4476-a962-d4dbae14672b.jpg","button_link":"shopify:\/\/pages\/overview"}},"1586366070612":{"type":"item","settings":{"link_title":"What we know about CBD.","link_sub_title":"Get the truth","link_image":"shopify:\/\/shop_images\/cbmd-mission-vision-2col_2x_923a29d2-00ae-4980-b7c4-450efe0eb591.jpg","button_link":"shopify:\/\/pages\/our-science"}}},"block_order":["1586366036027","1586366070612"],"settings":{"background_color":"#ffffff"}},"banner-ourscience":{"type":"banner-ourscience","settings":{"banner_background":"shopify:\/\/shop_images\/science-banner.png","foreground_style":"side_image","foreground_position":"right","sidebar_background":"#eb161e","banner_title":"We believe in the strength of science.","banner_text":"As doctors, we have insight into the human body. And as CBD research expands, we can apply a nuanced understanding to address knowledge gaps in CBD’s potential and safety.","button_link":"","button_text":"See our CBD","is_small_background":false,"use_tab":false}},"cbmd-stats-ourscience":{"type":"cbmd-stats-ourscience","blocks":{"1586399278069":{"type":"collection","settings":{"subheading":"1940","content":"Year CBD was first isolated and identified by Harvard chemist Roger Adams."}},"1586399286823":{"type":"collection","settings":{"subheading":"80%","content":"Percent of US doctors that have discussed CBD\/cannabis with their patients."}},"1586399297091":{"type":"collection","settings":{"subheading":"30%","content":"Amount of US doctors who feel they know enough about CBD to advise their patients on product selection or utility."}}},"block_order":["1586399278069","1586399286823","1586399297091"],"settings":{"background_color":"#ffffff","highlight_heading":"Education","highlight_title":"Informed decisions. <br>Safer choices.","highlight_description":"Understanding CBD is key to knowing what it can do. CBMD™ gathers resources and research to help physicians and consumers understand what’s in the products they use.","action_style":"link","action_title":"","action_link":""}},"cbmd-highlight-image-ourscience":{"type":"cbmd-highlight-image-ourscience","settings":{"background_color":"#ffffff","highlight_style":"left_image","highlight_image":"shopify:\/\/shop_images\/cbmd-our-partnership_2x_7a614592-aef1-4190-b85d-07004a467bd3.jpg","highlight_video":"","highlight_heading":"Our partnership","highlight_title":"A common purpose.","highlight_description":"CBMD™ operates in association with Cannabiomed™, a consortium of medical professionals, researchers, scientists, and pharmacists working to bring a medical perspective to the CBD industry.<br><br>Cannabiomed™ seeks to equip healthcare practitioners with resources that enable them to be informed, effective advisors for patients wanting to integrate CBD into their wellness routines.","action_style":"link","action_title":"Learn more","action_link":"shopify:\/\/pages\/our-mission"}},"cbmd-tab-ourscience":{"type":"cbmd-tab-ourscience","blocks":{"1586400660178":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/cbmd-cannabidiol_2x_4c66c0ab-9ee5-4beb-991d-0a75a812de7f.jpg","title":"Cannabidiol","subheading":"What is CBD?","heading":"","content":"<p>Cannabidiol (CBD) is one of 113 biologic compounds&mdash;called <em>cannabinoids<\/em>&mdash;found within the trichomes of the cannabis\/hemp plant. Two of the most well-known of these compounds are CBD and THC. While both are naturally occurring, CBD is distinct from THC, in that CBD does not produce the psychoactive effect (or high) that THC does.<\/p>\n<p>All cannabinoid molecules, like those found in CBD, act on the receptors in the body&rsquo;s endocannabinoid system (ECS). Active in the body whether or not a person uses CBD or THC products, the ECS plays a role in sleep, appetite, mood, memory, and immune processes.<\/p>\n<p>All CBMD products are formulated with broad-spectrum CBD, which has been purified to substantially reduce the THC content and profile.<\/p>"}},"1586400671768":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/cbmd-types_2x_ea842101-815c-4478-9823-faa790a8b22f.jpg","title":"Types","subheading":"Different types of CBD","heading":"","content":"<p>Today, one can find CBD labeled full-spectrum, broad-spectrum, and pure isolate. Full-spectrum products contain precisely that: the full range of both cannabinoids and terpenes present in the plant. (Terpenes are the chemicals responsible for the smell and taste associated with cannabis). Full-spectrum products are notable in that they are inclusive of THC.<\/p>\n<p>However, by definition, CBD cannot contain more than 0.3% of THC. On the other hand, broad-spectrum products are refined so as to remove much more of the THC content and profile. CBD isolate is created by extracting CBD and then removing all other cannabinoids and terpenes, isolating only the CBD molecules.<\/p>"}},"1586402991291":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/cbmd-dosing_2x_8a641c13-35a1-4c7d-afe0-7dcf64f0fe12.jpg","title":"Dosing","subheading":"Dosing","heading":"","content":"<p>Determining the appropriate CBD dose is dependent upon a number of factors, including the delivery technology, concentration, and product type. There are also other factors to consider, like a person&rsquo;s unique biological makeup, and medicines an individual might be taking, Additionally, CBD isolate will exert a different kind of dose response than broad-spectrum and full-spectrum products. Because of this variability, we recommend that individuals consult a doctor, and also begin with a low dosage and build from there.<\/p>"}},"1586403059111":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/cbmd-bioavailability_2x_cc294f94-3239-47a6-b9f8-7fece244b1fb.jpg","title":"Bioavailability","subheading":"Bioavailability","heading":"","content":"<p>The term&nbsp;<i>bioavailability<\/i>&nbsp;refers to the percentage or fraction of a given dose that is absorbed into the bloodstream, and therefore made available for use by the body. Bioavailability is based on a variety of factors, including product composition and method of delivery. In several of our CBD formulations, we incorporate ingredients that display increased and prolonged bioavailability.<\/p>"}},"1587182002336":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/cbmd-cannabidiol_2x_4c66c0ab-9ee5-4beb-991d-0a75a812de7f.jpg","title":"Endocannabinoid","subheading":"Endocannabinoid System","heading":"","content":"<p>All cannabinoid molecules, like those found in CBD, act on the receptors in the body&rsquo;s endocannabinoid system (ECS). Active in the body whether or not a person uses CBD or THC products, the ECS plays a role in sleep, appetite, mood, memory, and immune processes.<\/p>\n<p>There are two main kinds of receptors: CB1 receptors, which are mainly concentrated in the brain, and CB2 receptors, located throughout the body and largely connected with immune system function.<\/p>\n<p>The human body also produces its own endocannabinoids, a fact that is part of an interesting story of the endocannabinoid system&rsquo;s scientific provenance&mdash;starting in the early 19th century and leading to the recent mapping of the endocannabinoid receptors&rsquo; genetic group.<\/p>"}}},"block_order":["1586400660178","1586400671768","1586402991291","1586403059111","1587182002336"],"settings":{"text_color":"#ffffff"}},"cbmd-book-ourscience":{"type":"cbmd-book-ourscience","settings":{"heading":"Featured publication","book_title":"News and research","book_description":"Created by Americans for Safe Access (ASA),The Patient’s Guide to CBD is an informative resource for patients, healthcare providers, consumers, and others seeking information on the topic of cannabidiol (CBD).","book_name":"Patient’s Guide <br>  to CBD","book_cover":"shopify:\/\/shop_images\/cbmd-patients-guide-to-cbd.png","book_url":"https:\/\/cdn.shopify.com\/s\/files\/1\/0321\/8472\/9739\/files\/Patients_Guide_to_CBD.pdf"}},"cbmd-slider-rect":{"type":"cbmd-slider-rect","blocks":{"1586443811292":{"type":"item","settings":{"item_name":"FDA recommends science-based approach","item_description":"With so many questions around the safety and quality of CBD products, the FDA looks at policy to ensure safe standards are maintained for the production of CBD.","picture":"shopify:\/\/shop_images\/cbmd-additional-resources-FDA-1_2x_8e952825-2f65-4ed4-baaf-d4e5378b8a02.jpg","link":"https:\/\/www.fda.gov\/consumers\/consumer-updates\/what-you-need-know-and-what-were-working-find-out-about-products-containing-cannabis-or-cannabis"}},"1586443918536":{"type":"item","settings":{"item_name":"Clinicians guide to CBD and hemp oil","item_description":"With the explosion in CBD’s popularity comes the need for physicians to understand the importance of product selection to ensure safety.","picture":"shopify:\/\/shop_images\/cbmd-additional-resources-clinicians-2_2x_2fe73169-5c7a-4c06-b070-1afe9a398a91.jpg","link":"https:\/\/www.mayoclinicproceedings.org\/article\/S0025-6196(19)30007-2\/fulltext"}},"1586443953620":{"type":"item","settings":{"item_name":"Johns Hopkins professor looks to physicians","item_description":"Associate Professor of Psychiatry and Behavioral Sciences Ryan Vandrey, PhD says patients should speak to their doctors before trying CBD.","picture":"shopify:\/\/shop_images\/cbmd-additional-resources-3_2x_db217314-0152-4ec9-9055-4226b6ebfca0.jpg","link":"https:\/\/hub.jhu.edu\/2020\/01\/03\/what-is-cbd-2499-em1-art1-qa-health\/"}}},"block_order":["1586443811292","1586443918536","1586443953620"],"settings":{"background_color":"#ffffff","section_title":"Additional resources"}},"cbmd-faq-ourscience":{"type":"cbmd-faq-ourscience","blocks":{"1586448776768":{"type":"item","settings":{"item_title":"What is Cannabidiol (CBD)?","item_description":"Cannabidiol (CBD) is one of 113 biologic compounds—called cannabinoids—found within the cannabis plant. Two of the most well-known of these compounds are CBD and THC. While both are naturally occurring in the plant, CBD is distinct from TCH, in that CBD does not produce the psychoactive effect (or high) that THC does. <br><br>\nAll cannabinoid molecules, like those found in CBD, act on the receptors in the central nervous system—and more specifically, the body’s endocannabinoid system (ECS). Active in the body whether or not a person uses CBD or THC products, the ECS plays a role in sleep, appetite, mood, memory, and immune processes.<br><br>\nAll CBMD products are formulated with broad-spectrum CBD, which has been purified to substantially reduce the THC content and profile.","link_name":"","link":"","type":"cbd"}},"1586448824891":{"type":"item","settings":{"item_title":"What does “broad-spectrum” CBD mean?","item_description":"Today, one can find CBD labeled full-spectrum, broad-spectrum, and pure isolate. Full-spectrum products contain precisely that: the full range of both cannabinoids and terpenes present in the plant. (Terpenes are the chemicals responsible for the smell and taste associated with cannabis). Full-spectrum products are notable in that they are inclusive of THC. However, by definition, CBD cannot contain more than 0.3% of THC. On the other hand, broad-spectrum products are refined so as to remove much more of the THC content and profile. CBD isolate is created by extracting CBD and then removing all other cannabinoids and terpenes, isolating only the CBD molecules.","link_name":"","link":"","type":"cbd"}},"1586448845848":{"type":"item","settings":{"item_title":"Will I get “high” from CBD?","item_description":"No, you won’t. The cannabinoid responsible for inducing a psychoactive effect is THC, not CBD. In CBD that has been responsibly produced, the THC content will be below 0.03%. <br><br>","link_name":"","link":"","type":"cbd"}},"1586448862838":{"type":"item","settings":{"item_title":"Can I take too much CBD? What’s the right dosage for me?","item_description":"The general recommendation has been between 20 and 1,500 milligrams (mg) per day, with a small starting dosage, and slowly increasing until the desired effect is attained. But, the ideal dosage will depend on a number of factors, including body weight and chemistry, the product’s CBD concentration, and the method of ingestion\/absorption. <br><br>\nBut because the research on CBD dosing is lacking, there are no uniform guidelines for physicians to follow. This is further complicated by consumers attempting to monitor their own intake when there is no regulation in the industry, and only a fraction of the brands sold in the market are accurately labeled.<br><br>\nIn the absence of research on CBD dosing, there are no uniform guidelines for physicians to follow. This is further complicated by consumers attempting to monitor their own intake amid a non-regulated industry where only a fraction of the products sold are accurately labeled.\n<br><br>\nCBMD products, however, are produced with transparency by physicians in cooperation with scientists. We uphold stringent measures for consistency and accuracy, and significantly, we understand the body’s processes. As the potential of CBD is further revealed, we can provide a responsible option for healthcare providers and individuals who wish to explore the utility of CBD products.","link_name":"","link":"","type":"products"}},"1586448881097":{"type":"item","settings":{"item_title":"How are marijuana and hemp different?","item_description":"There are many species of the cannabis\/hemp plant, and though most people are familiar with the terms hemp and marijuana, there is some confusion between the two. Simply: plants with a THC concentration below 0.3% are commonly referred to as hemp, while those above that threshold are classified as marijuana. This is because THC is the compound responsible for the psychoactive effect (or high) associated with marijuana.<br><br>\nAll CBD used in CBMD’s products is derived from hemp-classified plants.","link_name":"","link":"","type":"products"}},"1586448900889":{"type":"item","settings":{"item_title":"What is the endocannabinoid system?","item_description":"All cannabinoid molecules, like those found in CBD, act on the receptors in the body’s endocannabinoid system (ECS). Active in the body whether or not a person uses CBD or THC products, the ECS plays a role in sleep, appetite, mood, memory, and immune processes.<br><br>\nThere are two main kinds of receptors: CB1 receptors, which are mainly concentrated in the brain, and CB2 receptors, located throughout the body and largely connected with immune system function. When cannabinoids attach to these receptors, they exert a physiological effect on mechanisms impacting sleep, appetite, mood, memory, pain and immune processes. <br><br>\nThe human body also produces its own endocannabinoids, a fact that is part of an interesting story of the endocannabinoid system’s scientific provenance—starting in the early 19th century and leading to the recent mapping of the endocannabinoid receptors’ genetic group. At CBMD, we believe in the strength of science, and work to help educate others who are interested in learning more.","link_name":"","link":"","type":"products"}}},"block_order":["1586448776768","1586448824891","1586448845848","1586448862838","1586448881097","1586448900889"],"settings":{"background_color":"#ffffff","section_title":"FAQs","cbd_title":"About CBD","products_title":"About our products"}},"cbmd-multilinks-ourscience":{"type":"cbmd-multilinks-ourscience","blocks":{"1586483312813":{"type":"item","settings":{"link_title":"Discover the difference.","link_sub_title":"Explore products","link_image":"shopify:\/\/shop_images\/cbmd-benefits-2col_2x_c03e4f42-eb70-4476-a962-d4dbae14672b.jpg","button_link":"shopify:\/\/pages\/overview"}},"1586483402450":{"type":"item","settings":{"link_title":"Why we exist.","link_sub_title":"Explore our mission and vision","link_image":"shopify:\/\/shop_images\/cbmd-products-2col_2x_b9bcab69-dabe-449f-b887-e4634f5149b9.jpg","button_link":"shopify:\/\/pages\/our-mission"}}},"block_order":["1586483312813","1586483402450"],"settings":{"background_color":"#ffffff"}},"banner-overview":{"type":"banner-overview","settings":{"banner_background":"","foreground_style":"half_image","foreground_position":"right","sidebar_background":"#eb161e","banner_title":"Designed with you in mind.","banner_text":"Our full line of physician-formulated CBD products. Our medical-grade products are all developed to offer a more responsible and reliable CBD option.","button_link":"","button_text":"See our CBD"}},"cbmd-collections-overview":{"type":"cbmd-collections-overview","blocks":{"1586785946180":{"type":"item","settings":{"collection_description":"Customization, Chronic Pain<br>\nInflammation, Cognition","collection":"raw","view_title":"A solid foundation.","view_description":"Created for individuals looking to integrate additive-free CBD into their wellness routines - our RAW product is also an ideal base compound for physicians who want to build customized formulations for their patients.","background":"shopify:\/\/shop_images\/cbmd-raw_2x_0408e2e9-72c8-4f70-bd55-7e0c4d576663.png"}},"1586785972587":{"type":"item","settings":{"collection_description":"Chronic pain, Stiffness<br>\nInflammation, Migraines","collection":"pmt-1","view_title":"A targeted solution.","view_description":"In combination with CBD, select plant-based ingredients and other naturally occurring compounds comprise a formulation designed for discomfort and inflammation.","background":"shopify:\/\/shop_images\/cbmd-pmt_2x_286a7287-8a9c-454e-84f3-dcc38d38f991.png"}},"1586785986283":{"type":"item","settings":{"collection_description":"Anxiety, Depression<br>\nInsomnia, Jet lag","collection":"pmt","view_title":"A true equilibrium.","view_description":"With a proprietary blend of CBD and natural bioactive supplements, our PSY line is formulated to achieve equilibrium—targeting tension, sleeplessness, and stress.","background":"shopify:\/\/shop_images\/cbmd-psy_2x_973d4ef8-03cb-4ef6-872e-8f8788bc51f8.png"}},"1586785995744":{"type":"item","settings":{"collection_description":"Dryness, Inflammation<br>\nSkin Texture, Aging","collection":"drm","view_title":"A great reflection.","view_description":"Our team of dermatologic specialists created our DRM line with phytocannabinoid-rich oils and select plant extracts to smooth, soothe, and put back what time takes out.","background":"shopify:\/\/shop_images\/cbmd-drm_2x_4d2b4506-6f99-4150-b4ed-8d3336801c0c.png"}}},"block_order":["1586785946180","1586785972587","1586785986283","1586785995744"],"settings":{"background_color":"#ffffff","highlight_heading":"Our products"}},"collection-list":{"type":"collection-list","blocks":{"1586786751516":{"type":"collection","settings":{"collection":"drm","image":"","image_alignment":"center center","content_position":"bottomLeft","subheading":"Sub-heading","title":"Collection name","button_text":"View products","button_link":"","apply_overlay":true}}},"block_order":["1586786751516"],"settings":{"image_size":"normal","add_spacing":true,"expand_collection":false,"stack_on_mobile":true,"text_color":"#ffffff","button_color":"#363636"}},"cbmd-multilinks-overview":{"type":"cbmd-multilinks-overview","blocks":{"1586828046356":{"type":"item","settings":{"link_title":"CBD benefits","link_sub_title":"Learn more","link_image":"shopify:\/\/shop_images\/cbmd-benefits-2col_2x_c03e4f42-eb70-4476-a962-d4dbae14672b.jpg","button_link":"shopify:\/\/pages\/our-science"}},"1586828367296":{"type":"item","settings":{"link_title":"Explore our  mission and vision","link_sub_title":"Learn more","link_image":"shopify:\/\/shop_images\/cbmd-mission-vision-2-2col_2x_a4d70ca3-07c2-49ca-a39e-88f15fa3a884.jpg","button_link":"shopify:\/\/pages\/our-mission"}}},"block_order":["1586828046356","1586828367296"],"settings":{"background_color":"#ffffff"}},"banner-contact":{"type":"banner-contact","settings":{"banner_background":"shopify:\/\/shop_images\/cbmd-contact-header_2x_0d2bfabe-37f3-487b-a21b-aa5f5a403f7d.jpg","foreground_style":"half_image","foreground_position":"right","sidebar_background":"#eb161e","banner_title":"It’s time to demand more from your CBD.","banner_text":"Get in touch with us if you would like more information on our physician-formulated CBD products.","button_link":"","button_text":"See our CBD"}},"cbmd-slider-noimage":{"type":"cbmd-slider-noimage","blocks":{"1586856522273":{"type":"item","settings":{"heading":"For healthcare practitioners","description":"Be part of a new era in healthcare. Learn more about opportunities for medical professionals to engage with the advisory team at CBMD™.","button_name":"Get information","button_link":"mailto:info@cbmd.com"}},"1586856538102":{"type":"item","settings":{"heading":"For customers","description":"<p>Email: <a href=\"mailto:support@cbmd.com\" data-action=\"open-modal\" aria-controls=\"modal-product-subscription\" class=\"hyper_link\">support@cbmd.com<\/a><\/p>\n<p>Phone: <a href=\"tel:888.678.CBMD%20(2263)\" data-rel=\"external\" class=\"hyper_link\">888.678.CBMD (2263)<\/a><\/p>\n<p><a href=\"\/pages\/our-science?q=faq\" class=\"hyper_link\"> Frequently asked questions<\/a><\/p>\n<p class=\"description\">\nCustomer support is available from 9am and 5pm PST<br>Monday through Friday, excluding holidays<br>Please allow 1-2 business days for a response<\/p>","button_name":"","button_link":""}},"1586856549135":{"type":"item","settings":{"heading":"General inquiries","description":"<p>For all general inquiries and questions: <br>\n<a class=\"hyper_link\" href=\"mailto:info@cbmd.com\">info@cbmd.com<\/a><\/p>\n<p>For press or other media inquiries:<br>\n<a class=\"hyper_link\" href=\"mailto:press@cbmd.com\">press@cbmd.com<\/a><\/p>","button_name":"Get in touch","button_link":"#"}}},"block_order":["1586856522273","1586856538102","1586856549135"],"settings":{}},"cbmd-instagram":{"type":"cbmd-instagram","blocks":{"1586882235794":{"type":"item","settings":{"link_image":"shopify:\/\/shop_images\/cbmd-social-1_2x_e352a21f-3944-4202-88fd-746d15ad2994.jpg"}},"1586882319267":{"type":"item","settings":{"link_image":"shopify:\/\/shop_images\/cbmd-social-2_2x_9b186469-c8de-4a9d-8549-d5c673a585c7.jpg"}},"1586882340318":{"type":"item","settings":{"link_image":"shopify:\/\/shop_images\/cbmd-social-3_2x_861c1ea9-b859-44e1-8091-4baae588e7fa.jpg"}},"1586882358598":{"type":"item","settings":{"link_image":"shopify:\/\/shop_images\/cbmd-social-4_2x_a87cf10c-9398-425b-b3a9-fc2b9363fa05.jpg"}},"1586882368827":{"type":"item","settings":{"link_image":"shopify:\/\/shop_images\/cbmd-social-5_2x_3407a861-0bc0-4b83-88c8-1471c2c2e7af.jpg"}},"1586882381612":{"type":"item","settings":{"link_image":"shopify:\/\/shop_images\/contact-cbmd-social.png"}}},"block_order":["1586882235794","1586882319267","1586882340318","1586882358598","1586882368827","1586882381612"],"settings":{"heading":"Follow us on social","hashtag":"@cbmdhealth"}},"cbmd-slider-noimage-1":{"type":"cbmd-slider-noimage-1","blocks":{"1586884638194":{"type":"item","settings":{"heading":"<a href=\"https:\/\/www.facebook.com\/CBMDhealth\/\" target=\"_blank\">@cbmdhealth<\/a>","description":"Created by Americans for Safe Access (ASA),The Patient’s Guide to CBD is an informative resource for patients, healthcare providers, consumers, and others seeking information on the topic of CBD.","type":"facebook"}},"1586884647574":{"type":"item","settings":{"heading":"<a href=\"https:\/\/twitter.com\/cbmdhealth\" target=\"_blank\">@cbmdhealth<\/a>","description":"With so many questions around the safety and quality of CBD products, the FDA looks at policy to ensure safe standards are maintained for the production of CBD.","type":"twitter"}},"1586884664356":{"type":"item","settings":{"heading":"<a href=\"https:\/\/www.linkedin.com\/company\/38105495\/admin\/\" target=\"_blank\">@cbmdhealth<\/a>","description":"Johns Hopkins University Associate Professor of Psychiatry and Behavioral Sciences Ryan Vandrey, PhD suggests patients consult with their doctors before trying CBD.","type":"instagram"}}},"block_order":["1586884638194","1586884647574","1586884664356"],"settings":{}}},"content_for_index":["1585562300015","1586335607840","1586335792900","1586335866753","1586352869270","1586336977121","1586337176858","1586337244488"]},"presets":{"Allure":{"heading_color":"#1c1b1b","text_color":"#1c1b1b","text_light_color":"#6a6a6a","link_color":"#6a6a6a","background":"#efefef","light_background":"#ffffff","product_on_sale_color":"#f94c43","button_background":"#1c1b1b","button_text_color":"#ffffff","header_background":"#ffffff","header_heading_color":"#1c1b1b","header_light_color":"#6a6a6a","footer_background":"#ffffff","footer_heading_color":"#1c1b1b","footer_text_color":"#6a6a6a","newsletter_popup_background":"#1c1b1b","newsletter_popup_text_color":"#ffffff","secondary_elements_background":"#1c1b1b","secondary_elements_text_color":"#ffffff","navigation_background":"#1c1b1b","navigation_text_color":"#ffffff","heading_font":"montserrat_n5","heading_size":"small","uppercase_heading":true,"text_font":"nunito_sans_n4","base_text_font_size":14,"currency_conversion_enabled":false,"currency_conversion_round_amounts":true,"currency_conversion_supported_currencies":"USD CAD EUR GBP","currency_conversion_money_format":"money_format","show_page_transition":true,"search_mode":"product,article","product_show_price_on_hover":false,"product_show_secondary_image":false,"product_info_alignment":"center","product_image_size":"natural","product_list_horizontal_spacing":"medium","product_list_vertical_spacing":"small","cart_type":"drawer","cart_enable_notes":true,"cart_show_free_shipping_threshold":false,"cart_free_shipping_threshold":"50","checkout_logo_position":"center","checkout_logo_size":"small","checkout_body_background_color":"#ffffff","checkout_input_background_color_mode":"white","checkout_sidebar_background_color":"#efefef","checkout_accent_color":"#1c1b1b","checkout_button_color":"#1c1b1b","sections":{"sidebar-menu":{"type":"sidebar-menu","settings":{"primary_menu":"main-menu","show_social_media":true}},"announcement":{"type":"announcement","settings":{"background":"#000000","text_color":"#ffffff","content":"Announce something here"}},"header":{"type":"header","settings":{"use_sticky_header":true,"logo_max_width":140,"navigation_menu":"main-menu","navigation_style":"inline","enable_transparent_header":true,"transparent_text_color":"#ffffff"}},"footer":{"type":"footer","blocks":{"footer-0":{"type":"text","settings":{"show_social_media":true}},"footer-1":{"type":"links","settings":{"menu":"footer"}},"footer-2":{"type":"newsletter","settings":{"title":"Newsletter","content":"<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"}}},"block_order":["footer-0","footer-1","footer-2"],"settings":{"show_payment_methods":true}},"slideshow":{"type":"slideshow","blocks":{"slide-0":{"type":"image","settings":{"apply_overlay":true,"content_position":"bottomLeft","subheading":"Slide title","title":"Tell your story"}},"slide-1":{"type":"image","settings":{"apply_overlay":true,"content_position":"bottomLeft","subheading":"Slide title","title":"Tell your story"}}},"block_order":["slide-0","slide-1"],"settings":{"show_fullscreen":true,"show_arrow":false,"autoplay":true,"cycle_speed":5,"text_color":"#ffffff","button_color":"#363636"}},"featured-collections":{"type":"featured-collections","blocks":{"featured-collection-0":{"type":"collection","settings":{"grid_items_count":8,"button_text":"View all products"}}},"block_order":["featured-collection-0"],"settings":{"title":"Featured collection","layout_mode":"grid","show_product_info":true,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"collection-list":{"type":"collection-list","blocks":{"collection-0":{"type":"collection","settings":{"image_alignment":"center center","subheading":"Sub-heading","button_text":"View products","apply_overlay":true}},"collection-1":{"type":"collection","settings":{"image_alignment":"center center","subheading":"Sub-heading","button_text":"View products","apply_overlay":true}},"collection-2":{"type":"collection","settings":{"image_alignment":"center center","subheading":"Sub-heading","button_text":"View products","apply_overlay":true}}},"block_order":["collection-0","collection-1","collection-2"],"settings":{"add_spacing":true,"expand_collection":false,"text_color":"#ffffff","button_color":"#363636"}},"featured-product":{"type":"featured-product","settings":{"title":"Featured product","show_vendor":true,"show_description":true,"show_color_swatch":false,"show_color_carousel":false,"show_quantity_selector":true,"show_inventory_quantity":false,"inventory_quantity_threshold":3}},"timeline":{"type":"timeline","blocks":{"item-0":{"type":"item","settings":{"apply_overlay":true,"title":"2000","subheading":"Sub-heading","heading":"Heading","content":"<p>Add your own custom content to give more information about your store, availability details...<\/p>"}},"item-1":{"type":"item","settings":{"apply_overlay":true,"title":"2001","subheading":"Sub-heading","heading":"Heading","content":"<p>Add your own custom content to give more information about your store, availability details...<\/p>"}},"item-2":{"type":"item","settings":{"apply_overlay":true,"title":"2002","subheading":"Sub-heading","heading":"Heading","content":"<p>Add your own custom content to give more information about your store, availability details...<\/p>"}}},"block_order":["item-0","item-1","item-2"],"settings":{"text_color":"#ffffff"}},"blog-posts":{"type":"blog-posts","blocks":{"blog-0":{"type":"blog","settings":{"blog":"news"}}},"block_order":["blog-0"],"settings":{"title":"Featured article","show_category":false,"button_text":"View all articles"}},"shop-the-look":{"type":"shop-the-look","blocks":{"look-0":{"type":"look","settings":{"dot_style":"light","product_1_horizontal_position":30,"product_1_vertical_position":40,"product_2_horizontal_position":45,"product_2_vertical_position":65,"product_3_horizontal_position":70,"product_3_vertical_position":50}},"look-1":{"type":"look","settings":{"dot_style":"light","product_1_horizontal_position":25,"product_1_vertical_position":45,"product_2_horizontal_position":55,"product_2_vertical_position":30,"product_3_horizontal_position":65,"product_3_vertical_position":60}}},"block_order":["look-0","look-1"],"settings":{"subheading":"Shop","title":"Our looks"}},"collection-template":{"type":"collection-template","settings":{"show_collection_info":true,"show_collection_image":false,"show_sort_by":true,"show_layout_switch":false,"toolbar_position":"bottom","filter_position":"sidebar","filter_mode":"tag","show_filter_color_swatch":true,"grid_items_per_page":16,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"recently-viewed-products":{"type":"recently-viewed-products","settings":{"show_section":true,"title":"Recently viewed","show_product_info":true}},"collection-footer":{"type":"collection-footer","settings":{"show_section":false,"text_color":"#ffffff","apply_overlay":true,"title":"Our story","content":"<p>Add your own custom content to explain your processes...<\/p>"}},"product-template":{"type":"product-template","settings":{"show_share_buttons":true,"show_vendor":true,"show_color_swatch":false,"show_color_carousel":false,"show_quantity_selector":true,"show_inventory_quantity":false,"inventory_quantity_threshold":3,"image_size":"large","stack_images":true,"show_thumbnails":false,"enable_image_zoom":true,"reviews_enabled":false}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"show_product_info":true}}},"content_for_index":["slideshow","featured-collections","collection-list","featured-product","timeline","blog-posts","shop-the-look"]},"Couture":{"heading_color":"#5c5c5c","text_color":"#5c5c5c","text_light_color":"#939393","link_color":"#323232","background":"#ffffff","light_background":"#ffffff","product_on_sale_color":"#f94c43","button_background":"#5c5c5c","button_text_color":"#ffffff","header_background":"#ffffff","header_heading_color":"#5c5c5c","header_light_color":"#939393","footer_background":"#ffffff","footer_heading_color":"#5c5c5c","footer_text_color":"#939393","newsletter_popup_background":"#ffffff","newsletter_popup_text_color":"#1c1b1b","secondary_elements_background":"#5c5c5c","secondary_elements_text_color":"#ffffff","navigation_background":"#ffffff","navigation_text_color":"#5c5c5c","heading_font":"futura_n4","heading_size":"large","uppercase_heading":false,"text_font":"century_gothic_n4","base_text_font_size":15,"currency_conversion_enabled":false,"currency_conversion_round_amounts":true,"currency_conversion_supported_currencies":"USD CAD EUR GBP","currency_conversion_money_format":"money_format","show_page_transition":true,"search_mode":"product,article","product_show_price_on_hover":true,"product_show_secondary_image":false,"product_info_alignment":"left","product_image_size":"natural","product_list_horizontal_spacing":"small","product_list_vertical_spacing":"small","cart_type":"drawer","cart_enable_notes":true,"cart_show_free_shipping_threshold":false,"cart_free_shipping_threshold":"50","checkout_logo_position":"center","checkout_logo_size":"small","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_color":"#fafafa","checkout_accent_color":"#323232","checkout_button_color":"#5c5c5c","sections":{"sidebar-menu":{"type":"sidebar-menu","settings":{"primary_menu":"main-menu","show_social_media":true}},"announcement":{"type":"announcement","settings":{"background":"#f3f3f3","text_color":"#5c5c5c","content":"Announce something here"}},"header":{"type":"header","settings":{"use_sticky_header":true,"logo_max_width":140,"navigation_menu":"main-menu","navigation_style":"center","enable_transparent_header":true,"transparent_text_color":"#ffffff"}},"footer":{"type":"footer","blocks":{"footer-0":{"type":"text","settings":{"show_social_media":true}},"footer-1":{"type":"links","settings":{"menu":"footer"}},"footer-2":{"type":"newsletter","settings":{"title":"Newsletter","content":"<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"}}},"block_order":["footer-0","footer-1","footer-2"],"settings":{"show_payment_methods":true}},"slideshow":{"type":"slideshow","blocks":{"slide-0":{"type":"image","settings":{"apply_overlay":true,"content_position":"bottomLeft","subheading":"Slide title","title":"Tell your story"}},"slide-1":{"type":"image","settings":{"apply_overlay":true,"content_position":"bottomLeft","subheading":"Slide title","title":"Tell your story"}}},"block_order":["slide-0","slide-1"],"settings":{"show_fullscreen":true,"show_arrow":false,"autoplay":true,"cycle_speed":5,"text_color":"#ffffff","button_color":"#363636"}},"featured-collections":{"type":"featured-collections","blocks":{"featured-collection-0":{"type":"collection","settings":{"grid_items_count":8,"button_text":"View all products"}}},"block_order":["featured-collection-0"],"settings":{"title":"Featured collection","layout_mode":"grid","show_product_info":true,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"collection-list":{"type":"collection-list","blocks":{"collection-0":{"type":"collection","settings":{"image_alignment":"center center","subheading":"Sub-heading","button_text":"View products","apply_overlay":true}},"collection-1":{"type":"collection","settings":{"image_alignment":"center center","subheading":"Sub-heading","button_text":"View products","apply_overlay":true}},"collection-2":{"type":"collection","settings":{"image_alignment":"center center","subheading":"Sub-heading","button_text":"View products","apply_overlay":true}}},"block_order":["collection-0","collection-1","collection-2"],"settings":{"add_spacing":true,"expand_collection":false,"text_color":"#ffffff","button_color":"#363636"}},"featured-product":{"type":"featured-product","settings":{"title":"Featured product","show_vendor":true,"show_description":true,"show_color_swatch":false,"show_color_carousel":false,"show_quantity_selector":true,"show_inventory_quantity":false,"inventory_quantity_threshold":3}},"timeline":{"type":"timeline","blocks":{"item-0":{"type":"item","settings":{"apply_overlay":true,"title":"2000","subheading":"Sub-heading","heading":"Heading","content":"<p>Add your own custom content to give more information about your store, availability details...<\/p>"}},"item-1":{"type":"item","settings":{"apply_overlay":true,"title":"2001","subheading":"Sub-heading","heading":"Heading","content":"<p>Add your own custom content to give more information about your store, availability details...<\/p>"}},"item-2":{"type":"item","settings":{"apply_overlay":true,"title":"2002","subheading":"Sub-heading","heading":"Heading","content":"<p>Add your own custom content to give more information about your store, availability details...<\/p>"}}},"block_order":["item-0","item-1","item-2"],"settings":{"text_color":"#ffffff"}},"blog-posts":{"type":"blog-posts","blocks":{"blog-0":{"type":"blog","settings":{"blog":"news"}}},"block_order":["blog-0"],"settings":{"title":"Featured article","show_category":false,"button_text":"View all articles"}},"shop-the-look":{"type":"shop-the-look","blocks":{"look-0":{"type":"look","settings":{"dot_style":"light","product_1_horizontal_position":30,"product_1_vertical_position":40,"product_2_horizontal_position":45,"product_2_vertical_position":65,"product_3_horizontal_position":70,"product_3_vertical_position":50}},"look-1":{"type":"look","settings":{"dot_style":"light","product_1_horizontal_position":25,"product_1_vertical_position":45,"product_2_horizontal_position":55,"product_2_vertical_position":30,"product_3_horizontal_position":65,"product_3_vertical_position":60}}},"block_order":["look-0","look-1"],"settings":{"subheading":"Shop","title":"Our looks"}},"collection-template":{"type":"collection-template","settings":{"show_collection_info":true,"show_collection_image":false,"show_sort_by":true,"show_layout_switch":false,"toolbar_position":"bottom","filter_position":"sidebar","filter_mode":"tag","show_filter_color_swatch":true,"grid_items_per_page":16,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"recently-viewed-products":{"type":"recently-viewed-products","settings":{"show_section":true,"title":"Recently viewed","show_product_info":true}},"collection-footer":{"type":"collection-footer","settings":{"show_section":false,"text_color":"#ffffff","apply_overlay":true,"title":"Our story","content":"<p>Add your own custom content to explain your processes...<\/p>"}},"product-template":{"type":"product-template","settings":{"show_share_buttons":true,"show_vendor":true,"show_color_swatch":false,"show_color_carousel":false,"show_quantity_selector":true,"show_inventory_quantity":false,"inventory_quantity_threshold":3,"image_size":"large","stack_images":true,"show_thumbnails":false,"enable_image_zoom":true,"reviews_enabled":false}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"show_product_info":true}}},"content_for_index":["slideshow","featured-collections","collection-list","featured-product","timeline","blog-posts","shop-the-look"]},"Vogue":{"heading_color":"#454545","text_color":"#454545","text_light_color":"#9d9d9d","link_color":"#a17c5e","background":"#ffffff","light_background":"#ffffff","product_on_sale_color":"#f94c43","button_background":"#c2a284","button_text_color":"#ffffff","header_background":"#ffffff","header_heading_color":"#454545","header_light_color":"#9d9d9d","footer_background":"#ffffff","footer_heading_color":"#454545","footer_text_color":"#9d9d9d","newsletter_popup_background":"#454545","newsletter_popup_text_color":"#ffffff","secondary_elements_background":"#f1e4d8","secondary_elements_text_color":"#373737","navigation_background":"#454545","navigation_text_color":"#ffffff","heading_font":"din_neuzeit_grotesk_n3","heading_size":"small","uppercase_heading":true,"text_font":"futura_n4","base_text_font_size":14,"currency_conversion_enabled":false,"currency_conversion_round_amounts":true,"currency_conversion_supported_currencies":"USD CAD EUR GBP","currency_conversion_money_format":"money_format","show_page_transition":true,"show_element_staggering":false,"search_mode":"product,article","product_show_price_on_hover":true,"product_show_secondary_image":false,"product_info_alignment":"center","product_image_size":"natural","product_list_horizontal_spacing":"medium","product_list_vertical_spacing":"small","cart_type":"drawer","cart_enable_notes":true,"cart_show_free_shipping_threshold":false,"cart_free_shipping_threshold":"50","checkout_logo_position":"left","checkout_logo_size":"medium","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_color":"#fafafa","checkout_accent_color":"#a17c5e","checkout_button_color":"#454545","sections":{"sidebar-menu":{"type":"sidebar-menu","settings":{"primary_menu":"main-menu","show_social_media":true}},"announcement":{"type":"announcement","settings":{"background":"#f1e4d8","text_color":"#343434","content":"Announce something here"}},"header":{"type":"header","settings":{"use_sticky_header":true,"logo_max_width":140,"navigation_menu":"main-menu","navigation_style":"inline","enable_transparent_header":true,"transparent_text_color":"#ffffff"}},"footer":{"type":"footer","blocks":{"footer-0":{"type":"text","settings":{"show_social_media":true}},"footer-1":{"type":"links","settings":{"menu":"footer"}},"footer-2":{"type":"newsletter","settings":{"title":"Newsletter","content":"<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"}}},"block_order":["footer-0","footer-1","footer-2"],"settings":{"show_payment_methods":true}},"slideshow":{"type":"slideshow","blocks":{"slide-0":{"type":"image","settings":{"apply_overlay":true,"content_position":"bottomLeft","subheading":"Slide title","title":"Tell your story"}},"slide-1":{"type":"image","settings":{"apply_overlay":true,"content_position":"bottomLeft","subheading":"Slide title","title":"Tell your story"}}},"block_order":["slide-0","slide-1"],"settings":{"show_fullscreen":true,"show_arrow":false,"autoplay":true,"cycle_speed":5,"text_color":"#ffffff","button_color":"#363636"}},"featured-collections":{"type":"featured-collections","blocks":{"featured-collection-0":{"type":"collection","settings":{"grid_items_count":8,"button_text":"View all products"}}},"block_order":["featured-collection-0"],"settings":{"title":"Featured collection","layout_mode":"grid","show_product_info":true,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"collection-list":{"type":"collection-list","blocks":{"collection-0":{"type":"collection","settings":{"image_alignment":"center center","subheading":"Sub-heading","button_text":"View products","apply_overlay":true}},"collection-1":{"type":"collection","settings":{"image_alignment":"center center","subheading":"Sub-heading","button_text":"View products","apply_overlay":true}},"collection-2":{"type":"collection","settings":{"image_alignment":"center center","subheading":"Sub-heading","button_text":"View products","apply_overlay":true}}},"block_order":["collection-0","collection-1","collection-2"],"settings":{"add_spacing":true,"expand_collection":false,"text_color":"#ffffff","button_color":"#363636"}},"featured-product":{"type":"featured-product","settings":{"title":"Featured product","show_vendor":true,"show_description":true,"show_color_swatch":false,"show_color_carousel":false,"show_quantity_selector":true,"show_inventory_quantity":false,"inventory_quantity_threshold":3}},"timeline":{"type":"timeline","blocks":{"item-0":{"type":"item","settings":{"apply_overlay":true,"title":"2000","subheading":"Sub-heading","heading":"Heading","content":"<p>Add your own custom content to give more information about your store, availability details...<\/p>"}},"item-1":{"type":"item","settings":{"apply_overlay":true,"title":"2001","subheading":"Sub-heading","heading":"Heading","content":"<p>Add your own custom content to give more information about your store, availability details...<\/p>"}},"item-2":{"type":"item","settings":{"apply_overlay":true,"title":"2002","subheading":"Sub-heading","heading":"Heading","content":"<p>Add your own custom content to give more information about your store, availability details...<\/p>"}}},"block_order":["item-0","item-1","item-2"],"settings":{"text_color":"#ffffff"}},"blog-posts":{"type":"blog-posts","blocks":{"blog-0":{"type":"blog","settings":{"blog":"news"}}},"block_order":["blog-0"],"settings":{"title":"Featured article","show_category":false,"button_text":"View all articles"}},"shop-the-look":{"type":"shop-the-look","blocks":{"look-0":{"type":"look","settings":{"dot_style":"light","product_1_horizontal_position":30,"product_1_vertical_position":40,"product_2_horizontal_position":45,"product_2_vertical_position":65,"product_3_horizontal_position":70,"product_3_vertical_position":50}},"look-1":{"type":"look","settings":{"dot_style":"light","product_1_horizontal_position":25,"product_1_vertical_position":45,"product_2_horizontal_position":55,"product_2_vertical_position":30,"product_3_horizontal_position":65,"product_3_vertical_position":60}}},"block_order":["look-0","look-1"],"settings":{"subheading":"Shop","title":"Our looks"}},"collection-template":{"type":"collection-template","settings":{"show_collection_info":true,"show_collection_image":false,"show_sort_by":true,"show_layout_switch":false,"toolbar_position":"bottom","filter_position":"sidebar","filter_mode":"tag","show_filter_color_swatch":true,"grid_items_per_page":16,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"recently-viewed-products":{"type":"recently-viewed-products","settings":{"show_section":true,"title":"Recently viewed","show_product_info":true}},"collection-footer":{"type":"collection-footer","settings":{"show_section":false,"text_color":"#ffffff","apply_overlay":true,"title":"Our story","content":"<p>Add your own custom content to explain your processes...<\/p>"}},"product-template":{"type":"product-template","settings":{"show_share_buttons":true,"show_vendor":true,"show_color_swatch":false,"show_color_carousel":false,"show_quantity_selector":true,"show_inventory_quantity":false,"inventory_quantity_threshold":3,"image_size":"large","stack_images":true,"show_thumbnails":false,"enable_image_zoom":true,"reviews_enabled":false}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"show_product_info":true}}},"content_for_index":["slideshow","featured-collections","collection-list","featured-product","timeline","blog-posts","shop-the-look"]}}}
+{
+  "current": {
+    "heading_color": "#1c1b1b",
+    "bar_color": "#eb161e",
+    "text_color": "#000000",
+    "text_light_color": "#6c6c6c",
+    "link_color": "#a4a4a4",
+    "background": "#eeeeee",
+    "light_background": "#ffffff",
+    "product_on_sale_color": "#f94c43",
+    "button_background": "#1c1b1b",
+    "button_text_color": "#ffffff",
+    "header_background": "#ffffff",
+    "header_heading_color": "#1c1b1b",
+    "header_light_color": "#ffffff",
+    "footer_background": "#ffffff",
+    "footer_heading_color": "#1c1b1b",
+    "footer_text_color": "#6a6a6a",
+    "navigation_background": "#eb161e",
+    "navigation_text_color": "#ffffff",
+    "newsletter_popup_background": "#1c1b1b",
+    "newsletter_popup_text_color": "#ffffff",
+    "secondary_elements_background": "#1c1b1b",
+    "secondary_elements_text_color": "#ffffff",
+    "heading_font": "montserrat_n5",
+    "heading_size": "small",
+    "uppercase_heading": true,
+    "text_font": "nunito_sans_n4",
+    "base_text_font_size": 14,
+    "currency_conversion_enabled": false,
+    "currency_conversion_round_amounts": true,
+    "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+    "currency_conversion_money_format": "money_format",
+    "show_page_transition": true,
+    "show_button_transition": true,
+    "show_image_zooming": true,
+    "show_element_staggering": true,
+    "search_mode": "product,article",
+    "product_show_price_on_hover": true,
+    "product_show_secondary_image": false,
+    "product_info_alignment": "center",
+    "product_image_size": "natural",
+    "product_list_horizontal_spacing": "medium",
+    "product_list_vertical_spacing": "small",
+    "cart_type": "drawer",
+    "cart_enable_notes": true,
+    "cart_show_free_shipping_threshold": false,
+    "cart_free_shipping_threshold": "50",
+    "share_image": "",
+    "social_facebook": "https:\/\/www.facebook.com\/CBMDhealth",
+    "social_twitter": "https:\/\/twitter.com\/CBMDhealth",
+    "social_pinterest": "",
+    "social_instagram": "https:\/\/www.instagram.com\/cbmdhealth\/",
+    "social_vimeo": "",
+    "social_tumblr": "",
+    "social_youtube": "",
+    "social_linkedin": "https:\/\/www.linkedin.com\/company\/38105495\/admin\/",
+    "social_snapchat": "",
+    "social_fancy": "",
+    "favicon": "shopify:\/\/shop_images\/cbmd-favicon.jpg",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#efefef",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#1c1b1b",
+    "checkout_button_color": "#1c1b1b",
+    "checkout_error_color": "#e32c2b",
+    "sidebar_color": "#eb161e",
+    "sections": {
+      "sidebar-menu": {
+        "type": "sidebar-menu",
+        "settings": {
+          "primary_menu": "navigation",
+          "secondary_menu": "",
+          "show_social_media": true
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "enable_bar": false,
+          "home_page_only": false,
+          "background": "#000000",
+          "text_color": "#ffffff",
+          "content": "Announce something here"
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "1586287763421": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "education",
+              "push_1_image": "shopify:\/\/shop_images\/cbmd-nav-our-mission_2x_91ac9627-e209-423b-9d29-f04c35ecc8ce.jpg",
+              "push_1_heading": "Our mission",
+              "push_1_subheading": "Our mission",
+              "push_1_url": "shopify:\/\/pages\/our-mission",
+              "push_2_image": "shopify:\/\/shop_images\/cbmd-nav-our-science_2x_54b29c3e-c3fb-4a66-836f-e8c7fcb07319.jpg",
+              "push_2_heading": "Our science",
+              "push_2_subheading": "Users arriving on this page are expecting to learn the company purpose and vision.",
+              "push_2_url": "shopify:\/\/pages\/our-science"
+            }
+          },
+          "1586288058086": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "products",
+              "push_1_image": "shopify:\/\/shop_images\/908bde91ad33d586ec47f405c2643f9c.jpeg",
+              "push_1_heading": "Overview",
+              "push_1_subheading": "",
+              "push_1_url": "shopify:\/\/pages\/products",
+              "push_2_heading": "Shop All",
+              "push_2_subheading": ""
+            }
+          }
+        },
+        "block_order": [
+          "1586287763421",
+          "1586288058086"
+        ],
+        "settings": {
+          "use_sticky_header": true,
+          "logo": "shopify:\/\/shop_images\/cbmd-logo-white.png",
+          "logo_max_width": 100,
+          "mobile_logo_max_width": 85,
+          "navigation_menu": "navigation",
+          "navigation_style": "inline",
+          "show_icons": false,
+          "enable_transparent_header": false,
+          "enable_transparent_header_collection": false,
+          "show_transparent_header_border": true,
+          "transparent_text_color": "#ffffff"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-1": {
+            "type": "links",
+            "settings": {
+              "menu": "products"
+            }
+          },
+          "1585764898128": {
+            "type": "links",
+            "settings": {
+              "menu": "about"
+            }
+          },
+          "1585795412306": {
+            "type": "text",
+            "settings": {
+              "show_social_media": true
+            }
+          }
+        },
+        "block_order": [
+          "footer-1",
+          "1585764898128",
+          "1585795412306"
+        ],
+        "settings": {
+          "show_payment_methods": true,
+          "cmbd_logo": "shopify:\/\/shop_images\/cbmd-logo-black.png",
+          "cannabiomed_logo": "shopify:\/\/shop_images\/cannabiomed-logo.png",
+          "cannabiomed_description": "CBMD is proud to be in partnership with:",
+          "newsletter_title": "Get the latest from CBMD.",
+          "newsletter_content": "<p>Your data will not be distributed or sold.<\/p>",
+          "copyright": "This product is not for use by or for sale to persons under the age of 18. Customers’ age will be verified at checkout. This product should be used only as directed on the label. It should not be used if you are pregnant or nursing. Consult with a physician before use if you have a serious medical condition or use prescription medications. A doctor’s advice should be sought before using this or any supplemental dietary product.<br>\n\n<p class=\"f-border\">The statements made regarding these products have not been evaluated by the Food and Drug Administration. The efficacy of these products has not been confirmed by FDA-approved research. These products are not intended to diagnose, treat, cure, or prevent any disease. All information presented here is not meant as a substitute for or alternative to information from healthcare practitioners. Please consult your healthcare professional about potential interactions or other possible complications before using any product. The Federal Food, Drug, and Cosmetic Act requires this notice.<\/p>",
+          "terms_of_use": "shopify:\/\/policies\/terms-of-service",
+          "policy": "shopify:\/\/policies\/privacy-policy"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_info": true,
+          "show_collection_image": false,
+          "apply_overlay": true,
+          "show_color_swatch": false,
+          "show_vendor": false,
+          "collection_image_size": "normal",
+          "show_sort_by": true,
+          "show_layout_switch": false,
+          "toolbar_position": "bottom",
+          "filter_position": "sidebar",
+          "filter_mode": "tag",
+          "show_filter_color_swatch": true,
+          "filter_menu": "",
+          "grid_items_per_page": 16,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "recently-viewed-products": {
+        "type": "recently-viewed-products",
+        "settings": {
+          "show_section": true,
+          "title": "Recently viewed",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "collection-footer": {
+        "type": "collection-footer",
+        "settings": {
+          "show_section": false,
+          "image": "",
+          "text_color": "#ffffff",
+          "apply_overlay": true,
+          "title": "Our story",
+          "content": "<p>Add your own custom content to explain your processes...<\/p>"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_share_buttons": true,
+          "show_vendor": true,
+          "show_sku": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "dropdown",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": true,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 3,
+          "show_price_in_button": false,
+          "show_payment_button": true,
+          "image_size": "large",
+          "stack_images": true,
+          "show_thumbnails": false,
+          "enable_image_zoom": true,
+          "enable_video_looping": false,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "reviews_enabled": false,
+          "featured_image_size": "large"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": false,
+          "show_only_on_index": false,
+          "show_only_for_visitors": false,
+          "show_only_once": false,
+          "title": "Popup",
+          "content": "<p>You can use this popup to display some useful information to your customers.<\/p>",
+          "show_newsletter": true,
+          "apparition_delay": 6
+        }
+      },
+      "1585562300015": {
+        "type": "banner",
+        "settings": {
+          "banner_background": "shopify:\/\/shop_images\/cbmd-hero-home_2x_2.png",
+          "foreground_style": "side_image",
+          "foreground_position": "right",
+          "sidebar_background": "#eb161e",
+          "banner_title": "Formulated by physicians, made for you.<span>™<\/span>",
+          "banner_text": "Be assured. We bring science to CBD. The same integrity we apply every day in our medical practice is here in our products.",
+          "button_link": "shopify:\/\/pages\/overview",
+          "button_text": "Shop our CBD",
+          "is_small_background": false
+        }
+      },
+      "featured-collections": {
+        "type": "featured-collections",
+        "blocks": {
+          "featured-collection-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "title": "",
+              "grid_items_count": 8,
+              "button_text": "View all products"
+            }
+          }
+        },
+        "block_order": [
+          "featured-collection-0"
+        ],
+        "settings": {
+          "title": "Featured collection",
+          "layout_mode": "grid",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "banner": {
+        "type": "banner",
+        "settings": {
+          "banner_background": "shopify:\/\/shop_images\/cbmd-our-mission-hero_2x_d79c4424-2b70-49ab-adb7-be4f88c01d26.png",
+          "foreground_style": "full_image",
+          "foreground_position": "right",
+          "sidebar_background": "#eb161e",
+          "banner_title": "The MD in our name is no accident.",
+          "banner_text": "We’re deliberate in all we do. From caring for our patients, to examining how consumer products impact our patients, and knowing why potency and dosing matter. CBMD™ is governed by medical science.",
+          "button_link": "",
+          "button_text": "See our CBD",
+          "is_small_background": false
+        }
+      },
+      "1586335607840": {
+        "type": "cbmd-stats",
+        "blocks": {
+          "1586335607840-0": {
+            "type": "collection",
+            "settings": {
+              "subheading": "1 in 12",
+              "content": "Fraction of products containing the CBD concentration stated on the label."
+            }
+          },
+          "1586335607840-1": {
+            "type": "collection",
+            "settings": {
+              "subheading": "69%",
+              "content": "Amount of products whose CBD content is not accurately represented on the label."
+            }
+          },
+          "1586335607840-2": {
+            "type": "collection",
+            "settings": {
+              "subheading": "21%",
+              "content": "Portion of CBD products tested that detected levels of THC, some as high as 6.43mg\/ml."
+            }
+          }
+        },
+        "block_order": [
+          "1586335607840-0",
+          "1586335607840-1",
+          "1586335607840-2"
+        ],
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_heading": "The current problem",
+          "highlight_title": "There’s no real standard when it comes to CBD.",
+          "highlight_description": "The demand for CBD is soaring, and in the absence of research and oversight, CBD products go largely unregulated - putting a supply of mislabeled, ineffective, and potentially unsafe products into the hands of consumers.",
+          "action_style": "link",
+          "action_title": "The CBMD mission",
+          "action_link": "shopify:\/\/pages\/our-mission"
+        }
+      },
+      "1586335792900": {
+        "type": "cbmd-highlight-image",
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_style": "left_image",
+          "highlight_image": "shopify:\/\/shop_images\/Image.jpg",
+          "highlight_video": "",
+          "highlight_heading": "A better CBD solution",
+          "highlight_title": "Intelligent care. <br>Uncommon insight.",
+          "highlight_description": "As physicians, we take a different approach to CBD. <br>Our formulations are developed with the rigor and transparency necessary to afford clarity around each component. We mind the details, select ingredients deliberately, and leave nothing to chance. With CBMD™, you know exactly what you’re getting—the truth.",
+          "action_style": "link",
+          "action_title": "See the science",
+          "action_link": "shopify:\/\/pages\/our-science",
+          "action_text": "\/pages\/our-science"
+        }
+      },
+      "1586335866753": {
+        "type": "cbmd-slider",
+        "blocks": {
+          "1586335890983": {
+            "type": "item",
+            "settings": {
+              "product_name": "RAW",
+              "product_sub_name": "Simply CBD",
+              "sub_heading": "Formulated for",
+              "product_usage": "<strong>A solid foundation<\/strong>. Created for those looking to integrate additive-free CBD into their wellness routines, RAW is also an ideal base for physicians who want to build customized formulations for patients.",
+              "product_description": "Cognition, Headaches, Customization, Inflammation, Pain",
+              "picture": "shopify:\/\/shop_images\/RAW_Caps_66e97574-76e0-4469-b3bc-ec45c4ec2247.png",
+              "picture_hover": "shopify:\/\/shop_images\/cbmd-types_2x_59097ba7-ff1b-4d1b-a6eb-42a0a2dcbf43.jpg",
+              "button_name": "RAW Products",
+              "button_link": "shopify:\/\/pages\/overview"
+            }
+          },
+          "1586335919175": {
+            "type": "item",
+            "settings": {
+              "product_name": "PMT",
+              "product_sub_name": "Pain Support",
+              "sub_heading": "Formulated for",
+              "product_usage": "<strong>A targeted solution.<\/strong> In combination  with CBD, select plant-based compounds and other natural ingredients comprise  a formulation designed to support discomfort and inflammation.",
+              "product_description": "Pain, Muscle Soreness, Joint Stiffness, Backaches, Headaches",
+              "picture": "shopify:\/\/shop_images\/PMT_Tincture_5d189c1b-b5df-4c3c-9bc1-6a2fc1b42ec6.png",
+              "picture_hover": "shopify:\/\/shop_images\/cbmd-cannabidiol_2x_33464af0-1a7c-4f77-8169-1202b392f9f6.jpg",
+              "button_name": "PMT Products",
+              "button_link": "shopify:\/\/pages\/overview"
+            }
+          },
+          "1586335942797": {
+            "type": "item",
+            "settings": {
+              "product_name": "PSY",
+              "product_sub_name": "Mind Balance",
+              "sub_heading": "Formulated for",
+              "product_usage": "<strong>A true equilibrium.<\/strong> With a proprietary blend of CBD and natural bioactive ingredients, our PSY formulations are designed to support balance—targeting tension, sleeplessness, and stress.",
+              "product_description": "Insomnia, Anxiety,  Jet Lag, Mood, Premenstrual Syndrome",
+              "picture": "shopify:\/\/shop_images\/PSY_Anx_Caps_7cc6d2ca-635d-46e7-932b-b01d4b5e42ee.png",
+              "picture_hover": "shopify:\/\/shop_images\/cbmd-dosing_2x_7cfbf35c-f124-4217-b1ad-4938ec5fe846.jpg",
+              "button_name": "PSY Products",
+              "button_link": "shopify:\/\/pages\/overview"
+            }
+          },
+          "1586335962046": {
+            "type": "item",
+            "settings": {
+              "product_name": "DRM",
+              "product_sub_name": "Skin Restore",
+              "sub_heading": "Formulated for",
+              "product_usage": "<strong>A great reflection.<\/strong> Our team of dermatologic specialists created our phytocannabinoid-rich DRM line that pairs CBD with select plant extracts to smooth, soothe, and put back what time takes out.",
+              "product_description": "Dryness, Inflammation, Aging, Skin Texture, Redness",
+              "picture": "shopify:\/\/shop_images\/DRM_Tincture_f4786484-5602-4912-b34a-cae6fabc2637.png",
+              "picture_hover": "shopify:\/\/shop_images\/cbmd-bioavailability_2x_6921f7cf-524e-4752-be7b-e14ce93db2e5.jpg",
+              "button_name": "DRM Products",
+              "button_link": "shopify:\/\/pages\/overview"
+            }
+          }
+        },
+        "block_order": [
+          "1586335890983",
+          "1586335919175",
+          "1586335942797",
+          "1586335962046"
+        ],
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_heading": "Our CBD product lines",
+          "highlight_title": "Our formulations in development"
+        }
+      },
+      "1586336977121": {
+        "type": "cbmd-providers",
+        "disabled": true,
+        "blocks": {
+          "1587202716538": {
+            "type": "item",
+            "settings": {
+              "provider_name": "Fady Elias, MD",
+              "provider_title": "<p>Orthopedic Surgery<\/p>",
+              "provider_description": "When patients ask me about CBD, I tell them the truth. That some of it is probably unsafe and some may be fine, but without appropriate clinical research my ability to provide responsible recommendations is impeded.",
+              "picture": "shopify:\/\/shop_images\/cbmd-dr-fady-elias.jpg"
+            }
+          },
+          "1586336999879": {
+            "type": "item",
+            "settings": {
+              "provider_name": "Jay Lieberman, MD",
+              "provider_title": "<p>Pediatrics and Infectious Disease<\/p>",
+              "provider_description": "As physicians, we want to know that our patients get what they think they’re getting with supplements. Lack of transparency in concentration alone puts them at risk for dangerous side effects or interactions with medicines also prescribed to them.",
+              "picture": "shopify:\/\/shop_images\/cbmd-dr-jay-leibermam.jpg"
+            }
+          },
+          "1586337058744": {
+            "type": "item",
+            "settings": {
+              "provider_name": "Matt Iorio, MD",
+              "provider_title": "<p>Plastic\/Reconstructive Extremity Microsurgery<\/p>",
+              "provider_description": "There is an increasing amount of evidence based medicine and clinical studies on cannabidiol (CBD), and it is our intention at CBMD to create the most scientifically structured and efficacious CBD products currently available.",
+              "picture": "shopify:\/\/shop_images\/cbmd-dr-matt-iorio_2x_06cbb25f-a763-49b4-ac5d-814fbad420df.jpg"
+            }
+          },
+          "1586337106367": {
+            "type": "item",
+            "settings": {
+              "provider_name": "Mitchel Goldman, MD",
+              "provider_title": "<p>Dermatology and Cosmetic Surgery<\/p>",
+              "provider_description": "With CBD, we are seeing an incredibly high demand but, unfortunately, there does not appear to be a sufficient regulatory framework. It really underscores the importance of ensuring the integrity of the product you are getting.",
+              "picture": "shopify:\/\/shop_images\/cbmd-dr-mitchel-goldman_2x_28f9dcff-e879-426a-ac9b-0708afb119f9.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1587202716538",
+          "1586336999879",
+          "1586337058744",
+          "1586337106367"
+        ],
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_heading": "Healthcare providers and CBD"
+        }
+      },
+      "1586337176858": {
+        "type": "cbmd-highlight-image",
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_style": "left_image",
+          "highlight_image": "shopify:\/\/shop_images\/Image_2.png",
+          "highlight_video": "",
+          "highlight_heading": "Learn More",
+          "highlight_title": "Talk to our <br>medical team.",
+          "highlight_description": "We believe that conversations are a powerful starting point. Engage with us to learn more about the CBMD physician team, our scientific process, and our line of CBD products.",
+          "action_style": "button",
+          "action_title": "Reach out",
+          "action_link": "shopify:\/\/pages\/contact",
+          "action_text": "\/pages\/contact"
+        }
+      },
+      "1586337244488": {
+        "type": "cbmd-multilinks",
+        "blocks": {
+          "1586337253724": {
+            "type": "item",
+            "settings": {
+              "link_title": "Discover the difference.",
+              "link_sub_title": "CBMD products",
+              "link_image": "shopify:\/\/shop_images\/cbmd-benefits-3col_2x_204f1646-5daf-4623-831f-89cf68caa1e6.jpg",
+              "button_link": "shopify:\/\/pages\/overview"
+            }
+          },
+          "1586337284472": {
+            "type": "item",
+            "settings": {
+              "link_title": "CBD and medical care.",
+              "link_sub_title": "CBMD team",
+              "link_image": "shopify:\/\/shop_images\/Frame_27_eb2e4afd-57c6-4a49-be4d-2d36d18880d4.jpg",
+              "button_link": "shopify:\/\/pages\/our-science"
+            }
+          },
+          "1586337320743": {
+            "type": "item",
+            "settings": {
+              "link_title": "Why we exist.",
+              "link_sub_title": "CBMD mission",
+              "link_image": "shopify:\/\/shop_images\/cbmd-products-3col_2x_d4674b34-d8f4-4c94-8deb-df10c859e1af.jpg",
+              "button_link": "shopify:\/\/pages\/our-mission"
+            }
+          }
+        },
+        "block_order": [
+          "1586337253724",
+          "1586337284472",
+          "1586337320743"
+        ],
+        "settings": {
+          "background_color": "#ffffff"
+        }
+      },
+      "cbmd-stats": {
+        "type": "cbmd-stats",
+        "blocks": {
+          "1586337695897": {
+            "type": "collection",
+            "settings": {
+              "subheading": "85+",
+              "content": "years of combined experience"
+            }
+          },
+          "1586337709803": {
+            "type": "collection",
+            "settings": {
+              "subheading": "1000+",
+              "content": "peer-reviewed medical publications"
+            }
+          },
+          "1586337721938": {
+            "type": "collection",
+            "settings": {
+              "subheading": "350K+",
+              "content": "patients under our care"
+            }
+          }
+        },
+        "block_order": [
+          "1586337695897",
+          "1586337709803",
+          "1586337721938"
+        ],
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_heading": "Our philosophy",
+          "highlight_title": "First do no harm.",
+          "highlight_description": "We took an oath. Our commitment to responsibility, accountability, and patient outcomes is here in our products. With a focus on quality, efficacy and safety we’re taking everything we know and applying it to provide quality products that consumers and healthcare providers can trust.",
+          "action_style": "link",
+          "action_title": "Learn more",
+          "action_link": ""
+        }
+      },
+      "cbmd-highlight-image-1": {
+        "type": "cbmd-highlight-image-1",
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_style": "right_image",
+          "highlight_image": "shopify:\/\/shop_images\/cbmd-a-clear-vision_2x_91d468cc-48b2-41fc-9020-9c5f585c7bfd.jpg",
+          "highlight_video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0321\/8472\/9739\/files\/cbmd-find-your-cbd.mp4?v=1585816723",
+          "highlight_heading": "Our vision",
+          "highlight_title": "To reveal the full potential of responsible CBD.",
+          "highlight_description": "CBMD™ takes a different approach, built on scientific expertise and clinical insight. CBMD™ traces the overlooked steps in CBD’s path to market, to realize a quality, medical-grade line of products.",
+          "action_style": "button",
+          "action_title": "See our products",
+          "action_link": "shopify:\/\/pages\/overview"
+        }
+      },
+      "cbmd-highlight-image": {
+        "type": "cbmd-highlight-image",
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_style": "left_image",
+          "highlight_image": "shopify:\/\/shop_images\/8f79b1aa8843dc28c6980b1f98e4b76c.jpeg",
+          "highlight_video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0321\/8472\/9739\/files\/cbmd-a-different-mission_af9dfb4c-0b74-47e4-a9c1-af3172a3be4e.mp4?v=1586918025",
+          "highlight_heading": "Our mission",
+          "highlight_title": "We eliminate confusion and illuminate the facts.",
+          "highlight_description": "Every day we work to view CBD through the lens of science, infuse the conversation with knowledge, impart an evidence-based approach to the industry, and develop quality CBD options.",
+          "action_style": "link",
+          "action_title": "Learn more",
+          "action_link": "",
+          "action_text": ""
+        }
+      },
+      "cbmd-slider-circle": {
+        "type": "cbmd-slider-circle",
+        "blocks": {
+          "1586338131660": {
+            "type": "item",
+            "settings": {
+              "product_name": "Formulation",
+              "product_sub_name": "01",
+              "product_description": "Our medical experience, our scientific approach, and high-quality CBD come together in our proprietary formulas, developed to optimally address individual needs.",
+              "picture": "shopify:\/\/shop_images\/cbmd-our-process-1-sourcing_2x_03a89135-614f-49ad-8a31-190e1651cb7d.jpg"
+            }
+          },
+          "1586338238115": {
+            "type": "item",
+            "settings": {
+              "product_name": "Sourcing",
+              "product_sub_name": "02",
+              "product_description": "With exacting standards for quality, purity, safety, and efficacy, we evaluate each ingredient independently, and select optimal pairings to achieve the desired goal.",
+              "picture": "shopify:\/\/shop_images\/cbmd-our-process-2-formulation_2x_2a281331-5c13-458d-a894-044e95797c39.jpg"
+            }
+          },
+          "1586338273488": {
+            "type": "item",
+            "settings": {
+              "product_name": "Testing",
+              "product_sub_name": "03",
+              "product_description": "Our products undergo rigorous testing and evaluation for potency, allergens, and harmful interactions. This transparent methodology helps empower informed decisions.",
+              "picture": "shopify:\/\/shop_images\/cbmd-our-process-3-testing_2x_17128447-06cf-45de-b3a0-e2c45964a2d4.jpg"
+            }
+          },
+          "1586338302636": {
+            "type": "item",
+            "settings": {
+              "product_name": "Refinement",
+              "product_sub_name": "04",
+              "product_description": "We continuously evaluate our formulations through emergent research and customer-based controlled studies, applying the data to build upon our scientific foundation and elevate our product standards.",
+              "picture": "shopify:\/\/shop_images\/cbmd-our-process-4-refinement_2x_dd72b593-67cd-4d7c-8e45-4901d1b31f39.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1586338131660",
+          "1586338238115",
+          "1586338273488",
+          "1586338302636"
+        ],
+        "settings": {
+          "background_color": "#ffffff",
+          "section_heading": "Our process",
+          "section_title": "A higher degree <br>of care."
+        }
+      },
+      "1586352869270": {
+        "type": "cbmd-video",
+        "disabled": true,
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0321\/8472\/9739\/files\/cbmd-find-your-cbd.mp4?v=1585816723",
+          "highlight_video_mobile": "https:\/\/cdn.shopify.com\/s\/files\/1\/0321\/8472\/9739\/files\/cbmd-find-your-cbd.webm?v=1587123194",
+          "highlight_heading": "Find your CBD",
+          "highlight_title": "What’s right for you?",
+          "highlight_description": "In order to choose what’s best for your body and mind, you’ve got to be informed. We can help. CBMD™ gives you access to all the latest news, research, and information.",
+          "action_name": "",
+          "autoplay": true,
+          "subscriber": true
+        }
+      },
+      "cbmd-video": {
+        "type": "cbmd-video",
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0321\/8472\/9739\/files\/cbmd-our-science-med.mp4?v=1586394762",
+          "highlight_video_mobile": "",
+          "highlight_heading": "Our science",
+          "highlight_title": "Truth. <br>\nNot trends.",
+          "highlight_description": "Our team of physicians is guided by a medical ethos. That translates to evidence-based decisions, quality ingredients, and transparent development. Where we see unanswered questions, unsubstantiated claims, consumer confusion, and a medical community that is only partially engaged, we lead with what we know, understand, and believe in: science.",
+          "action_name": "Stay informed",
+          "action_link": "shopify:\/\/pages\/our-science",
+          "autoplay": false,
+          "subscriber": false
+        }
+      },
+      "cbmd-highlight-image-2": {
+        "type": "cbmd-highlight-image-2",
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_style": "right_image",
+          "highlight_image": "shopify:\/\/shop_images\/cbmd-healthcare-provider_2x_d3b1da20-9703-4f8e-b187-14d56bd7be8c.jpg",
+          "highlight_video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0321\/8472\/9739\/files\/cbmd-find-your-cbd.mp4?v=1585816723",
+          "highlight_heading": "Know more",
+          "highlight_title": "Are you a healthcare provider?",
+          "highlight_description": "Like us, you want what’s best for your patients. If you have questions about the science of our products or want to learn more about partnering with CBMD™ on customized formulations, let us know.",
+          "action_style": "button",
+          "action_title": "Get in touch",
+          "action_link": "\/pages\/contact"
+        }
+      },
+      "cbmd-multilinks": {
+        "type": "cbmd-multilinks",
+        "blocks": {
+          "1586366036027": {
+            "type": "item",
+            "settings": {
+              "link_title": "Discover the difference.",
+              "link_sub_title": "Explore products",
+              "link_image": "shopify:\/\/shop_images\/cbmd-benefits-2col_2x_c03e4f42-eb70-4476-a962-d4dbae14672b.jpg",
+              "button_link": "shopify:\/\/pages\/overview"
+            }
+          },
+          "1586366070612": {
+            "type": "item",
+            "settings": {
+              "link_title": "What we know about CBD.",
+              "link_sub_title": "Get the truth",
+              "link_image": "shopify:\/\/shop_images\/cbmd-mission-vision-2col_2x_923a29d2-00ae-4980-b7c4-450efe0eb591.jpg",
+              "button_link": "shopify:\/\/pages\/our-science"
+            }
+          }
+        },
+        "block_order": [
+          "1586366036027",
+          "1586366070612"
+        ],
+        "settings": {
+          "background_color": "#ffffff"
+        }
+      },
+      "banner-ourscience": {
+        "type": "banner-ourscience",
+        "settings": {
+          "banner_background": "shopify:\/\/shop_images\/science-banner.png",
+          "foreground_style": "side_image",
+          "foreground_position": "right",
+          "sidebar_background": "#eb161e",
+          "banner_title": "We believe in the strength of science.",
+          "banner_text": "As doctors, we have insight into the human body. And as CBD research expands, we can apply a nuanced understanding to address knowledge gaps in CBD’s potential and safety.",
+          "button_link": "",
+          "button_text": "See our CBD",
+          "is_small_background": false,
+          "use_tab": false
+        }
+      },
+      "cbmd-stats-ourscience": {
+        "type": "cbmd-stats-ourscience",
+        "blocks": {
+          "1586399278069": {
+            "type": "collection",
+            "settings": {
+              "subheading": "1940",
+              "content": "Year CBD was first isolated and identified by Harvard chemist Roger Adams."
+            }
+          },
+          "1586399286823": {
+            "type": "collection",
+            "settings": {
+              "subheading": "80%",
+              "content": "Percent of US doctors that have discussed CBD\/cannabis with their patients."
+            }
+          },
+          "1586399297091": {
+            "type": "collection",
+            "settings": {
+              "subheading": "30%",
+              "content": "Amount of US doctors who feel they know enough about CBD to advise their patients on product selection or utility."
+            }
+          }
+        },
+        "block_order": [
+          "1586399278069",
+          "1586399286823",
+          "1586399297091"
+        ],
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_heading": "Education",
+          "highlight_title": "Informed decisions. <br>Safer choices.",
+          "highlight_description": "Understanding CBD is key to knowing what it can do. CBMD™ gathers resources and research to help physicians and consumers understand what’s in the products they use.",
+          "action_style": "link",
+          "action_title": "",
+          "action_link": ""
+        }
+      },
+      "cbmd-highlight-image-ourscience": {
+        "type": "cbmd-highlight-image-ourscience",
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_style": "left_image",
+          "highlight_image": "shopify:\/\/shop_images\/cbmd-our-partnership_2x_7a614592-aef1-4190-b85d-07004a467bd3.jpg",
+          "highlight_video": "",
+          "highlight_heading": "Our partnership",
+          "highlight_title": "A common purpose.",
+          "highlight_description": "CBMD™ operates in association with Cannabiomed™, a consortium of medical professionals, researchers, scientists, and pharmacists working to bring a medical perspective to the CBD industry.<br><br>Cannabiomed™ seeks to equip healthcare practitioners with resources that enable them to be informed, effective advisors for patients wanting to integrate CBD into their wellness routines.",
+          "action_style": "link",
+          "action_title": "Learn more",
+          "action_link": "shopify:\/\/pages\/our-mission"
+        }
+      },
+      "cbmd-tab-ourscience": {
+        "type": "cbmd-tab-ourscience",
+        "blocks": {
+          "1586400660178": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/cbmd-cannabidiol_2x_4c66c0ab-9ee5-4beb-991d-0a75a812de7f.jpg",
+              "title": "Cannabidiol",
+              "subheading": "What is CBD?",
+              "heading": "",
+              "content": "<p>Cannabidiol (CBD) is one of 113 biologic compounds&mdash;called <em>cannabinoids<\/em>&mdash;found within the trichomes of the cannabis\/hemp plant. Two of the most well-known of these compounds are CBD and THC. While both are naturally occurring, CBD is distinct from THC, in that CBD does not produce the psychoactive effect (or high) that THC does.<\/p>\n<p>All cannabinoid molecules, like those found in CBD, act on the receptors in the body&rsquo;s endocannabinoid system (ECS). Active in the body whether or not a person uses CBD or THC products, the ECS plays a role in sleep, appetite, mood, memory, and immune processes.<\/p>\n<p>All CBMD products are formulated with broad-spectrum CBD, which has been purified to substantially reduce the THC content and profile.<\/p>"
+            }
+          },
+          "1586400671768": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/cbmd-types_2x_ea842101-815c-4478-9823-faa790a8b22f.jpg",
+              "title": "Types",
+              "subheading": "Different types of CBD",
+              "heading": "",
+              "content": "<p>Today, one can find CBD labeled full-spectrum, broad-spectrum, and pure isolate. Full-spectrum products contain precisely that: the full range of both cannabinoids and terpenes present in the plant. (Terpenes are the chemicals responsible for the smell and taste associated with cannabis). Full-spectrum products are notable in that they are inclusive of THC.<\/p>\n<p>However, by definition, CBD cannot contain more than 0.3% of THC. On the other hand, broad-spectrum products are refined so as to remove much more of the THC content and profile. CBD isolate is created by extracting CBD and then removing all other cannabinoids and terpenes, isolating only the CBD molecules.<\/p>"
+            }
+          },
+          "1586402991291": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/cbmd-dosing_2x_8a641c13-35a1-4c7d-afe0-7dcf64f0fe12.jpg",
+              "title": "Dosing",
+              "subheading": "Dosing",
+              "heading": "",
+              "content": "<p>Determining the appropriate CBD dose is dependent upon a number of factors, including the delivery technology, concentration, and product type. There are also other factors to consider, like a person&rsquo;s unique biological makeup, and medicines an individual might be taking, Additionally, CBD isolate will exert a different kind of dose response than broad-spectrum and full-spectrum products. Because of this variability, we recommend that individuals consult a doctor, and also begin with a low dosage and build from there.<\/p>"
+            }
+          },
+          "1586403059111": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/cbmd-bioavailability_2x_cc294f94-3239-47a6-b9f8-7fece244b1fb.jpg",
+              "title": "Bioavailability",
+              "subheading": "Bioavailability",
+              "heading": "",
+              "content": "<p>The term&nbsp;<i>bioavailability<\/i>&nbsp;refers to the percentage or fraction of a given dose that is absorbed into the bloodstream, and therefore made available for use by the body. Bioavailability is based on a variety of factors, including product composition and method of delivery. In several of our CBD formulations, we incorporate ingredients that display increased and prolonged bioavailability.<\/p>"
+            }
+          },
+          "1587182002336": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/cbmd-cannabidiol_2x_4c66c0ab-9ee5-4beb-991d-0a75a812de7f.jpg",
+              "title": "Endocannabinoid",
+              "subheading": "Endocannabinoid System",
+              "heading": "",
+              "content": "<p>All cannabinoid molecules, like those found in CBD, act on the receptors in the body&rsquo;s endocannabinoid system (ECS). Active in the body whether or not a person uses CBD or THC products, the ECS plays a role in sleep, appetite, mood, memory, and immune processes.<\/p>\n<p>There are two main kinds of receptors: CB1 receptors, which are mainly concentrated in the brain, and CB2 receptors, located throughout the body and largely connected with immune system function.<\/p>\n<p>The human body also produces its own endocannabinoids, a fact that is part of an interesting story of the endocannabinoid system&rsquo;s scientific provenance&mdash;starting in the early 19th century and leading to the recent mapping of the endocannabinoid receptors&rsquo; genetic group.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1586400660178",
+          "1586400671768",
+          "1586402991291",
+          "1586403059111",
+          "1587182002336"
+        ],
+        "settings": {
+          "text_color": "#ffffff"
+        }
+      },
+      "cbmd-book-ourscience": {
+        "type": "cbmd-book-ourscience",
+        "settings": {
+          "heading": "Featured publication",
+          "book_title": "News and research",
+          "book_description": "Created by Americans for Safe Access (ASA),The Patient’s Guide to CBD is an informative resource for patients, healthcare providers, consumers, and others seeking information on the topic of cannabidiol (CBD).",
+          "book_name": "Patient’s Guide <br>  to CBD",
+          "book_cover": "shopify:\/\/shop_images\/cbmd-patients-guide-to-cbd.png",
+          "book_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0321\/8472\/9739\/files\/Patients_Guide_to_CBD.pdf"
+        }
+      },
+      "cbmd-slider-rect": {
+        "type": "cbmd-slider-rect",
+        "blocks": {
+          "1586443811292": {
+            "type": "item",
+            "settings": {
+              "item_name": "FDA recommends science-based approach",
+              "item_description": "With so many questions around the safety and quality of CBD products, the FDA looks at policy to ensure safe standards are maintained for the production of CBD.",
+              "picture": "shopify:\/\/shop_images\/cbmd-additional-resources-FDA-1_2x_8e952825-2f65-4ed4-baaf-d4e5378b8a02.jpg",
+              "link": "https:\/\/www.fda.gov\/consumers\/consumer-updates\/what-you-need-know-and-what-were-working-find-out-about-products-containing-cannabis-or-cannabis"
+            }
+          },
+          "1586443918536": {
+            "type": "item",
+            "settings": {
+              "item_name": "Clinicians guide to CBD and hemp oil",
+              "item_description": "With the explosion in CBD’s popularity comes the need for physicians to understand the importance of product selection to ensure safety.",
+              "picture": "shopify:\/\/shop_images\/cbmd-additional-resources-clinicians-2_2x_2fe73169-5c7a-4c06-b070-1afe9a398a91.jpg",
+              "link": "https:\/\/www.mayoclinicproceedings.org\/article\/S0025-6196(19)30007-2\/fulltext"
+            }
+          },
+          "1586443953620": {
+            "type": "item",
+            "settings": {
+              "item_name": "Johns Hopkins professor looks to physicians",
+              "item_description": "Associate Professor of Psychiatry and Behavioral Sciences Ryan Vandrey, PhD says patients should speak to their doctors before trying CBD.",
+              "picture": "shopify:\/\/shop_images\/cbmd-additional-resources-3_2x_db217314-0152-4ec9-9055-4226b6ebfca0.jpg",
+              "link": "https:\/\/hub.jhu.edu\/2020\/01\/03\/what-is-cbd-2499-em1-art1-qa-health\/"
+            }
+          }
+        },
+        "block_order": [
+          "1586443811292",
+          "1586443918536",
+          "1586443953620"
+        ],
+        "settings": {
+          "background_color": "#ffffff",
+          "section_title": "Additional resources"
+        }
+      },
+      "cbmd-faq-ourscience": {
+        "type": "cbmd-faq-ourscience",
+        "blocks": {
+          "1586448776768": {
+            "type": "item",
+            "settings": {
+              "item_title": "What is Cannabidiol (CBD)?",
+              "item_description": "Cannabidiol (CBD) is one of 113 biologic compounds—called cannabinoids—found within the cannabis plant. Two of the most well-known of these compounds are CBD and THC. While both are naturally occurring in the plant, CBD is distinct from TCH, in that CBD does not produce the psychoactive effect (or high) that THC does. <br><br>\nAll cannabinoid molecules, like those found in CBD, act on the receptors in the central nervous system—and more specifically, the body’s endocannabinoid system (ECS). Active in the body whether or not a person uses CBD or THC products, the ECS plays a role in sleep, appetite, mood, memory, and immune processes.<br><br>\nAll CBMD products are formulated with broad-spectrum CBD, which has been purified to substantially reduce the THC content and profile.",
+              "link_name": "",
+              "link": "",
+              "type": "cbd"
+            }
+          },
+          "1586448824891": {
+            "type": "item",
+            "settings": {
+              "item_title": "What does “broad-spectrum” CBD mean?",
+              "item_description": "Today, one can find CBD labeled full-spectrum, broad-spectrum, and pure isolate. Full-spectrum products contain precisely that: the full range of both cannabinoids and terpenes present in the plant. (Terpenes are the chemicals responsible for the smell and taste associated with cannabis). Full-spectrum products are notable in that they are inclusive of THC. However, by definition, CBD cannot contain more than 0.3% of THC. On the other hand, broad-spectrum products are refined so as to remove much more of the THC content and profile. CBD isolate is created by extracting CBD and then removing all other cannabinoids and terpenes, isolating only the CBD molecules.",
+              "link_name": "",
+              "link": "",
+              "type": "cbd"
+            }
+          },
+          "1586448845848": {
+            "type": "item",
+            "settings": {
+              "item_title": "Will I get “high” from CBD?",
+              "item_description": "No, you won’t. The cannabinoid responsible for inducing a psychoactive effect is THC, not CBD. In CBD that has been responsibly produced, the THC content will be below 0.03%. <br><br>",
+              "link_name": "",
+              "link": "",
+              "type": "cbd"
+            }
+          },
+          "1586448862838": {
+            "type": "item",
+            "settings": {
+              "item_title": "Can I take too much CBD? What’s the right dosage for me?",
+              "item_description": "The general recommendation has been between 20 and 1,500 milligrams (mg) per day, with a small starting dosage, and slowly increasing until the desired effect is attained. But, the ideal dosage will depend on a number of factors, including body weight and chemistry, the product’s CBD concentration, and the method of ingestion\/absorption. <br><br>\nBut because the research on CBD dosing is lacking, there are no uniform guidelines for physicians to follow. This is further complicated by consumers attempting to monitor their own intake when there is no regulation in the industry, and only a fraction of the brands sold in the market are accurately labeled.<br><br>\nIn the absence of research on CBD dosing, there are no uniform guidelines for physicians to follow. This is further complicated by consumers attempting to monitor their own intake amid a non-regulated industry where only a fraction of the products sold are accurately labeled.\n<br><br>\nCBMD products, however, are produced with transparency by physicians in cooperation with scientists. We uphold stringent measures for consistency and accuracy, and significantly, we understand the body’s processes. As the potential of CBD is further revealed, we can provide a responsible option for healthcare providers and individuals who wish to explore the utility of CBD products.",
+              "link_name": "",
+              "link": "",
+              "type": "products"
+            }
+          },
+          "1586448881097": {
+            "type": "item",
+            "settings": {
+              "item_title": "How are marijuana and hemp different?",
+              "item_description": "There are many species of the cannabis\/hemp plant, and though most people are familiar with the terms hemp and marijuana, there is some confusion between the two. Simply: plants with a THC concentration below 0.3% are commonly referred to as hemp, while those above that threshold are classified as marijuana. This is because THC is the compound responsible for the psychoactive effect (or high) associated with marijuana.<br><br>\nAll CBD used in CBMD’s products is derived from hemp-classified plants.",
+              "link_name": "",
+              "link": "",
+              "type": "products"
+            }
+          },
+          "1586448900889": {
+            "type": "item",
+            "settings": {
+              "item_title": "What is the endocannabinoid system?",
+              "item_description": "All cannabinoid molecules, like those found in CBD, act on the receptors in the body’s endocannabinoid system (ECS). Active in the body whether or not a person uses CBD or THC products, the ECS plays a role in sleep, appetite, mood, memory, and immune processes.<br><br>\nThere are two main kinds of receptors: CB1 receptors, which are mainly concentrated in the brain, and CB2 receptors, located throughout the body and largely connected with immune system function. When cannabinoids attach to these receptors, they exert a physiological effect on mechanisms impacting sleep, appetite, mood, memory, pain and immune processes. <br><br>\nThe human body also produces its own endocannabinoids, a fact that is part of an interesting story of the endocannabinoid system’s scientific provenance—starting in the early 19th century and leading to the recent mapping of the endocannabinoid receptors’ genetic group. At CBMD, we believe in the strength of science, and work to help educate others who are interested in learning more.",
+              "link_name": "",
+              "link": "",
+              "type": "products"
+            }
+          }
+        },
+        "block_order": [
+          "1586448776768",
+          "1586448824891",
+          "1586448845848",
+          "1586448862838",
+          "1586448881097",
+          "1586448900889"
+        ],
+        "settings": {
+          "background_color": "#ffffff",
+          "section_title": "FAQs",
+          "cbd_title": "About CBD",
+          "products_title": "About our products"
+        }
+      },
+      "cbmd-multilinks-ourscience": {
+        "type": "cbmd-multilinks-ourscience",
+        "blocks": {
+          "1586483312813": {
+            "type": "item",
+            "settings": {
+              "link_title": "Discover the difference.",
+              "link_sub_title": "Explore products",
+              "link_image": "shopify:\/\/shop_images\/cbmd-benefits-2col_2x_c03e4f42-eb70-4476-a962-d4dbae14672b.jpg",
+              "button_link": "shopify:\/\/pages\/overview"
+            }
+          },
+          "1586483402450": {
+            "type": "item",
+            "settings": {
+              "link_title": "Why we exist.",
+              "link_sub_title": "Explore our mission and vision",
+              "link_image": "shopify:\/\/shop_images\/cbmd-products-2col_2x_b9bcab69-dabe-449f-b887-e4634f5149b9.jpg",
+              "button_link": "shopify:\/\/pages\/our-mission"
+            }
+          }
+        },
+        "block_order": [
+          "1586483312813",
+          "1586483402450"
+        ],
+        "settings": {
+          "background_color": "#ffffff"
+        }
+      },
+      "banner-overview": {
+        "type": "banner-overview",
+        "settings": {
+          "banner_background": "",
+          "foreground_style": "half_image",
+          "foreground_position": "right",
+          "sidebar_background": "#eb161e",
+          "banner_title": "Designed with you in mind.",
+          "banner_text": "Our full line of physician-formulated CBD products. Our medical-grade products are all developed to offer a more responsible and reliable CBD option.",
+          "button_link": "",
+          "button_text": "See our CBD"
+        }
+      },
+      "cbmd-collections-overview": {
+        "type": "cbmd-collections-overview",
+        "blocks": {
+          "1586785946180": {
+            "type": "item",
+            "settings": {
+              "collection_description": "Customization, Chronic Pain<br>\nInflammation, Cognition",
+              "collection": "raw",
+              "view_title": "A solid foundation.",
+              "view_description": "Created for individuals looking to integrate additive-free CBD into their wellness routines - our RAW product is also an ideal base compound for physicians who want to build customized formulations for their patients.",
+              "background": "shopify:\/\/shop_images\/cbmd-raw_2x_0408e2e9-72c8-4f70-bd55-7e0c4d576663.png"
+            }
+          },
+          "1586785972587": {
+            "type": "item",
+            "settings": {
+              "collection_description": "Chronic pain, Stiffness<br>\nInflammation, Migraines",
+              "collection": "pmt-1",
+              "view_title": "A targeted solution.",
+              "view_description": "In combination with CBD, select plant-based ingredients and other naturally occurring compounds comprise a formulation designed for discomfort and inflammation.",
+              "background": "shopify:\/\/shop_images\/cbmd-pmt_2x_286a7287-8a9c-454e-84f3-dcc38d38f991.png"
+            }
+          },
+          "1586785986283": {
+            "type": "item",
+            "settings": {
+              "collection_description": "Anxiety, Depression<br>\nInsomnia, Jet lag",
+              "collection": "pmt",
+              "view_title": "A true equilibrium.",
+              "view_description": "With a proprietary blend of CBD and natural bioactive supplements, our PSY line is formulated to achieve equilibrium—targeting tension, sleeplessness, and stress.",
+              "background": "shopify:\/\/shop_images\/cbmd-psy_2x_973d4ef8-03cb-4ef6-872e-8f8788bc51f8.png"
+            }
+          },
+          "1586785995744": {
+            "type": "item",
+            "settings": {
+              "collection_description": "Dryness, Inflammation<br>\nSkin Texture, Aging",
+              "collection": "drm",
+              "view_title": "A great reflection.",
+              "view_description": "Our team of dermatologic specialists created our DRM line with phytocannabinoid-rich oils and select plant extracts to smooth, soothe, and put back what time takes out.",
+              "background": "shopify:\/\/shop_images\/cbmd-drm_2x_4d2b4506-6f99-4150-b4ed-8d3336801c0c.png"
+            }
+          }
+        },
+        "block_order": [
+          "1586785946180",
+          "1586785972587",
+          "1586785986283",
+          "1586785995744"
+        ],
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_heading": "Our products"
+        }
+      },
+      "collection-list": {
+        "type": "collection-list",
+        "blocks": {
+          "1586786751516": {
+            "type": "collection",
+            "settings": {
+              "collection": "drm",
+              "image": "",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "Sub-heading",
+              "title": "Collection name",
+              "button_text": "View products",
+              "button_link": "",
+              "apply_overlay": true
+            }
+          }
+        },
+        "block_order": [
+          "1586786751516"
+        ],
+        "settings": {
+          "image_size": "normal",
+          "add_spacing": true,
+          "expand_collection": false,
+          "stack_on_mobile": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
+      },
+      "cbmd-multilinks-overview": {
+        "type": "cbmd-multilinks-overview",
+        "blocks": {
+          "1586828046356": {
+            "type": "item",
+            "settings": {
+              "link_title": "CBD benefits",
+              "link_sub_title": "Learn more",
+              "link_image": "shopify:\/\/shop_images\/cbmd-benefits-2col_2x_c03e4f42-eb70-4476-a962-d4dbae14672b.jpg",
+              "button_link": "shopify:\/\/pages\/our-science"
+            }
+          },
+          "1586828367296": {
+            "type": "item",
+            "settings": {
+              "link_title": "Explore our  mission and vision",
+              "link_sub_title": "Learn more",
+              "link_image": "shopify:\/\/shop_images\/cbmd-mission-vision-2-2col_2x_a4d70ca3-07c2-49ca-a39e-88f15fa3a884.jpg",
+              "button_link": "shopify:\/\/pages\/our-mission"
+            }
+          }
+        },
+        "block_order": [
+          "1586828046356",
+          "1586828367296"
+        ],
+        "settings": {
+          "background_color": "#ffffff"
+        }
+      },
+      "banner-contact": {
+        "type": "banner-contact",
+        "settings": {
+          "banner_background": "shopify:\/\/shop_images\/cbmd-contact-header_2x_0d2bfabe-37f3-487b-a21b-aa5f5a403f7d.jpg",
+          "foreground_style": "half_image",
+          "foreground_position": "right",
+          "sidebar_background": "#eb161e",
+          "banner_title": "It’s time to demand more from your CBD.",
+          "banner_text": "Get in touch with us if you would like more information on our physician-formulated CBD products.",
+          "button_link": "",
+          "button_text": "See our CBD"
+        }
+      },
+      "cbmd-slider-noimage": {
+        "type": "cbmd-slider-noimage",
+        "blocks": {
+          "1586856522273": {
+            "type": "item",
+            "settings": {
+              "heading": "For healthcare practitioners",
+              "description": "Be part of a new era in healthcare. Learn more about opportunities for medical professionals to engage with the advisory team at CBMD™.",
+              "button_name": "Get information",
+              "button_link": "mailto:info@cbmd.com"
+            }
+          },
+          "1586856538102": {
+            "type": "item",
+            "settings": {
+              "heading": "For customers",
+              "description": "<p>Email: <a href=\"mailto:support@cbmd.com\" data-action=\"open-modal\" aria-controls=\"modal-product-subscription\" class=\"hyper_link\">support@cbmd.com<\/a><\/p>\n<p>Phone: <a href=\"tel:888.678.CBMD%20(2263)\" data-rel=\"external\" class=\"hyper_link\">888.678.CBMD (2263)<\/a><\/p>\n<p><a href=\"\/pages\/our-science?q=faq\" class=\"hyper_link\"> Frequently asked questions<\/a><\/p>\n<p class=\"description\">\nCustomer support is available from 9am and 5pm PST<br>Monday through Friday, excluding holidays<br>Please allow 1-2 business days for a response<\/p>",
+              "button_name": "",
+              "button_link": ""
+            }
+          },
+          "1586856549135": {
+            "type": "item",
+            "settings": {
+              "heading": "General inquiries",
+              "description": "<p>For all general inquiries and questions: <br>\n<a class=\"hyper_link\" href=\"mailto:info@cbmd.com\">info@cbmd.com<\/a><\/p>\n<p>For press or other media inquiries:<br>\n<a class=\"hyper_link\" href=\"mailto:press@cbmd.com\">press@cbmd.com<\/a><\/p>",
+              "button_name": "Get in touch",
+              "button_link": "#"
+            }
+          }
+        },
+        "block_order": [
+          "1586856522273",
+          "1586856538102",
+          "1586856549135"
+        ],
+        "settings": {}
+      },
+      "cbmd-instagram": {
+        "type": "cbmd-instagram",
+        "blocks": {
+          "1586882235794": {
+            "type": "item",
+            "settings": {
+              "link_image": "shopify:\/\/shop_images\/cbmd-social-1_2x_e352a21f-3944-4202-88fd-746d15ad2994.jpg"
+            }
+          },
+          "1586882319267": {
+            "type": "item",
+            "settings": {
+              "link_image": "shopify:\/\/shop_images\/cbmd-social-2_2x_9b186469-c8de-4a9d-8549-d5c673a585c7.jpg"
+            }
+          },
+          "1586882340318": {
+            "type": "item",
+            "settings": {
+              "link_image": "shopify:\/\/shop_images\/cbmd-social-3_2x_861c1ea9-b859-44e1-8091-4baae588e7fa.jpg"
+            }
+          },
+          "1586882358598": {
+            "type": "item",
+            "settings": {
+              "link_image": "shopify:\/\/shop_images\/cbmd-social-4_2x_a87cf10c-9398-425b-b3a9-fc2b9363fa05.jpg"
+            }
+          },
+          "1586882368827": {
+            "type": "item",
+            "settings": {
+              "link_image": "shopify:\/\/shop_images\/cbmd-social-5_2x_3407a861-0bc0-4b83-88c8-1471c2c2e7af.jpg"
+            }
+          },
+          "1586882381612": {
+            "type": "item",
+            "settings": {
+              "link_image": "shopify:\/\/shop_images\/contact-cbmd-social.png"
+            }
+          }
+        },
+        "block_order": [
+          "1586882235794",
+          "1586882319267",
+          "1586882340318",
+          "1586882358598",
+          "1586882368827",
+          "1586882381612"
+        ],
+        "settings": {
+          "heading": "Follow us on social",
+          "hashtag": "@cbmdhealth"
+        }
+      },
+      "cbmd-slider-noimage-1": {
+        "type": "cbmd-slider-noimage-1",
+        "blocks": {
+          "1586884638194": {
+            "type": "item",
+            "settings": {
+              "heading": "<a href=\"https:\/\/www.facebook.com\/CBMDhealth\/\" target=\"_blank\">@cbmdhealth<\/a>",
+              "description": "Created by Americans for Safe Access (ASA),The Patient’s Guide to CBD is an informative resource for patients, healthcare providers, consumers, and others seeking information on the topic of CBD.",
+              "type": "facebook"
+            }
+          },
+          "1586884647574": {
+            "type": "item",
+            "settings": {
+              "heading": "<a href=\"https:\/\/twitter.com\/cbmdhealth\" target=\"_blank\">@cbmdhealth<\/a>",
+              "description": "With so many questions around the safety and quality of CBD products, the FDA looks at policy to ensure safe standards are maintained for the production of CBD.",
+              "type": "twitter"
+            }
+          },
+          "1586884664356": {
+            "type": "item",
+            "settings": {
+              "heading": "<a href=\"https:\/\/www.linkedin.com\/company\/38105495\/admin\/\" target=\"_blank\">@cbmdhealth<\/a>",
+              "description": "Johns Hopkins University Associate Professor of Psychiatry and Behavioral Sciences Ryan Vandrey, PhD suggests patients consult with their doctors before trying CBD.",
+              "type": "instagram"
+            }
+          }
+        },
+        "block_order": [
+          "1586884638194",
+          "1586884647574",
+          "1586884664356"
+        ],
+        "settings": {}
+      },
+      "16110458041b7e9f57": {
+        "type": "information-tabs",
+        "blocks": {
+          "298b07ba-90dd-4a7f-91c1-2bf72396fb09": {
+            "type": "item",
+            "settings": {
+              "tab__nav_title": "Cannabidiol",
+              "tab_heading": "What is Cannabidiol (CBD)?",
+              "tab_text": "<p>Cannabidiol (CBD) is one of 113 biologic compounds—called cannabinoids—found within the trichomes of the cannabis\/hemp plant. The most well-known of these compounds are CBD and THC. While both CBD and THC are naturally occurring, CBD does not produce the psychoactive effect, or high, that THC does.<\/p><p>All cannabinoid molecules act on the receptors in the body’s endocannabinoid system (ECS). This biological system plays a role in sleep, appetite, mood, memory, and immune processes, and is active in the body whether or not a person uses products containing cannabinoids like CBD and THC.<\/p><p>All CBMD products are formulated with broad-spectrum CBD, which has been purified to reduce the presence of THC content.<\/p><p><\/p>",
+              "tab_image": "shopify:\/\/shop_images\/cbmd-cannabidiol.jpg"
+            }
+          },
+          "22fdb6d8-caff-4f73-957c-bed476ea3db9": {
+            "type": "item",
+            "settings": {
+              "tab__nav_title": "Types",
+              "tab_heading": "Types of CBD",
+              "tab_text": "<p>CBD can be found in multiple forms, including full-spectrum, broad-spectrum, and pure isolate. <\/p><p><\/p><p>Full-spectrum products contain precisely that: the full range of cannabinoids and also terpenes—the chemicals responsible for the smell and taste associated with cannabis. Full-spectrum products are notable in that they also include THC.<\/p><p><\/p><p>However, hemp-derived CBD, by definition, cannot contain more than 0.3% of THC. Broad-spectrum products are refined so as to nearly eliminate the THC content and profile. <\/p><p><\/p><p>CBD isolate is created by extracting CBD and then removing terpenes and all other cannabinoids, isolating only the CBD molecules. This is the purest form of CBD. <\/p><p><\/p><p>CBMD products include CBD molecules that have been refined to the nanoscale, but we refrain from utilizing the isolate form in our products, as the current data do not support the safety of the solvents required to derive the isolate.<\/p><p><\/p>",
+              "tab_image": "shopify:\/\/shop_images\/cbmd-types.jpg"
+            }
+          },
+          "d81a054f-6657-4c92-b698-e375fbf684b0": {
+            "type": "item",
+            "settings": {
+              "tab__nav_title": "Dosing",
+              "tab_heading": "Dosing",
+              "tab_text": "<p>The topic of CBD dosing can be complex. This is in part because the appropriate dose of CBD for a given individual is dependent upon multiple independent factors like product type, potency, and delivery technology. Additionally, the individual’s age, weight, metabolic function, and other medicines or supplements a person may be taking can all impact the recommendation for a specific dosage. Finally, each form of CBD—isolate, broad-spectrum, or full-spectrum—can exert a different kind of dose response. We therefore typically recommend that a healthcare provider offer individual guidance where dosing is concerned.<\/p><p><\/p><p>It is precisely this dosing variability that supports the need for a greater and more nuanced understanding of CBD products and the impact they have on the human body. CBMD is not only committed to developing research-based formulations with care, oversight, and precision, but our medical team works to support colleagues, providing them with information and a fully transparent CBD resource in which the industry and the consumer can have full confidence. <\/p><p><\/p>",
+              "tab_image": "shopify:\/\/shop_images\/cbmd-dosing.jpg"
+            }
+          },
+          "7054adf2-5bba-4bf4-9e0e-86f945a59891": {
+            "type": "item",
+            "settings": {
+              "tab__nav_title": "Bioavailability",
+              "tab_heading": "Bioavailability",
+              "tab_text": "<p>The term bioavailability refers to the percentage or fraction of a given dose of any compound that is absorbed into the bloodstream and therefore made available for use by the body. Bioavailability is based on a variety of factors, including product composition and method of delivery. Where CBD is concerned, the challenge is that it must reach the endocannabinoid system in order to be effective, meaning that the issue of bioavailability is an important one. The CBMD development process takes a scientific approach to bioavailability, and considers the differences in delivery methods and the need for precise dosing. Further, in several of our CBD formulations, we incorporate select ingredients, lipids, and delivery support technology to enhance and prolong bioavailability. One such area of focus is the integration of nanotechnology to support increased and targeted absorption.<\/p><p><\/p>",
+              "tab_image": "shopify:\/\/shop_images\/cbmd-bioavailability.jpg"
+            }
+          },
+          "160b29ef-4efe-4def-bc74-365cb17c4d2e": {
+            "type": "item",
+            "settings": {
+              "tab__nav_title": "Endocannabinoid",
+              "tab_heading": "Endocannabinoid system",
+              "tab_text": "<p>All cannabinoid molecules, like those found in CBD, act on the receptors in the body’s endocannabinoid system (ECS). This biological system plays a role in sleep, appetite, mood, memory, and immune processes, and is active in the body whether or not a person uses products containing cannabinoids like CBD and THC.<\/p><p><\/p><p>In the ECS, there are two main kinds of receptors: CB1 and CB2 receptors. The former are mainly concentrated in the brain, while the latter are located throughout the body and largely connected with immune system function.<\/p><p><\/p><p>The human body also produces its own endocannabinoids, a fact that is part of an interesting story of the endocannabinoid system’s scientific provenance—starting in the early 19th century and leading to the recent mapping of the endocannabinoid receptors’ genetic group.<\/p><p><\/p><p><\/p>",
+              "tab_image": "shopify:\/\/shop_images\/cbmd-endocannabinoid_2x_47dc8805-b5fb-4992-b616-d0498e76c68e.png"
+            }
+          }
+        },
+        "block_order": [
+          "298b07ba-90dd-4a7f-91c1-2bf72396fb09",
+          "22fdb6d8-caff-4f73-957c-bed476ea3db9",
+          "d81a054f-6657-4c92-b698-e375fbf684b0",
+          "7054adf2-5bba-4bf4-9e0e-86f945a59891",
+          "160b29ef-4efe-4def-bc74-365cb17c4d2e"
+        ],
+        "settings": {
+          "it_tab_title": "The information you need.",
+          "it_tab_heading": "CBD Education"
+        }
+      },
+      "161107015793604ffb": {
+        "type": "text-over-image",
+        "settings": {
+          "text_over_image_headline": "Sales for clinics and practices",
+          "text_over_image_title": "Available wherever there’s care.",
+          "text_over_image_text": "Conversations about CBD are happening everywhere, and people are increasingly turning to their healthcare providers for answers. CBMD offers a physician-developed line of CBD products that you and your patients can trust.",
+          "text_over_image_image": "shopify:\/\/shop_images\/cbmd-clinic.png"
+        }
+      },
+      "161132267338efc12d": {
+        "type": "higlighted-product",
+        "settings": {
+          "hp_title": "PMT",
+          "hp_subtitle": "Pain Support CBD Topical Cream",
+          "hp_text": "<span style=\"color:#EB161E;\">Formulated for<\/span> Pain, Muscle Soreness, <br>Joint Stiffness, Backaches, Discomfort",
+          "hp_link": "psy-4",
+          "hp_image": "shopify:\/\/shop_images\/CBMD_PMT_topical-hero_d031ddd5-b3b3-40bc-97c8-dc34eb207fd4.png"
+        }
+      },
+      "higlighted-product-collection-page": {
+        "type": "higlighted-product-collection-page",
+        "settings": {
+          "hp_title": "",
+          "hp_subtitle": "",
+          "hp_text": "",
+          "hp_link": ""
+        }
+      },
+      "cmbd-higlight-image-collection-page": {
+        "type": "cmbd-higlight-image-collection-page",
+        "settings": {
+          "background_color": "#ffffff",
+          "highlight_style": "left_image",
+          "highlight_image": "shopify:\/\/shop_images\/Image_4.png",
+          "highlight_video": "",
+          "highlight_heading": "CBMD formulations",
+          "highlight_title": "Our full suite of products",
+          "highlight_description": "With the launch of our first physician-formulated CBD product, PMT Pain Support Topical Cream, we look forward to releasing both PMT capsules and tinctures, and introducing our RAW, PSY, and DRM formulations—all developed to the same stringent CBMD®standards",
+          "action_style": "link",
+          "action_title": "Our process",
+          "action_text": ""
+        }
+      },
+      "text-over-image-collection-page": {
+        "type": "text-over-image-collection-page",
+        "settings": {
+          "text_over_image_headline": "Sales for clinics and practices",
+          "text_over_image_title": "Available wherever there’s care.",
+          "text_over_image_text": "Conversations about CBD are happening everywhere, and people are increasingly turning to their healthcare providers for answers. CBMD offers a physician-developed line of CBD products that you and your patients can trust.",
+          "text_over_image_image": "shopify:\/\/shop_images\/cbmd-clinic.png"
+        }
+      },
+      "collection-list-sliders": {
+        "type": "collection-list-sliders",
+        "blocks": {
+          "2ebcf483-7a6f-4142-b2df-4eb09f08f866": {
+            "type": "item",
+            "settings": {
+              "collection_handle": "raw",
+              "sub_heading": "Simply CBD",
+              "ss_description": "<span>A solid foundation.<\/span> Created for those looking to integrate additive-free CBD into their wellness routines, RAW is also an idea base for physicians who want to build customized formulations for patients.",
+              "formulated": "<span>Pain<\/span><span>Headaches<\/span><span>Inflammation<\/span><span>Customization<\/span>\n<span>Cognition<\/span><span>Discomfort<\/span>"
+            }
+          },
+          "2686be82-0ef8-446a-8466-84482241c6b7": {
+            "type": "item",
+            "settings": {
+              "collection_handle": "pmt-1",
+              "sub_heading": "Pain Support",
+              "ss_description": "<b>A targeted solution<\/b>. In combination with CBD, select plant-based compounds and other natural ingredients comprise a formulation designed to support discomfort and inflammation.",
+              "formulated": "<span>Pain<\/span>\n<span>Muscle Soreness<\/span>\n<span>Joint Stiffness<\/span>\n<span>Backaches<\/span>\n<span>Headaches<\/span>\n<span>Muscle Tension<\/span>"
+            }
+          },
+          "8f661f97-9e09-4e42-a27f-60240f8df236": {
+            "type": "item",
+            "settings": {
+              "collection_handle": "pmt",
+              "sub_heading": "Mind Balance",
+              "ss_description": "<b>A true equilibrium<\/b>. With a proprietary blend of CBD and natural bioactive ingredients, our PSY formulations are designed to support balance—targeting tension, sleeplessness, and stress.",
+              "formulated": "<span>Stress<\/span>\n<span>Insomnia<\/span>\n<span>Anxiety<\/span>\n<span>Mood<\/span>\n<span>Jet Lag<\/span>\n<span>Premenstrual Syndrome<\/span>"
+            }
+          },
+          "6300385a-6b48-43d7-b453-9c504b29a296": {
+            "type": "item",
+            "settings": {
+              "collection_handle": "drm",
+              "sub_heading": "Skin Restore",
+              "ss_description": "<b>A great reflection<\/b>. Our team of dermatologic specialists created our phytocannabinoid-rich DRM line that pairs CBD with select plant extracts to smooth, soothe, and put back what time takes out.",
+              "formulated": "<span>Dryness<\/span>\n<span>Inflammatation<\/span>\n<span>Aging<\/span>\n<span>Skin Texture<\/span><span>Redness<\/span>\n<span>Breakouts<\/span>"
+            }
+          }
+        },
+        "block_order": [
+          "2ebcf483-7a6f-4142-b2df-4eb09f08f866",
+          "2686be82-0ef8-446a-8466-84482241c6b7",
+          "8f661f97-9e09-4e42-a27f-60240f8df236",
+          "6300385a-6b48-43d7-b453-9c504b29a296"
+        ],
+        "settings": {
+          "highlight_heading": "",
+          "highlight_title": ""
+        }
+      },
+      "b-image-left-template": {
+        "type": "b-image-left-template",
+        "settings": {}
+      },
+      "a-text-over-image": {
+        "type": "a-text-over-image",
+        "settings": {}
+      }
+    },
+    "content_for_index": [
+      "1585562300015",
+      "1586335607840",
+      "1586335792900",
+      "161132267338efc12d",
+      "161107015793604ffb",
+      "1586335866753",
+      "1586352869270",
+      "1586336977121",
+      "16110458041b7e9f57",
+      "1586337176858",
+      "1586337244488"
+    ]
+  },
+  "presets": {
+    "Allure": {
+      "heading_color": "#1c1b1b",
+      "text_color": "#1c1b1b",
+      "text_light_color": "#6a6a6a",
+      "link_color": "#6a6a6a",
+      "background": "#efefef",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#1c1b1b",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#1c1b1b",
+      "header_light_color": "#6a6a6a",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#1c1b1b",
+      "footer_text_color": "#6a6a6a",
+      "newsletter_popup_background": "#1c1b1b",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#1c1b1b",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#1c1b1b",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "montserrat_n5",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "nunito_sans_n4",
+      "base_text_font_size": 14,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": false,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#efefef",
+      "checkout_accent_color": "#1c1b1b",
+      "checkout_button_color": "#1c1b1b",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#000000",
+            "text_color": "#ffffff",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    },
+    "Couture": {
+      "heading_color": "#5c5c5c",
+      "text_color": "#5c5c5c",
+      "text_light_color": "#939393",
+      "link_color": "#323232",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#5c5c5c",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#5c5c5c",
+      "header_light_color": "#939393",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#5c5c5c",
+      "footer_text_color": "#939393",
+      "newsletter_popup_background": "#ffffff",
+      "newsletter_popup_text_color": "#1c1b1b",
+      "secondary_elements_background": "#5c5c5c",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#ffffff",
+      "navigation_text_color": "#5c5c5c",
+      "heading_font": "futura_n4",
+      "heading_size": "large",
+      "uppercase_heading": false,
+      "text_font": "century_gothic_n4",
+      "base_text_font_size": 15,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "left",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "small",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#323232",
+      "checkout_button_color": "#5c5c5c",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f3f3f3",
+            "text_color": "#5c5c5c",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "center",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    },
+    "Vogue": {
+      "heading_color": "#454545",
+      "text_color": "#454545",
+      "text_light_color": "#9d9d9d",
+      "link_color": "#a17c5e",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#c2a284",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#454545",
+      "header_light_color": "#9d9d9d",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#454545",
+      "footer_text_color": "#9d9d9d",
+      "newsletter_popup_background": "#454545",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#f1e4d8",
+      "secondary_elements_text_color": "#373737",
+      "navigation_background": "#454545",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "din_neuzeit_grotesk_n3",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "futura_n4",
+      "base_text_font_size": 14,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "show_element_staggering": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#a17c5e",
+      "checkout_button_color": "#454545",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f1e4d8",
+            "text_color": "#343434",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    }
+  }
+}

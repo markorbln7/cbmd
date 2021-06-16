@@ -24,13 +24,13 @@
 
               {% case product_name %}
               {% when 'RAW' %}
-              {% assign q = 'RAW' %}
+              {% assign q = 'raw' %}
               {% when 'PMT' %}
-              {% assign q = 'PMT' %}
+              {% assign q = 'pmt' %}
               {% when 'PSY' %}                        
-              {% assign q = 'PSY' %}
+              {% assign q = 'psy' %}
               {% when 'DRM' %}                        
-              {% assign q = 'DRM' %}
+              {% assign q = 'drm' %}
               {% endcase %}
 
             <div class="Highlights_products_item box Highlights_products_item_rbln swiper-slide h-100">
@@ -49,7 +49,7 @@
               </div> {% endcomment %}
 
               <div class="Highlights_products_content">
-                <a href="https://cbmd.com/pages/products" class="Highlights_products_link Button Button--cbd Button--red">{{- button_name -}}</a>
+                <a href="{{ product_link }}?q={{ q }}" class="Highlights_products_link Button Button--cbd Button--red">{{- button_name -}}</a>
               </div>
             </div>
 

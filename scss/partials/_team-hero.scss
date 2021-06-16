@@ -1,0 +1,83 @@
+html.page-team {
+    font-size:20px !important;
+
+    @media only screen and (min-width: 732px) {
+        font-size:1.56vw !important;
+    }
+
+    @media only screen and (min-width: 1240px) {
+        font-size:1.56vw !important;
+    }
+}
+
+.team-hero {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        padding: 0 2.2rem;
+
+        @media only screen and (max-width: 731px) {
+            padding: 0 2rem 0 0;
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        max-width: 25rem;   
+
+        @media only screen and (max-width: 731px) {
+            background-color: #fff;
+            padding: 2rem 1.1rem;
+        }
+    }
+
+    &__title {
+        font-size: 2.8rem;
+        line-height: 1;
+        letter-spacing: -0.03rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        max-width: 10rem;
+
+        @media only screen and (max-width: 731px) {
+            font-size: 1.8rem;
+        }
+    } 
+
+    &__text {
+        font-size: 1rem;
+        line-height: 1.2;
+        letter-spacing: -0.01rem;
+        margin-bottom: 1.5rem;
+
+        @media only screen and (max-width: 731px) {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+
+

@@ -60,14 +60,6 @@
     line-height: 1.83rem;
     color: #EB161E;
 }
-.h6_bold {
-    font-family: Graphik;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.14rem;
-    line-height: 1.83rem;
-    color: #000000;
-}
 .p {
     font-family: Graphik;
     font-style: normal;
@@ -228,9 +220,6 @@
         margin-bottom:.3rem;
     }
 }
-
-/* ANA */ 
-
 .Certifications_container {
     display: flex;
     flex-direction: row;
@@ -252,14 +241,6 @@
     }
     img {
         width: 100%;
-    gap: 3.9rem;
-    padding: 2.3rem;
-}
-.Certifications_box {
-    width: 6.88rem;
-    img {
-        width: 6.88rem;
-        height: 6.88rem;
     }
     p {
         font-family: Graphik;
@@ -293,25 +274,17 @@
 // }
 .labCertified_box-left {
     //padding-right: 10rem;
-}
-.labCertified_box {
-    width: 50%;
-}
-.labCertified_box-left {
-    padding-right: 10rem;
     position: relative;
 }
 .img_COA {
     position: absolute;
     top: -1.6rem;
     right: -0.6rem;
-    right: 3.4rem;
     width: 8.18rem;
     height: 8.18rem;
 }
 .COA_box_bottom {
     padding-top: 0;
-    padding-top: 2.98rem;
 }
 .input_number-COA {
     background: rgba(164, 164, 164, 0.08);
@@ -353,12 +326,6 @@
 }
 .tab-label-COA {
     font-family: Graphik;
-}
-.accortion_COA {
-   
-    overflow: hidden;
-}
-.tab-label-COA {
     border-top: 1px solid  #DCDCDC;
     padding: 1.15rem 0;
     font-weight: 300;
@@ -372,9 +339,6 @@
         position: absolute;
         right: 0px;
         top:13%;
-        font-size: 24px;
-        position: absolute;
-        right: 0px;
     }
 }
 .accordion_box-COA input {
@@ -389,7 +353,6 @@
         font-weight: 600;
         &:after {
             transform: rotate(135deg);
-            transform: rotate(90deg);
           }
     }
 }
@@ -443,5 +406,3 @@
         margin-bottom: 1rem;
     }
 }
-
-} 

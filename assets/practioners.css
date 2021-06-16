@@ -1,0 +1,102 @@
+html.page-team {
+  font-size: 20px !important;
+}
+
+@media only screen and (min-width: 732px) {
+  html.page-team {
+    font-size: 1.56vw !important;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  html.page-team {
+    font-size: 1.56vw !important;
+  }
+}
+
+.team-hero {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team-hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.team-hero__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team-hero__container {
+  width: 100%;
+  padding: 0 2.2rem;
+}
+
+@media only screen and (max-width: 731px) {
+  .team-hero__container {
+    padding: 0 2rem 0 0;
+  }
+}
+
+.team-hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 25rem;
+}
+
+@media only screen and (max-width: 731px) {
+  .team-hero__content {
+    background-color: #fff;
+    padding: 2rem 1.1rem;
+  }
+}
+
+.team-hero__title {
+  font-size: 2.8rem;
+  line-height: 1;
+  letter-spacing: -0.03rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  max-width: 10rem;
+}
+
+@media only screen and (max-width: 731px) {
+  .team-hero__title {
+    font-size: 1.8rem;
+  }
+}
+
+.team-hero__text {
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.01rem;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 731px) {
+  .team-hero__text {
+    font-size: 0.8rem;
+  }
+}
+
+.team-rounded {
+  border: 1px solid red;
+}
+/*# sourceMappingURL=practioners.css.map */
