@@ -1,3 +1,8 @@
 .team-rounded {
-    border: 1px solid red;
+    &__above-title {
+        color: #eb161e;
+        font-weight: 600;
+        font-family: Graphik;
+        font-size: 1.07rem;
+    }
 }
