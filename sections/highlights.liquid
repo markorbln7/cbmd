@@ -1,0 +1,138 @@
+
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="highlights">
+  <div class="Highlights_container">
+    <div class="Highlights_item Highlights_first">
+      <p class="Highlights_heading">{{section.settings.highlight_heading}}</p>
+      <p class="Highlights_title">{{section.settings.highlight_title}}</p>
+      <p class="Highlights_description">{{section.settings.highlight_description}}</p>
+
+      {%- assign action_link = section.settings.action_style -%}
+      {%- if action_link == "button" -%}
+        <a href="{{section.settings.action_link}}" class="Button Button--cbd">{{ section.settings.action_title | escape }}</a>
+      {%- else -%}  
+        <a href="{{section.settings.action_link}}" class="Link Link--cbd">{{ section.settings.action_title | escape }}</a>
+      {%- endif -%}      
+    </div>
+    <div class="Highlights_item Highlights_second">
+
+        {%- for block in section.blocks -%}
+          {%- assign collection = collections[block.settings.collection] -%}
+
+          <div class="collections">
+            <H3>
+              {{- block.settings.subheading | default: collection.subheading -}}            
+            </H3>
+            <p>
+              {{- block.settings.content | default: collection.content -}}            
+            </p>
+          </div>
+        {%- endfor -%}
+
+
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Highlights Stats",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "highlight_heading",
+      "label": "Heading Title",
+      "default": "The problem"
+    },
+    {
+      "type": "textarea",
+      "id": "highlight_title",
+      "label": "Highlights Title",
+      "default": "Highlights Title ..."
+    },    
+    {
+      "type": "textarea",
+      "id": "highlight_description",
+      "label": "Highlights Description",
+      "default": "Highlights Description ..."
+    },        
+    {
+      "type": "header",
+      "content": "Action"
+    },
+    {
+      "type": "select",
+      "id": "action_style",
+      "label": "Action Style",
+      "options": [
+        {
+          "value": "link",
+          "label": "Link"
+        },
+        {
+          "value": "button",
+          "label": "Button"
+        }
+      ],
+      "default": "link"
+    },
+    {
+      "type": "text",
+      "id": "action_title",
+      "label": "Action Title",
+      "default": "Learn more"
+    },
+    {
+      "type": "text",
+      "id": "action_link",
+      "label": "Action Link",
+      "default": "https://..."
+    }    
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Sub-heading",
+          "default": "..."
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Text",
+          "default": "..."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Highlights",
+      "name": "Highlights Stats",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

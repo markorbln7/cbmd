@@ -1,0 +1,124 @@
+{% comment %} <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> {% endcomment %}
+{%- for block in section.blocks -%}
+{%- assign collection_name = block.settings.collection_handle -%}
+{%- assign collection_subheadind = block.settings.sub_heading -%}
+{%- assign collection_description= block.settings.ss_description -%}
+{%- assign formulated = block.settings.formulated -%}
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd" class="collection-sliders">
+<div id="{{ collections[collection_name].title }}" class="collection-slider-container Highlights_container">
+    <div class="collection-slider-decription">
+            <h2 class="box">{{ collections[collection_name].title }}</h2>
+            <h3 class="box">{{ collection_subheadind}}</h3>
+            <p class="col-desc box">{{ collection_description }}</p>
+            <p class="formulated box">Formulated for<br>{{ formulated  }}</p>
+    </div>
+    <div class="collection-slider-slider">
+      <div class="swiper-container col-slider-container box">
+        <div class="swiper-wrapper">
+        {% for product in collections[collection_name].products %}
+            <div class="product-card swiper-slide box position-relative">
+                <div class="ps-image {{product.handle}}">
+                 {% if product.available %}
+                  <div class="badge position-absolute top-0 start-0">{% render 'buy-now-badge' %}</div>
+                 {% endif %}
+                     <img src="{{ product.featured_image | img_url: '1024x' }}" alt="{{ product.featured_image.alt | escape }}">
+                     {% if product.available %}
+                        <a class="buy-button" href="{{ product.url }}">More Details</a>
+                    {% endif %}
+                </div>
+                <h2 data-mh="collection-product-title">{{ product.title }}</h2> 
+                <div class="ps-dosing d-flex justify-content-between"><button class="dosing">{{product.metafields.dosinglink_title.dosinglink_title}}</button> 
+                {% if product.available != true %}
+                <button data-title="{{ product.title }}" data-action="open-modal" aria-controls="modal-product-subscription-{{ product.title }}" class="buy-now">Notify when available</button>
+                {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+       </div>
+       <!-- Add Pagination -->
+       <div class="swiper-pagination col-col-pagination col-pagination-bullet collection-pagination"></div>
+    </div>
+    <div class="swiper-pagination col-col-pagination col-pagination-bullet collection-pagination"></div>
+  </div>
+</div>
+</section>
+{%- endfor -%}
+<script>
+    const numberOfSlides = document.querySelectorAll('.swiper-slide').length;
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 15,
+      pagination: {
+        el: '.collection-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        501: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        792: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        1110: {
+          slidesPerView: 4,
+          spaceBetween: 25,
+        },
+      }
+      
+    });
+</script>
+{% schema %}
+{
+  "name": "Collections Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "highlight_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "highlight_title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection_handle",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "sub_heading",
+          "label": "Subheading"
+        },
+        {
+          "type": "textarea",
+          "id": "ss_description",
+          "label": "Colection Description"
+        },
+        {
+          "type": "textarea",
+          "id": "formulated",
+          "label": "Formulated For (wrapp every tag in span"
+        }
+      ]
+    }
+  ],    
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Collections Slider",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

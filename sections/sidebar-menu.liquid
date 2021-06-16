@@ -1,0 +1,174 @@
+{%- assign main_menu_handle = section.settings.primary_menu | default: 'main-menu' -%}
+{%- assign main_menu = linklists[main_menu_handle] -%}
+
+<section id="sidebar-menu" class="SidebarMenu Drawer Drawer--small Drawer--fromLeft" aria-hidden="true" data-section-id="{{ section.id }}" data-section-type="sidebar-menu">
+    <header class="Drawer__Header" data-drawer-animated-left>
+
+      {%- capture drawer_header_logo -%}
+        <a href="{{ routes.root_url }}" class="Header__LogoLink">
+          <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M80.1807 1.25301C90.4173 1.25301 98.7456 9.58132 98.7456 19.8179C98.7456 30.0546 90.4173 38.3829 80.1807 38.3829H19.8179C9.58132 38.3829 1.25302 30.0546 1.25302 19.8179C1.25302 9.58132 9.58132 1.25301 19.8179 1.25301H80.1807ZM80.1807 0H19.8179C8.87256 0 0 8.87255 0 19.8179C0 30.7633 8.87256 39.6359 19.8179 39.6359H80.1821C91.1274 39.6359 100 30.7633 100 19.8179C99.9986 8.87255 91.1261 0 80.1807 0Z" fill="white"/>
+          <path d="M13.1367 20.0143C13.1367 14.8076 17.0041 10.9663 22.0559 10.9663C23.6804 10.9663 25.2775 11.4818 26.3345 12.0754L27.0817 10.9663H28.1126V17.0751H26.9528C25.9219 13.9563 24.2206 12.074 21.9777 12.074C19.3483 12.074 17.0287 14.6267 17.0287 19.6017C17.0287 24.7056 19.8391 27.1541 22.5453 27.1541C24.943 27.1541 26.6183 25.7626 27.8302 23.3128L28.8104 23.7761C27.6245 26.5344 25.305 28.7512 21.6186 28.7512C16.2555 28.7526 13.1367 25.0922 13.1367 20.0143Z" fill="white"/>
+          <path d="M29.6846 27.3348C31.7204 27.258 32.1083 27.025 32.1083 26.2257V13.4652C32.1083 12.666 31.7217 12.4343 29.6846 12.3562V11.376H37.5989C42.9866 11.376 44.3273 13.4378 44.3273 15.449C44.3273 17.0474 43.2182 18.6967 39.9966 19.2642V19.367C43.502 19.5727 44.9977 21.481 44.9977 23.414C44.9977 26.1462 43.3485 28.3369 37.8319 28.3369H29.6846V27.3348ZM37.3151 18.905C39.9445 18.905 40.7698 17.8481 40.7698 15.6573C40.7698 13.5694 39.9966 12.4604 37.2904 12.4604H35.6659V18.905H37.3151ZM37.5989 27.258C40.8987 27.258 41.3881 25.6595 41.3881 23.3907C41.3881 21.3028 40.2543 19.9881 37.3151 19.9881H35.6659V27.258H37.5989Z" fill="white"/>
+          <path d="M46.0547 27.387C48.3482 27.0525 48.6841 26.2272 48.6841 23.7774V14.2139C48.6841 13.2597 48.1686 12.4358 46.0547 12.3576V11.3774H53.0669L57.4237 23.6224H57.6293L61.8051 11.3774H68.6104V12.3576C66.5745 12.4344 66.1866 12.6675 66.1866 13.4667V26.2272C66.1866 27.0264 66.5732 27.2581 68.6104 27.3363V28.3411H60.5425V27.3363C62.1917 27.2595 62.6565 27.0785 62.6565 26.2272V13.5709H62.4755L57.2167 28.3411H55.6703L50.1537 13.5695H49.9481V23.7774C49.9481 26.2011 50.1798 26.999 52.5007 27.387V28.3411H46.0547V27.387Z" fill="white"/>
+          <path d="M69.875 27.3348C71.9108 27.258 72.2988 27.025 72.2988 26.2257V13.4652C72.2988 12.666 71.9122 12.4343 69.875 12.3562V11.376H77.6083C83.9502 11.376 86.9662 14.6497 86.9662 19.5219C86.9662 24.2132 84.4657 28.3383 77.9703 28.3383H69.8764V27.3348H69.875ZM77.5316 27.258C81.8362 27.258 83.1249 25.0673 83.1249 19.7564C83.1249 14.4208 81.1659 12.4617 77.2985 12.4617H75.8549V27.258H77.5316Z" fill="white"/>
+          <path d="M87.4955 11.8436H86.7812V11.3774H88.8116V11.8436H88.0973V14.0219H87.4941V11.8436H87.4955Z" fill="white"/>
+          <path d="M89.4102 11.3774H90.2012L90.8181 13.0239L91.4281 11.3774H92.2055V14.0219H91.6105V12.1657L90.8784 14.0219H90.6824L89.9462 12.1657V14.0219H89.4102V11.3774Z" fill="white"/>
+          </svg>
+        </a>
+      {%- endcapture -%}
+
+      <div class="Drawer__Header__Logo">{{ drawer_header_logo }}</div>
+
+      <button class="Drawer__Close Icon-Wrapper--clickable" data-action="close-drawer" data-drawer-id="sidebar-menu" aria-label="{{ 'header.navigation.close_sidebar' | t }}">
+        {% comment %}
+        {%- render 'icon' with 'close' -%}
+        {% endcomment %}
+        Close
+      </button>
+    </header>
+
+    <div class="Drawer__Content">
+      <div class="Drawer__Main" data-drawer-animated-left data-scrollable>
+        <div class="Drawer__Container">
+          <nav class="SidebarMenu__Nav SidebarMenu__Nav--primary" aria-label="{{ 'header.navigation.sidebar_title' | t }}">
+            {%- for link in main_menu.links -%}
+              <div class="Collapsible">
+
+                {%- if link.title == 'Products' -%}
+                  <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6 only-for-phone">{{ link.title | escape }}</a>
+                {%- endif -%}
+
+                {%- if link.links != blank -%}
+                  <button class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" {% if link.links != blank %}aria-expanded="false"{% endif %}>
+                    {{- link.title | escape -}} <span class="Collapsible__Plus"></span>
+                  </button>
+
+                  <div class="Collapsible__Inner">
+                    <div class="Collapsible__Content">
+                      {%- for sub_link in link.links -%}
+                        <div class="Collapsible">
+                          {%- if sub_link.links != blank -%}
+                            <button class="Collapsible__Button Heading Text--subdued Link--primary u-h7" data-action="toggle-collapsible" {% if sub_link.links != blank %}aria-expanded="false"{% endif %}>
+                              {{- sub_link.title | escape -}} <span class="Collapsible__Plus"></span>
+                            </button>
+
+                            <div class="Collapsible__Inner">
+                              <div class="Collapsible__Content">
+                                <ul class="Linklist Linklist--bordered Linklist--spacingLoose">
+                                  {%- for sub_sub_link in sub_link.links -%}
+                                    <li class="Linklist__Item">
+                                      <a href="{{ sub_sub_link.url }}" class="Text--subdued Link Link--primary">{{ sub_sub_link.title | escape }}</a>
+                                    </li>
+                                  {%- endfor -%}
+                                </ul>
+                              </div>
+                            </div>
+                          {%- else -%}
+                            <a href="{{ sub_link.url }}" class="Collapsible__Button Heading Text--subdued Link Link--primary u-h7">{{ sub_link.title | escape }}</a>
+                          {%- endif -%}
+                        </div>
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                {%- else -%}
+                  <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6">{{ link.title | escape }}</a>
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+          </nav>
+
+          {%- assign secondary_menu = linklists[section.settings.secondary_menu] -%}
+
+          <nav class="SidebarMenu__Nav SidebarMenu__Nav--secondary">
+            <ul class="Linklist Linklist--spacingLoose">
+              {%- for link in secondary_menu.links -%}
+                <li class="Linklist__Item">
+                  <a href="{{ link.url }}" class="Text--subdued Link Link--primary">{{ link.title | escape }}</a>
+                </li>
+              {%- endfor -%}
+
+              {%- comment -%}We automatically add some links to the secondary menu{%- endcomment -%}
+
+              {%- if shop.customer_accounts_enabled -%}
+                <li class="Linklist__Item">
+                  <a href="{{ routes.account_url }}" class="Text--subdued Link Link--primary">{{ 'header.navigation.account' | t }}</a>
+                </li>
+              {%- endif -%}
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      {%- if section.settings.show_social_media -%}
+        {%- capture social_media -%}
+          {% render 'social-media', class: 'SidebarMenu__Social', spacing: 'fill' %}
+        {%- endcapture -%}
+      {%- endif -%}
+
+      {%- if settings.currency_conversion_enabled or shop.enabled_currencies.size > 1 or social_media != blank -%}
+        <aside class="Drawer__Footer" data-drawer-animated-bottom>
+          {%- if settings.currency_conversion_enabled or shop.enabled_currencies.size > 1 -%}
+            <div class="SidebarMenu__CurrencySelector">
+              <div class="Select Select--transparent">
+                {%- if shop.enabled_currencies.size > 1 -%}
+                  {%- form 'currency', id: 'mobile_currency_form' -%}
+                    <select class="CurrencySelector__Select" name="currency" title="{{ 'header.navigation.currency_selector' | t | escape }}" onchange="this.form.submit()">
+                      {%- for currency in shop.enabled_currencies -%}
+                        <option value="{{ currency.iso_code }}" {% if cart.currency == currency %}selected="selected"{% endif %}>{{ currency.iso_code }}</option>
+                      {%- endfor -%}
+                    </select>
+                  {%- endform -%}
+                {%- else -%}
+                  <select class="CurrencySelector__Select" title="{{ 'header.navigation.currency_selector' | t | escape }}">
+                    {%- capture codes -%}USD,EUR,GBP,CAD,ARS,AUD,BBD,BDT,BSD,BHD,BRL,BOB,BND,BGN,BWP,MMK,KYD,CLP,CNY,COP,CRC,HRK,CZK,DKK,DOP,XCD,EGP,XPF,FJD,GHS,GTQ,GYD,GEL,HKD,HUF,ILS,ISK,INR,IDR,NIS,JMD,JPY,JOD,KZT,KES,KWD,LVL,LTL,MXN,MYR,MUR,MDL,MAD,MNT,MZN,ANG,NZD,NGN,NOK,OMR,PKR,PYG,PEN,PHP,PLN,QAR,RON,RUB,SAR,RSD,SCR,SGD,SYP,ZAR,KRW,LKR,SEK,CHF,TWD,THB,TZS,TTD,TRY,UAH,AED,UYU,VEB,VND,ZMK{%- endcapture -%}
+                    {%- assign supported_codes = settings.currency_conversion_supported_currencies | remove_first: shop.currency | upcase | split: ' ' | uniq -%}
+
+                    <option value="{{ shop.currency }}" selected="selected">{{ shop.currency }}</option>
+
+                    {%- for code in supported_codes -%}
+                      {%- if codes contains code -%}
+                        <option value="{{ code }}">{{ code }}</option>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </select>
+                {%- endif -%}
+
+                {%- render 'icon' with 'select-arrow' -%}
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- if social_media != blank -%}
+            {{ social_media }}
+          {%- endif -%}
+        </aside>
+      {%- endif -%}
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sidebar menu",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "primary_menu",
+      "label": "Primary menu",
+      "default": "main-menu"
+    },
+    {
+      "type": "link_list",
+      "id": "secondary_menu",
+      "label": "Secondary menu",
+      "info": "This menu won't show dropdown items."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social_media",
+      "label": "Show social media",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

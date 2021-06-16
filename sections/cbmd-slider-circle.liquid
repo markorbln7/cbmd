@@ -1,0 +1,166 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">  
+  <div class="cbmd_slider_circle_container Highlights_container with-mobile-swipe-notice">
+    <p class="heading">{{section.settings.section_heading}}</p>
+    <p class="title">{{section.settings.section_title}}</p>
+    <div class="cbmd_slider_circle_items">
+
+      {%- for block in section.blocks -%}
+        {%- assign product_name = block.settings.product_name -%}
+        {%- assign product_sub_name = block.settings.product_sub_name -%}
+        {%- assign product_description = block.settings.product_description -%}
+        {%- assign picture = block.settings.picture -%} 
+        {%- if product_name != blank and product_sub_name != blank and product_description != blank and picture != blank -%}
+
+          <div class="item">
+            <div class="image_area">
+              <div class="image" style="background-image: url({{ picture | img_url: 'master' }})"></div>
+            </div>
+            
+            <div class="content">
+              <p class="name">{{- product_name -}}</p>
+              <p class="sub_name">{{- product_sub_name -}}</p>
+              <p class="exp">{{- product_description -}}</p>
+            </div>
+          </div>
+
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    <div class="mobile-swipe-notice">Swipe <img src="{{ 'mobile-swipe-icon.svg' | asset_url }}" /></div>
+  </div>
+</section>
+<style>
+  .cbmd_slider_circle_container {
+    background: {{section.settings.background_color}};
+  }
+</style>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    initProductsSlider();
+    $( window ).resize(function() {
+      initProductsSlider();   
+    });
+
+
+  });
+
+  function initProductsSlider() {
+    if (window.innerWidth > 1096) {
+      if ($(".cbmd_slider_circle_container").find(".slick-initialized").length > 0) 
+        $('.cbmd_slider_circle_items').slick('unslick');
+    }
+    else {
+      if ($(".cbmd_slider_circle_container").find(".slick-initialized").length == 0) 
+        initSlick();
+    }
+  }
+
+  function initSlick() {
+    $('.cbmd_slider_circle_items').slick({
+      centerMode: false,
+      infinite: false,
+      centerPadding: '0px',
+      slidesToShow: 4,
+      arrows: false,
+      variableWidth: true,
+      variableHeight: true,
+      responsive: [
+        {
+          breakpoint: 1279,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 3
+          }
+        },        
+        {
+          breakpoint: 820,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 2
+          }
+        },      
+        {
+          breakpoint: 600,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    })
+    .on('afterChange', function(event, slick, currentSlide, nextSlide){
+      if ($('.cbmd_slider_circle_items .slick-slide:last-child').hasClass('slick-active')) {
+        $('#section-{{ section.id }}').addClass('slick-end');
+      } else {
+        $('#section-{{ section.id }}').removeClass('slick-end');
+      }
+    });
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Slider Circled",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "section_title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "product_sub_name",
+          "label": "Sub Name"
+        },        
+        {
+          "type": "textarea",
+          "id": "product_description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "picture",
+          "label": "Picture"
+        }
+      ]
+    }
+  ],    
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Slider Circled",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

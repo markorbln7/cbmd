@@ -1,0 +1,141 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">  
+  <div class="cbmd_slider_rect_container Highlights_container">
+    <p class="title">{{section.settings.section_title}}</p>
+    <div class="cbmd_slider_rec_items">
+      {%- for block in section.blocks -%}
+        {%- assign name = block.settings.item_name -%}
+        {%- assign description = block.settings.item_description -%}
+        {%- assign picture = block.settings.picture -%} 
+        {%- if name != blank and description != blank and picture != blank -%}
+
+          <div class="item">
+            <div class="image_area">
+              <div class="image" style="background-image: url({{ picture | img_url: 'master' }})"></div>
+            </div>
+            
+            <div class="content">
+              <p class="name">{{- name -}}</p>
+              <p class="description">{{- description -}}</p>
+              <p class="read_more"><a class="Link--cbd" target="_blank" href="{{block.settings.link}}">Read More</a></p>
+            </div>
+          </div>
+
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>  
+<style>
+  .cbmd_slider_rect_container {
+    background: {{section.settings.background_color}};
+  }
+</style>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    initRectSlider();
+    $( window ).resize(function() {
+      initRectSlider();   
+    });
+
+
+  });
+
+  function initRectSlider() {
+    if (window.innerWidth > 1230) {
+      if ($(".cbmd_slider_rect_container").find(".slick-initialized").length > 0) 
+        $('.cbmd_slider_rec_items').slick('unslick');
+    }
+    else {
+      if ($(".cbmd_slider_rect_container").find(".slick-initialized").length == 0) 
+        initSlick();
+    }
+  }
+
+  function initSlick() {
+    $('.cbmd_slider_rec_items').slick({
+      centerMode: false,
+      infinite: false,
+      centerPadding: '0px',
+      slidesToShow: 2,
+      arrows: false,
+      variableWidth: true,
+      variableHeight: true,
+      responsive: [
+        {
+          breakpoint: 1080,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 2
+          }
+        },        
+        {
+          breakpoint: 830,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });    
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Slider Rectangle",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "textarea",
+      "id": "section_title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "item_name",
+          "label": "Name"
+        },
+        {
+          "type": "textarea",
+          "id": "item_description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "picture",
+          "label": "Picture"
+        },
+        {
+          "type": "text",
+          "id": "link",
+          "label": "Link"
+        }        
+      ]
+    }
+  ],    
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Slider Rectangle",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

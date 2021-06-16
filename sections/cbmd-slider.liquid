@@ -1,0 +1,223 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd" class="Highlights_products_container_homepage">
+  <div class="Highlights_products_container Highlights_container with-mobile-swipe-notice rbln-container">
+    <p class="Highlights_heading t-red">{{section.settings.highlight_heading}}</p>
+    <p class="h1-t mw-title-20">{{section.settings.highlight_title}}</p>
+    <div class="Highlights_products">
+      <p class="Highlights_products_description">{{section.settings.description}}</p>
+      <div class="Highlights_products_items row-eq-height">
+        <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+        {%- for block in section.blocks -%}
+          {%- assign product_name = block.settings.product_name -%}
+          {%- assign product_sub_name = block.settings.product_sub_name -%}
+          {%- assign product_description = block.settings.product_description -%}
+          {%- assign product_usage = block.settings.product_usage -%}
+          {%- assign picture = block.settings.picture -%}
+          {%- assign picture_hover = block.settings.picture_hover -%}
+          {%- assign product = all_products[block.settings.product_link] -%}
+          {%- assign product_link = block.settings.button_link -%}
+          {%- assign product_sub_heading = block.settings.sub_heading  -%}
+          {%- assign button_name = block.settings.button_name  -%}
+
+          {%- if product_name != blank and product_sub_name != blank and product_description != blank and picture != blank -%}
+
+              {% case product_name %}
+              {% when 'RAW' %}
+              {% assign q = 'RAW' %}
+              {% when 'PMT' %}
+              {% assign q = 'PMT' %}
+              {% when 'PSY' %}                        
+              {% assign q = 'PSY' %}
+              {% when 'DRM' %}                        
+              {% assign q = 'DRM' %}
+              {% endcase %}
+
+            <div class="Highlights_products_item box Highlights_products_item_rbln swiper-slide h-100">
+              <div class="Highlights_products_content">
+                <p class="Highlights_products_name">{{- product_name -}}</p>
+                <p class="Highlights_products_sub_name">{{- product_sub_name -}}</p>
+                <p class="Highlights_products_usage" data-mh="slider-text">{{- product_usage -}}</p>
+                <p class="Highlights_products_exp" data-mh="slider-exp"><span class="Highlights_for">{{- product_sub_heading -}} &nbsp</span> {{- product_description -}}</p>
+              </div>
+
+              {% comment %} <div class="highlight_products_images">
+                {%- if picture_hover != blank -%}
+                  <img class="highlight_products_image highlight_products_image_hover" src="{{ picture_hover | img_url: 'master' }}" />
+                {%- endif -%}
+                <img class="highlight_products_image highlight_products_image_main" src="{{ picture | img_url: 'master' }}" />
+              </div> {% endcomment %}
+
+              <div class="Highlights_products_content">
+                <a href="https://cbmd.com/pages/products" class="Highlights_products_link Button Button--cbd Button--red">{{- button_name -}}</a>
+              </div>
+            </div>
+
+          {%- endif -%}
+        {%- endfor -%}
+        </div>
+       
+        </div> 
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    {% comment %} <div class="mobile-swipe-notice">Swipe <img src="{{ 'mobile-swipe-icon.svg' | asset_url }}" /></div> {% endcomment %}
+  </div>
+</section>
+<style>
+  {%- if section.settings.background_color -%}
+  #section-{{section.id}} .Highlights_products_container {
+    background: {{section.settings.background_color}};
+  }
+  {%- endif -%}
+</style>
+<script>
+    const numberOfSlides = document.querySelectorAll('.swiper-slide').length;
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 15,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        630: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 45,
+        },
+        1160: {
+          slidesPerView: 4,
+          spaceBetween: 45,
+        },
+        1600: {
+          slidesPerView: 4,
+          spaceBetween: 45,
+        },
+      }
+      
+    });
+</script>
+{% comment %} <script>
+$('.Highlights_products_items').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  dots:false,
+  adaptiveHeight: true,
+  responsive: [
+    {
+      breakpoint: 1030,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 760,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 630,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+</script> {% endcomment %}
+{% schema %}
+{
+  "name": "Slider",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "highlight_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "highlight_title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "product_sub_name",
+          "label": "Sub Name"
+        },
+        {
+          "type": "text",
+          "id": "sub_heading",
+          "label": "Sub Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "product_usage",
+          "label": "Description"
+        },
+        {
+          "type": "textarea",
+          "id": "product_description",
+          "label": "Formulated For Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "picture",
+          "label": "Picture"
+        },
+        {
+          "type": "image_picker",
+          "id": "picture_hover",
+          "label": "Hover Picture"
+        },
+        {
+          "type": "text",
+          "id": "button_name",
+          "label": "Button Name"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Product"
+        }
+      ]
+    }
+  ],    
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Slider",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

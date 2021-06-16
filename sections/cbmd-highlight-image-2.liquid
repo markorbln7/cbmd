@@ -1,0 +1,99 @@
+{%- render 'image-sections', section: section -%}
+
+{% schema %}
+{
+  "name": "Highlight Image-2",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "select",
+      "id": "highlight_style",
+      "label": "Layout style",
+      "options": [
+        {
+          "value": "left_image",
+          "label": "Left Image"
+        },
+        {
+          "value": "right_image",
+          "label": "Right Image"
+        }        
+      ],
+      "default": "left_image"
+    },
+    {
+      "type": "image_picker",
+      "id": "highlight_image",
+      "label": "Image"
+    },      
+    {
+      "type": "text",
+      "id": "highlight_video",
+      "label": "Background Video",
+      "default" : "https://cdn.shopify.com/s/files/1/0321/8472/9739/files/cbmd-find-your-cbd.mp4?v=1585816723"
+    },         
+    {
+      "type": "text",
+      "id": "highlight_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "highlight_title",
+      "label": "Title"
+    },    
+    {
+      "type": "textarea",
+      "id": "highlight_description",
+      "label": "Description"
+    },        
+    {
+      "type": "header",
+      "content": "Action"
+    },
+    {
+      "type": "select",
+      "id": "action_style",
+      "label": "Action Style",
+      "options": [
+        {
+          "value": "link",
+          "label": "Link"
+        },
+        {
+          "value": "button",
+          "label": "Button"
+        },
+        {
+          "value": "submit_form",
+          "label": "Submit Modal"
+        }        
+      ],
+      "default": "link"
+    },
+    {
+      "type": "text",
+      "id": "action_title",
+      "label": "Action Title",
+      "default": "Learn more"
+    },
+    {
+      "type": "text",
+      "id": "action_link",
+      "label": "Action Link"
+    }    
+  ],
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Highlight Image-2",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

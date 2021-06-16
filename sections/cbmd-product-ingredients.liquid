@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<section>
+ <div class="content_box Highlights_container rbln-container in-cont">
+    <h2 class="h2">Key </br> Ingredients</h2>
+
+
+    <div class="swiper-container ingredients-container">
+        <div class="swiper-wrapper">
+
+        {% for ingridient in product.metafields.inTitle.inTitle %} 
+        {%- assign ingridientTitle = ingridient -%}
+          <div class="swiper-slide align-items-center">
+            <img src="{{ product.metafields.inImage.inImage[forloop.index0] }}">
+            <div class="keyIngredients_box">
+              <h2 class="h2">{{- ingridientTitle -}} </h2>
+              <div class="p_medium">
+                   <p>{{ product.metafields.inSubtitle.inSubtitle[forloop.index0] }}</p>
+                   <p>{{ product.metafields.inText.inText[forloop.index0] }}</p>
+              </div>
+            </div>
+          </div>
+          {%- endfor -%} 
+         
+          
+        </div>
+      </div>
+
+
+<div class="swiper-pagination ingredients-pagination col-col-pagination col-pagination-bullet"></div>
+
+    <div class=" col-sm-9 align-items-start p_xsmall keyIngredients_description">
+        <p> <span style="font-weight:600;">Other Ingredients:</span> {{product.metafields.otherIn.otherIn}}/p>
+    </div>       
+  </div>
+  </section>
+
+
+<script>
+    var swiperIngredient = new Swiper('.ingredients-container', {
+      slidesPerView: 1,
+      spaceBetween: 45,
+      pagination: {
+        el: '.ingredients-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        501: {
+          slidesPerView: 2,
+        },
+        793: {
+          slidesPerView: 3,
+        },
+        1110: {
+          slidesPerView: 3,
+        },
+      }
+      
+    });
+</script>

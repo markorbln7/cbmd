@@ -1,0 +1,57 @@
+<section data-section-id="{{ section.id }}" data-section-type="cbmd"> 
+<div class="vh-100-r7" style="margin-top:4rem">
+    <div class="container_PMT Highlights_container s" >
+        <div class="flex-container_PMT">
+        <h1 class="box">PMT</h1>
+        <h2 class="box">Pain Support </br>CBD Topical Cream</h2>
+        <p class="box"><span style="color:#EB161E;">Formulated for</span> Pain, Muscle Soreness,<br> Joint Stiffness, Backaches, Discomfort</p>
+        <button class="box"><a href="https://cbmd.com/products/cbd-topical-cream">Buy now</a></button>
+        </div>
+    
+        <img class="img_available" src="https://cdn.shopify.com/s/files/1/0321/8472/9739/files/Group_614.png?v=1611144184">
+        
+        <div class="flex-container_PMT2" data-scroll data-scroll-direction="vertical" data-scroll-speed="1" data-scroll-class="appear" data-scroll-repeat="true">
+        <img class="img_PMT" src="https://cdn.shopify.com/s/files/1/0321/8472/9739/files/Screen_Shot_2021-01-26_at_13.23.22.png?v=1611663816">
+        </div>
+    </div>
+</div>
+</section>
+{% schema %}
+{
+  "name": "Highlighted Product",
+  "settings": [
+    {
+      "type": "text",
+      "id": "hp_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "hp_subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "textarea",
+      "id": "hp_text",
+      "label": "Text"
+    },
+    {
+      "type": "product",
+      "id": "hp_link",
+      "label": "Product Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "hp_image",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Highlighted product",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

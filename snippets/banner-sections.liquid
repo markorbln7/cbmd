@@ -1,0 +1,174 @@
+<section id="section-{{ section.id }}" class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="timeline" data-scroll data-scroll-repeat data-scroll-speed="-1.5">
+  {%- capture section_settings -%}
+  {
+    "isSmallBackground": {% if section.settings.is_small_background %}true{% else %}false{% endif %}
+  }
+  {%- endcapture -%}
+  {%- if sidebar -%}
+    <div class="banner_sidebar">
+    </div>  
+  {%- endif -%}
+
+  <div class="rbln-container banner_background {% if section.settings.foreground_style == "full_image" %} full_foreground {% elsif section.settings.foreground_style == "side_image" %} {% if section.settings.foreground_position == "right" %} right_foreground {% else %} left_foreground {% endif %} {% elsif section.settings.foreground_style == "half_image" %} half_foreground {% else %} no_foreground {% endif %}">
+    {%- if section.settings.banner_background != blank and section.settings.foreground_style != "half_image" -%}
+    <div class="banner_backgroundImageWrapper">
+      <img class="banner_backgroundImage"
+         src="{{ section.settings.banner_background | img_url: 'master' }}"
+         alt="{{ section.settings.banner_background.alt | default: shop.name | escape }}">
+    </div>
+    {%- endif -%}
+
+
+    
+    {%- capture banner_content -%}
+      <div class="banner_content" data-scroll data-scroll-direction="vertical" data-scroll-speed="-2" data-scroll-class="appear" data-scroll-repeat="true">
+        <div class="banner_content_first">
+          <p class="banner_content_title">{{ section.settings.banner_title }}</p>
+          <p class="banner_content_text">{{- section.settings.banner_text -}}</p>
+
+          {%- if section.settings.button_link and section.settings.button_text-%}
+            <div class="SectionButton">
+              <a href="{{ section.settings.button_link }}" class="Button Button--cbd Button--red">{{ section.settings.button_text | escape }}</a>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endcapture -%}
+
+    <div class="banner_contentWrapper">
+      {{ banner_content }}
+    </div>
+
+    {%- if section.settings.foreground_style == "half_image" and section.settings.banner_background != blank -%}
+      <div class="banner_backgroundImageWrapper">
+        <img class="banner_backgroundImage"
+           src="{{ section.settings.banner_background | img_url: 'master' }}"
+           alt="{{ section.settings.banner_background.alt | default: shop.name | escape }}">
+      </div>    
+    {%- endif -%}    
+
+  </div>
+</section>
+
+
+
+<style>
+
+  .banner_sidebar {
+    width: 176px;
+    background: {{ section.settings.sidebar_background }};
+    height: 100%;
+  }
+
+
+  .banner_backgroundImageWrapper {
+
+    {%- if section.settings.foreground_style == "full_image" -%}
+      padding: 0 !important;
+    {%- else -%}
+      {%- if section.settings.foreground_position == "right" -%}
+        justify-content: flex-end;
+      {%- else -%}
+        justify-content: flex-start;
+      {%- endif -%}
+      
+    {%- endif -%}
+  }
+
+
+  .banner_content .banner_content_first {
+    /*width: 50%;*/
+  }
+  .banner_content .banner_content_second {
+    width: 50%;
+  }
+
+
+  {%- if section.settings.is_small_background -%}
+    .banner_background {
+      display: block; 
+    }
+    .banner_backgroundImage {
+      height: 50%;
+      width: 100%;
+    }
+    .banner_content {
+      position: relative;
+      padding: 20px;
+      top: 0px;
+    }
+  {%- endif -%}  
+
+
+  {%- if section.settings.banner_background == blank -%}
+    .banner_content {
+      position: absolute;
+      padding: 80px;
+      top: 30%;
+    }
+  {%- endif -%}  
+
+</style>
+<script>
+  
+  document.documentElement.style.setProperty('--header-height', document.getElementById('shopify-section-header').offsetHeight + 'px');
+  document.documentElement.style.setProperty('--screen-size', window.innerWidth + 'px');
+  document.documentElement.style.setProperty('--banner-background-height', $(".banner_background").height() + 'px');
+  document.documentElement.style.setProperty('--banner-content-height', $(".banner_content").height() + 'px');
+  $( window ).resize(function() {
+    document.documentElement.style.setProperty('--banner-background-height', $(".banner_background").height() + 'px');
+    document.documentElement.style.setProperty('--screen-size', window.innerWidth + 'px');
+    document.documentElement.style.setProperty('--banner-content-height', $(".banner_content").height() + 'px');
+  });  
+  document.documentElement.style.setProperty('--header-height', document.getElementById('shopify-section-header').offsetHeight + 'px');
+
+  $(document).ready( function () {
+
+    {%- if sidebar -%}
+      $(".HorizontalList__Item").hover( function  () {
+        if ($(this).find(".MegaMenu").length > 0) {
+          $(".Header").css("background", "#EB161E");
+        }
+      });
+
+
+      $("#section-header").mouseleave( function  () {
+        if (window.innerWidth > 1279 && $(document).scrollTop() == 0) {
+          $(".Header").css("background", "transparent"); 
+        }
+      });
+
+      $( window ).resize(function() {
+        if (window.innerWidth > 1279) {
+          $(".Header").css("background", "transparent"); 
+        }      
+        else {
+          $(".Header").css("background", "#EB161E"); 
+        }
+      });
+
+    {%- endif -%}
+
+    setTimeout(function(){
+      let query = getUrlParameter('q');
+      if (query) {
+        switch (query) {
+          case "faq":
+            var element = document.querySelector("#shopify-section-cbmd-faq-ourscience");
+            element.scrollIntoView();                  
+          break;
+        }
+
+      }
+    }, 1000);
+
+
+  });
+
+  function getUrlParameter(name) {
+      name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+      var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+      var results = regex.exec(location.search);
+      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  };  
+</script>

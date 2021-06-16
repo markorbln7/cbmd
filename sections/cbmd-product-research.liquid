@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+<section id="r">
+<div class="content_box Highlights_container rbln-container">
+    <div class="d-flex flex-row research">
+        <div class="col-sm-5 align-items-start research_title">
+            <h2 class="h2">Truth, </br> not trends</h2>
+            <div class="p">
+                <p>Our physicians develop scientifically structured 
+                formulations based on available evidence.</p>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-container research-container">
+        <div class="swiper-wrapper">
+        {% for research in product.metafields.researchText.researchText %} 
+        {%- assign researchText = research -%}
+            <div class="swiper-slide align-items-center p_small">
+                    <p>{{- researchText -}}</p>
+            </div> 
+        {%- endfor -%} 
+        </div>
+    </div>
+    <div class="swiper-pagination research-pagination col-col-pagination col-pagination-bullet"></div>
+</div>
+</section>
+
+  <script>
+    var swiperResearch= new Swiper('.research-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: '.research-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        501: {
+          slidesPerView: 2,
+        },
+        793: {
+          slidesPerView: 3,
+        },
+        1110: {
+          slidesPerView: 3,
+        },
+      }
+      
+    });
+</script>

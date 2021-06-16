@@ -1,0 +1,33 @@
+<div class="ProductMeta">
+
+  <h1 class="ProductMeta__Title Heading u-h2 p-h1">
+    {%- if template.name == 'product' -%}
+      {{ product.vendor }}
+    {%- else -%}
+      <a href="{{ product.url }}">{{ product.vendor }}</a>
+    {%- endif -%}
+  </h1>
+  <h2 class="ProductMeta__Title Heading u-h2 p-h2">
+    {%- if template.name == 'product' -%}
+      {{ product.title }}
+    {%- else -%}
+      <a href="{{ product.url }}">{{ product.title }}</a>
+    {%- endif -%}
+  </h1>
+  <div class="p-p">
+  {{ product.description | replace: 'data-section-type', 'data-section-type-placeholder' }} 
+  </div>
+  <div class="pdp-stars mb-3">
+    <div class="yotpo bottomLine"
+      data-appkey="r2ZWM7yv5pG8hZim69WPlrRXz6zDK7fF2omBldHf"
+      data-domain="{{shop.permanent_domain | escape }}"
+      data-product-id="{{ product.id }}"
+      data-product-models="{{ product.id }}"
+      data-name="{{ product.title | escape }}"
+      data-url="{{ shop.url }}{{ product.url }}"
+      data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
+      data-description="{{ product.description | escape }}"
+      data-bread-crumbs="{% for tag in product.tags %}{{ tag | escape }};{% endfor %}">
+  </div>
+</div>
+</div>

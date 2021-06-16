@@ -1,0 +1,104 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">  
+<section class="a-certified">
+  <div class="labCertified">
+    <div class="labCertified_box labCertified_box-left"> 
+      <h4 class="h6_red">Independently tested CBD</h4>
+      <h1 class="h2">Lab certified. </br>
+          Physician approved.</h1>
+      <div class="p">In an industry that lacks federal guidelines for safety, 
+      efficacy, and manufacturing protocols around CBD products, 
+      we apply a medical and scientific standard to all of our processes. 
+      We rigorously evaluate every ingredient and formulation, and we 
+      provide transparency to help empower informed decisions.</div>
+      <img class="img_COA"   src="https://cdn.shopify.com/s/files/1/0321/8472/9739/files/Frame.svg?v=1618574865">
+        <div class="COA_box_bottom">
+          <h1 class="p_small">Learn about your batch</h1>
+          <div class="button_view_COA" >
+            <input id="myInput" type="text" class="input_number-COA" name="quantity">
+            <input type="submit" class="view_COA klikMe"  value="View COA">
+          </div>
+          <h2 class="digit_error">Batch ID not found</h2>
+          <h2>Six digits found on product label</h2>
+        </div>
+    </div>
+    <div class="labCertified_box labCertified_box-right"> 
+      <h2 class="h6_bold">Ingredient Measured  <span style="float:right;">
+        Our Standard</span></h2>
+      <div class="accortion_COA">
+        <div class="accordion_box-COA ">
+          <input type="checkbox" name="tab-COA" id="tab-1-COA">
+          <label class="tab-label-COA" for="tab-1-COA">CBD <span style="float:right; padding-right: 3.6rem;">
+        >20%</span></label>
+          <div class="tab__content-COA p">
+            Potency is important when calculating the safe recommended
+              dose and respective toxicity levels.
+          </div>
+        </div>
+        <div class="accordion_box-COA ">
+          <input type="checkbox" name="tab-COA" id="tab-2-COA">
+          <label class="tab-label-COA" for="tab-2-COA">THC  <span style="float:right; padding-right: 3.6rem;">
+        <0.0% </span></label>
+          <div class="tab__content-COA p">
+            Potency is important when calculating the safe recommended
+              dose and respective toxicity levels.
+          </div>
+        </div>
+        <div class="accordion_box-COA ">
+          <input disabled type="checkbox" name="tab-COA" id="tab-3-COA">
+          <label class="tab-label-COA" for="tab-3-COA">Pesticides  <span style="float:right; padding-right: 3.6rem;">
+        ND<sup>*</sup></span></label>
+          <div class="tab__content-COA p">
+            Potency is important when calculating the safe recommended
+              dose and respective toxicity levels.
+          </div>
+        </div>
+        <div class="accordion_box-COA">
+          <input disabled  type="checkbox" name="tab-COA" id="tab-4-COA">
+          <label class="tab-label-COA" for="tab-4-COA">Residual solvents<span style="float:right; padding-right: 3.6rem;">
+        ND<sup>*</sup></span></label>
+          <div class="tab__content-COA p">
+            Potency is important when calculating the safe recommended
+              dose and respective toxicity levels.
+          </div>
+        </div>
+        <div class="accordion_box-COA">
+          <input disabled  type="checkbox" name="tab-COA" id="tab-5-COA">
+          <label class="tab-label-COA" for="tab-5-COA" style="border-bottom: 1px solid #DCDCDC;">Heavy metals<span style="float:right; padding-right: 3.6rem;">
+        ND<sup>*</sup></span></label>
+          <div class="tab__content-COA p">
+            Potency is important when calculating the safe recommended
+              dose and respective toxicity levels.
+          </div>
+        </div>
+        <div class="p">*Non-detectable levels</div>
+      </div>
+      <div class="mobile_view">
+        <h1>Learn about your batch</h1>
+        <div class="button_view_COA" >
+            <input id="myInput" type="text" class="input_number-COA" name="quantity">
+            <input type="submit" class="view_COA klikMe"  value="View COA">
+        </div>
+        <h2 class="digit_error">Batch ID not found</h2>
+        <h2>Six digits found on product label</h2>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+<script>
+$('.klikMe').on("click", function () {
+      getInputValue();
+})
+function getInputValue(){
+    // Selecting the input element and get its value 
+    var inputVal = document.getElementById("myInput").value;
+    if(inputVal == '20214A') {
+      $('.digit_error').hide();
+       window.open('https://cdn.shopify.com/s/files/1/0321/8472/9739/files/Phytobiomed_Inc._PMT_Pain_Support_Batch_20214A.pdf?v=1621607662');
+    } else {
+       $('.digit_error').show();
+    }
+    console.log('VALUE', inputVal);
+}
+</script>

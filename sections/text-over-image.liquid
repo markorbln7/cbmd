@@ -1,0 +1,47 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd" style="overflow: hidden;"> 
+<div data-scroll data-scroll-repeat data-scroll-speed="-2" id="start" class="baskground_CBMD" style="background-image: url({{section.settings.text_over_image_image | img_url: 'master'}});">
+  <div></div>
+  <div class="flex-container_CBMD" data-scroll data-scroll-speed="3" data-scroll-call="dynamicColor" data-scroll-repeat="">
+  <h3>{{section.settings.text_over_image_headline}}</h3>
+  <h1>{{section.settings.text_over_image_title}}</h1>
+  <p>{{section.settings.text_over_image_text}}</p>
+  <button data-action="open-modal" aria-controls="modal-general-newsletter">Talk with us</button>
+
+  </div>
+</div>
+</section>
+
+{% schema %}
+{
+  "name": "Text Over Image",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text_over_image_headline",
+      "label": "Headline"
+    },
+    {
+      "type": "text",
+      "id": "text_over_image_title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "text_over_image_text",
+      "label": "Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "text_over_image_image",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Text over image",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">  
+<div class="product-dosing-wrapper position-relative">
+    <div class="product-dosing">
+        <div class="red-prehead">Made for you</div>
+        <div class="heading2 color-white">Dosing Instructions</div>
+        <div class="swiper-container dosing-container">
+          <div class="swiper-wrapper">
+          {% assign i = 1 %}
+          {% for dosing in product.metafields.dosingTItle.dosingTItle %} 
+          {%- assign dosingTitle = dosing -%}
+          <div class="swiper-slide d-flex flex-column dosingInstructions_box">
+              <h2 class="h3_white"> {{- dosingTitle -}} </br>
+                  <span style=" font-weight: 400;">0{{- i -}}</span></h2>
+              <div class="h5_white" data-mh="dosing-cards">
+              <p>{{ product.metafields.dosingText.dosingText[forloop.index0] }}</p>
+              </div>
+          </div>
+          {% assign i = i | plus:1 %}
+          {%- endfor -%} 
+
+          </div>
+        </div>
+        <div class="swiper-pagination dosing-pagination col-col-pagination col-pagination-bullet"></div>
+    </div>
+</div>
+</section>
+<script>
+    var swiperDosing = new Swiper('.dosing-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: '.dosing-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        501: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        732: {
+          slidesPerView: 3,
+          spaceBetween: 45,
+        }
+      }
+      
+    });
+</script>

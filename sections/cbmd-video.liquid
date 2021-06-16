@@ -1,0 +1,128 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">
+  <div class="Highlights_image_container Highlights_image_background">
+    <div class="videooverlay"></div>
+    <div class="Highlights_item Highlights_first">
+      {%- if section.settings.highlight_video != blank -%}
+        {%- if section.settings.autoplay -%}      
+        <video frameborder="0" allowfullscreen playsinline muted autoplay loop>
+            <source type="video/mp4" src="{{section.settings.highlight_video}}">
+            <source type="video/webm" src="{{section.settings.highlight_video_mobile}}">              
+        </video>
+
+        {%- else -%}
+          <video frameborder="0" allowfullscreen playsinline muted autoplay loop>
+              <source type="video/mp4" src="{{section.settings.highlight_video}}">
+              <source type="video/webm" src="{{section.settings.highlight_video_mobile}}">
+          </video>        
+        {%- endif -%}
+      {%- else -%}     
+        <img class="highlight_image" src="{{ section.settings.highlight_image | img_url: 'master' }}" srcset="{{ section.settings.highlight_image | img_url: 'master' }} 1x, {{ section.settings.highlight_image | img_url: 'master', scale: 2 }} 2x" alt="{{ section.settings.highlight_image.alt | default: shop.name | escape }}">          
+      {%- endif -%}
+
+    </div>
+
+    <div class="Highlights_item Highlights_second">
+      <div class="Highlights_item_content">
+        <p class="Highlights_heading">{{section.settings.highlight_heading}}</p>
+        <p class="Highlights_title">{{section.settings.highlight_title}}</p>
+        <p class="Highlights_video_description">{{section.settings.highlight_description}}</p>
+
+        {%- if section.settings.subscriber -%}
+        <form id="video-subscription">
+          <div class="Highlights_subscriber Button--group">  
+            <input type="email" name="email" class="Form__Input Input--cbd" placeholder="{{ 'home_page.highlights.input' | t }}" required>
+            <input type="submit" class="Button Button--cbd Button--red" value="{{ 'home_page.highlights.submit' | t }}" />
+          </div>                      
+        </form>
+        {%- endif -%}
+        {%- if section.settings.autoplay -%}
+        {%- else -%}
+          <div class="video_play_controller_area">  
+            <div class="video_play_controller">
+              <!--svg width="56" height="40" viewBox="0 0 56 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M54.8297 6.24613C54.1857 3.78742 52.2881 1.85129 49.8788 1.19419C45.5118 5.96046e-07 28 0 28 0C28 0 10.4882 5.96046e-07 6.12118 1.19419C3.71191 1.85129 1.81427 3.78742 1.17027 6.24613C-2.38419e-07 10.7023 0 20 0 20C0 20 -2.38419e-07 29.2974 1.17027 33.7539C1.81427 36.2126 3.71191 38.1487 6.12118 38.8061C10.4882 40 28 40 28 40C28 40 45.5118 40 49.8788 38.8061C52.2881 38.1487 54.1857 36.2126 54.8297 33.7539C56 29.2974 56 20 56 20C56 20 56 10.7023 54.8297 6.24613Z" fill="#EB161E"/>
+                <path d="M22.166 11.7646V28.2352L37.3327 20.0003L22.166 11.7646Z" fill="white"/>
+              </svg-->
+            </div>
+
+            <a class="Button Button--cbd Button--red"  data-action="open-modal" aria-controls="modal-general-newsletter" href="{{section.settings.action_link}}">{{section.settings.action_name}}</a>
+          </div>                    
+        {%- endif -%}        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Background Video",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "highlight_video",
+      "label": "Background Video",
+      "default" : "https://cdn.shopify.com/s/files/1/0321/8472/9739/files/cbmd-find-your-cbd.mp4?v=1585816723"
+    },      
+    {
+      "type": "text",
+      "id": "highlight_video_mobile",
+      "label": "Background Video for mobile"
+    },      
+    {
+      "type": "text",
+      "id": "highlight_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "highlight_title",
+      "label": "Title"
+    },    
+    {
+      "type": "textarea",
+      "id": "highlight_description",
+      "label": "Description"
+    },        
+    {
+      "type": "header",
+      "content": "Action"
+    },
+    {
+      "type": "text",
+      "id": "action_name",
+      "label": "Action"
+    },    
+    {
+      "type": "url",
+      "id": "action_link",
+      "label": "Link"
+    },     
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Need Autoplay?",
+      "default": false
+    },    
+    {
+      "type": "checkbox",
+      "id": "subscriber",
+      "label": "Add Subscrbier?",
+      "default": false
+    }    
+  ],
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Background Video",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

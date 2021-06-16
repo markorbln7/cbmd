@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<div class="new-home">
+{% section 'higlighted-product-collection-page' %} 
+{% section 'b-image-left-template' %}
+{% section 'collection-list-sliders' %}
+{% section 'a-text-over-image' %}
+</div>
+
+
+{% for product in collections.all.products %}
+<div id="modal-product-subscription-{{product.title}}" class="Modal Modal-Popup-Subscription Modal--address Modal--small" aria-hidden="true" role="dialog" data-scrollable>
+      <button class="Modal__Close Modal__Close--outside" data-action="close-modal">{%- render 'icon' with 'close' -%}</button>
+
+       <header class="Modal__Header">
+        <h3 class="Modal__Title Heading u-h2 modal-head">Thank you for your interest.</h3>
+        <p class="Modal__Description modal-desc">We will notify you when the <br><span style="font-weight:bold;">{{product.title}}</span> is available. </p>
+      </header>
+
+      <div class="Modal__Content">
+
+        <form id="product-subscription">
+          <div class="Form__Item">
+            <input type="email" class="Form__Input Input--cbd" name="email" value="" placeholder="{{ 'overview.email.placeholder' | t }}">
+          </div>
+
+          {% comment %} <div class="Form__Item">
+            <textarea class="Form__Input Input--cbd Input--textarea" name="message" value="" placeholder="Message"></textarea>
+          </div> {% endcomment %}
+
+          <div class="Form__Item">
+            <div class="Form__CheckboxWrapper">
+              <input type="checkbox" class="Form__Checkbox" name="cbmd_news" id="cbmd_news[product-subscription]" value="0">
+              {% render 'icon' with 'checkmark_cbmd' %}
+
+              <label for="cbmd_news[product-subscription]">{{ 'overview.news_title' | t }}</label>
+            </div>
+          </div>
+
+          <input type="submit" class="Button Button--cbd Button--red" value="{{ 'overview.notify_me' | t }}">
+        </form>
+      </div>
+    </div>
+    {% endfor %}

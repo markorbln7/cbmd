@@ -1,0 +1,71 @@
+{% comment %} {% section 'banner-contact' %} {% endcomment %}
+<div id="shopify-section-banner-contact" class="shopify-section shopify-section--banner"><section id="section-banner-contact" class="Section Section--spacingNormal is-inview" data-section-id="banner-contact" data-section-type="timeline"><div class="rbln-container banner_background  half_foreground "><div class="banner_contentWrapper">
+      <div class="banner_content">
+        <div class="banner_content_first">
+          <p class="banner_content_title">It’s time to demand more from your CBD.</p>
+          <p class="banner_content_text">Get in touch with us if you would like more information on our physician-formulated CBD products.</p></div>
+      </div>
+    </div><div class="banner_backgroundImageWrapper">
+        <img class="banner_backgroundImage" src="//cdn.shopify.com/s/files/1/0321/8472/9739/files/cbmd-contact-header_2x_0d2bfabe-37f3-487b-a21b-aa5f5a403f7d.jpg?v=1586833719" alt="CBMD">
+      </div></div>
+</section>
+
+
+
+<style>
+
+  .banner_sidebar {
+    width: 176px;
+    background: #eb161e;
+    height: 100%;
+  }
+
+
+  .banner_backgroundImageWrapper {justify-content: flex-end;}
+
+
+  .banner_content .banner_content_first {
+    /*width: 50%;*/
+  }
+  .banner_content .banner_content_second {
+    width: 50%;
+  }</style>
+<script>
+  
+  document.documentElement.style.setProperty('--header-height', document.getElementById('shopify-section-header').offsetHeight + 'px');
+  document.documentElement.style.setProperty('--screen-size', window.innerWidth + 'px');
+  document.documentElement.style.setProperty('--banner-background-height', $(".banner_background").height() + 'px');
+  document.documentElement.style.setProperty('--banner-content-height', $(".banner_content").height() + 'px');
+  $( window ).resize(function() {
+    document.documentElement.style.setProperty('--banner-background-height', $(".banner_background").height() + 'px');
+    document.documentElement.style.setProperty('--screen-size', window.innerWidth + 'px');
+    document.documentElement.style.setProperty('--banner-content-height', $(".banner_content").height() + 'px');
+  });  
+  document.documentElement.style.setProperty('--header-height', document.getElementById('shopify-section-header').offsetHeight + 'px');
+
+  $(document).ready( function () {setTimeout(function(){
+      let query = getUrlParameter('q');
+      if (query) {
+        switch (query) {
+          case "faq":
+            var element = document.querySelector("#shopify-section-cbmd-faq-ourscience");
+            element.scrollIntoView();                  
+          break;
+        }
+
+      }
+    }, 1000);
+
+
+  });
+
+  function getUrlParameter(name) {
+      name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+      var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+      var results = regex.exec(location.search);
+      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  };  
+</script></div>
+{% section 'cbmd-slider-noimage' %}
+{% section 'cbmd-instagram' %}
+{% section 'cbmd-slider-noimage-1' %}

@@ -1,0 +1,72 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">  
+<div class="stars">
+    <h4 class="h6_red">CBMD PMT Topical Cream</h4>
+        <h1 class="h2">Customer Reviews</h1>
+        <div class="yotpo yotpo-main-widget" 
+        data-product-id="{{ product.id }}" 
+        data-name="{{ product.title | escape }}" 
+        data-url="{{ shop.url }}{{ product.url }}"
+        data-description="{{ product.description | escape }}"></div>
+        {% comment %} <div class="klik-holder">
+            <button class="klik">More CBMD reviews</button>
+        </div> {% endcomment %}
+</div>
+</section>
+<style>
+.yotpo .yotpo-pager .yotpo-page-element {
+    margin-right: 15px !important;
+    color: black !important;
+}
+.yotpo-pager {
+    font-size:.9rem !important;
+    line-height:1.1 !important;
+}
+.yotpo-review:nth-child(13) {
+    display:block !important;
+}
+.yotpo .yotpo-pager {
+    width:100% !important;
+}
+</style>
+{% comment %} 
+<style>
+.yotpo-hidden {
+    display:none !important;
+}
+.yotpo-review {
+    display:none;
+}
+.yotpo-review:nth-child(4) {
+    display:block !important;
+}
+.yotpo-review:nth-child(5) {
+    display:block !important;
+}
+.yotpo-review:nth-child(6) {
+    display:block !important;
+}
+.klik-holder {
+    text-align:center;
+}
+.klik {
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: .8rem;
+    line-height: 1.5;
+    display:block;
+    cursor:pointer;
+    margin:0 auto;
+    text-decoration:underline;
+}
+</style>
+<script>
+$('.klik').on("click", function () {
+    $('.yotpo-review:nth-child(7)').css('display','block').hide().fadeIn();
+    $('.yotpo-review:nth-child(8)').css('display','block').hide().fadeIn();
+    $('.yotpo-review:nth-child(9)').css('display','block').hide().fadeIn();
+    $('.yotpo-review:nth-child(10)').css('display','block').hide().fadeIn();
+    $('.yotpo-review:nth-child(11)').css('display','block').hide().fadeIn();
+    $('.yotpo-review:nth-child(12)').css('display','block').hide().fadeIn();
+})
+    </script> {% endcomment %}

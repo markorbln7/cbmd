@@ -1,0 +1,348 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd" class="Highlights_products_container_overview">  
+  <div class="Highlights_products_container Highlights_container with-mobile-swipe-notice">
+    <p class="Highlights_heading">{{section.settings.highlight_heading}}</p>
+    <div class="Highlights_products">
+      <div class="Highlights_products_items">
+        {%- for block in section.blocks -%}
+          {%- assign collection = collections[block.settings.collection] -%}
+          {%- assign collection_description = block.settings.collection_description -%}
+            <div class="Highlights_products_item product_{{ collection.title | downcase }}" id="collection_item_{{ collection.id }}" data-id="{{ collection.id }}">
+              <div class="Highlights_products_content">
+                <p class="Highlights_products_name">{{- collection.title -}}</p>
+                <p class="Highlights_products_sub_name">{{- collection.description -}}</p>
+                <p class="Highlights_for">Formulated for</p>
+                <p class="Highlights_products_exp">{{- collection_description -}}</p>
+                <div class="tab_line {% if forloop.index != 1 %} hide {% endif %}"></div>
+              </div>
+            </div>
+        {%- endfor -%}
+      </div>
+    </div>
+    <div class="mobile-swipe-notice">Swipe <img src="{{ 'mobile-swipe-icon.svg' | asset_url }}" /></div> 
+  </div>
+  {%- capture collection_items -%}
+    {%- for block in section.blocks -%}
+      {%- assign collection = collections[block.settings.collection] -%}
+      {%- render 'collection-view-updated', block: block, collection: collection, index: forloop.index -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  <div class="collection_area">
+    <div class="collecton_views with-mobile-swipe-notice">
+      {{ collection_items }}
+    </div>
+  </div>
+</section>
+<style>
+  {%- if section.settings.background_color -%}
+  #section-{{section.id}} .Highlights_products_container {
+    background: {{section.settings.background_color}};
+  }
+  {%- endif -%}
+  #section-{{section.id}} .Highlights_products_container.with-mobile-swipe-notice .mobile-swipe-notice {
+    position: absolute;
+    bottom: 20px;
+    pointer-events: none;
+  }
+  #section-{{section.id}} .collecton_views.with-mobile-swipe-notice .mobile-swipe-notice {
+    margin-top: 0;
+  }
+</style>
+
+<script>
+$(document).ready(function(){
+
+
+    $("#section-{{ section.id }}").find(".Highlights_products_item").on('click', function () {
+      if (document.body.clientWidth >= 1280) {
+        var id = $(this).attr("data-id");
+        $(".collection_view").addClass("hide");
+        $(".collection_view").removeClass("show");
+        $(".collection_item_"+id).removeClass("hide");
+        $(".collection_item_"+id).addClass("show");
+
+        $(".tab_line").removeClass("show");
+        $(".tab_line").addClass("hide");
+        $(this).find(".tab_line").addClass("show");
+        $(this).find(".tab_line").removeClass("hide");
+      } else {
+        $(this).parents('.Highlights_products_items').slick('slickGoTo', $(this).index(), false);
+      }
+    });
+    setTimeout(function(){
+      let query = getUrlParameter('q');
+      if (query) {
+        $(".product_"+query).trigger("click");
+
+        // scroll to element
+        // var element = document.querySelector("#section-cbmd-collections-overview");
+        // element.scrollIntoView();
+      }
+    }, 100);
+
+
+  });
+  </script>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    initCollectionsSlider();
+    initProductsSlider();
+    $( window ).resize(function() {
+      initCollectionsSlider();   
+      initProductsSlider();
+    });
+
+    $("#section-{{ section.id }}").find(".Highlights_products_item").on('click', function () {
+      if (document.body.clientWidth >= 1280) {
+        var id = $(this).attr("data-id");
+        $(".collection_view").addClass("hide");
+        $(".collection_view").removeClass("show");
+        $(".collection_item_"+id).removeClass("hide");
+        $(".collection_item_"+id).addClass("show");
+
+        $(".tab_line").removeClass("show");
+        $(".tab_line").addClass("hide");
+        $(this).find(".tab_line").addClass("show");
+        $(this).find(".tab_line").removeClass("hide");
+      } else {
+        $(this).parents('.Highlights_products_items').slick('slickGoTo', $(this).index(), false);
+      }
+    });
+    setTimeout(function(){
+      let query = getUrlParameter('q');
+      if (query) {
+        $(".product_"+query).trigger("click");
+
+        // scroll to element
+        // var element = document.querySelector("#section-cbmd-collections-overview");
+        // element.scrollIntoView();
+      }
+    }, 100);
+
+
+  });
+
+  function getUrlParameter(name) {
+      name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+      var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+      var results = regex.exec(location.search);
+      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  };
+
+  function initProductsSlider(){
+    $("#section-{{ section.id }}").find(".collection_items").each( function () {
+      var count = $(this).find(".collection_product").length;
+
+      var breakpoint = 0;
+      switch(count) {
+        case 4:
+          breakpoint = 958;
+        break;
+        case 3:
+          breakpoint = 710;
+        break;
+        case 2:
+          breakpoint = 485;
+        break;
+        case 1:
+        break;
+      }
+
+      if (breakpoint != 0) {
+        if (window.innerWidth > breakpoint) {
+          if ($(this).find(".slick-list").length > 0) {
+            $(this).slick('unslick');
+          }
+        }
+        else {
+          if ($(this).find(".slick-list").length == 0) {
+            initProductSlick($(this));
+          }
+        }
+      }
+    });
+  }
+
+  function initCollectionsSlider() {
+    if (window.innerWidth >= 1280) {
+      if ($("#section-{{ section.id }}").find(".Highlights_products_container").find(".slick-initialized").length > 0) 
+        $("#section-{{ section.id }}").find('.Highlights_products_container').find(".Highlights_products_items").slick('unslick');
+    }
+    else {
+      if ($("#section-{{ section.id }}").find(".Highlights_products_container").find(".slick-initialized").length == 0) 
+        initSlick();
+    }
+
+  }
+
+  function initProductSlick(item) {
+    item.slick({
+      centerMode: false,
+      infinite: false,
+      centerPadding: '0px',
+      slidesToShow: 4,
+      arrows: false,
+      variableWidth: true,
+      variableHeight: true,
+      responsive: [
+        {
+          breakpoint: 958,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 3
+          }
+        },        
+        {
+          breakpoint: 710,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 485,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    })
+    .on('afterChange', function(event, slick, currentSlide, nextSlide){
+      if ($(item).find('.slick-slide:last-child').hasClass('slick-active')) {
+        $(item).parents('.collection_products').addClass('slick-end');
+      } else {
+        $(item).parents('.collection_products').removeClass('slick-end');
+      }
+    });
+  }
+
+  function initSlick() {
+    $("#section-{{ section.id }}").find(".Highlights_products_container").find('.Highlights_products_items').slick({
+      centerMode: false,
+      infinite: false,
+      centerPadding: '0px',
+      // slidesToShow: 4,
+      arrows: false,
+      variableWidth: true,
+      variableHeight: true,
+      responsive: [
+        {
+          breakpoint: 1279,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '0px',
+            // slidesToShow: 3
+          }
+        },        
+        {
+          breakpoint: 900,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '0px',
+            // slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '0px',
+            // slidesToShow: 1
+          }
+        }
+      ]
+    })
+    .on('afterChange', function(event, slick, currentSlide, nextSlide){
+      if ($("#section-{{ section.id }}").find(".Highlights_products_container").find('.Highlights_products_items').find('.slick-slide:last-child').hasClass('slick-active')) {
+        $("#section-{{ section.id }} .Highlights_products_container").addClass('slick-end');
+      } else {
+        $("#section-{{ section.id }} .Highlights_products_container").removeClass('slick-end');
+      }
+    })
+    .on('beforeChange', function(event, slick, currentSlide, nextSlide){
+
+      var slide = $("#section-{{ section.id }}").find(".Highlights_products_container").find('.Highlights_products_items').find('.Highlights_products_item:eq(' + nextSlide + ')');
+
+      var id = slide.attr("data-id");
+      $(".collection_view").addClass("hide");
+      $(".collection_view").removeClass("show");
+      $(".collection_item_"+id).removeClass("hide");
+      $(".collection_item_"+id).addClass("show");
+
+      $(".tab_line").removeClass("show");
+      $(".tab_line").addClass("hide");
+      $(slide).find(".tab_line").addClass("show");
+      $(slide).find(".tab_line").removeClass("hide");
+
+    });
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Collections",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "highlight_heading",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "collection_description",
+          "label": "Description"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "text",
+          "id": "view_title",
+          "label": "View Title"
+        },
+        {
+          "type": "textarea",
+          "id": "view_description",
+          "label": "View Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "background",
+          "label": "View Background"
+        }        
+      ]
+    }
+  ],    
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Collections",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

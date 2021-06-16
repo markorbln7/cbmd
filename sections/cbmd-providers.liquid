@@ -1,0 +1,157 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">  
+  <div class="Highlights_providers_container Highlights_container">
+    <div class="Highlights_providers_row">
+      <p class="Highlights_heading">{{section.settings.highlight_heading}}</p>
+      <div class="Highlights_providers">
+        <div class="Highlights_providers_description_area">
+          {%- for block in section.blocks -%}
+            
+            {%- assign provider_description = block.settings.provider_description -%}
+            
+            {%- if provider_description != blank  -%}
+              <p class="Highlights_providers_description Highlights_providers_description_{{ section.id }} {% if forloop.first == true %} show {% else %} hide {% endif %}"><span>“</span>{{provider_description}}<span>“</span></p>
+            {%- endif -%}
+          {%- endfor -%}        
+
+        </div>
+        
+        <div class="Highlights_providers_items">
+
+          {%- for block in section.blocks -%}
+            {%- assign provider_name = block.settings.provider_name -%}
+            {%- assign provider_title = block.settings.provider_title -%}
+            {%- assign picture = block.settings.picture -%} 
+            {%- if provider_name != blank and provider_title != blank and picture != blank -%}
+
+              <div class="Highlights_providers_item Highlights_providers_item_{{ section.id }} {% if forloop.first != true %} disabled {% else %} activated {% endif %}">
+                  <img class="highlight_provider_image"
+                           src="{{ picture | img_url: 'master' }}"
+                           alt="{{ provider_name }}">
+                  <div class="Highlights_providers_content">
+                    <p class="Highlights_providers_name">{{- provider_name -}}</p>
+                    <div class="Highlights_providers_exp">{{- provider_title -}}</div>
+                  </div>
+              </div>
+
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>      
+    </div>
+  </div>
+</section>
+
+<style>
+  .Highlights_providers_container {
+    background: {{section.settings.background_color}};
+    
+  }
+</style>
+<script>
+  var current = 0;
+  $(document).ready(function() {
+      changeProviderActive(current);
+      $('.Highlights_providers_item_{{ section.id }}').click(function(e) {
+          e.preventDefault();
+          var index = $(this).index();
+          changeProviderActive(index);
+          checkProviderHeight();
+      });
+
+      checkProviderHeight();
+
+      $( window ).resize(function() {
+        checkProviderHeight();   
+      });
+      setInterval(function(){ changeProviderActive(current); }, 15000);
+
+  });  
+
+  function checkProviderHeight() {
+    var max = 0;
+    $(".Highlights_providers_description").each( function () {
+      if ($(this).height() > max){
+        max = $(this).height();
+      }
+    });
+
+    max = max + 5;
+    $(".Highlights_providers_description_area").css("height", max+"px");
+  }
+
+  function changeProviderActive(index = 0) {
+    $('.Highlights_providers_item_{{ section.id }}').addClass("disabled");
+    $('.Highlights_providers_item_{{ section.id }}').removeClass("activated");
+
+    $(".Highlights_providers_item_{{section.id}}:eq( "+index+" )").removeClass("disabled");
+    $(".Highlights_providers_item_{{section.id}}:eq( "+index+" )").addClass("activated");
+
+    $(".Highlights_providers_description_{{section.id}}").removeClass("show");
+    $(".Highlights_providers_description_{{section.id}}").addClass("hide");
+    $(".Highlights_providers_description_{{section.id}}:eq( "+index+" )" ).removeClass("hide");
+    $(".Highlights_providers_description_{{section.id}}:eq( "+index+" )" ).addClass("show");
+
+    // $(".Highlights_providers_description_area").css("height", $(".Highlights_providers_description_{{section.id}}:eq( "+index+" )" ).height());
+
+    if (current == 2) {
+      current = 0;
+    }
+    else {
+      current = current + 1;
+    }
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Providers",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "highlight_heading",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "provider_name",
+          "label": "Name"
+        },
+        {
+          "type": "richtext",
+          "id": "provider_title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "provider_description",
+          "label": "Description"
+        },        
+        {
+          "type": "image_picker",
+          "id": "picture",
+          "label": "Picture"
+        }
+      ]
+    }
+  ],    
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Providers",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

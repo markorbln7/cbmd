@@ -1,0 +1,147 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">  
+  <div class="Highlights_multilnk_container Highlights_container" id="Highlights_multilnk_container_{{section.id}}">
+    {%- for block in section.blocks -%}
+      {%- assign link_title = block.settings.link_title -%}
+      {%- assign link_sub_title = block.settings.link_sub_title -%}
+      {%- assign link_image = block.settings.link_image -%} 
+      {%- if link_title != blank and link_sub_title != blank and link_image != blank -%}
+        <div class="Highlights_multilnk_item box">
+        <div class="Higlights_overlay"></div>
+          <a href="{{- block.settings.button_link -}}">
+            <div class="Highlights_multilnk_item_content" style="background-image: url({{ link_image | img_url: 'master' }});">
+              <h3>{{- block.settings.link_title -}}</h3>
+              <div class="Highlights_multilnk_item_body">
+                <p>{{- block.settings.link_sub_title -}}</p>
+                <img
+                  class="highlight_image"
+                  src="{{- 'arrow-right.svg' | asset_url -}}"
+                  alt="{{ link_title | default: shop.name | escape }}"
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</section>
+
+<style>
+  .Highlights_multilnk_container {
+    background: {{section.settings.background_color}};
+
+  }
+</style>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    initMultilinkSlider();
+    $( window ).resize(function() {
+      initMultilinkSlider();   
+    });    
+    
+    function initMultilinkSlider() {
+      var items = $("#section-{{ section.id }}").find(".Highlights_multilnk_item").length;
+      var breakpoint = 1279;
+
+      if (items == 2) {
+        breakpoint = 715;
+      }
+      if (window.innerWidth > breakpoint) {
+        if ($("#section-{{ section.id }}").find(".slick-initialized").length > 0) 
+          $('#section-{{ section.id }}').find(".Highlights_multilnk_container").slick('unslick');
+      }
+      else {
+        if ($("#section-{{ section.id }}").find(".slick-initialized").length == 0) 
+          initMultilinkSlick(items);
+      }
+    }    
+
+  });
+
+  function initMultilinkSlick(items) {
+
+    if(items == 2) {
+      $('#section-{{ section.id }}').find(".Highlights_multilnk_container").slick({
+        centerMode: false,
+        infinite: false,
+        centerPadding: '0px',
+        slidesToShow: 3,
+        arrows: false,
+        variableWidth: true,
+        variableHeight: true,
+        responsive: [
+          {
+            breakpoint: 1279,
+            settings: {
+              arrows: false,
+              centerMode: false,
+              centerPadding: '0px',
+              slidesToShow: 2
+            }
+          },        
+          {
+            breakpoint: 731,
+            settings: {
+              arrows: false,
+              centerMode: false,
+              centerPadding: '0px',
+              slidesToShow: 1
+            }
+          },      
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: false,
+              centerPadding: '0px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      }); 
+    }
+    else {
+      $('#section-{{ section.id }}').find(".Highlights_multilnk_container").slick({
+        centerMode: false,
+        infinite: false,
+        centerPadding: '0px',
+        slidesToShow: 3,
+        arrows: false,
+        variableWidth: true,
+        variableHeight: true,
+        responsive: [
+          {
+            breakpoint: 1279,
+            settings: {
+              arrows: false,
+              centerMode: false,
+              centerPadding: '0px',
+              slidesToShow: 2
+            }
+          },        
+          {
+            breakpoint: 731,
+            settings: {
+              arrows: false,
+              centerMode: false,
+              centerPadding: '0px',
+              slidesToShow: 1
+            }
+          },      
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: false,
+              centerPadding: '0px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });       
+    }
+   
+  }
+</script>

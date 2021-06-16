@@ -1,0 +1,93 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">
+  <div class="Highlights_stats_container Highlights_container rbln-container">
+    <div class="Highlights_item Highlights_first box">
+      <p class="Highlights_heading box t-red">{{section.settings.highlight_heading}}</p>
+      <p class="box h1-t stats-h1">{{section.settings.highlight_title}}</p>
+      <p class="stats-text box p-t mw-70">{{section.settings.highlight_description}}</p>
+
+      {%- assign action_link = section.settings.action_link -%}
+      {%- assign action_title = section.settings.action_title -%}
+      {%- assign action_style = section.settings.action_style -%}
+
+      {%- if action_link != blank and action_title != blank -%}
+        {%- if action_style == "button" -%}
+          <a href="{{section.settings.action_link}}" class="Button Button--cbd Button--red box db">{{ section.settings.action_title | escape }}</a>
+        {%- else -%}  
+          <a href="{{section.settings.action_link}}" class="Link Link--cbd box db">{{ section.settings.action_title | escape }}</a>
+        {%- endif -%}           
+      {%- endif -%}      
+      
+ 
+    </div>
+    <div class="Highlights_item Highlights_second Highlights_item_section_{{ section.id }}">
+
+        {%- for block in section.blocks -%}
+          {%- assign collection = collections[block.settings.collection] -%}
+
+          <div class="collections stats_collectsion box">
+            <H3>
+              {{- block.settings.subheading | default: collection.subheading -}}            
+            </H3>
+            <p>
+              {{- block.settings.content | default: collection.content -}}            
+            </p>
+          </div>
+        {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<style>
+  .Highlights_stats_container {
+    background: {{section.settings.background_color}};
+  }
+</style>
+
+<script>
+  $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+  };
+
+  $(document).ready( function () {
+
+    setTimeout(function(){
+      initEaseStats();
+    }, 2500);
+    
+
+    $(document).scroll(function () {
+      initEaseStats();
+    });
+
+  });
+
+  function initEaseStats() {
+    var y = $(document).scrollTop();
+    var banner_height = $(".banner_background").height();
+    var current_scroll = banner_height + y;  
+
+    var current_item_position = $(".Highlights_item_section_{{ section.id }}").offset().top;
+
+    var fullPos = $(".Highlights_item_section_{{ section.id }}").height() + current_item_position;
+
+    if ($(".Highlights_item_section_{{ section.id }}").isInViewport()) {
+      $(".Highlights_item_section_{{ section.id }}").find(".stats_collectsion").each( function (index) {
+          var time = (index + 1) * 800;
+
+          var item = $(this);
+
+          setTimeout(function(){
+            item.removeClass("hide");
+            item.addClass("show");
+          }, time);
+
+      });        
+    }
+  }
+</script>

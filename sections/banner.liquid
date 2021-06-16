@@ -1,0 +1,124 @@
+{%- render 'banner-sections', section: section, sidebar: true -%}
+
+{% schema %}
+{
+  "name": "Banner",
+  "class": "shopify-section--banner",  
+  "settings": [
+    {
+      "type": "header",
+      "content": "Foreground"
+    },  
+    {
+      "type": "image_picker",
+      "id": "banner_background",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "foreground_style",
+      "label": "Foreground style",
+      "options": [
+        {
+          "value": "full_image",
+          "label": "Full Image"
+        },
+        {
+          "value": "side_image",
+          "label": "Side Image"
+        },
+        {
+          "value": "half_image",
+          "label": "Half Image"
+        }        
+      ],
+      "default": "half_image"
+    },    
+    {
+      "type": "select",
+      "id": "foreground_position",
+      "label": "Foreground Position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    },       
+    {
+      "type": "color",
+      "id": "sidebar_background",
+      "label": "Side bar background",
+      "default": "#EB161E"
+    }, 
+    {
+      "type": "text",
+      "id": "banner_title",
+      "label": "Banner Title",
+      "default": "All Products"
+    },    
+    {
+      "type": "textarea",
+      "id": "banner_text",
+      "label": "Banner Text",
+      "default": "All Products"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },    
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "See our CBD"
+    },
+    {
+      "type": "checkbox",
+      "id": "is_small_background",
+      "label": "Is small background?",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Label",
+          "default": "Shop All",
+          "info": "Maximum 20 characters allowed."
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Formulated for"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>Mood restore Anxiety relief Skin restore Migraine relief</p>"
+        }
+      ]
+    }
+  ],  
+  "presets": [
+    {
+      "category": "Banner",
+      "name": "Banner",
+      "settings": {}  
+    }
+  ]
+}
+{% endschema %}

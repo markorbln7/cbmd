@@ -1,0 +1,209 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">  
+  <div class="cbmd_faq_container Highlights_container">
+    <h1 class="title">{{section.settings.section_title}}</h1>
+
+    <div class="faq_area">
+      <div class="faq_cbd faq_item">
+        <!--p class="sub_title">{{section.settings.cbd_title}}</p-->
+        <div class="faq_container">        
+        {%- for block in section.blocks -%}
+          {%- assign title = block.settings.item_title -%}
+          {%- assign desc = block.settings.item_description -%}
+          {%- assign link_name = block.settings.link_name -%} 
+          {%- assign link = block.settings.link-%} 
+          {%- assign type = block.settings.type -%}
+
+          {%- if type != blank and type == "cbd" -%}
+            <div class="item">
+              <div class="content" data-collapsed="true">
+                <div class="item_controller" data-id="item_controller_{{ forloop.index0 }}">
+                  <div class="item_name">{{- title -}}</div>  
+                  <span class="action">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="black"/>
+                    </svg>
+                  </span>                  
+                </div>
+                
+                <div class="collapsable">
+                  <div class="item_desc">{{- desc -}}</div>
+                  {% if link_name != blank %}
+                    <p class="item_link"><a href="{{- link -}}" class="Link--cbd">{{- link_name -}}</a></p>
+                  {% endif %}
+
+                </div>
+              </div>
+            </div>
+
+          {%- endif -%}
+        {%- endfor -%}              
+        </div>
+      </div>
+      <div class="faq_products faq_item">
+        <!--p class="sub_title">{{section.settings.products_title}}</p-->
+        <div class="faq_container">
+        {%- for block in section.blocks -%}
+          {%- assign title = block.settings.item_title -%}
+          {%- assign desc = block.settings.item_description -%}
+          {%- assign link_name = block.settings.link_name -%} 
+          {%- assign link = block.settings.link-%} 
+          {%- assign type = block.settings.type -%}
+
+          {%- if type != blank and type == "products" -%}
+            <div class="item">
+              <div class="content" data-collapsed="true">
+                <div class="item_controller" data-id="item_controller_{{ forloop.index0 }}">
+                  <div class="item_name">{{- title -}}</div>  
+                  <span class="action">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="black"/>
+                    </svg>
+                  </span>                  
+                </div>                <div class="collapsable">
+                  <div class="item_desc">{{- desc -}}</div>
+                  {% if link_name != blank %}
+                    <p class="item_link"><a href="{{- link -}}" class="Link--cbd">{{- link_name -}}</a></p>
+                  {% endif %}
+                  
+                </div>
+              </div>
+            </div>
+
+          {%- endif -%}
+        {%- endfor -%}    
+        </div>
+      </div>      
+    </div>
+  </div>
+</section>
+
+<style>
+
+</style>
+<script>
+  var expand = `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="black"/></svg>`;
+  var minimize = `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.2427 4.34315L10.0001 8.58579L5.75744 4.34315L4.34323 5.75736L8.58587 10L4.34323 14.2426L5.75744 15.6569L10.0001 11.4142L14.2427 15.6569L15.6569 14.2426L11.4143 10L15.6569 5.75736L14.2427 4.34315Z" fill="black"/>
+</svg>`
+  $(document).ready( function () {
+
+    $("#section-{{ section.id }}").find(".faq_container .item_controller").click( function () {
+      var section = $(this).siblings(".collapsable");
+      var parent = $(this).parents(".content");
+      var action = $(this).find(".action");
+      var that = $(this).attr("data-id");
+
+      $(".item_controller").each(function (index, e) {
+          var cur = $(this).attr("data-id");
+          if (that != cur) {
+            $(this).siblings(".collapsable").attr("data-collapsed", "true");
+            $(this).parents(".content").removeClass("collapsed");
+            $(this).find(".action").html(expand);
+            $(this).siblings(".collapsable").slideUp('500', function () {});                      
+          }
+      });
+
+
+      if (section.attr("data-collapsed") == "false") {
+        section.attr("data-collapsed", "true");
+        parent.removeClass("collapsed");          
+
+        section.slideUp('500', function () {
+        });
+        action.html(expand);
+      }
+      else {
+        section.attr("data-collapsed", "false");
+        parent.addClass("collapsed");          
+
+        section.hide().slideDown('500', function () {
+        });
+        action.html(minimize);
+      }
+
+    }); 
+  });
+
+</script>
+
+
+{% schema %}
+{
+  "name": "Faq",
+
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Title"
+    },    
+    {
+      "type": "text",
+      "id": "cbd_title",
+      "label": "Heading for CBD"
+    },
+    {
+      "type": "text",
+      "id": "products_title",
+      "label": "Heading for Products"
+    }    
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "item_title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "item_description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "link_name",
+          "label": "Link Name"
+        },        
+        {
+          "type": "text",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "type",
+          "label": "Type",
+          "options": [
+            {
+              "value": "cbd",
+              "label": "About CBD"
+            },
+            {
+              "value": "products",
+              "label": "About our products"
+            }      
+          ],
+          "default": "cbd"
+        }
+      ]
+    }
+  ],    
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Faq",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

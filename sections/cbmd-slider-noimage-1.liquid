@@ -1,0 +1,141 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">  
+  <div class="Highlights_products_container Highlights_container">
+    <div class="Highlights_products">
+      <div class="Highlights_products_items">
+
+        {%- for block in section.blocks -%}
+          {%- assign heading = block.settings.heading -%}
+          {%- assign description = block.settings.description -%}
+          {%- assign type = block.settings.type -%}
+
+          
+          {% case type %}
+            {% when "facebook" %}
+               {% assign handle = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 12C24 5.37188 18.6281 0 12 0C5.37188 0 0 5.37188 0 12C0 17.9906 4.3875 22.9547 10.125 23.8547V15.4688H7.07812V12H10.125V9.35625C10.125 6.34922 11.9156 4.6875 14.6578 4.6875C15.9703 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8297C14.3391 7.875 13.875 8.80078 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8547C19.6125 22.9547 24 17.9906 24 12Z" fill="black"/><path d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80078 14.3391 7.875 15.8297 7.875H17.3438V4.92188C17.3438 4.92188 15.9703 4.6875 14.6578 4.6875C11.9156 4.6875 10.125 6.34922 10.125 9.35625V12H7.07812V15.4688H10.125V23.8547C10.7367 23.9508 11.3625 24 12 24C12.6375 24 13.2633 23.9508 13.875 23.8547V15.4688H16.6711Z" fill="white"/></svg>' %}
+            {% when "twitter" %}
+               {% assign handle = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.84942 21.4426C16.692 21.4426 21.5273 14.117 21.5273 7.76477C21.5273 7.5567 21.5231 7.34956 21.5137 7.14336C22.4524 6.46479 23.2683 5.61798 23.9117 4.65401C23.0504 5.03688 22.1234 5.29462 21.151 5.41085C22.1436 4.81569 22.9056 3.87421 23.265 2.75184C22.3362 3.30248 21.3075 3.70269 20.2123 3.91873C19.3351 2.98428 18.0862 2.3999 16.7032 2.3999C14.0485 2.3999 11.8956 4.55278 11.8956 7.20663C11.8956 7.58388 11.9378 7.95081 12.0202 8.30275C8.0247 8.10171 4.48186 6.18877 2.11107 3.27999C1.69821 3.99043 1.46014 4.81568 1.46014 5.69624C1.46014 7.36409 2.30883 8.83652 3.59943 9.69786C2.81073 9.67349 2.06983 9.45699 1.42218 9.09661C1.42148 9.11678 1.42148 9.13645 1.42148 9.158C1.42148 11.4862 3.07855 13.43 5.27829 13.8705C4.87434 13.9807 4.44929 14.0397 4.01065 14.0397C3.70136 14.0397 3.40003 14.0093 3.10713 13.953C3.71916 15.8631 5.49387 17.2531 7.59801 17.292C5.95265 18.5817 3.87991 19.3497 1.62721 19.3497C1.23965 19.3497 0.856778 19.3277 0.480469 19.2832C2.60805 20.6469 5.13442 21.4426 7.84966 21.4426" fill="black"/></svg>' %}
+            {% else %}
+               {% assign handle = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 0H5C2.239 0 0 2.239 0 5V19C0 21.761 2.239 24 5 24H19C21.762 24 24 21.761 24 19V5C24 2.239 21.762 0 19 0ZM8 19H5V8H8V19ZM6.5 6.732C5.534 6.732 4.75 5.942 4.75 4.968C4.75 3.994 5.534 3.204 6.5 3.204C7.466 3.204 8.25 3.994 8.25 4.968C8.25 5.942 7.467 6.732 6.5 6.732ZM20 19H17V13.396C17 10.028 13 10.283 13 13.396V19H10V8H13V9.765C14.396 7.179 20 6.988 20 12.241V19Z" fill="black"/></svg>' %}
+          {% endcase %}
+
+          {%- if heading != blank and description -%}
+
+            <div class="Highlights_products_item">
+              <div class="Highlights_products_content">
+                <p class="Highlights_heading">
+                  {{ handle }} <span>{{- heading -}}</span>
+                </p>
+                <div class="Highlights_description">{{ description }}</div>
+              </div>
+            </div>
+
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>      
+  </div>
+</section>  
+
+{% comment %} <script type="text/javascript">
+  $(document).ready(function(){
+    // initNoImageSlider1();
+    $( window ).resize(function() {
+      // initNoImageSlider1();   
+    });
+  });
+
+  function initNoImageSlider1() {
+    if (window.innerWidth > 1096) {
+      if ($("#section-{{ section.id }}").find(".Highlights_products").find(".slick-initialized").length > 0) 
+        $("#section-{{ section.id }}").find('.Highlights_products_items').slick('unslick');
+    }
+    else {
+      if ($("#section-{{ section.id }}").find(".Highlights_products").find(".slick-initialized").length == 0) 
+        initNoImagSocialeSlick1();
+    }
+  }
+
+  function initNoImagSocialeSlick1() {
+    $("#section-{{ section.id }}").find('.Highlights_products_items').slick({
+      centerMode: false,
+      infinite: false,
+      centerPadding: '0px',
+      slidesToShow: 2,
+      arrows: false,
+      variableWidth: true,
+      variableHeight: true,
+      responsive: [
+        {
+          breakpoint: 1096,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 2
+          }
+        },        
+        {
+          breakpoint: 820,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });    
+  }
+</script> {% endcomment %}
+
+{% schema %}
+{
+  "name": "Social Text",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },  
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "select",
+          "id": "type",
+          "label": "Type",
+          "options": [
+            {
+              "value": "facebook",
+              "label": "Facebook"
+            },
+            {
+              "value": "twitter",
+              "label": "Twitter"
+            },
+            {
+              "value": "instagram",
+              "label": "Instagram"
+            }            
+          ]
+        }           
+      ]
+    }
+  ],    
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Social Text",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

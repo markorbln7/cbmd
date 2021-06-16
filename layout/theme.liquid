@@ -1,0 +1,269 @@
+<!doctype html>
+
+<html class="no-js {{ template.name | handle }}-{{ template.suffix }}" lang="{{ shop.locale }}">
+  <head>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="{{ settings.accent_color }}">
+
+    <title>
+    CBMD&#174; | CBD formulated by physicians, made for you.
+      {% comment %} {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %} {% endcomment %}
+    </title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- if settings.favicon -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '48x48' }}" type="image/png">
+    {%- endif -%}
+
+    {% render 'social-meta-tags' %}
+
+    {{ content_for_header }}
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{ 'bootstrap-grid.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'bootstrap-utilities.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'theme.scss.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'custom.scss.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'style.scss.css' | asset_url }}">
+    <script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=ctr7tqpxrztaxsfppmcgca" async="true"></script>
+    <link rel="stylesheet" href="{{ 'product-new.scss.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'pdp.scss.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'pdp-shop.scss.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'product-listing.scss.css' | asset_url }}">
+    
+<!-- CSS only -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.4/dist/gsap.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight.js"></script>
+    <script>
+      // This allows to expose several variables to the global scope, to be used in scripts
+      window.theme = {
+        template: {{ template.name | json }},
+        localeRootUrl: {% if request.locale.primary %}''{% else %}{{ request.locale.root_url | json }}{% endif %},
+        shopCurrency: {{ shop.currency | json }},
+        moneyFormat: {{ shop.money_format | json }},
+        moneyWithCurrencyFormat: {{ shop.money_with_currency_format | json }},
+        useNativeMultiCurrency: {% if shop.enabled_currencies.size > 1 %}true{% else %}false{% endif %},
+        currencyConversionEnabled: {% if shop.enabled_currencies.size > 1 %}false{% else %}{{ settings.currency_conversion_enabled | json }}{% endif %},
+        currencyConversionMoneyFormat: {{ settings.currency_conversion_money_format | json }},
+        currencyConversionRoundAmounts: {{ settings.currency_conversion_round_amounts | json }},
+        productImageSize: {{ settings.product_image_size | json }},
+        searchMode: {{ settings.search_mode | json }},
+        showPageTransition: {{ settings.show_page_transition | json }},
+        showElementStaggering: {{ settings.show_element_staggering | json }},
+        showImageZooming: {{ settings.show_image_zooming | json }}
+      };
+
+      window.languages = {
+        cartAddNote: {{ 'cart.general.add_note' | t | json }},
+        cartEditNote: {{ 'cart.general.edit_note' | t | json }},
+        productImageLoadingError: {{ 'product.slideshow.image_loading_error' | t | json }},
+        productFormAddToCart: {% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t | json }}{% else %}{{ 'product.form.add_to_cart' | t | json }}{% endif %},
+        productFormUnavailable: {{ 'product.form.unavailable' | t | json }},
+        productFormSoldOut: {{ 'product.form.sold_out' | t | json }},
+        shippingEstimatorOneResult: {{ 'cart.shipping_estimator.one_result_title' | t | json }},
+        shippingEstimatorMoreResults: {{ 'cart.shipping_estimator.more_results_title' | t | json }},
+        shippingEstimatorNoResults: {{ 'cart.shipping_estimator.no_results_title' | t | json }}
+      };
+
+      window.lazySizesConfig = {
+        loadHidden: false,
+        hFac: 0.5,
+        expFactor: 2,
+        ricTimeout: 150,
+        lazyClass: 'Image--lazyLoad',
+        loadingClass: 'Image--lazyLoading',
+        loadedClass: 'Image--lazyLoaded'
+      };
+
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
+
+      // We do a quick detection of some features (we could use Modernizr but for so little...)
+      (function() {
+        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
+        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
+      }());
+    </script>
+
+    <script src="{{ 'lazysizes.min.js' | asset_url }}" async></script>
+
+    {% if settings.currency_conversion_enabled %}
+      <script src="//cdn.shopify.com/s/javascripts/currencies.js" defer></script>
+    {% endif %}
+
+    {%- if template == 'customers/addresses' -%}
+      <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer></script>
+      <script src="{{ 'customer_area.js' | shopify_asset_url }}" defer></script>
+    {%- endif -%}
+
+   
+
+    <script>
+      (function () {
+        window.onpageshow = function() {
+          if (window.theme.showPageTransition) {
+            var pageTransition = document.querySelector('.PageTransition');
+
+            if (pageTransition) {
+              pageTransition.style.visibility = 'visible';
+              pageTransition.style.opacity = '0';
+            }
+          }
+
+          // When the page is loaded from the cache, we have to reload the cart content
+          document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', {
+            bubbles: true
+          }));
+        };
+      })();
+    </script>
+
+    {% render 'microdata-schema' %}
+    <script type="text/javascript">(function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/r2ZWM7yv5pG8hZim69WPlrRXz6zDK7fF2omBldHf/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();</script>
+  </head>
+
+  <body class="prestige--v4 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }} {{ template.name | handle }}-{{ template.suffix }}">
+    <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
+    <span class="LoadingBar"></span>
+    <div class="PageOverlay"></div>
+    <div class="PageTransition"></div>
+
+    {% section 'popup' %}
+    {% section 'sidebar-menu' %}
+
+    {%- if template != 'cart' -%}
+      {% render 'cart-drawer' %}
+    {%- endif -%}
+
+    <div class="PageContainer">
+      {% section 'announcement' %}
+      {% section 'header' %}
+      <div data-scroll-container class="scrollable">
+      <main id="main" role="main">
+        {{ content_for_layout }}
+      </main>
+
+      {% section 'footer' %}
+      </div>
+    </div>
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7497651.js"></script>
+
+    <div id="modal-product-subscription" class="Modal Modal-Popup-Subscription Modal--address Modal--small" aria-hidden="true" role="dialog" data-scrollable>
+      <button class="Modal__Close Modal__Close--outside" data-action="close-modal">{%- render 'icon' with 'close' -%}</button>
+
+       <header class="Modal__Header">
+        <h3 class="Modal__Title Heading u-h2 modal-head">Thank you for your interest.</h3>
+        <p class="Modal__Description modal-desc">CBMD is now available for purchase through healthcare providers across the country. Get in touch to find a location near you or to find out when you can purchase CBMD online. </p>
+      </header>
+
+      <div class="Modal__Content">
+
+        <form id="product-subscription">
+          <div class="Form__Item">
+            <input type="email" class="Form__Input Input--cbd" name="email" value="" placeholder="{{ 'overview.email.placeholder' | t }}">
+          </div>
+
+          {% comment %} <div class="Form__Item">
+            <textarea class="Form__Input Input--cbd Input--textarea" name="message" value="" placeholder="Message"></textarea>
+          </div> {% endcomment %}
+
+          <div class="Form__Item">
+            <div class="Form__CheckboxWrapper">
+              <input type="checkbox" class="Form__Checkbox" name="cbmd_news" id="cbmd_news[product-subscription]" value="0">
+              {% render 'icon' with 'checkmark_cbmd' %}
+
+              <label for="cbmd_news[product-subscription]">{{ 'overview.news_title' | t }}</label>
+            </div>
+          </div>
+
+          <input type="submit" class="Button Button--cbd Button--red" value="{{ 'overview.notify_me' | t }}">
+        </form>
+      </div>
+    </div>
+
+    <div id="modal-healthcare-providers" class="Modal Modal-Popup-Subscription Modal--address Modal--small" aria-hidden="true" role="dialog" data-scrollable>
+      <button class="Modal__Close Modal__Close--outside" data-action="close-modal">{%- render 'icon' with 'close' -%}</button>
+
+      <header class="Modal__Header">
+        <h3 class="Modal__Title Heading u-h2" style="margin-bottom: 8px;">Thank you for your interest.</h3>
+        <h3 class="Modal__Title Heading u-h2">We welcome the opportunity to work with you.</h3>
+        <!-- <p class="Modal__Description">{{ 'overview.email.description' | t }}</p> -->
+      </header>
+
+      <div class="Modal__Content">
+
+        <form id="healthcare-providers">
+          <div class="Form__Item">
+            <input type="email" class="Form__Input Input--cbd" name="email" value="" placeholder="Email address">
+          </div>
+
+          <div class="Form__Item">
+            <textarea class="Form__Input Input--cbd Input--textarea" name="message" value="" placeholder="Message"></textarea>
+          </div>
+
+          <div class="Form__Item">
+            <div class="Form__CheckboxWrapper">
+              <input type="checkbox" class="Form__Checkbox" name="cbmd_news" id="cbmd_news[healthcare-providers]" value="0">
+              {% render 'icon' with 'checkmark_cbmd' %}
+
+              <label for="cbmd_news[healthcare-providers]">Send me CBMD news and updates.</label>
+            </div>
+          </div>
+
+          <input type="submit" class="Button Button--cbd Button--red" value="Submit">
+
+          <p style="margin-top: 8px;">CBMD™ respects your privacy. We do not sell or distribute email addresses.</p>
+        </form>
+      </div>
+    </div>
+
+    <div id="modal-general-newsletter" class="Modal Modal-Popup-Subscription Modal--address Modal--small" aria-hidden="true" role="dialog" data-scrollable>
+      <button class="Modal__Close Modal__Close--outside" data-action="close-modal">{%- render 'icon' with 'close' -%}</button>
+
+      <header class="Modal__Header">
+        <h3 class="Modal__Title Heading u-h2 modal-head">Thank you for your interest.</h3>
+        <p class="Modal__Description modal-desc">We welcome the opportunity to work with you.</p>
+      </header>
+
+      <div class="Modal__Content">
+
+        <form id="general-newsletter">
+          <div class="Form__Item">
+            <input type="email" class="Form__Input Input--cbd" name="email" value="" placeholder="{{ 'overview.email.placeholder' | t }}">
+          </div>
+
+          <div class="Form__Item">
+            <div class="Form__CheckboxWrapper">
+              <input type="checkbox" class="Form__Checkbox" name="cbmd_news" id="cbmd_news[general-newsletter]" value="0">
+              {% render 'icon' with 'checkmark_cbmd' %}
+
+              <label for="cbmd_news[general-newsletter]">{{ 'overview.news_title' | t }}</label>
+            </div>
+          </div>
+
+          <input type="submit" class="Button Button--cbd Button--red" value="{{ 'overview.notify_me' | t }}">
+        </form>
+      </div>
+    </div>
+     <script src="https://cdn.polyfill.io/v3/polyfill.min.js?unknown=polyfill&features=fetch,Element.prototype.closest,Element.prototype.remove,Element.prototype.classList,Array.prototype.includes,Array.prototype.fill,Object.assign,CustomEvent,IntersectionObserver,IntersectionObserverEntry,URL" defer></script>
+    <script src="{{ 'libs.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'theme.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'custom.js' | asset_url }}" defer></script>
+  </body>
+</html>

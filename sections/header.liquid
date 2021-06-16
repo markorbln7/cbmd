@@ -1,0 +1,685 @@
+{%- comment -%}
+In Prestige, the header is quite complex due to the very high number of possible combinations. If you have to edit it, please
+make sure to duplicate the theme first so you can revert your changes in case any issue is introduced.
+{%- endcomment -%}
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+USEFUL VARIABLES
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- assign use_transparent_header = false -%}
+
+{%- if template == 'index' and section.settings.enable_transparent_header -%}
+  {%- assign use_transparent_header = true -%}
+{%- endif -%}
+
+{%- if template.name == 'collection' and section.settings.enable_transparent_header_collection and collection.image and collection.all_products_count > 0 and collection.template_suffix != 'no-image' -%}
+  {%- assign use_transparent_header = true -%}
+{%- endif -%}
+
+{%- if section.settings.navigation_style != 'sidebar' -%}
+  {%- assign use_sidebar_menu = false -%}
+{%- else -%}
+  {%- assign use_sidebar_menu = true -%}
+{%- endif -%}
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+CURRENCY CONVERTER
+
+The theme currency converter is used in lot of different places so to simply the code it's outputted here once
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- if settings.currency_conversion_enabled or shop.enabled_currencies.size > 1 -%}
+  {%- capture currency_conversion_select -%}
+    <div class="Header__CurrencySelector Text--subdued Heading Link Link--primary u-h8 hidden-pocket hidden-lap">
+      <div class="Select Select--transparent">
+        {%- if shop.enabled_currencies.size > 1 -%}
+          {%- form 'currency', id: 'desktop_currency_form' -%}
+            <select class="CurrencySelector__Select u-h8" name="currency" title="{{ 'header.navigation.currency_selector' | t | escape }}" onchange="this.form.submit()">
+              {%- for currency in shop.enabled_currencies -%}
+                <option value="{{ currency.iso_code }}" {% if cart.currency == currency %}selected="selected"{% endif %}>{{ currency.iso_code }}</option>
+              {%- endfor -%}
+            </select>
+          {%- endform -%}
+        {%- else -%}
+          <select class="CurrencySelector__Select u-h8" title="{{ 'header.navigation.currency_selector' | t | escape }}">
+            {%- capture codes -%}USD,EUR,GBP,CAD,ARS,AUD,BBD,BDT,BSD,BHD,BRL,BOB,BND,BGN,BWP,MMK,KYD,CLP,CNY,COP,CRC,HRK,CZK,DKK,DOP,XCD,EGP,XPF,FJD,GHS,GTQ,GYD,GEL,HKD,HUF,ILS,ISK,INR,IDR,NIS,JMD,JPY,JOD,KZT,KES,KWD,LVL,LTL,MXN,MYR,MUR,MDL,MAD,MNT,MZN,ANG,NZD,NGN,NOK,OMR,PKR,PYG,PEN,PHP,PLN,QAR,RON,RUB,SAR,RSD,SCR,SGD,SYP,ZAR,KRW,LKR,SEK,CHF,TWD,THB,TZS,TTD,TRY,UAH,AED,UYU,VEB,VND,ZMK{%- endcapture -%}
+            {%- assign supported_codes = settings.currency_conversion_supported_currencies | remove_first: shop.currency | upcase | split: ' ' | uniq -%}
+
+            <option value="{{ shop.currency }}" selected="selected">{{ shop.currency }}</option>
+
+            {%- for code in supported_codes -%}
+              {%- if codes contains code -%}
+                <option value="{{ code }}">{{ code }}</option>
+              {%- endif -%}
+            {%- endfor -%}
+          </select>
+        {%- endif -%}
+
+        {%- render 'icon' with 'select-arrow' -%}
+      </div>
+    </div>
+  {%- endcapture -%}
+{%- endif -%}
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+SEARCH FORM (implemented as a modal)
+
+Implementation note: make sure that the Search div is always just before the Header element, as the CSS uses
+                     this assumption
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<div id="Search" class="Search" aria-hidden="true">
+  <div class="Search__Inner">
+    <div class="Search__SearchBar">
+      <form action="{{ routes.search_url }}" name="GET" role="search" class="Search__Form">
+        <div class="Search__InputIconWrapper">
+          <span class="hidden-tablet-and-up">{%- render 'icon' with 'search' -%}</span>
+          <span class="hidden-phone">{%- render 'icon' with 'search-desktop' -%}</span>
+        </div>
+
+        <input type="search" class="Search__Input Heading" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="{{ 'search.general.input_placeholder' | t }}" autofocus>
+        <input type="hidden" name="type" value="product">
+      </form>
+
+      <button class="Search__Close Link Link--primary" data-action="close-search">{% render 'icon' with 'close' %}</button>
+    </div>
+
+    <div class="Search__Results" aria-hidden="true">
+      {%- if settings.search_mode != 'product' -%}
+        <div class="PageLayout PageLayout--breakLap">
+          <div class="PageLayout__Section"></div>
+          <div class="PageLayout__Section PageLayout__Section--secondary"></div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+HEADER CONTENT
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- capture section_settings -%}
+{
+  "navigationStyle": {{ section.settings.navigation_style | json }},
+  "hasTransparentHeader": {% if use_transparent_header %}true{% else %}false{% endif %},
+  "isSticky": {% if section.settings.use_sticky_header %}true{% else %}false{% endif %}
+}
+{%- endcapture -%}
+
+<header id="section-{{ section.id }}"
+        class="Header Header--{{ section.settings.navigation_style }} {% if section.settings.navigation_style != 'inline' and section.settings.navigation_style != 'logoLeft' %}Header--initialized{% endif %} {% if use_transparent_header %}Header--transparent{% endif %} {% if section.settings.show_icons or section.settings.navigation_style == 'sidebar' %}Header--withIcons{% endif %}"
+        data-section-id="{{ section.id }}"
+        data-section-type="header"
+        data-section-settings='{{ section_settings }}'
+        role="banner">
+        
+  <div class="Header__Wrapper">
+    {%- capture header_logo -%}
+      <a href="{{ routes.root_url }}" class="Header__LogoLink">
+        {%- if section.settings.logo != blank -%}
+          {%- capture image_size -%}{{ section.settings.logo_max_width }}x{%- endcapture -%}
+            <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M80.2 1.3C90.4 1.3 98.8 9.6 98.8 19.9C98.8 30.1 90.5 38.5 80.2 38.5H19.8C9.6 38.5 1.2 30.2 1.2 19.9C1.3 9.6 9.6 1.3 19.8 1.3H80.2ZM80.2 0H19.8C8.9 0 0 8.9 0 19.8C0 30.7 8.9 39.6 19.8 39.6H80.2C91.1 39.6 100 30.7 100 19.8C100 8.9 91.1 0 80.2 0Z" fill="white"/>
+<path d="M13.0996 20C13.0996 14.8 16.9996 11 21.9996 11C23.5996 11 25.1996 11.5 26.2996 12.1L26.9996 11H27.9996V17.1H26.9996C25.9996 14 24.2996 12.1 21.9996 12.1C19.3996 12.1 17.0996 14.7 17.0996 19.6C17.0996 24.7 19.8996 27.2 22.5996 27.2C24.9996 27.2 26.6996 25.8 27.8996 23.4L28.8996 23.9C27.6996 26.7 25.3996 28.9 21.6996 28.9C16.2996 28.8 13.0996 25.1 13.0996 20Z" fill="white"/>
+<path d="M29.6992 27.2999C31.6992 27.1999 32.0992 26.9999 32.0992 26.1999V13.4999C32.0992 12.6999 31.6992 12.4999 29.6992 12.3999V11.3999H37.5992C42.9992 11.3999 44.2992 13.4999 44.2992 15.4999C44.2992 17.0999 43.1992 18.6999 39.9992 19.2999V19.3999C43.4992 19.5999 44.9992 21.4999 44.9992 23.3999C44.9992 26.0999 43.3992 28.2999 37.7992 28.2999H29.6992V27.2999ZM37.2992 18.8999C39.8992 18.8999 40.7992 17.7999 40.7992 15.6999C40.7992 13.5999 39.9992 12.4999 37.2992 12.4999H35.6992V18.8999H37.2992ZM37.5992 27.2999C40.8992 27.2999 41.3992 25.6999 41.3992 23.3999C41.3992 21.2999 40.2992 19.9999 37.2992 19.9999H35.6992V27.2999H37.5992Z" fill="white"/>
+<path d="M46.0996 27.3998C48.3996 27.0998 48.6996 26.1998 48.6996 23.7998V14.1998C48.6996 13.1998 48.1996 12.3998 46.0996 12.2998V11.2998H53.0996L57.4996 23.4998H57.6996L61.8996 11.2998H68.6996V12.2998C66.6996 12.3998 66.2996 12.5998 66.2996 13.3998V26.1998C66.2996 26.9998 66.6996 27.1998 68.6996 27.2998V28.2998H60.5996V27.2998C62.1996 27.1998 62.6996 26.9998 62.6996 26.1998V13.5998H62.4996L57.1996 28.3998H55.6996L50.1996 13.5998H49.9996V23.7998C49.9996 26.1998 50.1996 26.9998 52.5996 27.3998V28.3998H46.1996V27.3998H46.0996Z" fill="white"/>
+<path d="M69.8994 27.2999C71.8994 27.1999 72.2994 26.9999 72.2994 26.1999V13.4999C72.2994 12.6999 71.8994 12.4999 69.8994 12.3999V11.3999H77.5994C83.8994 11.3999 86.9994 14.6999 86.9994 19.4999C86.9994 24.1999 84.4994 28.2999 77.9994 28.2999H69.8994V27.2999ZM77.4994 27.2999C81.7994 27.2999 83.0994 25.0999 83.0994 19.7999C83.0994 14.4999 81.0994 12.4999 77.2994 12.4999H75.8994V27.2999H77.4994Z" fill="white"/>
+<path d="M88.7002 13.6999C88.7002 12.3999 89.7002 11.3999 91.0002 11.3999C92.3002 11.3999 93.3002 12.3999 93.3002 13.6999C93.3002 14.9999 92.3002 15.9999 91.0002 15.9999C89.7002 15.9999 88.7002 14.9999 88.7002 13.6999ZM93.0002 13.6999C93.0002 12.4999 92.1002 11.6999 91.0002 11.6999C89.9002 11.6999 89.0002 12.4999 89.0002 13.6999C89.0002 14.8999 89.9002 15.6999 91.0002 15.6999C92.1002 15.6999 93.0002 14.8999 93.0002 13.6999ZM90.1002 12.4999H91.0002C91.6002 12.4999 92.0002 12.7999 92.0002 13.2999C92.0002 13.6999 91.8002 13.8999 91.5002 13.9999L92.1002 14.9999H91.4002L90.9002 13.9999H90.7002V14.8999H90.0002V12.4999H90.1002ZM91.0002 13.5999C91.3002 13.5999 91.4002 13.4999 91.4002 13.2999C91.4002 13.0999 91.3002 12.9999 91.0002 12.9999H90.7002V13.5999H91.0002Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="100" height="39.6" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+
+
+          {%- if use_transparent_header and section.settings.transparent_logo != blank -%}
+            <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M80.2 1.3C90.4 1.3 98.8 9.6 98.8 19.9C98.8 30.1 90.5 38.5 80.2 38.5H19.8C9.6 38.5 1.2 30.2 1.2 19.9C1.3 9.6 9.6 1.3 19.8 1.3H80.2ZM80.2 0H19.8C8.9 0 0 8.9 0 19.8C0 30.7 8.9 39.6 19.8 39.6H80.2C91.1 39.6 100 30.7 100 19.8C100 8.9 91.1 0 80.2 0Z" fill="white"/>
+<path d="M13.0996 20C13.0996 14.8 16.9996 11 21.9996 11C23.5996 11 25.1996 11.5 26.2996 12.1L26.9996 11H27.9996V17.1H26.9996C25.9996 14 24.2996 12.1 21.9996 12.1C19.3996 12.1 17.0996 14.7 17.0996 19.6C17.0996 24.7 19.8996 27.2 22.5996 27.2C24.9996 27.2 26.6996 25.8 27.8996 23.4L28.8996 23.9C27.6996 26.7 25.3996 28.9 21.6996 28.9C16.2996 28.8 13.0996 25.1 13.0996 20Z" fill="white"/>
+<path d="M29.6992 27.2999C31.6992 27.1999 32.0992 26.9999 32.0992 26.1999V13.4999C32.0992 12.6999 31.6992 12.4999 29.6992 12.3999V11.3999H37.5992C42.9992 11.3999 44.2992 13.4999 44.2992 15.4999C44.2992 17.0999 43.1992 18.6999 39.9992 19.2999V19.3999C43.4992 19.5999 44.9992 21.4999 44.9992 23.3999C44.9992 26.0999 43.3992 28.2999 37.7992 28.2999H29.6992V27.2999ZM37.2992 18.8999C39.8992 18.8999 40.7992 17.7999 40.7992 15.6999C40.7992 13.5999 39.9992 12.4999 37.2992 12.4999H35.6992V18.8999H37.2992ZM37.5992 27.2999C40.8992 27.2999 41.3992 25.6999 41.3992 23.3999C41.3992 21.2999 40.2992 19.9999 37.2992 19.9999H35.6992V27.2999H37.5992Z" fill="white"/>
+<path d="M46.0996 27.3998C48.3996 27.0998 48.6996 26.1998 48.6996 23.7998V14.1998C48.6996 13.1998 48.1996 12.3998 46.0996 12.2998V11.2998H53.0996L57.4996 23.4998H57.6996L61.8996 11.2998H68.6996V12.2998C66.6996 12.3998 66.2996 12.5998 66.2996 13.3998V26.1998C66.2996 26.9998 66.6996 27.1998 68.6996 27.2998V28.2998H60.5996V27.2998C62.1996 27.1998 62.6996 26.9998 62.6996 26.1998V13.5998H62.4996L57.1996 28.3998H55.6996L50.1996 13.5998H49.9996V23.7998C49.9996 26.1998 50.1996 26.9998 52.5996 27.3998V28.3998H46.1996V27.3998H46.0996Z" fill="white"/>
+<path d="M69.8994 27.2999C71.8994 27.1999 72.2994 26.9999 72.2994 26.1999V13.4999C72.2994 12.6999 71.8994 12.4999 69.8994 12.3999V11.3999H77.5994C83.8994 11.3999 86.9994 14.6999 86.9994 19.4999C86.9994 24.1999 84.4994 28.2999 77.9994 28.2999H69.8994V27.2999ZM77.4994 27.2999C81.7994 27.2999 83.0994 25.0999 83.0994 19.7999C83.0994 14.4999 81.0994 12.4999 77.2994 12.4999H75.8994V27.2999H77.4994Z" fill="white"/>
+<path d="M88.7002 13.6999C88.7002 12.3999 89.7002 11.3999 91.0002 11.3999C92.3002 11.3999 93.3002 12.3999 93.3002 13.6999C93.3002 14.9999 92.3002 15.9999 91.0002 15.9999C89.7002 15.9999 88.7002 14.9999 88.7002 13.6999ZM93.0002 13.6999C93.0002 12.4999 92.1002 11.6999 91.0002 11.6999C89.9002 11.6999 89.0002 12.4999 89.0002 13.6999C89.0002 14.8999 89.9002 15.6999 91.0002 15.6999C92.1002 15.6999 93.0002 14.8999 93.0002 13.6999ZM90.1002 12.4999H91.0002C91.6002 12.4999 92.0002 12.7999 92.0002 13.2999C92.0002 13.6999 91.8002 13.8999 91.5002 13.9999L92.1002 14.9999H91.4002L90.9002 13.9999H90.7002V14.8999H90.0002V12.4999H90.1002ZM91.0002 13.5999C91.3002 13.5999 91.4002 13.4999 91.4002 13.2999C91.4002 13.0999 91.3002 12.9999 91.0002 12.9999H90.7002V13.5999H91.0002Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="100" height="39.6" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+          {%- endif -%}
+        {%- else -%}
+          <span class="Heading u-h4">{{ shop.name }}</span>
+        {%- endif -%}
+      </a>
+    {%- endcapture -%}
+
+    <div class="Header__FlexItem Header__FlexItem--logo">
+      {%- if template == 'index' -%}
+        <h1 class="Header__Logo">{{ header_logo }}</h1>
+      {%- else -%}
+        <div class="Header__Logo">{{ header_logo }}</div>
+      {%- endif -%}
+    </div>
+
+    <div class="Header__FlexItem Header__FlexItem--fill">
+      <div class="Header_Mobile">
+
+        <!--a href="{{ routes.cart_url }}" class="Heading u-h6 Header_Mobile_cart " {% unless template == 'cart' or settings.cart_type == 'page' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endunless %}>{{ 'header.navigation.cart' | t }} (<span class="Header__CartCount">{{ cart.item_count }}</span>)</a-->
+
+        <button class="Heading u-h6 Header__Icon Icon-Wrapper Icon-Wrapper--clickable" aria-expanded="false" data-action="open-drawer" data-drawer-id="sidebar-menu" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
+          Menu
+        </button>
+
+
+      </div>
+
+      {%- comment -%}
+      --------------------------------------------------------------------------------------------------------------------
+      DESKTOP NAVIGATION (if not using the sidebar mode)
+      --------------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
+
+      {%- unless use_sidebar_menu -%}
+        {%- assign main_menu_handle = section.settings.navigation_menu | default: 'main-menu' -%}
+        {%- assign main_menu = linklists[main_menu_handle] -%}
+
+        {%- assign mega_menu_names = '' -%}
+
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'mega_menu' -%}
+            {%- assign trim_mega_menu_name = block.settings.navigation_mega_menu | strip -%}
+            {%- assign mega_menu_names = mega_menu_names | append: trim_mega_menu_name | append: ',' -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- assign mega_menu_names = mega_menu_names | downcase | split: ',' | compact -%}
+
+        <nav class="Header__MainNav" aria-label="{{ 'header.navigation.title' | t }}">
+          <ul class="HorizontalList HorizontalList--spacingExtraLoose">
+            {%- for link in main_menu.links -%}
+              {%- assign downcased_link_title = link.title | downcase | strip -%}
+              {%- assign use_mega_menu = false -%}
+
+              {%- capture menu_item_dropdown -%}
+                {%- if mega_menu_names contains downcased_link_title -%}
+                  {%- for block in section.blocks -%}
+                    {%- assign downcased_mega_menu_name = block.settings.navigation_mega_menu | downcase -%}
+
+                    {%- if downcased_mega_menu_name != downcased_link_title -%}
+                      {%- continue -%}
+                    {%- endif -%}
+
+                    {%- assign use_mega_menu = true -%}
+                    {%- assign push_image_count = 0 -%}
+
+                    {%- if block.settings.push_1_image -%}
+                      {%- assign push_image_count = push_image_count | plus: 1 -%}
+                    {%- endif -%}
+
+                    {%- if block.settings.push_2_image -%}
+                      {%- assign push_image_count = push_image_count | plus: 1 -%}
+                    {%- endif -%}
+
+                    {%- assign should_space_evenly = false -%}
+
+                    {%- if push_image_count == 0 and link.links.size <= 3 -%}
+                      {%- assign should_space_evenly = true -%}
+                    {%- endif -%}
+
+                    {%- if push_image_count == 1 and link.links.size == 1 -%}
+                      {%- assign should_space_evenly = true -%}
+                    {%- endif -%}
+
+                    {%- if push_image_count == 2 and link.links.size == 1 -%}
+                      {%- assign should_space_evenly = true -%}
+                    {%- endif -%}
+
+                    <div class="MegaMenu {% if push_image_count != 0 and link.links.size == 0 %}MegaMenu--spacingCenter{% elsif should_space_evenly %}MegaMenu--spacingEvenly{% endif %} {% if push_image_count == 0 and link.links.size > 4 %}MegaMenu--grid{% endif %}" aria-hidden="true" {{ block.shopify_attributes }}>
+                      <div class="MegaMenu__Inner">
+
+                        {%- if push_image_count > 0 -%}
+                          <div class="MegaMenu__Item">
+                            {%- if block.settings.push_1_image -%}
+                              <div class="MegaMenu__Push {% if push_image_count == 2 %}MegaMenu__Push--shrink{% endif %}">
+                                {%- if block.settings.push_1_url != blank -%}
+                                  <a class="MegaMenu__PushLink" href="{{ block.settings.push_1_url }}">
+                                {%- endif -%}
+
+                                {%- assign max_width = 370 | at_most: block.settings.push_1_image.width -%}
+
+                                {%- if link.title == "Products" -%}
+
+                                  {%- if page.template_suffix == "overview" -%}
+                                    {%- assign is-sub-active = "is-sub-active" -%}
+                                  {%- else-%}
+                                    {%- assign is-sub-active = "" -%}
+                                  {%- endif -%}
+                                {%- endif -%}
+
+
+                                {%- if link.title == "Education" -%}
+
+                                  {%- if page.template_suffix == "our-mission" -%}
+                                    {%- assign is-sub-active = "is-sub-active" -%}
+                                  {%- else-%}
+                                    {%- assign is-sub-active = "" -%}
+                                  {%- endif -%}
+                                {%- endif -%}
+
+
+                                <div class="MegaMenu__PushImageWrapper AspectRatio {{ is-sub-active }}" style="background: url({{ block.settings.push_1_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_1_image.aspect_ratio }}">
+                                  <img class="Image--lazyLoad Image--fadeIn"
+                                       data-src="{{ block.settings.push_1_image | img_url: '370x230', scale: 2 }}"
+                                       alt="{{ block.settings.push_1_image.alt | escape }}">
+
+                                  <span class="Image__Loader"></span>
+                                </div>
+
+                                {%- if block.settings.push_1_heading != blank -%}
+                                  <p class="MegaMenu__PushHeading Heading u-h6">{{ block.settings.push_1_heading | escape }}</p>
+                                {%- endif -%}
+
+                                {%- if block.settings.push_1_subheading != blank -%}
+                                  <!--p class="MegaMenu__PushSubHeading Heading Text--subdued u-h7">{{ block.settings.push_1_subheading | escape }}</p-->
+                                {%- endif -%}
+
+                                {%- if block.settings.push_1_url != blank -%}
+                                  </a>
+                                {%- endif -%}
+                              </div>
+                            {%- endif -%}
+
+                            {%- if block.settings.push_2_image -%}
+                              <div class="MegaMenu__Push {% if push_image_count == 2 %}MegaMenu__Push--shrink{% endif %}">
+                                {%- if block.settings.push_2_url != blank -%}
+                                  <a class="MegaMenu__PushLink" href="{{ block.settings.push_2_url }}">
+                                {%- endif -%}
+
+                                {%- assign max_width = 370 | at_most: block.settings.push_2_image.width -%}
+
+                                {%- if page.template_suffix == "our-science" -%}
+                                  {%- assign is-sub-active = "is-sub-active" -%}
+                                {%- else -%}
+                                  {%- assign is-sub-active = "" -%}
+                                {%- endif -%}
+
+                                <div class="MegaMenu__PushImageWrapper AspectRatio {{ is-sub-active }}" style="background: url({{ block.settings.push_2_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_2_image.aspect_ratio }}">
+                                  <img class="Image--lazyLoad Image--fadeIn"
+                                       data-src="{{ block.settings.push_2_image | img_url: '370x230', scale: 2 }}"
+                                       alt="{{ block.settings.push_2_image.alt | escape }}">
+
+                                  <span class="Image__Loader"></span>
+                                </div>
+
+                                {%- if block.settings.push_2_heading != blank -%}
+                                  <p class="MegaMenu__PushHeading Heading u-h6">{{ block.settings.push_2_heading | escape }}</p>
+                                {%- endif -%}
+
+                                {%- if block.settings.push_2_subheading != blank -%}
+                                  <!--p class="MegaMenu__PushSubHeading Heading Text--subdued u-h7">{{ block.settings.push_2_subheading | escape }}</p-->
+                                {%- endif -%}
+
+                                {%- if block.settings.push_2_url != blank -%}
+                                  </a>
+                                {%- endif -%}
+                              </div>
+                            {%- endif -%}
+                          </div>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  {%- endfor -%}
+                {%- elsif link.links != blank -%}
+                  <div class="DropdownMenu" aria-hidden="true">
+                    <ul class="Linklist">
+                      {%- for sub_link in link.links -%}
+                        <li class="Linklist__Item" {% if sub_link.links != blank %}aria-haspopup="true"{% endif %}>
+                          <a href="{{ sub_link.url }}" class="Link Link--secondary">{{ sub_link.title | escape }} {% if sub_link.links != blank %}{% render 'icon' with 'select-arrow-right' %}{% endif %}</a>
+
+                          {%- if sub_link.links != blank -%}
+                            <div class="DropdownMenu" aria-hidden="true">
+                              <ul class="Linklist">
+                                {%- for sub_sub_link in sub_link.links -%}
+                                  <li class="Linklist__Item">
+                                    <a href="{{ sub_sub_link.url }}" class="Link Link--secondary">{{ sub_sub_link.title | escape }}</a>
+                                  </li>
+                                {%- endfor -%}
+                              </ul>
+                            </div>
+                          {%- endif -%}
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+                {%- endif -%}
+              {%- endcapture -%}
+
+              {%- assign is-active = "" -%}
+
+              {%- if link.active -%}
+                {%- assign is-active = "is-active" -%}
+              {%- endif -%}
+
+              {%- if link.title == "Education" -%}
+                {% if menu_item_dropdown != blank %}
+
+                  {%- if page.template_suffix == "our-mission" or page.template_suffix == "our-science" -%}
+                      {%- assign is-active = "is-active" -%}
+                  {%- else -%}
+                      {%- assign is-active = "" -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+
+              {%- if link.title == "Products" -%}
+                {% if menu_item_dropdown != blank %}
+
+                  {%- if page.template_suffix == "overview" -%}
+                      {%- assign is-active = "is-active" -%}
+                  {%- else -%}
+                      {%- assign is-active = "" -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+
+              <li class="HorizontalList__Item {{ is-active }}" {% if menu_item_dropdown != blank %}aria-haspopup="true"{% endif %}>
+                <a href="{{ link.url }}" class="Heading u-h6">
+                  {{- link.title | escape -}}
+
+                  {%- if use_mega_menu or menu_item_dropdown == blank -%}
+                    <span class="Header__LinkSpacer">{{ link.title | escape }}</span>
+                  {%- endif -%}
+                </a>
+
+                {{- menu_item_dropdown -}}
+              </li>
+
+            {%- endfor -%}
+
+            <!--li class="HorizontalList__Item ">
+              <a href="{{ routes.cart_url }}" class="Heading u-h6" {% unless template == 'cart' or settings.cart_type == 'page' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endunless %}>{{ 'header.navigation.cart' | t }} (<span class="Header__CartCount">{{ cart.item_count }}</span>)</a>
+            </li-->            
+
+          </ul>
+        </nav>
+
+        {{- currency_conversion_select -}}
+      {%- endunless -%}
+    </div>
+  </div>
+
+
+</header>
+
+<style>
+  {%- if section.settings.use_sticky_header -%}
+    :root {
+      --use-sticky-header: 1;
+      --use-unsticky-header: 0;
+    }
+
+    .shopify-section--header {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  {%- else -%}
+    :root {
+      --use-sticky-header: 0;
+      --use-unsticky-header: 1;
+    }
+  {%- endif -%}
+
+  {%- if section.settings.logo -%}
+    @media screen and (max-width: 640px) {
+      .Header__LogoImage {
+        max-width: {{ section.settings.mobile_logo_max_width }}px;
+      }
+    }
+  {%- endif -%}
+
+  {%- if use_transparent_header -%}
+    :root {
+      --header-is-not-transparent: 0;
+      --header-is-transparent: 1;
+    }
+
+    .shopify-section--header {
+      margin-bottom: calc(-1 * var(--header-height));
+    }
+
+  {%- else -%}
+    :root {
+      --header-is-not-transparent: 1;
+      --header-is-transparent: 0;
+    }
+  {%- endif -%}
+</style>
+
+<script>
+  $( document ).scroll(function() {
+    if ($(".banner_sidebar").length > 0 && $(".banner_sidebar").width() > 0) {
+      if ($(document).scrollTop() == 0) {
+        $("#section-header").css("background", "transparent");
+      }
+      else {
+        if ($(document).scrollTop() > $(".shopify-section--banner").height()) {
+          $("#section-header").css("background", "#eb161e");   
+        }
+        else {
+
+          if($(".is-expanded").length == 0)
+            $("#section-header").css("background", "transparent"); 
+          else 
+            $("#section-header").css("background", "#eb161e"); 
+        }
+        
+      }      
+    }
+  });  
+</script>
+
+{% schema %}
+{
+  "name": "Header",
+  "class": "shopify-section--header",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_sticky_header",
+      "label": "Use sticky header",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Image",
+      "info": "200 x 60px .png recommended"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "min": 50,
+      "max": 350,
+      "step": 5,
+      "unit": "px",
+      "label": "Image width",
+      "default": 140
+    },
+    {
+      "type": "range",
+      "id": "mobile_logo_max_width",
+      "min": 50,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile image width",
+      "default": 90
+    },
+    {
+      "type": "header",
+      "content": "Navigation"
+    },
+    {
+      "type": "link_list",
+      "id": "navigation_menu",
+      "label": "Menu",
+      "default": "main-menu"
+    },
+    {
+      "type": "select",
+      "id": "navigation_style",
+      "label": "Navigation style",
+      "info": "Setting will default to center style if screen width cannot fit all the links.",
+      "options": [
+        {
+          "value": "sidebar",
+          "label": "Sidebar"
+        },
+        {
+          "value": "inline",
+          "label": "Inline"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "logoLeft",
+          "label": "Logo left"
+        }
+      ],
+      "default": "inline"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_icons",
+      "label": "Show icons",
+      "info": "Text for account, search and cart are replaced by icons on desktop.",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Transparent header"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_transparent_header",
+      "label": "Enable on homepage",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_transparent_header_collection",
+      "label": "Enable on collection pages",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_transparent_header_border",
+      "label": "Show separation border",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "transparent_text_color",
+      "label": "Text/icon color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "image_picker",
+      "id": "transparent_logo",
+      "label": "Logo image",
+      "info": "200 x 60px .png recommended"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "mega_menu",
+      "name": "Mega menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "navigation_mega_menu",
+          "label": "Menu item",
+          "info": "Enter menu item to apply a mega menu dropdown. [Learn more](http://support.maestrooo.com/article/149-navigation-enabling-and-configuring-mega-menu)."
+        },
+        {
+          "type": "header",
+          "content": "Image push 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "push_1_image",
+          "label": "Image",
+          "info": "740 x 460 px .jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "push_1_heading",
+          "label": "Heading",
+          "default": "Example heading"
+        },
+        {
+          "type": "text",
+          "id": "push_1_subheading",
+          "label": "Sub-heading",
+          "default": "Example sub-heading"
+        },
+        {
+          "type": "url",
+          "id": "push_1_url",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Image push 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "push_2_image",
+          "label": "Image",
+          "info": "740 x 460 px .jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "push_2_heading",
+          "label": "Heading",
+          "default": "Example heading"
+        },
+        {
+          "type": "text",
+          "id": "push_2_subheading",
+          "label": "Sub-heading",
+          "default": "Example sub-heading"
+        },
+        {
+          "type": "url",
+          "id": "push_2_url",
+          "label": "Link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

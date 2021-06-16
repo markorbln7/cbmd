@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">  
+    <div class="infoTab-wrapper rbln-container">
+        <div class="infoTab-wrapper__left">
+            <div class="infoTab-wrapper__left__content">
+                <p class="infoTab-wrapper__left__content_heading box t-red">{{section.settings.it_tab_heading}}</p>
+                <p class="infoTab-wrapper__left__content_title box h1-t">{{section.settings.it_tab_title}}</p>
+                
+                <div class="wrapper">
+                    <div class="tabs box">
+                    {%- for block in section.blocks -%}
+                        <div class="tab">
+                            <span class="tab-label" data-title="{{ block.settings.tab_heading }}" data-content="{{ block.settings.tab_text }}" data-label=".{{ block.settings.tab__nav_title }}" data-image="{{ block.settings.tab_image | img_url: 'master' }}">{{ block.settings.tab__nav_title }}</span>
+                        </div>
+                    {%- endfor -%} 
+                    </div>
+                    <h2 class="tab-title box"></h2> 
+                    <div class="tab-content box p-t">                                                 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="infoTab-wrapper__right box">
+            <img class="infoTab-wrapper__right_image" src="">
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+  "name": "Information Tabs",
+  "settings": [
+    {
+      "type": "text",
+      "id": "it_tab_title",
+      "label": "title"
+    },
+    {
+      "type": "text",
+      "id": "it_tab_heading",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab__nav_title",
+          "label": "Tab Nav Title"
+        },
+        {
+          "type": "text",
+          "id": "tab_heading",
+          "label": "Heading"
+        }, 
+        {
+          "type": "richtext",
+          "id": "tab_text",
+          "label": "Text"
+        },
+        {
+            "type": "image_picker",
+            "id": "tab_image",
+            "label": "Tab Section Image"
+        }       
+      ]
+    }
+  ],    
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Information Tabs",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

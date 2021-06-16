@@ -1,0 +1,204 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">  
+<div class="tabs-holder">
+<div class="tab_menu box">
+    <div data-active=".first-tab" class="tab_menu-item active">Formulation</div>
+    <div data-active=".second-tab" class="tab_menu-item">Ingredients</div>
+    {% comment %} <div data-active=".third-tab" class="tab_menu-item">Research</div> {% endcomment %}
+</div>
+    {% comment %} FIRST TAB {% endcomment %}
+    <div class="tab first-tab justify-content-between align-items-start box">
+        <div class="first-tab-left">
+            <div class="first-tab-title heading1">Fast acting CBD Topical Cream</div>
+            <img alt="A dose of white CBMD PMT Pain Support CBD topical cream formulated to support pain and inflammation, including back pain." class="mobile-only-image" src="https://cdn.shopify.com/s/files/1/0321/8472/9739/files/Group_559_2.png?v=1619682747">
+            <div class="first-tab-text">
+                In combination with CBD, select plant-based 
+                compounds and other natural ingredients comprise a 
+                formulation designed to support discomfort and inflammation.
+            </div>
+            <div class="pils">
+                <div class="pils_title red-prehead">Formulated for</div>
+                <div class="pils_holder d-flex flex-wrap">
+                    <span>Pain</span>
+                    <span>Muscle Soreness</span>
+                    <span>Inflammation</span>
+                    <span>Stiffness</span>
+                    <span>Discomfort</span>
+                    <span>Backaches</span>
+                    <span>Aches</span>
+                    <span>Joint Stiffness</span>
+                    <span>Headaches</span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="first-tab-right">
+            <img src="https://cdn.shopify.com/s/files/1/0321/8472/9739/files/Group_559_2.png?v=1619682747">
+        </div>
+    </div>
+    {% comment %} SECOND TAB {% endcomment %}
+    <div class="tab second-tab">
+        <div class="heading1 tab-title">Key Ingredients</div>
+        
+        <div class="swiper-container ingredients-container">
+            <div class="swiper-wrapper">
+
+            {% for ingridient in product.metafields.inTitle.inTitle %} 
+            {%- assign ingridientTitle = ingridient -%}
+            <div class="swiper-slide align-items-center">
+                <img src="{{ product.metafields.inImage.inImage[forloop.index0] }}">
+                <div class="keyIngredients_box">
+                <h2 class="h2">{{- ingridientTitle -}} </h2>
+                <div class="p_medium">
+                    <p>{{ product.metafields.inSubtitle.inSubtitle[forloop.index0] }}</p>
+                    <p>{{ product.metafields.inText.inText[forloop.index0] }}</p>
+                </div>
+                </div>
+            </div>
+            {%- endfor -%} 
+            
+            
+            </div>
+        </div>
+        <div class="swiper-pagination ingredients-pagination col-col-pagination col-pagination-bullet"></div>
+
+        <div class=" col-sm-9 align-items-start p_xsmall keyIngredients_description">
+            <p> <span style="font-weight:600;">Other Ingredients:</span> {{product.metafields.otherIn.otherIn}}</p>
+        </div>  
+
+    </div>
+    {% comment %} SECOND TAB END {% endcomment %}
+    {% comment %} THIRD TAB {% endcomment %}
+    {% comment %} <div class="tab third-tab position-relative">
+    <div class="tab-mobile-only">Research</div>
+    <div class="heading1 tab-title">Truth, <br>not trends</div>
+    <div class="subtitle">Our physicians develop scientifically structured formulations based on available evidence.</div>
+
+    <div class="swiper-container research-container">
+        <div class="swiper-wrapper">
+        {% for research in product.metafields.researchText.researchText %} 
+        {%- assign researchText = research -%}
+            <div class="swiper-slide align-items-center p_small">
+                    <p>{{- researchText -}}</p>
+            </div> 
+        {%- endfor -%} 
+        </div>
+    </div>
+    <div class="swiper-pagination research-pagination col-col-pagination col-pagination-bullet"></div>
+
+    </div> {% endcomment %}
+     {% comment %} THIRD TAB END {% endcomment %}
+
+
+</div>
+</section>
+<style>
+.second-tab, .third-tab {
+    display:none;
+}
+@media only screen and (max-width: 731px) {
+  .second-tab, .third-tab {
+    display:block;
+  }
+  .second-tab {
+    margin-top:3rem;
+    margin-bottom:2.5rem;
+  }
+  .third-tab {
+    margin-bottom:2rem;
+  }
+}
+</style>
+
+<script>
+$('.tab_menu-item').on("click", function () {
+    $('.tab_menu-item').removeClass('active');
+    $(this).addClass('active');
+    let klasa= $(this).data('active');
+
+    $('.tab').css('display','none');
+    if(klasa == '.first-tab') {
+        $(klasa).css('display','flex').hide().fadeIn();
+    } else {
+        $(klasa).css('display','block').hide().fadeIn();;
+    }
+    var swiperIngredient = new Swiper('.ingredients-container', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.ingredients-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        501: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        732: {
+          slidesPerView: 3,
+          spaceBetween: 45,
+        }
+      }
+      
+    });
+    var swiperResearch= new Swiper('.research-container', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.research-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        501: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        732: {
+          slidesPerView: 3,
+          spaceBetween: 45,
+        }
+      }
+      
+    });
+})
+    
+    var swiperIngredient = new Swiper('.ingredients-container', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.ingredients-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        601: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        732: {
+          slidesPerView: 3,
+          spaceBetween: 45,
+        }
+      }
+      
+    });
+    var swiperResearch= new Swiper('.research-container', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.research-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        601: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        732: {
+          slidesPerView: 3,
+          spaceBetween: 45,
+        }
+      }
+      
+    });
+</script>

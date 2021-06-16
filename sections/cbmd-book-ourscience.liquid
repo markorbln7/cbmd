@@ -1,0 +1,109 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">
+  <div class="cbmd_book_container Highlights_container">
+    <div class="book_contents_area">
+      <p class="heading">{{section.settings.heading}}</p>
+      <p class="title">{{section.settings.book_title}}</p>
+      <p class="description">{{section.settings.book_description}}</p> 
+      <a href="{{section.settings.book_url}}" target="_blank" class="Button Button--cbd Button--red">Open PDF</a>
+    </div>
+
+    <div class="book_cover_area">
+      <div class="book_container">
+        <div class="book_cover">
+
+          <a href="{{section.settings.book_url}}" target="_blank" >
+            <div class="book" style="background-image: url({{ section.settings.book_cover | img_url: 'master' }})">
+              <!--div class="left-side">
+                <h2>
+                  <span></span>
+                  <span></span>
+                </h2>
+              </div-->
+            </div>            
+          </a>
+        </div>
+      </div>      
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+  if( navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)) {
+
+    setInterval(function(){ 
+      // $("#section-{{ section.id }}").find(".book").remove();
+      $("#section-{{ section.id }}").find(".book").addClass('book_hovered');
+      setTimeout(function(){
+        $("#section-{{ section.id }}").find(".book").removeClass('book_hovered');
+      }, 1000);
+
+      // $("#section-{{ section.id }}").find(".book").trigger('hover');
+      // $("#section-{{ section.id }}").find(".book").trigger('mouseover');
+
+    }, 3000);
+    
+ }
+
+ $(document).ready( function () {
+  $(".book").hover(function(){
+    $(this).addClass("book_hovered");
+  });
+  $(".book").mouseleave(function(){
+    $(this).removeClass("book_hovered");
+  });
+
+ });
+</script>
+
+{% schema %}
+{
+  "name": "Book",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },      
+    {
+      "type": "text",
+      "id": "book_title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "book_description",
+      "label": "Description"
+    },    
+    {
+      "type": "textarea",
+      "id": "book_name",
+      "label": "Name"
+    },       
+    {
+      "type": "image_picker",
+      "id": "book_cover",
+      "label": "Cover"
+    },        
+    {
+      "type": "text",
+      "id": "book_url",
+      "label": "Url"
+    }
+  ],
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Book",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

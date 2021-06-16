@@ -1,0 +1,99 @@
+{%- render 'image-sections', section: section -%}
+
+{% schema %}
+{
+  "name": "Highlights Image",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "select",
+      "id": "highlight_style",
+      "label": "Layout style",
+      "options": [
+        {
+          "value": "left_image",
+          "label": "Left Image"
+        },
+        {
+          "value": "right_image",
+          "label": "Right Image"
+        }       
+      ],
+      "default": "left_image"
+    },
+    {
+      "type": "image_picker",
+      "id": "highlight_image",
+      "label": "Image"
+    },      
+    {
+      "type": "text",
+      "id": "highlight_video",
+      "label": "Background Video",
+      "default" : "https://cdn.shopify.com/s/files/1/0321/8472/9739/files/cbmd-find-your-cbd.mp4?v=1585816723"
+    },        
+    {
+      "type": "text",
+      "id": "highlight_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "highlight_title",
+      "label": "Title"
+    },    
+    {
+      "type": "textarea",
+      "id": "highlight_description",
+      "label": "Description"
+    },        
+    {
+      "type": "header",
+      "content": "Action"
+    },
+    {
+      "type": "select",
+      "id": "action_style",
+      "label": "Action Style",
+      "options": [
+        {
+          "value": "link",
+          "label": "Link"
+        },
+        {
+          "value": "button",
+          "label": "Button"
+        }
+      ],
+      "default": "link"
+    },
+    {
+      "type": "text",
+      "id": "action_title",
+      "label": "Action Title"
+    },
+    {
+      "type": "url",
+      "id": "action_link",
+      "label": "Action Link"
+    },
+    {
+      "type": "text",
+      "id": "action_text",
+      "label": "Hypter Link"
+    }        
+  ],
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Highlight Image",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

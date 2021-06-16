@@ -1,0 +1,276 @@
+{%- if template.name == 'page' or template.name == 'blog' or template == 'customers/account' or template == 'customers/order' or template == 'customers/addresses' -%}
+  {%- assign add_top_margin = true -%}
+{%- else -%}
+  {%- assign add_top_margin = false -%}
+{%- endif -%}
+
+{%- if template == 'page.collections' -%}
+  {%- assign add_top_margin = false -%}
+{%- endif -%}
+<script type="text/javascript">
+  var d = new Date();
+  var n = d.getFullYear();
+</script>
+<footer id="section-{{ section.id }}" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %} {% if add_top_margin %}Footer--withMargin{% endif %}" role="contentinfo">
+  <div class="Container">
+    {%- if section.blocks.size > 0 -%}
+      <div class="Footer_header">
+        {%- if section.settings.cmbd_logo != blank-%}
+          <svg class="footer_cbmd_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 729.43 289.11"><path d="M584.87 9.14c74.68 0 135.43 60.75 135.43 135.42s-60.75 135.42-135.43 135.42h-440.3c-74.68 0-135.43-60.75-135.43-135.42S69.88 9.14 144.56 9.14h440.3m0-9.14h-440.3A144.56 144.56 0 0 0 0 144.56h0a144.55 144.55 0 0 0 144.56 144.55h440.3a144.55 144.55 0 0 0 144.56-144.55h0C729.43 64.722 664.708 0 584.87 0zM95.8 146c0-38 28.2-66 65.06-66a67 67 0 0 1 31.22 8.09l5.45-8.1h7.52v44.56h-8.46c-7.52-22.7-19.93-36.47-36.27-36.47-19.18 0-36.1 18.6-36.1 54.9 0 37.23 20.5 55.1 40.24 55.1 17.48 0 29.7-10.16 38.54-28l7.15 3.38c-8.65 20.12-25.58 36.3-52.46 36.3-39.14-.02-61.9-26.72-61.9-63.76zm120.73 53.4c14.86-.56 17.68-2.26 17.68-8.08v-93.1c0-5.83-2.82-7.52-17.68-8.1V83h57.73c39.3 0 49.07 15 49.07 29.7 0 11.66-8.08 23.7-31.6 27.83v.75c25.6 1.55 36.48 15.42 36.48 29.55 0 19.93-12 35.9-52.27 35.9h-59.42zm55.66-61.5c19.18 0 25.2-7.7 25.2-23.7 0-15.23-5.65-23.3-25.4-23.3h-11.85v47zm2.07 60.94c24.07 0 27.64-11.66 27.64-28.2 0-15.23-8.28-24.82-29.7-24.82h-12v53zm61.67.93c16.74-2.45 19.18-8.46 19.18-26.33v-69.76c0-7-3.76-13-19.18-13.54V83h51.15l31.77 89.3h1.48L450.8 83h49.64v7.14c-14.85.57-17.67 2.26-17.67 8.1v93.08c0 5.82 2.82 7.52 17.67 8.08v7.33H441.6v-7.33c12-.56 15.4-1.88 15.4-8.08V98.98h-1.3l-38.35 107.74h-11.28L365.83 98.98h-1.5v74.46c0 17.68 1.7 23.5 18.62 26.33v7h-47zm173.74-.37c14.86-.56 17.68-2.26 17.68-8.08v-93.1c0-5.83-2.82-7.52-17.68-8.1V83h56.4c46.26 0 68.26 23.88 68.26 59.42 0 34.22-18.24 64.3-65.62 64.3h-59.05zm55.85-.56c31.4 0 40.8-16 40.8-54.72 0-38.92-14.3-53.2-42.5-53.2h-10.5v107.94zM639.87 86.4h-5.2V83h14.8v3.4h-5.2v15.9h-4.4zm13.96-3.4h5.77l4.5 12 4.46-12h5.66v19.3h-4.34V88.74l-5.34 13.54h-1.43l-5.37-13.54v13.54h-3.9z"/></svg>
+        {%- endif -%}
+      </div>
+      <div class="Footer__Inner_row">
+        <div class="Footer__Inner_first">
+          {%- if section.settings.newsletter_title != blank -%}
+            <h2 class="Footer__Title Heading u-h6">{{ section.settings.newsletter_title | escape }}</h2>
+          {%- endif -%}
+
+          <form id="footer-subscription">
+              <div class="Button--group">
+                <input type="email" name="email" class="Form__Input Input--cbd" placeholder="{{ 'footer.newsletter.input' | t }}" required>
+                <input type="submit" class="Button Button--cbd Button--black" value="{{ 'footer.newsletter.signup' | t }}" />
+              </div>            
+          </form>
+
+          {%- if section.settings.newsletter_content != blank -%}
+            <div class="Footer__Content Rte">
+              {{ section.settings.newsletter_content }}
+            </div>
+          {%- endif -%}                  
+        </div>
+        <div class="Footer__Inner">
+          {%- for block in section.blocks -%}
+            <div class="Footer__Block Footer__Block--{{ block.type }}" {{ block.shopify_attributes }}>
+              {%- case block.type -%}
+                {%- when 'text' -%}
+                  {%- if block.settings.title != blank -%}
+                    <h2 class="Footer__Title Heading u-h6">{{ block.settings.title | escape }}</h2>
+                  {%- endif -%}
+
+                  {%- if block.settings.content != blank -%}
+                    <div class="Footer__Content Rte">
+                      {{ block.settings.content }}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if block.settings.show_social_media -%}
+                    {% render 'social-media', class: 'Footer__Social', spacing: 'loose' %}
+                  {%- endif -%}
+
+                {%- when 'links' -%}
+                  {%- assign linklist = linklists[block.settings.menu] -%}
+
+                  {%- if linklist != empty  and linklist.title == "Products" -%}
+                    <h2 class="Footer__Title Heading u-h6"><a href="/pages/overview">{{ linklist.title | escape }}</a></h2>
+                    
+                    <ul class="Linklist">
+                      {%- for link in linklist.links -%}
+                        {% case link.title %}
+                        {% when 'RAW Pure CBD' %}
+                        {% assign q = 'raw' %}
+                        {% when 'PMT Pain Mgmt' %}
+                        {% assign q = 'pmt' %}
+                        {% when 'PSY Mind Clear' %}                        
+                        {% assign q = 'psy' %}
+                        {% when 'DRM Skin Restore' %}                        
+                        {% assign q = 'drm' %}
+                        {% endcase %}
+
+                        <li class="Linklist__Item">
+                          <a href="{{ link.url }}?q={{ q }}" class="Link Link--primary {% if linklist.title == "About" %}is-active{% endif %}">{{ link.title | escape }}</a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+
+                  {%- if linklist != empty  and linklist.title == "Our Mission" -%}
+                    <h2 class="Footer__Title Heading u-h6"><a href="/pages/our-mission">{{ linklist.title | escape }}</a></h2>
+                    
+                    <ul class="Linklist">
+                      {%- for link in linklist.links -%}
+                        <li class="Linklist__Item">
+                          <a href="{{ link.url }}" class="Link Link--primary {% if linklist.title == "Our Mission" %}is-active{% endif %}">{{ link.title | escape }}</a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}                  
+              {%- endcase -%}
+            </div>
+          {%- endfor -%}
+        </div>        
+      </div>
+      
+    {%- endif -%}
+
+    <div class="Footer__Bottom">
+      <div class="Footer__Proud">
+        <p class="Footer__ThemeAuthor">{{ section.settings.cannabiomed_description }}</p>
+        <img class="footer_cbmd_logo" src="{{ section.settings.cannabiomed_logo | img_url: 'master' }}" alt="CBMD">        
+        <!--a href="{{ routes.root_url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }}</a-->
+      </div>
+
+      <div class="Footer__Copyright">
+        <div class="Footer__Content Rte">
+          {{ section.settings.copyright }}
+          <p>© {{ "now" | date: "%Y" }} {{ 'footer.copyright.text' | t }}<br><a class="link-term-of-use" href="{{ section.settings.terms_of_use }}">Terms of Use</a> — <a href="{{ section.settings.policy }}">Privacy Policy</a></p>
+        </div>
+        <div class=""><img src="https://cdn.shopify.com/s/files/1/0321/8472/9739/files/Group_87.png?v=1622204898"></div>
+      </div>
+      {%- if section.settings.show_payment_methods -%}
+        {%- capture payment_methods -%}
+          {%- for type in shop.enabled_payment_types -%}
+            <li class="HorizontalList__Item">{{ type | payment_type_svg_tag }}</li>
+          {%- endfor -%}
+        {%- endcapture -%}
+
+        {%- if payment_methods != blank -%}
+          <ul class="Footer__PaymentList HorizontalList">
+            {{ payment_methods }}
+          </ul>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "class": "shopify-section--footer",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_payment_methods",
+      "label": "Show payment methods",
+      "info": "Payment method icons are automatically displayed based on your Shopify payment methods.",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "cmbd_logo",
+      "label": "CBMD Logo"
+    },    
+    {
+      "type": "header",
+      "content": "Cannabiomed Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "cannabiomed_logo",
+      "label": "Logo"
+    },
+    {
+      "type": "text",
+      "id": "cannabiomed_description",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Newsletter"
+    },
+    {
+      "type": "paragraph",
+      "content": "Customers who subscribe will have their email address added to the \"accepts marketing\" [customer list](/admin/customers?query=&accepts_marketing=1)."
+    },
+    {
+      "type": "text",
+      "id": "newsletter_title",
+      "label": "Heading",
+      "default": "Newsletter"
+    },
+    {
+      "type": "richtext",
+      "id": "newsletter_content",
+      "label": "Text",
+      "default": "<p>A short sentence describing what someone will receive by subscribing</p>"
+    },
+    {
+      "type": "header",
+      "content": "Copyright"
+    },
+    {
+      "type": "textarea",
+      "id": "copyright",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "terms_of_use",
+      "label": "Terms of Use"
+    },
+    {
+      "type": "url",
+      "id": "policy",
+      "label": "Policy"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Social media",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_social_media",
+          "label": "Show social media",
+          "info": "Make sure to have properly configured your social media in the theme settings.",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "name": "Links",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu",
+          "info": "This menu won't show dropdown items."
+        }
+      ]
+    },
+    {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Customers who subscribe will have their email address added to the \"accepts marketing\" [customer list](/admin/customers?query=&accepts_marketing=1)."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Newsletter"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>A short sentence describing what someone will receive by subscribing</p>"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "text",
+        "settings": {}
+      },
+      {
+        "type": "links",
+        "settings": {
+          "menu": "footer"
+        }
+      },
+      {
+        "type": "newsletter",
+        "settings": {}
+      }
+    ]
+  }
+}
+{% endschema %}

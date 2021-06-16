@@ -1,0 +1,103 @@
+{%- render 'stats-sections', section: section -%}
+{% schema %}
+{
+  "name": "Stats",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "highlight_heading",
+      "label": "Heading Title",
+      "default": "The problem"
+    },
+    {
+      "type": "textarea",
+      "id": "highlight_title",
+      "label": "Highlights Title",
+      "default": "Highlights Title ..."
+    },    
+    {
+      "type": "textarea",
+      "id": "highlight_description",
+      "label": "Highlights Description",
+      "default": "Highlights Description ..."
+    },        
+    {
+      "type": "header",
+      "content": "Action"
+    },
+    {
+      "type": "select",
+      "id": "action_style",
+      "label": "Action Style",
+      "options": [
+        {
+          "value": "link",
+          "label": "Link"
+        },
+        {
+          "value": "button",
+          "label": "Button"
+        }
+      ],
+      "default": "link"
+    },
+    {
+      "type": "text",
+      "id": "action_title",
+      "label": "Action Title",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "action_link",
+      "label": "Action Link"
+    }    
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Sub-heading",
+          "default": "..."
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+
+          "label": "Text",
+          "default": "..."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Stats",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

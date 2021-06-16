@@ -1,0 +1,51 @@
+{%- render 'multilinks-sections', section: section -%}
+
+{% schema %}
+{
+  "name": "Multilink",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "link_sub_title",
+          "label": "Link Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "link_image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Page"
+        }
+      ]
+    }
+  ],    
+  "presets": [
+    {
+      "category": "CBMD",
+      "name": "Multilinks",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

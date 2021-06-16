@@ -1,0 +1,39 @@
+{%- assign collection_back = block.settings.background -%}
+{%- assign collection_title = block.settings.view_title -%}
+{%- assign collection_description = block.settings.view_description -%}
+{%- assign products = collection.products -%}
+
+<div class="collection_view collection_item_{{ collection.id }} {% if index != 1 %} hide {% endif %}">
+  <div class="collection_item" data-id="{{ collection.id }}">
+    <img class="highlight_image"
+        src="{{ collection_back | img_url: 'master' }}"
+        alt="{{ section.settings.highlight_image.alt | default: shop.name | escape }}">
+    <div class="collection_content">
+      <p class="collection_label">Our products</p>
+      <h1 class="collection_title">{{ collection_title }}</h1>
+      <p class="collection_description">{{ collection_description }}</p>
+    </div>  
+  </div>
+  <div class="collection_products">
+    <p class="collection_label">Our products</p>
+    <div class="collection_items">
+      {%- for product in products -%}
+        <div class="collection_product">
+          <!--<a href="{{ product.url }}">-->
+          <a>
+            <h1>{{ product.title }}</h1>
+            <h1>{{ product.description }}</h1>                
+            <p>{{ product.type }}</p>               
+            <div class="img_area">
+              <img src="{{ product | img_url: 'master' }}">
+            </div>
+          </a>
+        </div>
+      {%- endfor -%}
+    </div>
+    <div class="mobile-swipe-notice">Swipe <img src="{{ 'mobile-swipe-icon.svg' | asset_url }}" /></div> 
+    <div class="collection_notify">
+      <button type="button"  data-action="open-modal" aria-controls="modal-product-subscription" class="Button Button--cbd Button--red">{{ 'overview.notify_button' | t }}</button>
+    </div>
+  </div>
+</div>
