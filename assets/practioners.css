@@ -29,7 +29,7 @@ html.page-team {
   color: #eb161e;
   font-weight: 600;
   font-family: Graphik;
-  font-size: 1.07rem;
+  font-size: 0.8rem;
   margin-bottom: 1rem;
 }
 
@@ -41,13 +41,25 @@ html.page-team {
   margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 731px) {
+  .bn-title {
+    font-size: 1.6rem;
+  }
+}
+
 .bn-lead {
   font-family: Graphik;
   font-style: normal;
   font-weight: normal;
   font-size: 1.1rem;
   line-height: 1.4;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.03rem;
+}
+
+@media only screen and (max-width: 731px) {
+  .bn-lead {
+    font-size: 0.9rem;
+  }
 }
 
 .team-hero {
@@ -606,5 +618,107 @@ html.page-team {
   font-size: 0.8rem;
   line-height: 1.5;
   border-bottom: 1px solid #E3E3E3;
+}
+
+.reviews {
+  border: 1px solid #000;
+}
+
+.reviews__intro {
+  max-width: 26rem;
+}
+
+.reviews__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 731px) {
+  .reviews__list {
+    display: block;
+  }
+  .reviews__list > * + * {
+    margin-top: 1.5rem;
+  }
+}
+
+.reviews__list-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  padding-right: 2.5rem;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.reviews__list-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url(./quotes.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 731px) {
+  .reviews__list-item {
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+    padding-right: 0;
+    margin-top: 2rem;
+    border-bottom: 1px solid #f3f3f3;
+  }
+}
+
+@media only screen and (max-width: 731px) {
+  .reviews__list-content {
+    padding-left: 2rem;
+  }
+}
+
+.reviews__user {
+  margin-top: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 731px) {
+  .reviews__user {
+    margin-top: 1rem;
+  }
+}
+
+.reviews__user-photo {
+  width: 1.5rem;
+  height: 1.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  display: block;
+}
+
+.reviews__user-info {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.7rem;
+  line-height: 1.14;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.reviews__user-name {
+  font-weight: 600;
+  color: black;
 }
 /*# sourceMappingURL=practioners.css.map */
