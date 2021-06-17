@@ -1,0 +1,107 @@
+<section class="partners">
+    <div class="bn-container">
+        <div class="partners__intro">
+            <div class="partners__intro-copy">
+                <h4 class="bn-subtitle">Our national network</h4>
+                <h2 class="bn-title">Partners with a common goal.</h2>
+                <div class="bn-lead">Our community is broad: physicians, healthcare practitioners, scientists, leaders in bioinformatics</div>
+            </div>
+            <div class="partners__map-wrapper">
+                <div class="partners__map">
+                    {% render 'usa-svg-map' %}
+                </div>
+                <div class="partners__img-legend">
+                    <div class="partners__legend-title">
+                        CBMD medical partners and affiliates across the United States.
+                    </div>
+                    <ul class="partners__legend-list">
+                        <li class="partners__legend-list-item">CBMD Distributor network</li>
+                        <li class="partners__legend-list-item">CBMD Distributors coming soon</li>
+                        <li class="partners__legend-list-item">CBMD Partnerships in progress</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="partners__list">
+            <li class="partners__list-item">
+                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
+                <div class="partners__partner-content">
+                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
+                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
+                </div>
+            </li>
+            <li class="partners__list-item">
+                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
+                <div class="partners__partner-content">
+                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
+                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
+                </div>
+            </li>
+            <li class="partners__list-item">
+                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
+                <div class="partners__partner-content">
+                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
+                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
+                </div>
+            </li>
+            <li class="partners__list-item">
+                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
+                <div class="partners__partner-content">
+                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
+                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
+                </div>
+            </li>
+            <li class="partners__list-item">
+                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
+                <div class="partners__partner-content">
+                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
+                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
+                </div>
+            </li>
+            <li class="partners__list-item">
+                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
+                <div class="partners__partner-content">
+                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
+                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
+                </div>
+            </li>
+            <li class="partners__list-item">
+                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
+                <div class="partners__partner-content">
+                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
+                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
+                </div>
+            </li>
+            <li class="partners__list-item">
+                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
+                <div class="partners__partner-content">
+                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
+                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
+                </div>
+            </li>
+            <li class="partners__list-item">
+                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
+                <div class="partners__partner-content">
+                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
+                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
+                </div>
+            </li>
+        </ul>
+        <div class="partners__button-wrapper">
+            <button class="partners__load-more">View more Partners</button>
+        </div>
+    </div>
+</section>
+
+<script>
+    $('.partners__load-more').on('click', togglePartners);
+
+    function togglePartners() {
+        $('.partners__list-item').toggleClass('show');
+        if($('.partners__load-more').text() == 'View more Partners') {
+            $('.partners__load-more').text('View less Partners');
+        } else {
+            $('.partners__load-more').text('View more Partners');
+        }
+    }
+</script>

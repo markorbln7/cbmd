@@ -25,6 +25,7 @@ html.page-team {
         font-weight: 600;
         font-family: Graphik;
         font-size: 1.07rem;
+        margin-bottom: 1rem;
     }
 
     &-title {
@@ -32,6 +33,17 @@ html.page-team {
         font-family: Graphik;
         font-weight: 600;
         line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    &-lead {
+        font-family: Graphik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.1rem;
+        line-height: 1.4;
+
+        letter-spacing: -0.03em;
     }
 }
 
