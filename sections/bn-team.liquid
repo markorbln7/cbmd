@@ -1,0 +1,163 @@
+<section class="team">
+    <div class="container">
+        <div class="team__intro">
+            <h4 class="team__subtitle">CBMD Medical Team</h4>
+            <h2 class="team__title">Leaders in the field of medicine. </h2>
+            <div>
+                Our founding advisory board is comprised of expert—practicing physicians, specialists in pharmacology researchers, and educators.
+            </div>
+        </div>
+
+        <div class="team__grid">
+            <div class="team__grid-item">
+                <img class="team__member-img" src="{{ 'test.jpg' | asset_img_url: 'master' }}" alt="Test">
+                <div class="team__member">
+                    <strong>Marisa Cavasco, MD</strong>
+                    <div>
+                        Dermatology and Cosmetic Surgery
+                    </div>
+                    <div class="team__additional-info">
+                        University of Illinois,
+                        Urbana Champaign Medical School
+                        Brigham and Women’s Hospital Chief of Neurology
+
+                        Harvard Medical School,
+                        Professor of Neurology
+
+                        Brigham and Women’s Hospital Chief of Neurology
+
+                        Harvard Medical School,
+                        Professor of Neurology
+                    </div>
+                      <img class="team__toggle-info" src="{{ 'plus.svg' | asset_url }}" alt="Info toggler">
+                </div>
+            </div>
+            <div class="team__grid-item">
+                <img class="team__member-img" src="{{ 'test.jpg' | asset_img_url: 'master' }}" alt="Test">
+                <div class="team__member">
+                    <strong>Marisa Cavasco, MD</strong>
+                    <div>
+                        Dermatology and Cosmetic Surgery
+                    </div>
+                    <div class="team__additional-info">
+                        University of Illinois,
+                        Urbana Champaign Medical School
+                        Brigham and Women’s Hospital Chief of Neurology
+
+                        Harvard Medical School,
+                        Professor of Neurology
+
+                        Brigham and Women’s Hospital Chief of Neurology
+
+                        Harvard Medical School,
+                        Professor of Neurology
+                    </div>
+                      <img class="team__toggle-info" src="{{ 'plus.svg' | asset_url }}" alt="Info toggler">
+                </div>
+
+            </div>
+            <div class="team__grid-item">
+                <img class="team__member-img" src="{{ 'test.jpg' | asset_img_url: 'master' }}" alt="Test">
+                <div class="team__member">
+                    <strong>Marisa Cavasco, MD</strong>
+                    <div>
+                        Dermatology and Cosmetic Surgery
+                    </div>
+                    <div class="team__additional-info">
+                        University of Illinois,
+                        Urbana Champaign Medical School
+                        Brigham and Women’s Hospital Chief of Neurology
+
+                        Harvard Medical School,
+                        Professor of Neurology
+
+                        Brigham and Women’s Hospital Chief of Neurology
+
+                        Harvard Medical School,
+                        Professor of Neurology
+                    </div>
+                    <img class="team__toggle-info" src="{{ 'plus.svg' | asset_url }}" alt="Info toggler">
+                </div>
+            </div>
+            <div class="team__grid-item">
+                <img class="team__member-img" src="{{ 'test.jpg' | asset_img_url: 'master' }}" alt="Test">
+                <div class="team__member">
+                    <strong>Marisa Cavasco, MD</strong>
+                    <div>
+                        Dermatology and Cosmetic Surgery
+                    </div>
+                    <div class="team__additional-info">
+                        University of Illinois,
+                        Urbana Champaign Medical School
+                        Brigham and Women’s Hospital Chief of Neurology
+
+                        Harvard Medical School,
+                        Professor of Neurology
+
+                        Brigham and Women’s Hospital Chief of Neurology
+
+                        Harvard Medical School,
+                        Professor of Neurology
+                    </div>
+                    <img class="team__toggle-info" src="{{ 'plus.svg' | asset_url }}" alt="Info toggler">
+                </div>
+            </div>
+            <div class="team__grid-item">
+                <img class="team__member-img" src="{{ 'test.jpg' | asset_img_url: 'master' }}" alt="Test">
+                <div class="team__member">
+                    <strong>Marisa Cavasco, MD</strong>
+                    <div>
+                        Dermatology and Cosmetic Surgery
+                    </div>
+                    <div class="team__additional-info">
+                        University of Illinois,
+                        Urbana Champaign Medical School
+                        Brigham and Women’s Hospital Chief of Neurology
+
+                        Harvard Medical School,
+                        Professor of Neurology
+
+                        Brigham and Women’s Hospital Chief of Neurology
+
+                        Harvard Medical School,
+                        Professor of Neurology
+                    </div>
+                    <img class="team__toggle-info" src="{{ 'plus.svg' | asset_url }}" alt="Info toggler">
+                </div>
+            </div>
+            <div class="team__grid-item">
+                <img class="team__member-img" src="{{ 'test.jpg' | asset_img_url: 'master' }}" alt="Test">
+                <div class="team__member">
+                    <strong>Marisa Cavasco, MD</strong>
+                    <div>
+                        Dermatology and Cosmetic Surgery
+                    </div>
+                    <div class="team__additional-info">
+                        University of Illinois,
+                        Urbana Champaign Medical School
+                        Brigham and Women’s Hospital Chief of Neurology
+
+                        Harvard Medical School,
+                        Professor of Neurology
+
+                        Brigham and Women’s Hospital Chief of Neurology
+
+                        Harvard Medical School,
+                        Professor of Neurology
+                    </div>
+                    <img class="team__toggle-info" src="{{ 'plus.svg' | asset_url }}" alt="Info toggler">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function toggleInfo() {
+        this.parentElement.classList.toggle('team__member--open');
+        this.classList.toggle('team__toggle-info--open');
+    }
+
+    $('.team__toggle-info').on('click', toggleInfo);
+
+</script>
