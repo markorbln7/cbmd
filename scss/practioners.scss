@@ -1,15 +1,6 @@
-html.page-team {
-    font-size:20px !important;
 
-    @media only screen and (min-width: 732px) {
-        font-size:1.56vw !important;
-    }
-
-    @media only screen and (min-width: 1240px) {
-        font-size:1.56vw !important;
-    }
-}
-
+@import './partials/general';
 @import './partials/team-hero';
 @import './partials/team-rounded';
 @import './partials/team';
+@import './partials/three-cols';
