@@ -14,7 +14,7 @@
                 <div class="team__member">
                     <strong>Marisa Cavasco, MD</strong>
                     <div>
-                        Dermatology and Cosmetic Surgery
+                        Dermatology and <br> Cosmetic Surgery
                     </div>
                     <div class="team__additional-info">
                         University of Illinois, Urbana Champaign <br> Medical School  <br> <br>
@@ -38,7 +38,7 @@
                 <div class="team__member">
                     <strong>Marisa Cavasco, MD</strong>
                     <div>
-                        Dermatology and Cosmetic Surgery
+                        Dermatology and <br> Cosmetic Surgery
                     </div>
                     <div class="team__additional-info">
                         University of Illinois, Urbana Champaign <br> Medical School  <br> <br>
@@ -62,7 +62,7 @@
                 <div class="team__member">
                     <strong>Marisa Cavasco, MD</strong>
                     <div>
-                        Dermatology and Cosmetic Surgery
+                        Dermatology and <br> Cosmetic Surgery
                     </div>
                     <div class="team__additional-info">
                         University of Illinois, Urbana Champaign <br> Medical School  <br> <br>
@@ -86,7 +86,7 @@
                 <div class="team__member">
                     <strong>Marisa Cavasco, MD</strong>
                     <div>
-                        Dermatology and Cosmetic Surgery
+                        Dermatology and <br> Cosmetic Surgery
                     </div>
                     <div class="team__additional-info">
                         University of Illinois, Urbana Champaign <br> Medical School  <br> <br>
@@ -110,7 +110,7 @@
                 <div class="team__member">
                     <strong>Marisa Cavasco, MD</strong>
                     <div>
-                        Dermatology and Cosmetic Surgery
+                        Dermatology and <br> Cosmetic Surgery
                     </div>
                     <div class="team__additional-info">
                         University of Illinois, Urbana Champaign <br> Medical School  <br> <br>
@@ -134,7 +134,7 @@
                 <div class="team__member">
                     <strong>Marisa Cavasco, MD</strong>
                     <div>
-                        Dermatology and Cosmetic Surgery
+                        Dermatology and <br> Cosmetic Surgery
                     </div>
                     <div class="team__additional-info">
                         University of Illinois, Urbana Champaign <br> Medical School  <br> <br>
@@ -159,6 +159,18 @@
 </section>
 
 <script>
+    if (window.innerWidth < 733) {
+        initSlider();
+    }
+
+    $( window ).resize(function() {
+        if (window.innerWidth < 733) {
+            initSlider();
+        } else {
+            killSlider();
+        }
+    });
+
     function toggleInfo() {
         this.parentElement.classList.toggle('team__member--open');
         this.classList.toggle('team__toggle-info--open');
@@ -166,4 +178,16 @@
 
     $('.team__toggle-info').on('click', toggleInfo);
 
+    function initSlider() {
+        $('.team__grid').slick({
+            autoplay: true,
+            arrows: false,
+            dots: false,
+            infinite: true
+        });
+    }
+
+    function killSlider() {
+        $('.team__grid').slick('unslick');
+    }
 </script>

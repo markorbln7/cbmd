@@ -20,6 +20,10 @@
     margin-bottom: 8rem;
     font-family: Graphik;
 
+    @media only screen and (max-width: 731px) {
+        margin-bottom: 4rem;
+    }
+
     &__bg {
         position: absolute;
         top: 0;
@@ -46,7 +50,7 @@
     &__content {
         position: relative;
         z-index: 1;
-        max-width: 25rem;   
+        max-width: 26rem;   
 
         @media only screen and (max-width: 731px) {
             background-color: #fff;
@@ -86,6 +90,11 @@
         margin-bottom: 1rem;
         max-width: 10rem;
 
+        @media only screen and (max-width: 1239px) {
+            font-size: 48px;
+            max-width: 16rem;
+        }
+
         @media only screen and (max-width: 731px) {
             font-size: 1.8rem;
         }
@@ -96,6 +105,11 @@
         line-height: 1.2;
         letter-spacing: -0.01rem;
         margin-bottom: 1.5rem;
+
+        @media only screen and (max-width: 1239px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
 
         @media only screen and (max-width: 731px) {
             font-size: 0.8rem;

@@ -40,6 +40,8 @@
         @media only screen and (max-width: 731px) {
             flex: 0 0 100%;
             margin-bottom: 1rem;
+            margin-left: 0;
+            margin-right: 0;
         }
 
         svg {
@@ -103,6 +105,10 @@
         margin-top: 3rem;
         display: flex;
         flex-wrap: wrap;
+
+        @media only screen and (max-width: 731px) {
+            margin-top: 1.51rem;
+        }
     }
 
     &__list-item {
@@ -119,14 +125,14 @@
         &:nth-child(1),
         &:nth-child(2),
         &:nth-child(3) {
-            display: block;
+            display: flex;
         }
 
         @media only screen and (min-width: 732px) {
             &:nth-child(4),
             &:nth-child(5),
             &:nth-child(6) {
-                display: block;
+                display: flex;
             }
         }
     
@@ -145,12 +151,12 @@
             &:nth-child(18),
             &:nth-child(19),
             &:nth-child(20) {
-                display: block;
+                display: flex;
             }
         }
 
         &.show {
-            display: block;
+            display: flex;
         }
         // ======================================================
         // Display children END

@@ -2,6 +2,10 @@
     margin-bottom: 4rem;
     font-family: Graphik;
 
+    @media only screen and (max-width: 731px) {
+        margin-bottom: 5rem;
+    }
+
     &__above-title {
         color: #eb161e;
         font-weight: 600;
@@ -36,5 +40,10 @@
     .tabs-holder .first-tab .first-tab-left .first-tab-text {
         font-size: 1.1rem;
         line-height: 1.6rem;
+        font-weight: 300;
+    }
+
+    .mobile-only-image {
+        padding-left: 2rem;
     }
 }

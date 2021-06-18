@@ -3,8 +3,20 @@
     margin-bottom: 4rem;
     font-family: Graphik;
 
+    @media only screen and (max-width: 731px) {
+        .bn-container {
+            padding-right: 1.5rem;
+        }
+    }
+
     &__intro {
         max-width: 20rem;
+
+        @media only screen and (max-width: 731px) {
+            .bn-subtitle {
+                margin-bottom: 0.5rem;
+            }
+        }
     }
 
     &__wrapper {
@@ -130,6 +142,10 @@
         margin-bottom: 0.5rem;
         font-size: 0.9rem;
         line-height: 1;
+
+        @media only screen and (max-width: 731px) {
+            max-width: 7rem;
+        }
     }
 
     &__number {
@@ -154,7 +170,7 @@
         }
 
         @media only screen and (max-width: 731px) {
-            flex: 0 0 30%;
+            flex: 0 0 35%;
         }
     }
 

@@ -1,6 +1,10 @@
 .rounded-left {
     margin-bottom: 4rem;
     font-family: Graphik;
+
+    @media only screen and (max-width: 731px) {
+        margin-bottom: 3rem;
+    }
     
     &__container {
         width: 100%;
@@ -15,6 +19,10 @@
 
         & > img {
             width: 55rem;
+
+            @media only screen and (max-width: 731px) {
+                width: 90%;
+            }
         }
     }
 
