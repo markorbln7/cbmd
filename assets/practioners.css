@@ -94,6 +94,7 @@ html.page-team {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 8rem;
+  font-family: Graphik;
 }
 
 .team-hero__bg {
