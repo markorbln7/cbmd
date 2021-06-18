@@ -1,45 +1,79 @@
 <section class="three-cols"> 
     <div class="bn-container">
         <div class="three-cols__intro">
-            <h4 class="bn-subtitle">Ways to get involved</h4>
-            <h2 class="bn-title">Work with CBMD. Serve your patients.</h2>
+            <h4 class="bn-subtitle">{{ section.settings.subtitle }}</h4>
+            <h2 class="bn-title">{{ section.settings.title }}</h2>
         </div>
         <ul class="three-cols__list">
-            <li class="three-cols__list-item">
-                <img class="three-cols__img" src="{{ 'test.jpg' | asset_img_url: 'master' }}" alt="TEST">
-                <div class="three-cols__item-content">
+            {% for block in section.blocks %}
+                <li class="three-cols__list-item">
+                    <img class="three-cols__img" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}">
+                    <div class="three-cols__item-content">
 
-                    <div class="three-cols__title">Get to <br> know us</div>
-                    <span class="three-cols__number">01</span>
-                    <div>
-                        If you’re a practitioner interested in learning more about our brand and our approach to CBD, we’d like to hear from you.
+                        <div class="three-cols__title">{{ block.settings.title }}</div>
+                        <span class="three-cols__number">0{{ forloop.index }}</span>
+                        <div>
+                            {{ block.settings.info }}
+                        </div>
+                        {% if block.settings.btn-link %}
+                            <a href="{{ block.settings.btn-link }}" class="Button Button--cbd Button--black three-cols__button">{{ block.settings.btn-text }}</a>
+                        {% endif %}
                     </div>
-                    <a href="#" class="Button Button--cbd Button--black three-cols__button">Talk with us</a>
-                </div>
-            </li>
-            <li class="three-cols__list-item">
-                <img class="three-cols__img" src="{{ 'test.jpg' | asset_img_url: 'master' }}" alt="TEST">
-                <div class="three-cols__item-content">
-                    <div class="three-cols__title">Get to <br> know us</div>
-                    <span class="three-cols__number">01</span>
-                    <div>
-                        If you’re a practitioner interested in learning more about our brand and our approach to CBD, we’d like to hear from you.
-                    </div>
-                    <a href="#" class="Button Button--cbd Button--black three-cols__button">Talk with us</a>
-                </div>
-            </li>
-            <li class="three-cols__list-item">
-                <img class="three-cols__img" src="{{ 'test.jpg' | asset_img_url: 'master' }}" alt="TEST">
-                <div class="three-cols__item-content">
-
-                    <div class="three-cols__title">Get to <br> know us</div>
-                    <span class="three-cols__number">01</span>
-                    <div>
-                        If you’re a practitioner interested in learning more about our brand and our approach to CBD, we’d like to hear from you.
-                    </div>
-                    <a href="#" class="Button Button--cbd Button--black three-cols__button">Talk with us</a>
-                </div>
-            </li>
+                </li> 
+            {% endfor %}
         </ul>
     </div>
 </section> 
+
+{% schema %}
+{
+    "name": "Three cols",
+    "settings": [
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "Ways to get involved"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Work with CBMD. Serve your patients."
+        }
+    ],
+    "blocks": [
+        {
+            "type": "member",
+            "name": "Team Member",
+            "settings": [
+                {
+                   "type": "image_picker",
+                   "id": "image",
+                   "label": "Team Member Image" 
+                },
+                {
+                    "type": "richtext",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "richtext",
+                    "id": "info",
+                    "label": "Info"
+                },
+                {
+                    "type": "text",
+                    "id": "btn-text",
+                    "label": "Button text"
+                },
+                {
+                    "type": "url",
+                    "id": "btn-link",
+                    "label": "Button link"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
