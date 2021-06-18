@@ -39,7 +39,6 @@
     }
 
     &__grid-item {
-        flex: 0 0 calc(33.3% - 0.5rem);
         margin-right: 0.75rem;
         padding: 1rem;
         padding-bottom: 6rem;
@@ -49,18 +48,20 @@
         overflow: hidden;
         margin-bottom: 1rem;
 
-        @media only screen and (min-width: 1240px) {
-            &:nth-child(3n + 3) {
-                margin-right: 0;
-            }
-        }
-
-        @media only screen and (min-width: 732px) {
+        @media only screen and (min-width: 732px) and (max-width: 1239px) {
             flex: 0 0 calc(50% - 0.5rem);
             margin-right: 1rem;
             padding-bottom: 5rem;
 
             &:nth-child(2n + 2) {
+                margin-right: 0;
+            }
+        }
+
+        @media only screen and (min-width: 1240px) {
+            flex: 0 0 calc(33.3% - 0.5rem);
+            
+            &:nth-child(3n + 3) {
                 margin-right: 0;
             }
         }
