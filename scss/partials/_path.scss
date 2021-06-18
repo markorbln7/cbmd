@@ -56,11 +56,12 @@
             }
 
             .path__image {
-                margin-top: 0;
-                margin-bottom: 1.5rem;
+                margin-bottom: 0;
+                margin-top: 1.5rem;
 
                 @media only screen and (max-width: 1239px) {
                     margin-bottom: 0;
+                    margin-top: 0;
                     margin-right: 1.5rem;
                     margin-left: 0;
                 }
@@ -139,11 +140,11 @@
 
     &__image {
         text-align: center;
-        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
 
         @media only screen and (max-width: 1239px) {
             margin-left: 1.5rem;
-            margin-top: 0;
+            margin-bottom: 0;
         }
 
         @media only screen and (max-width: 731px) {
