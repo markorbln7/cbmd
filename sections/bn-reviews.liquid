@@ -1,59 +1,74 @@
 <section class="reviews">
     <div class="bn-container">
         <div class="reviews__intro">
-            <h4 class="bn-subtitle">Hear from our doctors </h4>
-            <h2 class="bn-title">What it’s like to partner with CBMD</h2>
+            <h4 class="bn-subtitle">{{ section.settings.subtitle }}</h4>
+            <h2 class="bn-title">{{ section.settings.title }}</h2>
         </div>
         <ul class="reviews__list">
-            <li class="reviews__list-item">
-                <div class="reviews__list-content">
-                    <p>When patients ask me about CBD, I tell them the truth. That some of it is probably unsafe and some may be fine, but without appropriate clinical research my ability to provide responsible recommendations is impeded.</p>
-                </div>
-                <div class="reviews__user">
-                    <img class="reviews__user-photo" src="{{ 'test.jpg' | asset_url }}" alt="">
-                    <div class="reviews__user-info">
-                        <strong class="reviews__user-name">Fady Elias, MD</strong>
-                        <p>Orthopedic Surgery</p>
+            {% for block in section.blocks %}
+                <li class="reviews__list-item">
+                    <div class="reviews__list-content">
+                        <p>{{ block.settings.review }}</p>
                     </div>
-                </div>
-            </li>
-            <li class="reviews__list-item">
-                <div class="reviews__list-content">
-                    <p>When patients ask me about CBD, I tell them the truth. That some of it is probably unsafe and some may be fine, but without appropriate clinical research my ability to provide responsible recommendations is impeded.</p>
-                </div>
-                <div class="reviews__user">
-                    <img class="reviews__user-photo" src="{{ 'test.jpg' | asset_url }}" alt="">
-                    <div class="reviews__user-info">
-                        <strong class="reviews__user-name">Fady Elias, MD</strong>
-                        <p>Orthopedic Surgery</p>
+                    <div class="reviews__user">
+                        <img class="reviews__user-photo" src="{{ block.settings.image | img_url: "master"}}" alt="{{ block.settings.name }}">
+                        <div class="reviews__user-info">
+                            <strong class="reviews__user-name">{{ block.settings.name }}</strong>
+                            <p>{{ block.settings.info }}</p>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li class="reviews__list-item">
-                <div class="reviews__list-content">
-                    <p>When patients ask me about CBD, I tell them the truth. That some of it is probably unsafe and some may be fine, but without appropriate clinical research my ability to provide responsible recommendations is impeded.</p>
-                </div>
-                <div class="reviews__user">
-                    <img class="reviews__user-photo" src="{{ 'test.jpg' | asset_url }}" alt="">
-                    <div class="reviews__user-info">
-                        <strong class="reviews__user-name">Fady Elias, MD</strong>
-                        <p>Orthopedic Surgery</p>
-                    </div>
-                </div>
-            </li>
-            <li class="reviews__list-item">
-                <div class="reviews__list-content">
-                    <p>When patients ask me about CBD, I tell them the truth. That some of it is probably unsafe and some may be fine, but without appropriate clinical research my ability to provide responsible recommendations is impeded.</p>
-                </div>
-                <div class="reviews__user">
-                    <img class="reviews__user-photo" src="{{ 'test.jpg' | asset_url }}" alt="">
-                    <div class="reviews__user-info">
-                        <strong class="reviews__user-name">Fady Elias, MD</strong>
-                        <p>Orthopedic Surgery</p>
-                    </div>
-                </div>
-            </li>
+                </li>
+            {% endfor %}
+            
 
         </ul>
     </div>
 </section>
+
+{% schema %}
+{
+    "name": "Reviews",
+    "settings": [
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "Hear from our doctors"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "What it’s like to partner with CBMD"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "review",
+            "name": "Reviews",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "review",
+                    "label": "Review"
+                },
+                {
+                   "type": "image_picker",
+                   "id": "image",
+                   "label": "Team Member Image" 
+                },
+                {
+                    "type": "text",
+                    "id": "name",
+                    "label": "User name"
+                },
+                {
+                    "type": "text",
+                    "id": "info",
+                    "label": "Info"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
