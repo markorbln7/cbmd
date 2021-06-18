@@ -1,13 +1,58 @@
 <section class="rounded-left">
     <div class="rounded-left__container">
-        <img data-scroll-repeat="true" data-scroll="" data-scroll-speed="-1" class="highlight_image is-inview" src="//cdn.shopify.com/s/files/1/0321/8472/9739/files/Image_2048x.jpg?v=1612263749" srcset="//cdn.shopify.com/s/files/1/0321/8472/9739/files/Image_2048x.jpg?v=1612263749 1x, //cdn.shopify.com/s/files/1/0321/8472/9739/files/Image_2048x@2x.jpg?v=1612263749 2x" alt="CBMD" >
+        <img data-scroll-repeat="true" data-scroll="" data-scroll-speed="-1" class="highlight_image is-inview" src="{{ section.settings.image | img_url: "master" }}" alt="CBMD" >
         <div class="rounded-left__content">
-            <h4 class="bn-subtitle">Want to hear more?</h4>
-            <h2 class="bn-title">Our brand promise to clinicians</h2>
+            <h4 class="bn-subtitle">{{ section.settings.subtitle }}</h4>
+            <h2 class="bn-title">{{ section.settings.title }}</h2>
             <div>
-                <p>Healthcare providers are in a unique position to support patients and facilitate smart decisions around the safety of the products they use.</p>
+                {{ section.settings.copy }}
             </div>
-            <a href="#" class="Button Button--cbd Button--black three-cols__button">Talk with us</a>
+            {% if section.settings.btn_link %}
+                <a href="{{ section.settings.btn_link }}" class="Button Button--cbd Button--black three-cols__button">{{ section.settings.btn_text }}</a>
+            {% endif %}
         </div>
     </div>
 </section>
+
+
+{% schema %}
+{
+    "name": "Team Rounded Left",
+    "settings": [
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "Want to hear more?"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Our brand promise to clinicians"
+        },
+        {
+            "type": "richtext",
+            "id": "copy",
+            "label": "Content",
+            "default": "<p>Healthcare providers are in a unique position to support patients and facilitate smart decisions around the safety of the products they use.</p>"
+        },
+        {
+            "type": "url",
+            "id": "btn_link",
+            "label": "Button Link"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button Text",
+            "default": "Talk with us"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Select Image"
+        }
+    ]
+}
+{% endschema %}
