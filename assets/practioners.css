@@ -1,5 +1,6 @@
 html.page-team {
   font-size: 20px !important;
+  font-family: Graphik;
 }
 
 @media only screen and (min-width: 732px) {
@@ -196,6 +197,7 @@ html.page-team {
 
 .team-rounded {
   margin-bottom: 4rem;
+  font-family: Graphik;
 }
 
 .team-rounded__above-title {
@@ -222,6 +224,7 @@ html.page-team {
 
 .team {
   margin-bottom: 4rem;
+  font-family: Graphik;
 }
 
 .team__subtitle {
@@ -352,6 +355,7 @@ html.page-team {
 
 .three-cols {
   margin-bottom: 4rem;
+  font-family: Graphik;
 }
 
 .three-cols__intro {
@@ -480,6 +484,7 @@ html.page-team {
 
 .partners {
   margin-bottom: 4rem;
+  font-family: Graphik;
 }
 
 .partners__intro {
@@ -709,6 +714,7 @@ html.page-team {
 
 .reviews {
   margin-bottom: 4rem;
+  font-family: Graphik;
 }
 
 .reviews__intro {
@@ -811,6 +817,7 @@ html.page-team {
 
 .path {
   margin-bottom: 4rem;
+  font-family: Graphik;
 }
 
 .path__wrapper {
@@ -1104,6 +1111,7 @@ html.page-team {
 
 .rounded-left {
   margin-bottom: 4rem;
+  font-family: Graphik;
 }
 
 .rounded-left__container {

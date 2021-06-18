@@ -2,17 +2,61 @@
     <div class="tabs-holder">
         <div class="tab first-tab justify-content-between align-items-start box">
             <div class="first-tab-left">
-                <p class="team-rounded__above-title">Colleague to colleague</p>
-                <div class="first-tab-title heading1">We understand the concerns around CBD.</div>
+                <p class="team-rounded__above-title">{{ section.settings.subtitle }}</p>
+                <div class="first-tab-title heading1">{{ section.settings.title }}</div>
                 <img alt="A dose of white CBMD PMT Pain Support CBD topical cream formulated to support pain and inflammation, including back pain." class="mobile-only-image" src="https://cdn.shopify.com/s/files/1/0321/8472/9739/files/Group_559_2.png?v=1619682747">
                 <div class="first-tab-text">
-                    There is no consistent standard in testing, no ability to review the individual protocols, no evidence used in manufacturing CBD.. The current state of the industry is not serving the physicians. We have no ability to peer behind the curtain. In an effort to reshape the industry, we are coming at it with an evidence based approach to CBD. We provide medical grade formulations, transparent protocols, rigorous product testing, oversight, stringent ingredient sourcing and efficacious products to our patients.  
+                    {{ section.settings.copy }}  
                 </div>
-                <a href="#" class="Link Link--cbd box db">Our process</a>
+                {% if section.settings.btn_link %}
+                    <a href="{{ section.settings.btn_link }}" class="Link Link--cbd box db">{{ section.settings.btn_text }}</a>
+                {% endif %}
             </div>
             <div class="first-tab-right">
-                <img src="https://cdn.shopify.com/s/files/1/0321/8472/9739/files/Group_559_2.png?v=1619682747">
+                <img src="{{ section.settings.image | img_url: 'master' }}">
             </div>
         </div>    
     </div>
 </section>
+
+{% schema %}
+{
+    "name": "Team Rounded",
+    "settings": [
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "Colleague to colleague"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "We understand the concerns around CBD."
+        },
+        {
+            "type": "richtext",
+            "id": "copy",
+            "label": "Content",
+            "default": "<p>There is no consistent standard in testing, no ability to review the individual protocols, no evidence used in manufacturing CBD.. The current state of the industry is not serving the physicians. We have no ability to peer behind the curtain. In an effort to reshape the industry, we are coming at it with an evidence based approach to CBD. We provide medical grade formulations, transparent protocols, rigorous product testing, oversight, stringent ingredient sourcing and efficacious products to our patients.</p>"
+        },
+        {
+            "type": "url",
+            "id": "btn_link",
+            "label": "Button Link"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button Text",
+            "default": "Our process"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Select Image"
+        }
+    ]
+}
+{% endschema %}
