@@ -1010,4 +1010,36 @@ html.page-team {
     bottom: -0.1rem;
   }
 }
+
+.rounded-left__container {
+  width: 100%;
+  padding: 0 2.2rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 731px) {
+  .rounded-left__container {
+    padding: 0 1rem 0 0;
+    display: block;
+  }
+}
+
+.rounded-left__content {
+  margin-left: 4rem;
+  font-size: 1.1rem;
+  line-height: 1.45;
+}
+
+@media only screen and (max-width: 731px) {
+  .rounded-left__content {
+    margin-left: 0;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+  }
+}
 /*# sourceMappingURL=practioners.css.map */
