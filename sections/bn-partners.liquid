@@ -2,9 +2,9 @@
     <div class="bn-container">
         <div class="partners__intro">
             <div class="partners__intro-copy">
-                <h4 class="bn-subtitle">Our national network</h4>
-                <h2 class="bn-title">Partners with a common goal.</h2>
-                <div class="bn-lead">Our community is broad: physicians, healthcare practitioners, scientists, leaders in bioinformatics</div>
+                <h4 class="bn-subtitle">{{ section.settings.subtitle }}</h4>
+                <h2 class="bn-title">{{ section.settings.title }}</h2>
+                <div class="bn-lead">{{ section.settings.copy }}</div>
             </div>
             <div class="partners__map-wrapper">
                 <div class="partners__map">
@@ -23,69 +23,15 @@
             </div>
         </div>
         <ul class="partners__list">
-            <li class="partners__list-item">
-                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
-                <div class="partners__partner-content">
-                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
-                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
-                </div>
-            </li>
-            <li class="partners__list-item">
-                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
-                <div class="partners__partner-content">
-                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
-                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
-                </div>
-            </li>
-            <li class="partners__list-item">
-                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
-                <div class="partners__partner-content">
-                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
-                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
-                </div>
-            </li>
-            <li class="partners__list-item">
-                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
-                <div class="partners__partner-content">
-                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
-                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
-                </div>
-            </li>
-            <li class="partners__list-item">
-                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
-                <div class="partners__partner-content">
-                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
-                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
-                </div>
-            </li>
-            <li class="partners__list-item">
-                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
-                <div class="partners__partner-content">
-                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
-                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
-                </div>
-            </li>
-            <li class="partners__list-item">
-                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
-                <div class="partners__partner-content">
-                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
-                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
-                </div>
-            </li>
-            <li class="partners__list-item">
-                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
-                <div class="partners__partner-content">
-                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
-                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
-                </div>
-            </li>
-            <li class="partners__list-item">
-                <img src="{{ 'test.jpg' | asset_url }}" alt="TEST" class="partners__partner-img">
-                <div class="partners__partner-content">
-                    <h5 class="partners__partner-name">Matt Iorio, MD</h5>
-                    <p>Plastic/Reconstructive Extremity Microsurgery</p> 
-                </div>
-            </li>
+            {% for block in section.blocks %}
+                <li class="partners__list-item">
+                    <img src="{{ block.settings.image | img_url: "master" }}" alt="{{ block.settings.name }}" class="partners__partner-img">
+                    <div class="partners__partner-content">
+                        <h5 class="partners__partner-name">{{ block.settings.name }}</h5>
+                        <p>{{ block.settings.info }}</p> 
+                    </div>
+                </li>
+            {% endfor %}
         </ul>
         <div class="partners__button-wrapper">
             <button class="partners__load-more">View more Partners</button>
@@ -128,3 +74,52 @@
         }
     }
 </script>
+
+{% schema %}
+{
+    "name": "Partners",
+    "settings": [
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "Our national network"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Partners with a common goal."
+        },
+        {
+            "type": "richtext",
+            "id": "copy",
+            "label": "Content",
+            "default": "<p>Our community is broad: physicians, healthcare practitioners, scientists, leaders in bioinformatics</p>"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "member",
+            "name": "Team Member",
+            "settings": [
+                {
+                   "type": "image_picker",
+                   "id": "image",
+                   "label": "Team Member Image" 
+                },
+                {
+                    "type": "text",
+                    "id": "name",
+                    "label": "Name"
+                },
+                {
+                    "type": "richtext",
+                    "id": "info",
+                    "label": "Info"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
