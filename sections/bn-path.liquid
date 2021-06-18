@@ -1,64 +1,70 @@
 <section class="path">
     <div class="bn-container">
         <div class="path__intro">
-            <h4 class="bn-subtitle">Medical grade CBD</h4>
-            <h2 class="bn-title">The components of quality.</h2>
+            <h4 class="bn-subtitle">{{ section.settings.subtitle }}</h4>
+            <h2 class="bn-title">{{ section.settings.title }}</h2>
         </div>
         <ul class="path__wrapper">
             <span class="path__starting-line"></span>
 
-            <li class="path__item">
-                <div class="path__content">
-                    <span class="path__number">01</span>
-                    <div class="path__title">Quality ingredient Sourcing</div>
-                    <p>With exacting standards for quality, purity, safety, and efficacy, we evaluate each ingredient independently, and select optimal pairings to achieve the desired goal.</p>
-                </div>
-                <div class="path__image">
-                    <img src="{{ 'hand.svg' | asset_url }}" alt="">
-                </div>
-            </li>
-            <li class="path__item">
-                <div class="path__content">
-                    <span class="path__number">01</span>
-                    <div class="path__title">Quality ingredient Sourcing</div>
-                    <p>With exacting standards for quality, purity, safety, and efficacy, we evaluate each ingredient independently, and select optimal pairings to achieve the desired goal.</p>
-                </div>
-                <div class="path__image">
-                    <img src="{{ 'tube.svg' | asset_url }}" alt="">
-                </div>
-            </li>
-            <li class="path__item">
-                <div class="path__content">
-                    <span class="path__number">01</span>
-                    <div class="path__title">Quality ingredient Sourcing</div>
-                    <p>With exacting standards for quality, purity, safety, and efficacy, we evaluate each ingredient independently, and select optimal pairings to achieve the desired goal.</p>
-                </div>
-                <div class="path__image">
-                    <img src="{{ 'building.svg' | asset_url }}" alt="">
-                </div>
-            </li>
-            <li class="path__item">
-                <div class="path__content">
-                    <span class="path__number">01</span>
-                    <div class="path__title">Quality ingredient Sourcing</div>
-                    <p>With exacting standards for quality, purity, safety, and efficacy, we evaluate each ingredient independently, and select optimal pairings to achieve the desired goal.</p>
-                </div>
-                <div class="path__image">
-                    <img src="{{ 'micro.svg' | asset_url }}" alt="">
-                </div>
-            </li>
-            <li class="path__item">
-                <div class="path__content">
-                    <span class="path__number">01</span>
-                    <div class="path__title">Quality ingredient Sourcing</div>
-                    <p>With exacting standards for quality, purity, safety, and efficacy, we evaluate each ingredient independently, and select optimal pairings to achieve the desired goal.</p>
-                </div>
-                <div class="path__image">
-                    <img src="{{ 'pills.svg' | asset_url }}" alt="">
-                </div>
-            </li>
+            {% for block in section.blocks %}
+                <li class="path__item">
+                    <div class="path__content">
+                        <span class="path__number">0{{ forloop.index }}</span>
+                        <div class="path__title">{{ block.settings.title }}</div>
+                        <p>{{ block.settings.info }}</p>
+                    </div>
+                    <div class="path__image">
+                        <img src="{{ block.settings.image | img_url: "master" }}" alt="{{ block.settings.title }}">
+                    </div>
+                </li>
+            {% endfor %}
+            
 
             <span class="path__ending-line"></span>
         </ul>
     </div>
 </section>
+
+{% schema %}
+{
+    "name": "Medical Grade CBD",
+    "settings": [
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "Medical grade CBD"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "The components of quality."
+        }
+    ],
+    "blocks": [
+        {
+            "type": "member",
+            "name": "Components",
+            "settings": [
+                {
+                   "type": "image_picker",
+                   "id": "image",
+                   "label": "Icon" 
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "richtext",
+                    "id": "info",
+                    "label": "Info"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
