@@ -1,5 +1,5 @@
 .three-cols {
-    border: 1px solid #000;
+    margin-bottom: 4rem;
 
     &__intro {
         max-width: 22rem;
@@ -89,5 +89,7 @@
 
     &__button {
         margin-top: 1rem;
+        width: max-content;
+        display: inline-block;
     }
 }

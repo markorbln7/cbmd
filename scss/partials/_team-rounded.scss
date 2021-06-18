@@ -1,8 +1,18 @@
 .team-rounded {
+    margin-bottom: 4rem;
+
     &__above-title {
         color: #eb161e;
         font-weight: 600;
         font-family: Graphik;
         font-size: 1.07rem;
+    }
+
+    .tabs-holder {
+        padding-left: 2.2rem;
+
+        @media only screen and (max-width: 731px) {
+            padding-left: 1rem;
+        }
     }
 }

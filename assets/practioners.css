@@ -75,6 +75,7 @@ html.page-team {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 8rem;
 }
 
 .team-hero__bg {
@@ -144,11 +145,29 @@ html.page-team {
   }
 }
 
+.team-rounded {
+  margin-bottom: 4rem;
+}
+
 .team-rounded__above-title {
   color: #eb161e;
   font-weight: 600;
   font-family: Graphik;
   font-size: 1.07rem;
+}
+
+.team-rounded .tabs-holder {
+  padding-left: 2.2rem;
+}
+
+@media only screen and (max-width: 731px) {
+  .team-rounded .tabs-holder {
+    padding-left: 1rem;
+  }
+}
+
+.team {
+  margin-bottom: 4rem;
 }
 
 .team__subtitle {
@@ -278,7 +297,7 @@ html.page-team {
 }
 
 .three-cols {
-  border: 1px solid #000;
+  margin-bottom: 4rem;
 }
 
 .three-cols__intro {
@@ -393,6 +412,14 @@ html.page-team {
 
 .three-cols__button {
   margin-top: 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: inline-block;
+}
+
+.partners {
+  margin-bottom: 4rem;
 }
 
 .partners__intro {
@@ -621,7 +648,7 @@ html.page-team {
 }
 
 .reviews {
-  border: 1px solid #000;
+  margin-bottom: 4rem;
 }
 
 .reviews__intro {
@@ -720,6 +747,10 @@ html.page-team {
 .reviews__user-name {
   font-weight: 600;
   color: black;
+}
+
+.path {
+  margin-bottom: 4rem;
 }
 
 .path__wrapper {
@@ -1009,6 +1040,10 @@ html.page-team {
     right: 0.3rem;
     bottom: -0.1rem;
   }
+}
+
+.rounded-left {
+  margin-bottom: 4rem;
 }
 
 .rounded-left__container {
