@@ -11,6 +11,10 @@
             padding: 0 1rem 0 0;
             display: block;
         }
+
+        & > img {
+            width: 55rem;
+        }
     }
 
     &__content {
