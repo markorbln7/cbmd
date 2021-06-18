@@ -8,11 +8,44 @@
     </div>
     <div class="team-hero__container">
         <div class="team-hero__content" data-scroll data-scroll-direction="vertical" data-scroll-speed="-2" data-scroll-class="appear" data-scroll-repeat="true">
-            <h1 class="team-hero__title">We are physicians.</h1>
+            <h1 class="team-hero__title">{{ section.settings.title }}</h1>
             <div class="team-hero__text">
-                <p>What began as a response to our patients’ frequent requests for information on CBD, evolved into a broader response to address the inadequcies of the industry at large and serve our colleagues with an option in CBD that they can trust and verify.</p>
+                <p>{{ section.settings.copy }}</p>
             </div>
-            <a href="#" class="Button Button--cbd Button--red">Connect with us</a>
+            {% if section.settings.btn_link %}
+                <a href="{{ section.settings.btn_link }}" class="Button Button--cbd Button--red">{{ section.settings.btn_text }}</a>
+            {% endif %}
         </div>
     </div>
 </section>
+
+{% schema %}
+{
+    "name": "Team Hero",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "We are physicians."
+        },
+        {
+            "type": "text",
+            "id": "copy",
+            "label": "Copy",
+            "default": "What began as a response to our patients’ frequent requests for information on CBD, evolved into a broader response to address the inadequcies of the industry at large and serve our colleagues with an option in CBD that they can trust and verify."
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button Text",
+            "default": "Connect with us"
+        },
+        {
+            "type": "url",
+            "id": "btn_link",
+            "label": "Button Link"
+        }
+    ]
+}
+{% endschema %}
