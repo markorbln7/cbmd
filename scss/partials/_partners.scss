@@ -34,6 +34,8 @@
 
     &__map {
         margin-right: 2rem;
+        margin-left: 3rem;
+        flex: 0 0 20.4rem;
 
         @media only screen and (max-width: 731px) {
             flex: 0 0 100%;
@@ -53,6 +55,7 @@
         line-height: 1.25;
         letter-spacing: -0.01rem;
         margin-bottom: 1rem;
+        max-width: 13rem;
     }
 
     &__legend-list {
@@ -63,6 +66,8 @@
         margin-bottom: 0.5rem;
         position: relative;
         padding-left: 1rem;
+        font-size: 0.8rem;
+        line-height: 1rem;
 
         &:before {
             content: '';

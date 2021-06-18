@@ -21,6 +21,10 @@
         font-size: 1.1rem;
         line-height: 1.2;
         max-width: 26rem;
+
+        .bn-title {
+            max-width: 21rem;
+        }
     }
 
     &__grid {
@@ -88,6 +92,10 @@
 
     &__additional-info {
         margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid #e3e3e3;
+        font-size: 0.75rem;
+        line-height: 0.9rem;
     }
 
     &__toggle-info {

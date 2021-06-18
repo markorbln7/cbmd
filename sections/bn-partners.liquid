@@ -95,6 +95,29 @@
 
 <script>
     $('.partners__load-more').on('click', togglePartners);
+    showButton();
+
+    window.addEventListener("resize", showButton);
+
+    function showButton() {
+        console.log('got it');
+        $('.partners__button-wrapper').show();
+
+        switch (true) {
+            case window.innerWidth < 732 && $('.partners__list-item').length < 4:
+                $('.partners__button-wrapper').hide();
+                break;
+            case window.innerWidth < 1240 && $('.partners__list-item').length < 7:
+                $('.partners__button-wrapper').hide();
+                break;
+            case window.innerWidth > 1240 && $('.partners__list-item').length < 21:
+                $('.partners__button-wrapper').hide();
+                break;
+        
+            default:
+                break;
+        }
+    }
 
     function togglePartners() {
         $('.partners__list-item').toggleClass('show');

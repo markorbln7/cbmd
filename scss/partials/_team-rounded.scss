@@ -21,4 +21,20 @@
         font-size: 0.8rem;
         line-height: 1.2rem;
     }
+
+    .tabs-holder .first-tab .first-tab-left {
+        width: 31.35rem;
+        max-width: 100%;
+    }
+
+    .tabs-holder .first-tab .first-tab-right {
+        margin-top: 0;
+        width: 28rem;
+        max-width: 100%;
+    }
+
+    .tabs-holder .first-tab .first-tab-left .first-tab-text {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
 }

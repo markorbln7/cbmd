@@ -2,9 +2,9 @@
     <div class="tabs-holder">
         <div class="tab first-tab justify-content-between align-items-start box">
             <div class="first-tab-left">
-                <p class="team-rounded__above-title">{{ section.settings.subtitle }}</p>
-                <div class="first-tab-title heading1">{{ section.settings.title }}</div>
-                <img alt="A dose of white CBMD PMT Pain Support CBD topical cream formulated to support pain and inflammation, including back pain." class="mobile-only-image" src="https://cdn.shopify.com/s/files/1/0321/8472/9739/files/Group_559_2.png?v=1619682747">
+                <p class="bn-subtitle">{{ section.settings.subtitle }}</p>
+                <div class="bn-title">{{ section.settings.title }}</div>
+                <img alt="A dose of white CBMD PMT Pain Support CBD topical cream formulated to support pain and inflammation, including back pain." class="mobile-only-image" src="{{ section.settings.image | img_url: 'master' }}">
                 <div class="first-tab-text">
                     {{ section.settings.copy }}  
                 </div>
