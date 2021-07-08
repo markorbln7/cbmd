@@ -1231,8 +1231,7 @@
           "1586856538102",
           "1586856549135"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "cbmd-instagram": {
         "type": "cbmd-instagram",
@@ -1320,8 +1319,7 @@
           "1586884647574",
           "1586884664356"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "16110458041b7e9f57": {
         "type": "information-tabs",
@@ -1489,13 +1487,11 @@
       },
       "b-image-left-template": {
         "type": "b-image-left-template",
-        "settings": {
-        }
+        "settings": {}
       },
       "a-text-over-image": {
         "type": "a-text-over-image",
-        "settings": {
-        }
+        "settings": {}
       },
       "bn-team-hero": {
         "type": "bn-team-hero",

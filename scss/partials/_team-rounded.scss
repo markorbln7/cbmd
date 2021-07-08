@@ -1,49 +1,52 @@
 .team-rounded {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
+  font-family: Graphik;
+
+  @media only screen and (max-width: 731px) {
+    margin-bottom: 5rem;
+  }
+
+  &__above-title {
+    color: #eb161e;
+    font-weight: 600;
     font-family: Graphik;
+    font-size: 1.07rem;
+  }
+
+  .tabs-holder {
+    padding-left: 2.2rem;
 
     @media only screen and (max-width: 731px) {
-        margin-bottom: 5rem;
+      padding-left: 1rem;
     }
+  }
 
-    &__above-title {
-        color: #eb161e;
-        font-weight: 600;
-        font-family: Graphik;
-        font-size: 1.07rem;
-    }
+  .Link {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
 
-    .tabs-holder {
-        padding-left: 2.2rem;
+  .tabs-holder .first-tab .first-tab-left {
+    width: 31.35rem;
+    max-width: 100%;
+  }
 
-        @media only screen and (max-width: 731px) {
-            padding-left: 1rem;
-        }
-    }
+  .tabs-holder .first-tab .first-tab-right {
+    margin-top: 0;
+    width: 28rem;
+    max-width: 100%;
+  }
 
-    .Link {
-        font-size: 0.8rem;
-        line-height: 1.2rem;
-    }
+  .tabs-holder .first-tab .first-tab-left .first-tab-text {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+  }
 
-    .tabs-holder .first-tab .first-tab-left {
-        width: 31.35rem;
-        max-width: 100%;
-    }
-
-    .tabs-holder .first-tab .first-tab-right {
-        margin-top: 0;
-        width: 28rem;
-        max-width: 100%;
-    }
-
-    .tabs-holder .first-tab .first-tab-left .first-tab-text {
-        font-size: 1.1rem;
-        line-height: 1.6rem;
-        font-weight: 300;
-    }
-
-    .mobile-only-image {
-        padding-left: 2rem;
-    }
+  .mobile-only-image {
+    padding-left: 0;
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
+  }
 }
