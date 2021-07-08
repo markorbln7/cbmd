@@ -67,7 +67,10 @@ let modalNewsletter = $('#modal-general-newsletter');
 let modalTrigger = $('.modal-trigger');
 let modalClose = $('.Modal__Close');
 
-
+const scroller = new LocomotiveScroll({
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true,
+});
 let windowWidthStart = $(window).width(); // New width
 
 // Intersection observer code
@@ -100,41 +103,41 @@ document.querySelectorAll(".box").forEach((box) => {
 }
 
 
-$(window).resize(function() {
-    let winSize = $(window).width(); // New width
-    if(winSize > 731) {
-        const scroller = new LocomotiveScroll({
-            el: document.querySelector('[data-scroll-container]'),
-            smooth: true,
-        });
-    }
-    if(winSize > 768) {
-        let observer = new IntersectionObserver(function (entries, self) {
-          let targets = entries.map((entry) => {
-            if (entry.isIntersecting) {
-              self.unobserve(entry.target);
-              return entry.target;
-            }
-          });
+// $(window).resize(function() {
+//     let winSize = $(window).width(); // New width
+//     if(winSize > 731) {
+//         const scroller = new LocomotiveScroll({
+//             el: document.querySelector('[data-scroll-container]'),
+//             smooth: true,
+//         });
+//     }
+//     if(winSize > 768) {
+//         let observer = new IntersectionObserver(function (entries, self) {
+//           let targets = entries.map((entry) => {
+//             if (entry.isIntersecting) {
+//               self.unobserve(entry.target);
+//               return entry.target;
+//             }
+//           });
         
-          // Call our animation function
-          fadeIn(targets);
-        }, config);
+//           // Call our animation function
+//           fadeIn(targets);
+//         }, config);
         
-        document.querySelectorAll(".box").forEach((box) => {
-          observer.observe(box);
-        });
-        // Fades in the targets given
-            function fadeIn(targets) {
-            // Using GSAP's staggers!
-            gsap.to(targets, {
-                y: -40,
-                opacity: 1,
-                stagger: 0.2
-            });
-            }
-        }
-});
+//         document.querySelectorAll(".box").forEach((box) => {
+//           observer.observe(box);
+//         });
+//         // Fades in the targets given
+//             function fadeIn(targets) {
+//             // Using GSAP's staggers!
+//             gsap.to(targets, {
+//                 y: -40,
+//                 opacity: 1,
+//                 stagger: 0.2
+//             });
+//             }
+//         }
+// });
 
 
 inView('.product-dosing-wrapper').once('enter', scrollUpdateCustom);

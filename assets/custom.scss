@@ -1352,7 +1352,8 @@ section {
       .Highlights_multilnk_container .Highlights_multilnk_item {
         width: 100%;
         max-width: 314px;
-        margin-right: 24px; }
+        margin-right: 24px;
+        padding-top: 40px; }
         .Highlights_multilnk_container .Highlights_multilnk_item:last-child {
           margin-right: 0px; } }
     @media (max-width: 731px) {
@@ -1376,7 +1377,8 @@ section {
         .Highlights_multilnk_container .Highlights_multilnk_item a .Highlights_multilnk_item_content {
           height: 261px;
           width: 100%;
-          max-width: 314px; } }
+          max-width: 314px;
+          padding-top: 40px; } }
       @media (max-width: 731px) {
         .Highlights_multilnk_container .Highlights_multilnk_item a .Highlights_multilnk_item_content {
           padding: 12px;

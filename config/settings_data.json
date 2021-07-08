@@ -1231,7 +1231,8 @@
           "1586856538102",
           "1586856549135"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "cbmd-instagram": {
         "type": "cbmd-instagram",
@@ -1319,7 +1320,8 @@
           "1586884647574",
           "1586884664356"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "16110458041b7e9f57": {
         "type": "information-tabs",
@@ -1487,11 +1489,286 @@
       },
       "b-image-left-template": {
         "type": "b-image-left-template",
-        "settings": {}
+        "settings": {
+        }
       },
       "a-text-over-image": {
         "type": "a-text-over-image",
-        "settings": {}
+        "settings": {
+        }
+      },
+      "bn-team-hero": {
+        "type": "bn-team-hero",
+        "settings": {
+          "title": "We are physicians.",
+          "copy": "What began as a response to our patients’ frequent requests for information on CBD, evolved into a broader response to address the inadequcies of the industry at large and serve our colleagues with an option in CBD that they can trust and verify.",
+          "btn_text": "Connect with us",
+          "btn_link": "shopify:\/\/pages\/contact"
+        }
+      },
+      "bn-team-rounded": {
+        "type": "bn-team-rounded",
+        "settings": {
+          "subtitle": "Colleague to colleague",
+          "title": "We understand the concerns around CBD.",
+          "copy": "<p>There is no consistent standard in testing, no ability to review the individual protocols, no evidence used in manufacturing CBD.. The current state of the industry is not serving the physicians. We have no ability to peer behind the curtain. In an effort to reshape the industry, we are coming at it with an evidence based approach to CBD. We provide medical grade formulations, transparent protocols, rigorous product testing, oversight, stringent ingredient sourcing and efficacious products to our patients.<\/p>",
+          "btn_link": "shopify:\/\/pages\/our-science",
+          "btn_text": "Our process",
+          "image": "shopify:\/\/shop_images\/Image_caa16dea-d354-41eb-939c-ca7b4a85991c.png"
+        }
+      },
+      "bn-team": {
+        "type": "bn-team",
+        "blocks": {
+          "14a7f281-3de4-4acd-a47b-19aeef8d8d46": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/test.jpg",
+              "name": "Marisa Cavasco, MD",
+              "info": "<p>Dermatology and <br\/>Cosmetic Surgery<\/p>",
+              "additional-info": "<p>University of Illinois,<br\/>Urbana Champaign Medical School<br\/>  Brigham and Women’s Hospital  Chief of Neurology<br\/><br\/>Harvard Medical School,<br\/> Professor of Neurology<br\/><br\/>Brigham and Women’s Hospital  Chief of Neurology<br\/><br\/>Harvard Medical School,<br\/> Professor of Neurology<\/p>"
+            }
+          },
+          "206d8919-2750-4920-98d7-f74521890e55": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_46.jpg",
+              "name": "Fady Elias, MD",
+              "info": "<p>Orthopedic Surgery<br\/>Spine Surgeon<\/p>",
+              "additional-info": ""
+            }
+          },
+          "fb04d3d5-491a-428d-83dd-6a97db4cd475": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_47.jpg",
+              "name": "Matt Iorio, MD",
+              "info": "<p>Plastic\/Reconstructive  Extremity Microsurgery<br\/><\/p>",
+              "additional-info": ""
+            }
+          },
+          "39d16757-6b8c-46df-be06-a55dafd99dfb": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_48.jpg",
+              "name": "Mitchel Goldman, MD",
+              "info": "<p>Dermatology and  Cosmetic Surgery<\/p>",
+              "additional-info": ""
+            }
+          },
+          "77ad7a27-ae07-48f7-88ea-552a0d3111f0": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_50.jpg",
+              "name": "Victor Wang, MD  ",
+              "info": "<p>Anaesthesia, Pain Management and Neurology<\/p>",
+              "additional-info": ""
+            }
+          }
+        },
+        "block_order": [
+          "14a7f281-3de4-4acd-a47b-19aeef8d8d46",
+          "206d8919-2750-4920-98d7-f74521890e55",
+          "fb04d3d5-491a-428d-83dd-6a97db4cd475",
+          "39d16757-6b8c-46df-be06-a55dafd99dfb",
+          "77ad7a27-ae07-48f7-88ea-552a0d3111f0"
+        ],
+        "settings": {
+          "subtitle": "CBMD Medical Team",
+          "title": "Leaders in the field of medicine.",
+          "copy": "<p>Our founding advisory board is comprised of expert—practicing physicians, specialists in pharmacology researchers, and educators. <\/p>"
+        }
+      },
+      "bn-three-cols": {
+        "type": "bn-three-cols",
+        "blocks": {
+          "b492243f-4adc-4b56-a682-ffa11138dc96": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Mask_Group.png",
+              "title": "<p>Get to  <br\/>know us<\/p>",
+              "info": "<p>If you’re a practitioner interested in learning more about our brand and our approach to CBD, we’d like to hear from you.<\/p>",
+              "btn-text": "Talk with us",
+              "btn-link": "shopify:\/\/pages\/contact"
+            }
+          },
+          "cb4b78fd-11e5-467f-8eed-c4625ccbad4d": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Mask_Group1.png",
+              "title": "<p>Carry our<br\/>products<\/p>",
+              "info": "<p>Get in touch with our team if you’d like to learn how you can offer CBMD products for sale in your clinic or practice.<\/p>",
+              "btn-text": "Work with us",
+              "btn-link": "shopify:\/\/pages\/contact"
+            }
+          },
+          "56e9e40f-aabd-4a75-9b20-f0f1d1931e3c": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Mask_Group-1.png",
+              "title": "<p>Request custom<br\/>formulations<br\/><\/p>",
+              "info": "<p>If you are interested in creating proprietary formulations that meet specific needs for your patients, our team can help.<\/p>",
+              "btn-text": "Reach out",
+              "btn-link": "shopify:\/\/pages\/contact"
+            }
+          }
+        },
+        "block_order": [
+          "b492243f-4adc-4b56-a682-ffa11138dc96",
+          "cb4b78fd-11e5-467f-8eed-c4625ccbad4d",
+          "56e9e40f-aabd-4a75-9b20-f0f1d1931e3c"
+        ],
+        "settings": {
+          "subtitle": "Ways to get involved",
+          "title": "Work with CBMD. Serve your patients."
+        }
+      },
+      "bn-partners": {
+        "type": "bn-partners",
+        "blocks": {
+          "a5a81f55-4210-484e-b3cf-154ef8b33f08": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_47.jpg",
+              "name": "Matt Iorio, MD",
+              "info": "<p>Plastic\/Reconstructive  Extremity Microsurgery<\/p>"
+            }
+          },
+          "0ba02546-38e1-4ca6-bf11-34846d62f2d3": {
+            "type": "member",
+            "settings": {
+              "name": "",
+              "info": ""
+            }
+          }
+        },
+        "block_order": [
+          "a5a81f55-4210-484e-b3cf-154ef8b33f08",
+          "0ba02546-38e1-4ca6-bf11-34846d62f2d3"
+        ],
+        "settings": {
+          "subtitle": "Our national network",
+          "title": "Partners with a common goal.",
+          "copy": "<p>Our community is broad: physicians, healthcare practitioners, scientists, leaders in bioinformatics<\/p>"
+        }
+      },
+      "bn-reviews": {
+        "type": "bn-reviews",
+        "blocks": {
+          "171cac25-ddf1-4a42-866f-bc6ce6cee3d1": {
+            "type": "review",
+            "settings": {
+              "review": "<p>When patients ask me about CBD, I tell them the truth. That some of it is probably unsafe and some may be fine, but without appropriate clinical research my ability to provide responsible recommendations is impeded.<\/p>",
+              "image": "shopify:\/\/shop_images\/Rectangle_46.jpg",
+              "name": "Fady Elias, MD",
+              "info": "Orthopedic Surgery"
+            }
+          },
+          "4ff64657-6f75-4d71-ab8d-db638b016f06": {
+            "type": "review",
+            "settings": {
+              "review": "<p>As physicians, we want to know that our patients get what they think they’re getting with supplements. Lack of transparency in concentration alone puts them at risk for dangerous side effects or interactions with medicines also prescribed to them.<\/p>",
+              "image": "shopify:\/\/shop_images\/Frame_12.jpg",
+              "name": "Jay Lieberman, MD",
+              "info": "Pediatrics and Infectious Disease"
+            }
+          },
+          "1e9e7f83-31df-4ff4-b422-21df008eb23b": {
+            "type": "review",
+            "settings": {
+              "review": "<p>There is an increasing amount of evidence based medicine and clinical studies on cannabidiol (CBD), and it is our intention at CBMD to create the most scientifically structured and efficacious CBD products currently available.<\/p>",
+              "image": "shopify:\/\/shop_images\/Rectangle_47.jpg",
+              "name": "Matt Iorio, MD",
+              "info": "Plastic\/Reconstructive Extremity Microsurgery"
+            }
+          },
+          "fbd7d757-fb1a-48fc-aa10-aa99774e6e33": {
+            "type": "review",
+            "settings": {
+              "review": "<p>With CBD, we are seeing an incredibly high demand but, unfortunately, there does not appear to be a sufficient regulatory framework. It really underscores the importance of ensuring the integrity of the product you are getting.<\/p>",
+              "image": "shopify:\/\/shop_images\/Rectangle_48.jpg",
+              "name": "Mitchel Goldman, MD",
+              "info": "Dermatology and Cosmetic Surgery"
+            }
+          }
+        },
+        "block_order": [
+          "171cac25-ddf1-4a42-866f-bc6ce6cee3d1",
+          "4ff64657-6f75-4d71-ab8d-db638b016f06",
+          "1e9e7f83-31df-4ff4-b422-21df008eb23b",
+          "fbd7d757-fb1a-48fc-aa10-aa99774e6e33"
+        ],
+        "settings": {
+          "subtitle": "Hear from our doctors",
+          "title": "What it’s like to partner with CBMD"
+        }
+      },
+      "bn-path": {
+        "type": "bn-path",
+        "blocks": {
+          "450873e6-8263-4578-81ec-66dc918f4cb5": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hand_e763e25e-3cf1-4115-b262-d15e110718ad.png",
+              "title": "Quality ingredient Sourcing",
+              "info": "<p>With exacting standards for quality, purity, safety, and efficacy, we evaluate each ingredient independently,\u0003 and select optimal pairings  to achieve the desired goal.<\/p>"
+            }
+          },
+          "ce477bae-c971-496e-8b0f-96732becd0c4": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/tube_3aba5132-d925-41fc-8bd9-479331369196.png",
+              "title": "Evidence Based Formulations",
+              "info": "<p>Our medical experience,  our scientific approach,  and high-quality CBD come  together in our proprietary  formulas, developed to optimally address individual needs.<\/p>"
+            }
+          },
+          "f035be07-19db-427e-b139-9ba15c9e4ba1": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/building_76b9b05f-6704-4852-a624-d27ec92fa21c.png",
+              "title": "Manufacturing Protocols",
+              "info": "<p>With exacting standards for quality, purity, safety, and efficacy, we evaluate each ingredient independently,\u0003 and select optimal pairings  to achieve the desired goal.<\/p>"
+            }
+          },
+          "949dbfd0-48bf-4c26-a6cb-e8d14a6e801e": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/micro_f73adf33-0078-4440-b0f8-1be10ac3208e.png",
+              "title": "3rd Party Lab Tested",
+              "info": "<p>Our medical experience,  our scientific approach,  and high-quality CBD come  together in our proprietary  formulas, developed to optimally address individual needs.<\/p>"
+            }
+          },
+          "045a92b8-0242-46cf-a7ba-da5238551460": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pills_d47ce137-5b66-43d1-999d-d9193ba451c8.png",
+              "title": "Proper Dosing  Recommendations",
+              "info": "<p>With exacting standards for quality, purity, safety, and efficacy, we evaluate each ingredient independently,\u0003 and select optimal pairings  to achieve the desired goal.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "450873e6-8263-4578-81ec-66dc918f4cb5",
+          "ce477bae-c971-496e-8b0f-96732becd0c4",
+          "f035be07-19db-427e-b139-9ba15c9e4ba1",
+          "949dbfd0-48bf-4c26-a6cb-e8d14a6e801e",
+          "045a92b8-0242-46cf-a7ba-da5238551460"
+        ],
+        "settings": {
+          "subtitle": "Medical grade CBD",
+          "title": "The components of quality."
+        }
+      },
+      "bn-team-rounded-left": {
+        "type": "bn-team-rounded-left",
+        "settings": {
+          "subtitle": "Want to hear more?",
+          "title": "Our brand promise to clinicians",
+          "copy": "<p>Healthcare providers are in a unique position to support patients and facilitate smart decisions around the safety of the products they use.<\/p>",
+          "btn_link": "shopify:\/\/pages\/contact",
+          "btn_text": "Talk with us",
+          "image": "shopify:\/\/shop_images\/Image_f48d7874-df26-4227-8a68-008fc49b5a94.png"
+        }
       }
     },
     "content_for_index": [
