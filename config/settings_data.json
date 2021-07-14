@@ -89,7 +89,8 @@
           "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content": "Announce something here"
+          "content": "Announce something here",
+          "link": ""
         }
       },
       "header": {
@@ -113,12 +114,14 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "products",
-              "push_1_image": "shopify:\/\/shop_images\/908bde91ad33d586ec47f405c2643f9c.jpeg",
-              "push_1_heading": "Overview",
+              "push_1_image": "shopify:\/\/shop_images\/CBMD_PMT_Topical_header_2-02_1_1.png",
+              "push_1_heading": "PMT Pain Topical",
               "push_1_subheading": "",
-              "push_1_url": "shopify:\/\/pages\/products",
-              "push_2_heading": "Shop All",
-              "push_2_subheading": ""
+              "push_1_url": "shopify:\/\/products\/cbd-topical-cream",
+              "push_2_image": "shopify:\/\/shop_images\/908bde91ad33d586ec47f405c2643f9c_370x230_2x_07e041f0-8858-473d-9b7b-acd2d2f18240.jpg",
+              "push_2_heading": "Overview",
+              "push_2_subheading": "",
+              "push_2_url": "shopify:\/\/pages\/products"
             }
           }
         },
@@ -449,7 +452,7 @@
         "settings": {
           "background_color": "#ffffff",
           "highlight_heading": "Our CBD product lines",
-          "highlight_title": "Our formulations in development"
+          "highlight_title": "Our suite of products"
         }
       },
       "1586336977121": {
@@ -694,6 +697,7 @@
           "highlight_title": "What’s right for you?",
           "highlight_description": "In order to choose what’s best for your body and mind, you’ve got to be informed. We can help. CBMD™ gives you access to all the latest news, research, and information.",
           "action_name": "",
+          "action_link": "",
           "autoplay": true,
           "subscriber": true
         }
@@ -1356,7 +1360,7 @@
             "settings": {
               "tab__nav_title": "Bioavailability",
               "tab_heading": "Bioavailability",
-              "tab_text": "<p>The term bioavailability refers to the percentage or fraction of a given dose of any compound that is absorbed into the bloodstream and therefore made available for use by the body. Bioavailability is based on a variety of factors, including product composition and method of delivery. Where CBD is concerned, the challenge is that it must reach the endocannabinoid system in order to be effective, meaning that the issue of bioavailability is an important one. The CBMD development process takes a scientific approach to bioavailability, and considers the differences in delivery methods and the need for precise dosing. Further, in several of our CBD formulations, we incorporate select ingredients, lipids, and delivery support technology to enhance and prolong bioavailability. One such area of focus is the integration of nanotechnology to support increased and targeted absorption.<\/p><p><\/p>",
+              "tab_text": "<p>The term bioavailability refers to the percentage or fraction of a given dose of any compound that is absorbed into the bloodstream and therefore made available for use by the body. Bioavailability is based on a variety of factors, including product composition and method of delivery. Where CBD is concerned, the challenge is that it must reach the endocannabinoid system in order to be effective, meaning that the issue of bioavailability is an important one.<\/p><p> The CBMD development process takes a scientific approach to bioavailability, and considers the differences in delivery methods and the need for precise dosing. Further, in several of our CBD formulations, we incorporate select ingredients, lipids, and delivery support technology to enhance and prolong bioavailability. One such area of focus is the integration of nanotechnology to support increased and targeted absorption.<\/p><p><\/p>",
               "tab_image": "shopify:\/\/shop_images\/cbmd-bioavailability.jpg"
             }
           },
