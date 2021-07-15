@@ -184,7 +184,7 @@ html.page-team {
 }
 
 .team-hero__title {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   line-height: 1;
   letter-spacing: -0.03rem;
   font-weight: 600;
@@ -206,8 +206,8 @@ html.page-team {
 }
 
 .team-hero__text {
-  font-size: 1rem;
-  line-height: 1.2;
+  font-size: 0.9rem;
+  line-height: 1.4;
   letter-spacing: -0.01rem;
   margin-bottom: 1.5rem;
 }
@@ -245,6 +245,7 @@ html.page-team {
 
 .team-rounded .tabs-holder {
   padding-left: 2.2rem;
+  padding-top: 3.5rem;
 }
 
 @media only screen and (max-width: 731px) {
@@ -381,7 +382,7 @@ html.page-team {
 }
 
 .team__member {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   line-height: 1.2;
   position: absolute;
   top: calc(100% - 6rem);
@@ -406,13 +407,10 @@ html.page-team {
 .team__member--open {
   top: 0;
   bottom: 0;
-  padding-left: 2.5rem;
-  padding-top: 2.5rem;
   font-size: 1rem;
 }
 
 .team__member--open .team__additional-info {
-  border-top: 1px solid #e3e3e3;
   margin-top: 1rem;
 }
 
@@ -467,6 +465,7 @@ html.page-team {
 }
 
 .three-cols {
+  margin-top: 6rem;
   margin-bottom: 4rem;
   font-family: Graphik;
 }
@@ -496,7 +495,7 @@ html.page-team {
       -ms-flex: 0 0 calc(33.3% - 1rem);
           flex: 0 0 calc(33.3% - 1rem);
   margin-right: 1.5rem;
-  padding-right: 3rem;
+  padding-right: 2.6rem;
   font-family: Graphik;
   font-style: normal;
   font-weight: normal;
@@ -610,6 +609,7 @@ html.page-team {
 }
 
 .partners {
+  margin-top: 6rem;
   margin-bottom: 4rem;
   font-family: Graphik;
 }
@@ -665,9 +665,6 @@ html.page-team {
 .partners__map {
   margin-right: 2rem;
   margin-left: 3rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 20.4rem;
-          flex: 0 0 20.4rem;
 }
 
 @media only screen and (max-width: 731px) {
@@ -709,7 +706,7 @@ html.page-team {
 }
 
 .partners__legend-list-item:before {
-  content: '';
+  content: "";
   display: block;
   width: 0.5rem;
   height: 0.5rem;
@@ -720,7 +717,7 @@ html.page-team {
 }
 
 .partners__legend-list-item:nth-child(1)::before {
-  background-color: #EB2C25;
+  background-color: #eb2c25;
 }
 
 .partners__legend-list-item:nth-child(2)::before {
@@ -728,7 +725,7 @@ html.page-team {
 }
 
 .partners__legend-list-item:nth-child(3)::before {
-  background-color: #E3E3E3;
+  background-color: #e3e3e3;
 }
 
 .partners__list {
@@ -796,7 +793,7 @@ html.page-team {
             flex: 0 0 calc(50% - 0.5rem);
     margin-right: 1rem;
     padding-right: 0;
-    border-bottom: 1px solid #E3E3E3;
+    border-bottom: 1px solid #e3e3e3;
     margin-bottom: 0;
     padding: 1rem 0;
   }
@@ -804,7 +801,7 @@ html.page-team {
     margin-right: 0;
   }
   .partners__list-item:nth-child(1), .partners__list-item:nth-child(2) {
-    border-top: 1px solid #E3E3E3;
+    border-top: 1px solid #e3e3e3;
   }
 }
 
@@ -824,7 +821,7 @@ html.page-team {
   height: 3.2rem;
   -o-object-fit: cover;
      object-fit: cover;
-  background-color: #E3E3E3;
+  background-color: #e3e3e3;
   display: block;
   border-radius: 50%;
   margin-right: 0.8rem;
@@ -878,10 +875,11 @@ html.page-team {
   font-weight: normal;
   font-size: 0.8rem;
   line-height: 1.5;
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 .reviews {
+  margin-top: 6rem;
   margin-bottom: 4rem;
   font-family: Graphik;
 }
@@ -915,6 +913,13 @@ html.page-team {
   padding-right: 2.5rem;
   padding-top: 2rem;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .reviews__list-item::before {
@@ -951,6 +956,7 @@ html.page-team {
 
 .reviews__user {
   margin-top: 3.5rem;
+  margin-top: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1005,6 +1011,7 @@ html.page-team {
 }
 
 .path {
+  margin-top: 6rem;
   margin-bottom: 4rem;
   font-family: Graphik;
 }
@@ -1296,7 +1303,7 @@ html.page-team {
 .path__ending-line::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  left: -6px;
+  left: -8px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1310,7 +1317,7 @@ html.page-team {
 .path__ending-line::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  left: 6px;
+  left: 9px;
   top: -2px;
 }
 
@@ -1324,6 +1331,7 @@ html.page-team {
 }
 
 .rounded-left {
+  margin-top: 8rem;
   margin-bottom: 4rem;
   font-family: Graphik;
 }
@@ -1371,9 +1379,10 @@ html.page-team {
 
 .rounded-left__content {
   margin-left: 4rem;
-  font-size: 1.1rem;
-  line-height: 1.45;
-  padding-right: 3rem;
+  padding-right: 7rem;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 731px) {
