@@ -17,7 +17,7 @@
       <div class="swiper-container col-slider-container box">
         <div class="swiper-wrapper">
         {% for product in collections[collection_name].products %}
-            <div class="product-card swiper-slide box position-relative">
+            <div class="product-card swiper-slide box position-relative class-{{product.handle}}">
                 <div class="ps-image {{product.handle}}">
                  {% if product.available %}
                   <div class="badge position-absolute top-0 start-0">{% render 'buy-now-badge' %}</div>

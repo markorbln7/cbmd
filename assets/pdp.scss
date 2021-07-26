@@ -333,6 +333,11 @@
     line-height: 1.76rem;
     display: block;
     position: relative;
+    &.no-after {
+        &:after {
+            display:none;
+        } 
+    }
     &:after {
         content: "\002B";
         font-size: 1.2rem;
@@ -405,4 +410,8 @@
     .h3_white {
         margin-bottom: 1rem;
     }
+}
+
+.class-cbd-topical-cream {
+    display:none !important;
 }

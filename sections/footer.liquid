@@ -64,22 +64,23 @@
                     <h2 class="Footer__Title Heading u-h6"><a href="/pages/overview">{{ linklist.title | escape }}</a></h2>
                     
                     <ul class="Linklist">
-                      {%- for link in linklist.links -%}
-                        {% case link.title %}
-                        {% when 'RAW Pure CBD' %}
-                        {% assign q = 'raw' %}
-                        {% when 'PMT Pain Mgmt' %}
-                        {% assign q = 'pmt' %}
-                        {% when 'PSY Mind Clear' %}                        
-                        {% assign q = 'psy' %}
-                        {% when 'DRM Skin Restore' %}                        
-                        {% assign q = 'drm' %}
-                        {% endcase %}
+                      <ul class="Linklist">
 
                         <li class="Linklist__Item">
-                          <a href="{{ link.url }}?q={{ q }}" class="Link Link--primary {% if linklist.title == "About" %}is-active{% endif %}">{{ link.title | escape }}</a>
+                          <a href="https://cbmd.com/pages/products#RAW" class="Link Link--primary ">RAW Simply CBD</a>
                         </li>
-                      {%- endfor -%}
+
+                        <li class="Linklist__Item">
+                          <a href="https://cbmd.com/pages/products#PMT" class="Link Link--primary ">PMT Pain Support</a>
+                        </li>
+
+                        <li class="Linklist__Item">
+                          <a href="https://cbmd.com/pages/products#PSY" class="Link Link--primary ">PSY Mind Balance</a>
+                        </li>
+
+                        <li class="Linklist__Item">
+                          <a href="https://cbmd.com/pages/products#DRM" class="Link Link--primary ">DRM Skin Restore</a>
+                        </li></ul>
                     </ul>
                   {%- endif -%}
 

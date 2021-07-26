@@ -102,7 +102,13 @@ document.querySelectorAll(".box").forEach((box) => {
     }
 }
 
-
+// if(window.location.hash) {
+//   $('.box').css('opacity','1');
+//   $('.box').css('transform:','translate(0px, -40px);');
+//   console.log('ima hashaaaa');
+// } else {
+//   console.log('nema hashaaaa');
+// }
 // $(window).resize(function() {
 //     let winSize = $(window).width(); // New width
 //     if(winSize > 731) {
