@@ -1,112 +1,113 @@
 .three-cols {
-    margin-bottom: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  font-family: Graphik;
+
+  @media only screen and (max-width: 731px) {
+    margin-bottom: 5rem;
+  }
+
+  &__intro {
+    max-width: 24rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  &__list-item {
+    flex: 0 0 calc(33.3% - 1rem);
+    margin-right: 1.5rem;
+    padding-right: 2.6rem;
+
     font-family: Graphik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    letter-spacing: -0.01rem;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
 
     @media only screen and (max-width: 731px) {
-        margin-bottom: 5rem;
-    }
+      flex: 0 0 100%;
+      margin-right: 0;
+      margin-bottom: 2rem;
+      padding-right: 0;
+      display: flex;
+      align-items: flex-start;
 
-    &__intro {
-        max-width: 24rem;
-    }
-
-    &__list {
-        list-style: none;
-        display: flex;
-        margin-top: 2rem;
-        flex-wrap: wrap;
-    }
-
-    &__list-item {
-        flex: 0 0 calc(33.3% - 1rem);
-        margin-right: 1.5rem;
-        padding-right: 3rem;
-
-        font-family: Graphik;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 0.8rem;
-        line-height: 1.2;
-        letter-spacing: -0.01rem;
-
-        &:nth-child(3n + 3) {
-            margin-right: 0;
-        }
-
-        @media only screen and (max-width: 731px) {
-            flex: 0 0 100%;
-            margin-right: 0;
-            margin-bottom: 2rem;
-            padding-right: 0;
-            display: flex;
-            align-items: flex-start;
-
-            &:nth-child(3n + 3) {
-                margin-bottom: 0;
-            }
-        }
-    }
-
-    &__img {
-        border-radius: 50%;
-        width: 12.2rem;
-        height: 12.2rem;
-        object-fit: cover;
-        display: block;
-
-        @media only screen and (max-width: 731px) {
-            max-width: 30%;
-            height: auto;
-            margin-right: 1rem;
-            margin-top: 2rem;
-        }
-    }
-
-    &__item-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__title {
-        font-family: Graphik;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 1.5rem;
-        line-height: 1;
+      &:nth-child(3n + 3) {
         margin-bottom: 0;
-        margin-top: 1.5rem;
-
-        @media only screen and (max-width: 731px) {
-            margin-top: 0;
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-        }
+      }
     }
+  }
 
-    &__number {
-        font-family: Graphik;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.6rem;
-        line-height: 1;
-        display: block;
-        margin-bottom: 1rem;
+  &__img {
+    border-radius: 50%;
+    width: 12.2rem;
+    height: 12.2rem;
+    object-fit: cover;
+    display: block;
 
-        @media only screen and (max-width: 731px) {
-            order: -1;
-            margin-bottom: 0;
-            font-size: 1.2rem;
-        }
+    @media only screen and (max-width: 731px) {
+      max-width: 30%;
+      height: auto;
+      margin-right: 1rem;
+      margin-top: 2rem;
     }
+  }
 
-    &__button {
-        margin-top: 1rem;
-        width: max-content;
-        display: inline-block;
-        transition: 0.3s;
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+  }
 
-        &:hover {
-            opacity: 0.7;
-        }
+  &__title {
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+
+    @media only screen and (max-width: 731px) {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
     }
+  }
+
+  &__number {
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1;
+    display: block;
+    margin-bottom: 1rem;
+
+    @media only screen and (max-width: 731px) {
+      order: -1;
+      margin-bottom: 0;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__button {
+    margin-top: 1rem;
+    width: max-content;
+    display: inline-block;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }

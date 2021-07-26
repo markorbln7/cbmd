@@ -84,7 +84,7 @@
   }
 
   &__member {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     line-height: 1.2;
     position: absolute;
     top: calc(100% - 6rem);
@@ -105,12 +105,10 @@
     &--open {
       top: 0;
       bottom: 0;
-      padding-left: 2.5rem;
-      padding-top: 2.5rem;
       font-size: 1rem;
 
       .team__additional-info {
-        border-top: 1px solid #e3e3e3;
+        // border-top: 1px solid #e3e3e3;
         margin-top: 1rem;
       }
     }

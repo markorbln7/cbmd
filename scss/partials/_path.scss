@@ -1,5 +1,6 @@
 .path {
   $borderRadius: 10rem;
+  margin-top: 6rem;
   margin-bottom: 4rem;
   font-family: Graphik;
 
@@ -237,7 +238,7 @@
 
     &::before {
       transform: rotate(45deg);
-      left: -6px;
+      left: -8px;
 
       @media only screen and (max-width: 900px) {
         top: -3px;
@@ -248,7 +249,7 @@
 
     &::after {
       transform: rotate(-45deg);
-      left: 6px;
+      left: 9px;
       top: -2px;
 
       @media only screen and (max-width: 900px) {
