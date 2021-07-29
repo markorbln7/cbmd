@@ -1,0 +1,51 @@
+.tabs-holder .first-tab .first-tab-left .first-tab-text {
+    font-weight: 300;
+}
+
+.tab__content-COA.p {
+    display: block;
+    max-height: 0;
+    overflow-y: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+}
+
+.accordion_box-COA input:checked ~ .tab__content-COA {
+    max-height: max-content;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding-bottom: 1.07rem;
+}
+
+.Highlights_multilnk_container .Highlights_multilnk_item a .Highlights_multilnk_item_content .Highlights_multilnk_item_body {
+    z-index: 9999;
+}
+
+@media only screen and (max-width: 991px) {
+    .new-home .flex-container_PMT {
+        margin-top: -5rem;
+    }
+
+    .heading1 {
+        font-size: 2rem;
+        line-height: 1;
+        letter-spacing: -.03em;
+        margin-bottom: 1rem;
+    }
+
+    .a-text-over-image .flex-container_CBMD h3 {
+        font-size: 0.7rem;
+    }
+
+    .a-text-over-image .flex-container_CBMD h1 {
+        font-size: 1.5rem;
+        padding-top: 5px;
+        padding-bottom: 12px;
+    }
+
+    .formulated.box {
+        margin-top: 20px;
+    }
+}

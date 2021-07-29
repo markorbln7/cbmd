@@ -36,6 +36,7 @@
   &__map {
     margin-right: 2rem;
     margin-left: 3rem;
+    max-width: 25rem;
     // flex: 0 0 20.4rem;
 
     @media only screen and (max-width: 731px) {
@@ -106,6 +107,7 @@
     margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
+    display: none; //only for launch
 
     @media only screen and (max-width: 731px) {
       margin-top: 1.51rem;
@@ -214,6 +216,10 @@
 
     @media only screen and (max-width: 731px) {
       font-size: 0.7rem;
+    }
+
+    p {
+      margin-bottom: 0;
     }
   }
 

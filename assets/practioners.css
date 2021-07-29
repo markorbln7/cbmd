@@ -62,6 +62,7 @@ html.page-team {
   font-weight: normal;
   font-size: 1.1rem;
   line-height: 1.4;
+  font-weight: 300;
   letter-spacing: -0.03rem;
 }
 
@@ -281,6 +282,12 @@ html.page-team {
   padding-left: 0;
   margin-bottom: 1.2rem;
   margin-top: 1.2rem;
+}
+
+.team-rounded .first-tab {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .team {
@@ -577,7 +584,7 @@ html.page-team {
 .three-cols__number {
   font-family: Graphik;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.6rem;
   line-height: 1;
   display: block;
@@ -665,6 +672,7 @@ html.page-team {
 .partners__map {
   margin-right: 2rem;
   margin-left: 3rem;
+  max-width: 25rem;
 }
 
 @media only screen and (max-width: 731px) {
@@ -735,6 +743,7 @@ html.page-team {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  display: none;
 }
 
 @media only screen and (max-width: 731px) {
@@ -848,6 +857,10 @@ html.page-team {
   }
 }
 
+.partners__partner-content p {
+  margin-bottom: 0;
+}
+
 .partners__partner-name {
   margin-bottom: 0;
   font-family: Graphik;
@@ -882,6 +895,7 @@ html.page-team {
   margin-top: 6rem;
   margin-bottom: 4rem;
   font-family: Graphik;
+  display: none;
 }
 
 .reviews__intro {
@@ -963,6 +977,7 @@ html.page-team {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  min-height: 3.5rem;
 }
 
 @media only screen and (max-width: 731px) {
@@ -1339,6 +1354,7 @@ html.page-team {
 @media only screen and (max-width: 731px) {
   .rounded-left {
     margin-bottom: 3rem;
+    margin-top: 5rem;
     padding-top: 3.2rem;
   }
   .rounded-left .highlight_image {
@@ -1430,5 +1446,56 @@ html.page-team {
 
 .animate.appear > * {
   opacity: 1;
+}
+
+.tabs-holder .first-tab .first-tab-left .first-tab-text {
+  font-weight: 300;
+}
+
+.tab__content-COA.p {
+  display: block;
+  max-height: 0;
+  overflow-y: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.accordion_box-COA input:checked ~ .tab__content-COA {
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  padding-bottom: 1.07rem;
+}
+
+.Highlights_multilnk_container .Highlights_multilnk_item a .Highlights_multilnk_item_content .Highlights_multilnk_item_body {
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 991px) {
+  .new-home .flex-container_PMT {
+    margin-top: -5rem;
+  }
+  .heading1 {
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: -.03em;
+    margin-bottom: 1rem;
+  }
+  .a-text-over-image .flex-container_CBMD h3 {
+    font-size: 0.7rem;
+  }
+  .a-text-over-image .flex-container_CBMD h1 {
+    font-size: 1.5rem;
+    padding-top: 5px;
+    padding-bottom: 12px;
+  }
+  .formulated.box {
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=practioners.css.map */
