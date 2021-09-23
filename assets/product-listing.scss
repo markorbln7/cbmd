@@ -91,7 +91,7 @@ html.page-collections {
     .flex-container_PMT2 {
         height: unset;
         margin-top: unset;
-        margin-bottom: unset;
+        margin-bottom: 13%;
         width:100% !important;
         @media only screen and (min-width: 732px) {
             width:32rem !important;
@@ -417,3 +417,14 @@ html.page-collections {
         padding-bottom: 2rem;
     }
 }
+
+
+.page-our-mission {
+    .banner_backgroundImage {
+        @media only screen and (max-width: 732px) {
+            height: 100% !important;
+            margin-right: unset !important;
+            margin-top: unset !important;
+        }
+    }
+  }

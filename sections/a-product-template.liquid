@@ -25,9 +25,20 @@
         <p class="p-desc color-black ">{{ product.description }} </p>
         <div class="r-stars">
             <div class="wl-stars">
-              <div class="yotpo bottomLine" style="display:inline-block"
+              {% comment %} <div class="yotpo bottomLine" style="display:inline-block"
                 data-product-id="{{ product.id }}">
-              </div>
+              </div> {% endcomment %}
+              <!-- Stamped - Begin Star Rating Badge -->
+<span 
+class="stamped-product-reviews-badge stamped-main-badge" 
+data-id="{{ product.id }}" 
+data-product-sku="{{ product.handle }}" 
+data-product-title="{{product.title}}" 
+data-product-type="{{product.type}}" 
+style="display: block;">
+{{product.metafields.stamped.badge}}
+</span>
+<!-- Stamped - End Star Rating Badge --><br>
             </div>
         </div>
         {%- render 'a-product-form', product: product -%}

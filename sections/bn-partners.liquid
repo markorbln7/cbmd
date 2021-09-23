@@ -12,17 +12,17 @@
                 </div>
                 <div class="partners__img-legend">
                     <div class="partners__legend-title">
-                        CBMD medical partners and affiliates across the United States.
+                        CBMD® medical partners and affiliates across the United States.
                     </div>
                     <ul class="partners__legend-list">
-                        <li class="partners__legend-list-item">CBMD Distributor network</li>
-                        <li class="partners__legend-list-item">CBMD Distributors coming soon</li>
-                        <li class="partners__legend-list-item">CBMD Partnerships in progress</li>
+                        <li class="partners__legend-list-item">CBMD® Distributor network</li>
+                        <li class="partners__legend-list-item">CBMD® Distributors coming soon</li>
+                        <li class="partners__legend-list-item">CBMD® Partnerships in progress</li>
                     </ul>
                 </div>
             </div>
         </div>
-        <ul class="partners__list">
+        {% comment %} <ul class="partners__list">
             {% for block in section.blocks %}
                 <li class="partners__list-item">
                     <img src="{{ block.settings.image | img_url: "master" }}" alt="{{ block.settings.name }}" class="partners__partner-img">
@@ -32,7 +32,7 @@
                     </div>
                 </li>
             {% endfor %}
-        </ul>
+        </ul> {% endcomment %}
         <div class="partners__button-wrapper">
             <button class="partners__load-more">View more Partners</button>
         </div>

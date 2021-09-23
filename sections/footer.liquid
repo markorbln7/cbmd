@@ -61,7 +61,7 @@
                   {%- assign linklist = linklists[block.settings.menu] -%}
 
                   {%- if linklist != empty  and linklist.title == "Products" -%}
-                    <h2 class="Footer__Title Heading u-h6"><a href="/pages/overview">{{ linklist.title | escape }}</a></h2>
+                    <h2 class="Footer__Title Heading u-h6"><a href="/pages/products">{{ linklist.title | escape }}</a></h2>
                     
                     <ul class="Linklist">
                       <ul class="Linklist">
@@ -93,6 +93,9 @@
                           <a href="{{ link.url }}" class="Link Link--primary {% if linklist.title == "Our Mission" %}is-active{% endif %}">{{ link.title | escape }}</a>
                         </li>
                       {%- endfor -%}
+                      {% comment %} <li class="Linklist__Item">
+                          <a href="/pages/return-policy" class="Link Link--primary is-active">Return Policy</a>
+                        </li> {% endcomment %}
                     </ul>
                   {%- endif -%}                  
               {%- endcase -%}
@@ -113,7 +116,7 @@
       <div class="Footer__Copyright">
         <div class="Footer__Content Rte">
           {{ section.settings.copyright }}
-          <p>© {{ "now" | date: "%Y" }} {{ 'footer.copyright.text' | t }}<br><a class="link-term-of-use" href="{{ section.settings.terms_of_use }}">Terms of Use</a> — <a href="{{ section.settings.policy }}">Privacy Policy</a></p>
+          <p>© {{ "now" | date: "%Y" }} {{ 'footer.copyright.text' | t }}<br><a class="link-term-of-use" href="{{ section.settings.terms_of_use }}">Terms of Use</a> — <a href="{{ section.settings.policy }}">Privacy Policy</a> — <a href="/pages/return-policy">Return Policy</a></p>
         </div>
         <div class=""><img src="https://cdn.shopify.com/s/files/1/0321/8472/9739/files/Group_87.svg?v=1627558912"></div>
       </div>
@@ -124,11 +127,11 @@
           {%- endfor -%}
         {%- endcapture -%}
 
-        {%- if payment_methods != blank -%}
+        {% comment %} {%- if payment_methods != blank -%}
           <ul class="Footer__PaymentList HorizontalList">
             {{ payment_methods }}
           </ul>
-        {%- endif -%}
+        {%- endif -%} {% endcomment %}
       {%- endif -%}
     </div>
   </div>

@@ -246,7 +246,8 @@ html.page-team {
 
 .team-rounded .tabs-holder {
   padding-left: 2.2rem;
-  padding-top: 3.5rem;
+  margin-top: -1.5rem;
+  /* padding-top: 3.5rem; */
 }
 
 @media only screen and (max-width: 731px) {
@@ -264,10 +265,35 @@ html.page-team {
   width: 31.35rem;
   max-width: 100%;
 }
+.bn-rounded .first-tab-text p {
+  font-size: .878rem;
+  line-height: 1.4;
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -.03em;
+  margin-bottom: 2.625rem;
+}
+@media only screen and (max-width: 991px) {
+  .team-rounded .tabs-holder .first-tab .first-tab-left {
+    width: 100%;
+  }
+  .team-rounded .Link {
+    margin-bottom:2rem;
+  }
+  .bn-rounded .first-tab-text p {
+    font-size: 1.25rem;
+    margin-bottom: 2.625rem;
+    margin-top: 2.625rem;
+  }
+  .new-home .Highlights_image_container.b-left .Highlights_item {
+    padding-left: 3rem;
+  }
+}
 
 .team-rounded .tabs-holder .first-tab .first-tab-right {
   margin-top: 0;
-  width: 28rem;
+  /* width: 28rem; */
   max-width: 100%;
 }
 
@@ -1075,6 +1101,7 @@ html.page-team {
           flex-direction: column-reverse;
   padding: 1.4rem;
   position: relative;
+  z-index: 9999;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1319,6 +1346,7 @@ html.page-team {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   left: -8px;
+  display:none;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1330,18 +1358,26 @@ html.page-team {
 }
 
 .path__ending-line::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  left: 9px;
-  top: -2px;
+  -webkit-transform: rotate(0);
+    transform: rotate(0);
+    left: -62px;
+    top: -100px;
+    background: url(https://cdn.shopify.com/s/files/1/0321/8472/9739/files/Screen_Shot_2021-08-27_at_11.50.48.png?v=1630057876);
+    width: 115px;
+    height: 100px;
+    /* transition: none !important; */
+    background-size: cover;
 }
 
 @media only screen and (max-width: 900px) {
   .path__ending-line::after {
     top: auto;
     left: auto;
-    right: 2px;
-    bottom: -3px;
+    right: -74px;
+    bottom: 16px;
+    transform: rotate(90deg);
+    width: 115px;
+    height: 100px;
   }
 }
 
@@ -1496,6 +1532,37 @@ html.page-team {
   }
   .formulated.box {
     margin-top: 20px;
+  }
+}
+.new-home.new-pc .t-red {
+  font-size: 0.72rem!important;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.new-home.new-pc .h1-t {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.094rem;
+  line-height: 1;
+  letter-spacing: -.03em;
+  margin-bottom: 1rem;
+}
+.new-home.new-pc .p-t {
+  font-size: 0.878rem;
+  line-height: 1.4;
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -.03em;
+  margin-bottom: 1.625rem;
+}
+@media only screen and (max-width: 991px) {
+  .new-home.new-pc .t-red {
+    font-size: 0.82rem!important;
+  }
+  .new-home.new-pc .p-t {
+    font-size: 1.25rem;
   }
 }
 /*# sourceMappingURL=practioners.css.map */
