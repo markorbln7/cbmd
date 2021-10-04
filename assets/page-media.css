@@ -1,0 +1,315 @@
+html.page-large {
+    font-size: 62.5% !important;
+    font-family: Graphik;
+    font-style: normal;
+  }
+  
+ 
+ /* @media only screen and (min-width: 1240px) {
+    .flex-container-media {
+      flex-direction: column;
+  }
+  }
+*/
+
+.main_container {
+    margin: 6.1rem 6.4rem;
+}
+.title_page {
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin-bottom: 4.0rem;
+
+}
+.flex-container-media {
+    display: flex;
+    flex-direction: row;
+    gap: 3.6rem;
+}
+.flex-container-media-right {
+  width: calc(70% - 1.8rem);
+}
+.flex-container-media-left {
+  width: calc(30% - 1.8rem);
+}
+.flex-container-latest {
+    display: flex;
+    flex-direction: row;
+    gap: 3.6rem;
+}
+.img_section-latest {
+  object-fit: cover;
+  height: 30.8rem;
+}
+.article_box-latest {
+  border-bottom: 1px solid #DCDCDC;
+  
+}
+.title_article-latest {
+  font-weight: 600;
+  font-size: 3.0rem;
+  line-height: 3.0rem;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin-bottom: 2.0rem;
+}
+.flex-container-physician {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.title_article-physician {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.01em;
+  color: #000000;
+  margin-bottom: 0rem;
+  padding-right: 3.2rem;
+}
+.article_box-physician {
+  display: flex;
+  flex-direction: row;
+  gap: 1.8rem;
+}
+.tablet-view {
+  display: none;
+}
+.text_article-physician {
+  width: 26.1rem;
+  border-bottom: 1px solid #DCDCDC;
+}
+.img_section-physician {
+  width: 8.3rem;
+  height: 8.3rem;
+  object-fit: cover;
+  border-bottom: 4px solid transparent;
+}
+.img_section-physician:hover {
+  border-bottom: 4px solid #EB161E;
+}
+.explore {
+  margin: 13.6rem 0 6.8rem 0;
+}
+  .flex-container-explore {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3.6rem;
+  }
+  .article_box {
+   flex: calc(25% - 3.6rem);
+  }
+  .article_box-explore {
+    display: flex;
+    flex-direction: column;
+  }
+  .title_section{
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.03em;
+    color: #000000;
+  }
+  .img_section {
+    object-fit: cover;
+    border-bottom: 4px solid transparent;
+    margin-bottom: 1.4rem;
+  }
+  .img_section:hover {
+    border-bottom: 4px solid #EB161E;
+  
+  }
+  .subtitle_red {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.01em;
+    color: #EB161E;
+  }
+  .title_article {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.4rem;
+    color: #000000;
+  }
+  .text_article {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.03em;
+    color: #000000;
+    margin-bottom: 0.8rem;
+  }
+  .footnote {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    letter-spacing: -0.01em;
+    color: #000000;
+
+  }
+
+  @media screen and (max-width: 1023px) {
+    .main_container {
+      margin: 5.1rem 3.6rem;
+  }
+  .title_page {
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+  }
+  .flex-container-media-right {
+    width: 100%;
+  }
+  .flex-container-media-left {
+    width: 100%;
+  }
+  .flex-container-latest {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .img_section-latest {
+    height: 13.8rem;
+  }
+  .article_box-latest {
+    width: 100%;
+    padding-right: 25rem;
+    padding-bottom: 3.2rem;
+  }
+  .title_section {
+    font-size: 2.8rem;
+  }
+   .text_article {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  .flex-container-physician {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .article-box-top {
+    flex: calc(50% - 2.5rem);
+  }
+  .article_box-physician {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+  .tablet-view {
+    display: block;
+  }
+  .img_section-physician {
+    width: auto;
+    height: auto;
+  }
+  .title_article-physician {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    margin-bottom: 1.2rem;
+    padding-right: 1.2rem;
+}
+  .text_article-physician {
+    border-bottom: none;
+  }
+    .flex-container-media {
+      flex-direction: column;
+     }
+     .article_box {
+      flex: calc(50% - 2.5rem);
+     }
+     .explore {
+      margin: 7.2rem 0 5.2rem 0;
+    }
+    .flex-container-explore {
+      gap: 2.5rem;
+    }
+    .title_article {
+      line-height: 2.2rem;
+      margin-bottom: 1.2rem;
+    }
+    .subtitle_red {
+      font-size: 1.4rem;
+    }
+    
+  }
+  @media screen and (max-width: 600px){
+    .main_container {
+      margin: 4.0rem 2.4rem;
+  }
+    .flex-container-media-left {
+      width: 100%;
+    }
+    .title_section {
+      font-size: 2.4rem;
+    }
+    .article_box-latest {
+      width: 100%;
+      padding-right: 0rem;
+      padding-bottom: 2.8rem;
+    }
+    .title_article-latest {
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+      padding-right: 6rem;
+    }
+    .article_box, .article-box-top {
+      flex: calc(100% - 3.6rem);
+     }
+     .article_box-physician {
+      display: flex;
+      flex-direction: row;
+      gap: 1.8em;
+      margin-bottom: 0;
+    }
+    .title_article-physician {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      margin-bottom: 1.2rem;
+      padding-right: 0rem;
+  }
+    .img_section-physician {
+      width: 8.3rem;
+      height: 8.3rem;
+    }
+    .tablet-view {
+      display: none;
+    }
+    .text_article-physician {
+      width: 100%;
+      border-bottom: 1px solid #DCDCDC;
+    }
+     .article_box-explore {
+      flex-direction: row;
+      gap: 1.8rem;
+    }
+    .img_section {
+      object-fit: cover;
+      width: 8.3rem;
+      height: 8.3rem;
+      margin-bottom: 0;
+    }
+    .text_article-explore{
+      width: 100%;
+      border-bottom: 1px solid #DCDCDC;
+    }
+    .title_article {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+    .desktop-view {
+      display: none;
+    }
+    
+  }
