@@ -568,7 +568,7 @@ html.product-new {
 .product-dosing-wrapper {
     background: #333333;
     padding:1.7rem .9rem 1.7rem .9rem;
-    margin-top:3.5rem;
+    margin-top:3.2rem;
     margin-left:1rem;
     margin-right:1rem;
     border-radius:8px;
@@ -911,6 +911,7 @@ html.product-new {
     }
 }
 .ingredients-pagination {
+    display:none;
     left: 42%;
     .swiper-pagination-bullet {
         background: #4D4D4D !important;
@@ -1012,6 +1013,9 @@ html.product-new {
 
 .r-stars {
     margin-bottom: 1rem;
+    @media only screen and (max-width: 991px) {
+        margin-bottom: 0rem;
+    }
     .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-star {
         font-size:1rem;
     }

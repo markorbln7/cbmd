@@ -13,7 +13,7 @@
                 <p>{{ section.settings.copy }}</p>
             </div>
             {% if section.settings.btn_link %}
-                <a href="{{ section.settings.btn_link }}" class="Button Button--cbd Button--red">{{ section.settings.btn_text }}</a>
+                <button data-action="open-modal" aria-controls="modal-general-newsletter" class="Button Button--cbd Button--red">{{ section.settings.btn_text }}</a>
             {% endif %}
         </div>
     </div>

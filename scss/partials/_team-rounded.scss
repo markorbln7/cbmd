@@ -55,3 +55,12 @@
     align-items: center;
   }
 }
+
+.page-team {
+  .bn-rounded .first-tab-text p {
+      @media only screen and (min-width: 732px) {
+          margin-top: 0;
+          font-size:1.8rem;
+      }
+  }
+}

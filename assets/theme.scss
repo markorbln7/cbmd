@@ -11064,7 +11064,7 @@ $vertical-spacing-two-products-per-row  : 0px;
 }
 
 .SidebarMenu__Nav .Collapsible:first-child {
-  border-top: none;
+  border-top: block;
 }
 
 /* We need to do that to add extra padding for scroll, as Safari on Mac and iOS has some issue with directly adding a padding-bottom */
