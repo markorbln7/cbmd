@@ -4,13 +4,12 @@ html.page-large {
     font-style: normal;
   }
   
+  @media only screen and (min-width: 1240px) {
+    html.page-large {
+      font-size: 0.78vw !important;
+    }
+  }
  
- /* @media only screen and (min-width: 1240px) {
-    .flex-container-media {
-      flex-direction: column;
-  }
-  }
-*/
 
 .main_container {
     margin: 6.1rem 6.4rem;

@@ -1,0 +1,208 @@
+html.article- {
+    font-size: 62.5% !important;
+    font-family: Graphik !important;
+    font-style: normal;
+}
+
+@media only screen and (min-width: 732px) {
+    html.article- {
+        font-family: Graphik !important;
+      font-size: .78vw !important;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 1240px) {
+    html.article- {
+        font-family: Graphik !important;
+      font-size: .78vw !important;
+    }
+  } 
+
+  .main_container_media-single {
+      margin: 6.4rem;
+  }
+  .breadcrumbs_media-single {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.01em;
+    color: #000000;
+    
+  }
+  .title_page_media-single {
+    font-weight: 600;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    letter-spacing: -0.03em;
+    color: #000000;
+  }
+  .flex_container_media-single {
+      display: flex;
+      flex-direction: row;
+      gap: 3.5rem;
+  }
+  .flex_container_media-single-left {
+    width: calc(70% - 1.8rem);
+  }
+  .flex_container_media-single-right {
+    width: calc(30% - 1.8rem); 
+  }
+  .img_section_media-single {
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 6.4rem;
+  }
+  .text_top_media-single {
+    font-size: 2.2rem;
+    line-height: 3.2rem; 
+    letter-spacing: -0.03em;
+    color: #000000;  
+  }
+  .text_media-single {
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    color: #000000;
+  }
+  .flex_container_media-single-left-bottom{
+      display: flex;
+      flex-direction: row;
+      margin-top: 9.6rem;
+      margin-bottom: 4.0rem;
+      gap: 4.0rem;
+  }
+  .img_section_media-single-bottom {
+      object-fit: cover;
+      width: calc(50% - 3.6rem);
+  }
+
+  .title_section_media-single {
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    letter-spacing: -0.01em;
+    color: #000000;
+    margin-bottom: 2.4rem;
+  }
+.flex_container_article_media-single {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-bottom: 6.4rem;
+}
+.article_box_media-single {
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+}
+.img_article_media-single {
+    width: 8.3rem;
+    height: 8.3rem;
+    object-fit: cover;
+    border-bottom: 4px solid transparent;
+}
+.img_article_media-single:hover {
+    border-bottom: 4px solid #EB161E;
+}
+.title_article_media-single {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.01em;
+    color: #000000;
+    margin-bottom: 0rem;
+}
+.text_article_media-single {
+    width: 26.1rem;
+    border-bottom: 1px solid #DCDCDC;
+}
+.flex_container_featured-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3.6rem;
+}
+.article_featured-products {
+    width: calc(50% - 3.6rem);
+}
+.img_featured-products {
+    object-fit: cover;
+}
+.title_featured-products {
+    font-family: Graphik;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.01em;
+    color: #000000;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+.fa-star:before {
+    font-size: 12px;
+    margin-right: -1px;
+    color: #000000;
+}
+  @media screen and (max-width: 1023px) {
+    .main_container_media-single {
+        margin: 5.1rem 3.6rem;
+    }
+    .title_page_media-single {
+        font-size: 3.8rem;
+        line-height: 3.8rem;
+    }
+    .flex_container_media-single {
+        display: flex;
+        flex-direction: column;
+        gap: 5.6rem;
+    }
+    .flex_container_media-single-left {
+        width: 100%;
+      }
+      .flex_container_media-single-right {
+        width: 100%; 
+      }
+    .title_section_media-single {
+        font-weight: 600;
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+    }
+    .flex_container_article_media-single {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .article_media-single {
+        flex: calc(50% - 2.5rem);
+    }
+    .article_box_media-single {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .img_article_media-single {
+        width: auto;
+        height: auto;
+    }
+    .article_featured-products {
+        width: calc(25% - 3.6rem);
+    }
+    .title_featured-products {
+        font-size: 1.6rem;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    .main_container_media-single {
+        margin: 4.0rem 2.4rem;
+    }
+    .title_page_media-single {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
+    .article_featured-products {
+        width: calc(50% - 3.6rem);
+    }
+  }
+ 
