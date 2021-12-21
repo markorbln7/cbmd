@@ -91,7 +91,7 @@ html.page-collections {
     .flex-container_PMT2 {
         height: unset;
         margin-top: unset;
-        margin-bottom: unset;
+        margin-bottom: 13%;
         width:100% !important;
         @media only screen and (min-width: 732px) {
             width:32rem !important;
@@ -267,6 +267,7 @@ html.page-collections {
         .collection-slider-decription {
             //margin-top:40px;
             margin-bottom:0;
+            margin-top:3.2rem;
             @media only screen and (min-width: 732px) {
                 width:13.5rem;
                 padding-top:30px;
@@ -414,6 +415,37 @@ html.page-collections {
         }
     }
     .col-slider-container {
-        padding-bottom: 2rem;
+        padding-bottom: .5rem;
     }
 }
+
+
+.page-our-mission {
+    .banner_backgroundImage {
+        @media only screen and (max-width: 732px) {
+            height: 100% !important;
+            margin-right: unset !important;
+            margin-top: unset !important;
+        }
+    }
+  }
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    text-align: center;
+}
+
+.page-team {
+    .bn-rounded .first-tab-text p {
+        @media only screen and (max-width: 991px) {
+            margin-top: 0;
+            font-size:.9rem;
+            margin-bottom:1.2rem;
+        }
+    }
+    .slick-dots li button:before, .new-home .slick-dots li.slick-active button:before {
+        color:black;
+    }
+    .slick-dots {
+        padding-left: 4px;
+    }
+  }

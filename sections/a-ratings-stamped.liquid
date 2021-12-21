@@ -1,0 +1,224 @@
+<!--Stamped - Begin Main Widget -->
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd">  
+<div class="stars">
+    <h4 class="h6_red">CBMD PMT Topical Cream</h4>
+        <h1 class="h2">Customer Reviews</h1>
+<div 
+id="stamped-main-widget"   
+data-product-id="{{ product.id }}"   
+data-name="{{ product.title | escape }}"   
+data-url="{{ shop.url }}{{ product.url }}"   
+data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" 
+data-description="{{ product.description | escape }}"   
+data-product-sku="{{product.handle}}"
+data-product-title="{{product.title}}" 
+data-product-type="{{product.type}}">   
+{{product.metafields.stamped.reviews}}   
+<!-- Stamped - End Main Widget -->
+</div>
+</div>
+</section>
+<style>
+div.stamped-container[data-widget-style], div[data-widget-style] div.stamped-container {
+    max-width:unset;
+}
+.stamped-header-title, .stamped-summary-text-1 strong {
+    display:none;
+}
+.fa-star, .fa-star-checked, .fa-star-half-o, .fa-star-o, .stamped-fa-star, .stamped-fa-star-checked, .stamped-fa-star-half-o, .stamped-fa-star-o {
+    color:black;
+}
+.stamped-summary-starrating i:before {
+    font-size:1.3rem;
+}
+.summary-overview {
+    display: flex;
+    justify-content: space-between;
+    width: 32% !important;
+    margin-left: -40px;
+}
+[data-version="2"] .stamped-summary {
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+.stamped-summary-caption .stamped-summary-text {
+    font-size: .7rem;
+    margin-top: 10px;
+}
+.summary-rating-bar-content {
+    background: black;
+    line-height: normal;
+    display: flex;
+    padding: 1px 0 2px;
+    word-wrap: initial;
+    word-break: initial;
+    color: white;
+}
+.stamped-summary-ratings {
+    width:32%;
+}
+.summary-rating-bar-content {
+    background: black;
+    line-height: normal;
+    display: flex;
+    padding: 1px 0 2px;
+    word-wrap: initial;
+    word-break: initial;
+    color: white;
+    font-size: .7rem;
+}
+.summary-rating-count {
+    width: 15%;
+    display: inline-block;
+    text-align: left;
+    padding-left: 5px;
+    color: black;
+    white-space: nowrap;
+    font-size: .7rem;
+}
+.summary-rating-title {
+    width: 19%;
+    display: inline-block;
+    cursor: pointer;
+    font-size: .7rem;
+    color: black;
+}
+.stamped-summary-actions-newreview,.stamped-summary-actions-newquestion {
+    float: right;
+    margin: 0 0 0 15px;
+    background-color: b;
+    font-size: .8rem!important;
+    line-height: 2.5!important;
+    /* font-family: "Nunito Sans",sans-serif!important; */
+    text-transform: lowercase!important;
+    background: black;
+    color: white;
+    display: block;
+    width: 100%;
+    max-width: 10rem;
+    box-shadow: none !important;
+}
+.stamped-summary-actions-newquestion {
+    cursor: pointer;
+    background: transparent;
+    color: black;
+    box-shadow: none !important;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-top:10px;
+}
+.stamped-summary:after, .stamped-summary:before {
+    display:none;
+}
+div.stamped-container ul.stamped-tabs, div.stamped-container ul.stamped-tabs li {
+    max-height: 45px;
+    margin-bottom: 0;
+    margin-left: 0;
+    background: transparent !important;
+    font-size: 0.75rem !important;
+
+}
+.stamped-container ul.stamped-tabs li.active {
+    font-weight: 700;
+    border-bottom: 3px solid #EB161E;
+    background: #eee;
+    padding: 10px!important;
+}
+.stamped-reviews-filter[data-show-filters=part], .stamped-reviews-filter[data-show-filters=true] {
+    display:none !important;
+}
+div[data-widget-style*=standard] .stamped-questions, div[data-widget-style=two-columns] .stamped-reviews {
+    margin-top:2rem !important;
+}
+.stamped-review-avatar {
+    display:none;
+}
+.stamped-review .author {
+    font-size:.8rem;
+}
+.stamped-reviews .stamped-review-options ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-size: .8rem;
+}
+.stamped-reviews .stamped-review-options ul li {
+    margin-right: 20px;
+    margin-bottom: -1px;
+    font-size: .8rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 33%;
+}
+p.stamped-review-content-body {
+    font-size: .8rem;
+    white-space: pre-wrap;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+.stamped-container[data-widget-show-product-variant=true] .stamped-review-product, .stamped-container[data-widget-show-product-variant=true] .stamped-review-variant {
+    display:none !important;
+}
+.stamped-share-icon {
+    display:none;
+}
+.stamped-rating-holder,.fa-check-circle-o:before, .fa-share-alt:before, .fa-thumbs-down:before, .fa-thumbs-up:before, .stamped-fa-check-circle-o:before, .stamped-fa-share-alt:before, .stamped-fa-thumbs-down:before, .stamped-fa-thumbs-up:before,.fa-check-circle-o, .fa-share-alt, .fa-thumbs-down, .fa-thumbs-up, .stamped-fa-check-circle-o, .stamped-fa-share-alt, .stamped-fa-thumbs-down, .stamped-fa-thumbs-up  {
+    font-size: .7rem;
+    color: black !important;
+}
+.stamped-review {
+    padding:1.25rem;
+    background: rgba(164, 164, 164, 0.08);
+}
+.stamped-review-footer #stamped-review-vote, .stamped-review-footer .stamped-review-vote {
+    float: right!important;
+    /* float: none !important; */
+    margin-right: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+.stamped-review-header .stamped-verified-badge, .stamped-review-header .verified, .stamped-review-header .verified .fa-check-circle-o, .stamped-review-header .verified .stamped-fa-check-circle-o, .stamped-review-header .verified-badge, .stamped-review-header .verified-badge .fa-check-circle-o, .stamped-review-header .verified-badge .stamped-fa-check-circle-o, .stamped-verified-badge {
+    color:black;
+}
+.stamped-review-header-starratings {
+    font-size: 1rem;
+    display: inline-block;
+    margin-left: -2px;
+    margin-top: .5rem;
+}
+.fa-star-half-o:before, .fa-star-o:before, .fa-star:before, .stamped-fa-star-half-o:before, .stamped-fa-star-o:before, .stamped-fa-star:before {
+    font-size:1rem;
+}
+.stamped-badge {
+    font-size:.8rem;
+    text-decoration:underline;
+}
+@media only screen and (max-width: 900px) {
+    .summary-overview {
+        display: flex;
+        justify-content: space-between;
+        width: 100% !important;
+        margin-left: -40px;
+        margin-bottom:40px;
+    }
+    .stamped-summary-ratings {
+        width:100%;
+        margin-bottom:40px;
+    }
+    .stamped-header {
+        margin-bottom:40px;
+    }
+    .stamped-summary-actions-newreview, .stamped-summary-actions-newquestion {
+        float:left;
+        max-width:
+    }
+    .stamped-summary-ratings {
+        width:100%;
+    }
+} 
+</style>

@@ -307,6 +307,22 @@ html, body {
     width: 192px;
     margin-bottom: 37px;
 }
+.flex-container_PMT .button {
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: #EB161E;
+    padding: 18px;
+    width: 192px;
+    margin-bottom: 37px;
+}
+.flex-container_PMT .button:hover {
+    background-color: #000000;
+    transition: 0.3s; 
+}
 .flex-container_PMT button:hover {
     background-color: #000000;
     transition: 0.3s; 
@@ -447,7 +463,7 @@ html, body {
         width: 100%;
         height: 120%;
         margin-top: 30%;
-        margin-bottom: 40%;
+        margin-bottom: 60%;
     }
     .img_PMT {
         transform: rotate(-90deg) scale(1.5);

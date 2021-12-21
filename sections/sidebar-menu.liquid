@@ -35,9 +35,9 @@
             {%- for link in main_menu.links -%}
               <div class="Collapsible">
 
-                {%- if link.title == 'Products' -%}
+                {% comment %} {%- if link.title == 'Products' -%}
                   <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6 only-for-phone">{{ link.title | escape }}</a>
-                {%- endif -%}
+                {%- endif -%} {% endcomment %}
 
                 {%- if link.links != blank -%}
                   <button class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" {% if link.links != blank %}aria-expanded="false"{% endif %}>

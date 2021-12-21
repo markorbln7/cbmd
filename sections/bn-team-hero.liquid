@@ -1,9 +1,9 @@
 <section class="team-hero" data-scroll data-scroll-speed="-1.5">
     <div class="team-hero__bg">
         <picture>
-          <source media="(min-width:1240px)" srcset="{{ 'teams-hero.png' | asset_url }}">
-          <source media="(min-width:732px)" srcset="{{ 'team-hero-tab.jpg' | asset_url }}">
-          <img src="{{ 'team-hero-mob.jpg' | asset_url }}">
+          <source media="(min-width:1240px)" srcset="https://cdn.shopify.com/s/files/1/0321/8472/9739/files/cbmd-practitioner-lander.png?v=1628578358">
+          <source media="(min-width:732px)" srcset="https://cdn.shopify.com/s/files/1/0321/8472/9739/files/cbmd-practitioner-lander.png?v=1628578358">
+          <img src="https://cdn.shopify.com/s/files/1/0321/8472/9739/files/cbmd-practitioner-lander.png?v=1628578358">
         </picture>
     </div>
     <div class="team-hero__container">
@@ -13,7 +13,7 @@
                 <p>{{ section.settings.copy }}</p>
             </div>
             {% if section.settings.btn_link %}
-                <a href="{{ section.settings.btn_link }}" class="Button Button--cbd Button--red">{{ section.settings.btn_text }}</a>
+                <button data-action="open-modal" aria-controls="modal-general-newsletter" class="Button Button--cbd Button--red">{{ section.settings.btn_text }}</a>
             {% endif %}
         </div>
     </div>
