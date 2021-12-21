@@ -435,6 +435,37 @@ html.page-collections {
 }
 
 .page-team {
+    .Modal-Popup-Subscription .Modal__Header .Modal__Title {
+        font-family: Graphik;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.7rem;
+        line-height: .88;
+        letter-spacing: -0.03em;
+        max-width: 14rem;
+        margin-bottom:1rem;
+    }
+    .Modal-Popup-Subscription .Modal__Header .Modal__Description {
+        font-size: .7rem;
+        line-height: 1.43;
+        margin-bottom:.7rem;
+        display:block;
+    }
+    .Modal-Popup-Subscription .Modal__Content form .Form__Item .Form__CheckboxWrapper label {
+        font-size: .7rem;
+        line-height: 1.43;
+        margin-bottom:.7rem;
+    }
+    .Input--cbd {
+        font-size: .8rem;
+        line-height: 1.5;
+    }
+    .Modal--small {
+        max-width:16rem;
+        @media only screen and (max-width: 991px) {
+            max-width:100vw;
+        }
+    }
     .bn-rounded .first-tab-text p {
         @media only screen and (max-width: 991px) {
             margin-top: 0;

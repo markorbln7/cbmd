@@ -6,7 +6,7 @@
 {%- assign collection_description= block.settings.ss_description -%}
 {%- assign formulated = block.settings.formulated -%}
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="cbmd" class="collection-sliders">
-<div class="collection-slider-container Highlights_container">
+<div id="{{ collections[collection_name].title | upcase }}" class="collection-slider-container Highlights_container">
     <div class="collection-slider-decription">
             <h2 class="box">{{ collections[collection_name].title }}</h2>
             <h3 class="box">{{ collection_subheadind}}</h3>

@@ -289,6 +289,9 @@ html.page-team {
   .new-home .Highlights_image_container.b-left .Highlights_item {
     padding-left: 3rem;
   }
+  .team-rounded .first-tab {
+    margin-bottom:0;
+  }
 }
 
 .team-rounded .tabs-holder .first-tab .first-tab-right {
@@ -314,6 +317,7 @@ html.page-team {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          margin-bottom:4rem;
 }
 
 .team {
@@ -1363,8 +1367,8 @@ html.page-team {
     left: -62px;
     top: -100px;
     background: url(https://cdn.shopify.com/s/files/1/0321/8472/9739/files/Screen_Shot_2021-08-27_at_11.50.48.png?v=1630057876);
-    width: 115px;
-    height: 100px;
+    width: 92px;
+    height: 70px;
     /* transition: none !important; */
     background-size: cover;
 }

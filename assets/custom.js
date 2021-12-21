@@ -71,6 +71,16 @@ const scroller = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true,
 });
+
+let hash =  window.location.hash;
+console.log('HASH', hash)
+// const target = document.querySelector('#js-target');
+if(hash) {
+  console.log('class', $('.box'))
+  $('.box').css('opacity','1')
+  scroller.scrollTo(hash);
+}
+
 let windowWidthStart = $(window).width(); // New width
 
 // Intersection observer code
