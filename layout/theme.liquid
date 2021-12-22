@@ -8,7 +8,7 @@
     <meta name="theme-color" content="{{ settings.accent_color }}">
 
     <title>
-    CBMD&#174; | CBD formulated by physicians, made for you.
+    CBMD| CBD formulated by physicians, made for you.
       {% comment %} {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %} {% endcomment %}
     </title>
 
@@ -40,10 +40,14 @@
     <link rel="stylesheet" href="{{ 'practioners.css' | asset_url }}">
     <link rel="stylesheet" href="{{ 'page-media.css' | asset_url }}">
     <link rel="stylesheet" href="{{ 'article.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'process.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'our-science.css' | asset_url }}">
+    
 <!-- CSS only -->
 
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.4/dist/gsap.min.js"></script>
+
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -270,5 +274,6 @@
     <!-- Stamped - Begin Script-->
 <script async type="text/javascript" data-api-key="" id="stamped-script-widget" src="https://cdn-stamped-io.azureedge.net/files/widget.min.js"></script>
 <!-- Stamped - End Script -->
+    <script src="{{ 'process.js' | asset_url }}" defer></script>
   </body>
 </html>

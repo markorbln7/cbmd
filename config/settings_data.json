@@ -59,9 +59,9 @@
     "social_fancy": "",
     "favicon": "shopify:\/\/shop_images\/cbmd-favicon.jpg",
     "checkout_header_image": "",
-    "checkout_logo_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/CBMD_Facebook.png",
     "checkout_logo_position": "center",
-    "checkout_logo_size": "small",
+    "checkout_logo_size": "medium",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
@@ -106,7 +106,7 @@
               "push_1_url": "shopify:\/\/pages\/our-mission",
               "push_2_image": "shopify:\/\/shop_images\/cbmd-nav-our-science_2x_54b29c3e-c3fb-4a66-836f-e8c7fcb07319.jpg",
               "push_2_heading": "Our science",
-              "push_2_subheading": "Users arriving on this page are expecting to learn the company purpose and vision.",
+              "push_2_subheading": "",
               "push_2_url": "shopify:\/\/pages\/our-science"
             }
           },
@@ -115,11 +115,11 @@
             "settings": {
               "navigation_mega_menu": "products",
               "push_1_image": "shopify:\/\/shop_images\/CBMD_PMT_Topical_header_2-02_1_1.png",
-              "push_1_heading": "PMT Pain Topical",
+              "push_1_heading": "PMT Pain Topical - Now Available",
               "push_1_subheading": "",
               "push_1_url": "shopify:\/\/products\/cbd-topical-cream",
               "push_2_image": "shopify:\/\/shop_images\/908bde91ad33d586ec47f405c2643f9c_370x230_2x_07e041f0-8858-473d-9b7b-acd2d2f18240.jpg",
-              "push_2_heading": "Overview",
+              "push_2_heading": "All Products - Coming Soon",
               "push_2_subheading": "",
               "push_2_url": "shopify:\/\/pages\/products"
             }
@@ -133,7 +133,7 @@
           "use_sticky_header": true,
           "logo": "shopify:\/\/shop_images\/cbmd-logo-white.png",
           "logo_max_width": 100,
-          "mobile_logo_max_width": 85,
+          "mobile_logo_max_width": 50,
           "navigation_menu": "navigation",
           "navigation_style": "inline",
           "show_icons": false,
@@ -282,7 +282,7 @@
           "sidebar_background": "#eb161e",
           "banner_title": "Formulated by physicians, made for you.<span>™<\/span>",
           "banner_text": "Be assured. We bring science to CBD. The same integrity we apply every day in our medical practice is here in our products.",
-          "button_link": "shopify:\/\/pages\/overview",
+          "button_link": "shopify:\/\/pages\/products",
           "button_text": "Shop our CBD",
           "is_small_background": false
         }
@@ -1215,7 +1215,7 @@
             "type": "item",
             "settings": {
               "heading": "For customers",
-              "description": "<p>Email: <a href=\"mailto:support@cbmd.com\" data-action=\"open-modal\" aria-controls=\"modal-product-subscription\" class=\"hyper_link\">support@cbmd.com<\/a><\/p>\n<p>Phone: <a href=\"tel:888.678.CBMD%20(2263)\" data-rel=\"external\" class=\"hyper_link\">888.678.CBMD (2263)<\/a><\/p>\n<p><a href=\"\/pages\/our-science?q=faq\" class=\"hyper_link\"> Frequently asked questions<\/a><\/p>\n<p class=\"description\">\nCustomer support is available from 9am and 5pm PST<br>Monday through Friday, excluding holidays<br>Please allow 1-2 business days for a response<\/p>",
+              "description": "<p>Email: <a href=\"mailto:info@cbmd.com\" data-action=\"open-modal\" aria-controls=\"modal-product-subscription\" class=\"hyper_link\">info@cbmd.com<\/a><\/p>\n<p>Phone: <a href=\"tel:888.678.CBMD%20(2263)\" data-rel=\"external\" class=\"hyper_link\">888.678.CBMD (2263)<\/a><\/p>\n<p>Address: <span data-rel=\"external\" class=\"hyper_link\">1533 Culver Drive, Suite 340 #5D, Irvine, CA 92640 USA<\/span><\/p>\n<p class=\"description\">\nCustomer support is available from 9am and 5pm PST<br>Monday through Friday, excluding holidays<br>Please allow 1-2 business days for a response<\/p>",
               "button_name": "",
               "button_link": ""
             }
@@ -1235,7 +1235,8 @@
           "1586856538102",
           "1586856549135"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "cbmd-instagram": {
         "type": "cbmd-instagram",
@@ -1323,7 +1324,8 @@
           "1586884647574",
           "1586884664356"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "16110458041b7e9f57": {
         "type": "information-tabs",
@@ -1491,18 +1493,20 @@
       },
       "b-image-left-template": {
         "type": "b-image-left-template",
-        "settings": {}
+        "settings": {
+        }
       },
       "a-text-over-image": {
         "type": "a-text-over-image",
-        "settings": {}
+        "settings": {
+        }
       },
       "bn-team-hero": {
         "type": "bn-team-hero",
         "settings": {
           "title": "We are physicians.",
-          "copy": "What began as a response to our patients’ frequent requests for information on CBD, evolved into a broader response to address the inadequcies of the industry at large and serve our colleagues with an option in CBD that they can trust and verify.",
-          "btn_text": "Connect with us",
+          "copy": "Be assured. We bring science to CBD. The same integrity we apply every day in our medical practice is here in our products.",
+          "btn_text": "Talk with us",
           "btn_link": "shopify:\/\/pages\/contact"
         }
       },
@@ -1511,40 +1515,22 @@
         "settings": {
           "subtitle": "Colleague to colleague",
           "title": "We understand the concerns around CBD.",
-          "copy": "<p>There is no consistent standard in testing, no ability to review the individual protocols, no evidence used in manufacturing CBD.. The current state of the industry is not serving the physicians. We have no ability to peer behind the curtain. In an effort to reshape the industry, we are coming at it with an evidence based approach to CBD. We provide medical grade formulations, transparent protocols, rigorous product testing, oversight, stringent ingredient sourcing and efficacious products to our patients.<\/p>",
+          "copy": "<p>In the absence of consistent protocols for ingredient sourcing and analysis, scientifically structured formulations, and quality manufacturing, healthcare professionals must either step outside typical medical and pharmaceutical conventions or disengage from the CBD conversation entirely. CBMD® offers another choice – our oversight ensures that no compromise is necessary. <\/p>",
           "btn_link": "shopify:\/\/pages\/our-science",
           "btn_text": "Our process",
-          "image": "shopify:\/\/shop_images\/Image_caa16dea-d354-41eb-939c-ca7b4a85991c.png"
+          "image": "shopify:\/\/shop_images\/Image_9.png"
         }
       },
       "bn-team": {
         "type": "bn-team",
         "blocks": {
-          "14a7f281-3de4-4acd-a47b-19aeef8d8d46": {
-            "type": "member",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/test.jpg",
-              "name": "Marisa Cavasco, MD",
-              "info": "<p>Dermatology and <br\/>Cosmetic Surgery<\/p>",
-              "additional-info": "<p>University of Illinois,<br\/>Urbana Champaign Medical School<br\/>  Brigham and Women’s Hospital  Chief of Neurology<br\/><br\/>Harvard Medical School,<br\/> Professor of Neurology<br\/><br\/>Brigham and Women’s Hospital  Chief of Neurology<br\/><br\/>Harvard Medical School,<br\/> Professor of Neurology<\/p>"
-            }
-          },
-          "206d8919-2750-4920-98d7-f74521890e55": {
-            "type": "member",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Rectangle_46.jpg",
-              "name": "Fady Elias, MD",
-              "info": "<p>Orthopedic Surgery<br\/>Spine Surgeon<\/p>",
-              "additional-info": ""
-            }
-          },
           "fb04d3d5-491a-428d-83dd-6a97db4cd475": {
             "type": "member",
             "settings": {
               "image": "shopify:\/\/shop_images\/Rectangle_47.jpg",
               "name": "Matt Iorio, MD",
-              "info": "<p>Plastic\/Reconstructive  Extremity Microsurgery<br\/><\/p>",
-              "additional-info": ""
+              "info": "<p>Plastic\/Reconstructive Extremity Microsurgery, Orthopedic Surgery<br\/><\/p>",
+              "additional-info": "<p>University of Chicago<\/p><p>Georgetown University Medical School<\/p><p><\/p><p>University of Washington Hand & Microvascular Surgery, Fellow <\/p><p><\/p><p>Harvard Medical School, Assistant Professor <\/p><p><\/p><p>University of Colorado, Hand & Extremity Surgery Co-Director and Associate Professor<\/p><p><br\/><br\/><br\/><br\/><br\/><br\/><br\/><br\/><\/p><p><br\/><br\/><br\/> <\/p><p><br\/><br\/><br\/><\/p>"
             }
           },
           "39d16757-6b8c-46df-be06-a55dafd99dfb": {
@@ -1552,31 +1538,50 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Rectangle_48.jpg",
               "name": "Mitchel Goldman, MD",
-              "info": "<p>Dermatology and  Cosmetic Surgery<\/p>",
-              "additional-info": ""
+              "info": "<p>Dermatology and Cosmetic Surgery<\/p>",
+              "additional-info": "<p>Stanford University Medical School<\/p><p><\/p><p>President of the American Society of Dermatologic Surgery<\/p><p><\/p><p>Founder of SkinMedica, acquired<br\/>by Allergan<\/p><p><\/p><p>University of California San Diego, Volunteer Clinical Professor<\/p><p><\/p><p>West Dermatology, Medical Director<br\/><\/p><p><br\/>\t\t\t\t<br\/>\t\t\t<br\/>\t\t<br\/>\t<br\/><\/p>"
+            }
+          },
+          "206d8919-2750-4920-98d7-f74521890e55": {
+            "type": "member",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Image_20210528_170312_2_e0e3e7d9-414a-4272-b1a6-de8dc2cd4f1e.jpg",
+              "name": "Seenu Reddy, MD MBA",
+              "info": "<p>Cardiovascular Surgery<\/p>",
+              "additional-info": "<p>University of Alabama School of Medicine<br\/><\/p><p>Vanderbilt University Owen School of Management<\/p><p><\/p><p>Vanderbilt University Department of Cardiac Surgery, Associate Clinical Professor<\/p><p><\/p><p>HCA Healthcare, National Medical Director Cardiac Surgery<\/p><p><\/p><p>Centennial Health & Vascular Surgery, Director of Cardiovascular Surgery<\/p>"
+            }
+          },
+          "14a7f281-3de4-4acd-a47b-19aeef8d8d46": {
+            "type": "member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/VictorWang.jpg",
+              "name": "Victor Wang, MD PhD",
+              "info": "<p>Anesthesia and Pain Management, Neurology<\/p>",
+              "additional-info": "<p>University of Illinois, Urbana Champaign Medical School<\/p><p>University of Utah, Neurology Residency<\/p><p>Brigham and Women’s Hospital, Chief of Neurology<\/p><p>Harvard Medical School, Professor of Neurology<br\/><\/p>"
             }
           },
           "77ad7a27-ae07-48f7-88ea-552a0d3111f0": {
             "type": "member",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Rectangle_50.jpg",
-              "name": "Victor Wang, MD  ",
-              "info": "<p>Anaesthesia, Pain Management and Neurology<\/p>",
-              "additional-info": ""
+              "image": "shopify:\/\/shop_images\/Jay_Lieberman_MD.png",
+              "name": "Jay Lieberman, MD",
+              "info": "<p>Pediatrics and Infectious Disease<\/p>",
+              "additional-info": "<p>Princeton University<br\/><\/p><p>New York University School of Medicine<\/p><p><\/p><p>Children's Hospital of Los Angeles and UCLA Medical Center, Resident Physician<\/p><p><\/p><p>ICON (formerly PRA Health Sciences), Medical Director<\/p><p><br\/><br\/><br\/><\/p>"
             }
           }
         },
         "block_order": [
-          "14a7f281-3de4-4acd-a47b-19aeef8d8d46",
-          "206d8919-2750-4920-98d7-f74521890e55",
           "fb04d3d5-491a-428d-83dd-6a97db4cd475",
           "39d16757-6b8c-46df-be06-a55dafd99dfb",
+          "206d8919-2750-4920-98d7-f74521890e55",
+          "14a7f281-3de4-4acd-a47b-19aeef8d8d46",
           "77ad7a27-ae07-48f7-88ea-552a0d3111f0"
         ],
         "settings": {
-          "subtitle": "CBMD Medical Team",
+          "subtitle": "CBMD® Medical Team",
           "title": "Leaders in the field of medicine.",
-          "copy": "<p>Our founding advisory board is comprised of expert—practicing physicians, specialists in pharmacology researchers, and educators. <\/p>"
+          "copy": "<p>Our medical team includes physicians, pharmacologists, researchers, chemists, and educators - all highly regarded leaders in their respective areas of expertise.<\/p>"
         }
       },
       "bn-three-cols": {
@@ -1587,7 +1592,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Mask_Group.png",
               "title": "<p>Get to  <br\/>know us<\/p>",
-              "info": "<p>If you’re a practitioner interested in learning more about our brand and our approach to CBD, we’d like to hear from you.<\/p>",
+              "info": "<p>If you're a practitioner interested in learning more about our brand and our approach to CBD, we welcome your questions. <\/p>",
               "btn-text": "Talk with us",
               "btn-link": "shopify:\/\/pages\/contact"
             }
@@ -1597,7 +1602,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Mask_Group1.png",
               "title": "<p>Carry our<br\/>products<\/p>",
-              "info": "<p>Get in touch with our team if you’d like to learn how you can offer CBMD products for sale in your clinic or practice.<\/p>",
+              "info": "<p>Get in touch with our team if you’d like to learn how you can offer CBMD® products for sale in your clinic or practice.<\/p>",
               "btn-text": "Work with us",
               "btn-link": "shopify:\/\/pages\/contact"
             }
@@ -1620,7 +1625,7 @@
         ],
         "settings": {
           "subtitle": "Ways to get involved",
-          "title": "Work with CBMD. Serve your patients."
+          "title": "Work with CBMD®. Serve your patients."
         }
       },
       "bn-partners": {
@@ -1649,7 +1654,7 @@
         "settings": {
           "subtitle": "Our national network",
           "title": "Partners with a common goal.",
-          "copy": "<p>Our community is broad: physicians, healthcare practitioners, scientists, leaders in bioinformatics<\/p>"
+          "copy": "<p>Our community of care includes physicians and other healthcare and wellness professionals. <\/p>"
         }
       },
       "bn-reviews": {
@@ -1711,15 +1716,15 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/hand_e763e25e-3cf1-4115-b262-d15e110718ad.png",
               "title": "Quality ingredient Sourcing",
-              "info": "<p>With exacting standards for quality, purity, safety, and efficacy, we evaluate each ingredient independently,\u0003 and select optimal pairings  to achieve the desired goal.<\/p>"
+              "info": "<p>With exacting standards for quality, purity, safety, and efficacy, we evaluate each ingredient independently and select only those ingredients that meet our criteria.<\/p>"
             }
           },
           "ce477bae-c971-496e-8b0f-96732becd0c4": {
             "type": "member",
             "settings": {
               "image": "shopify:\/\/shop_images\/tube_3aba5132-d925-41fc-8bd9-479331369196.png",
-              "title": "Evidence Based Formulations",
-              "info": "<p>Our medical experience,  our scientific approach,  and high-quality CBD come  together in our proprietary  formulas, developed to optimally address individual needs.<\/p>"
+              "title": "Research Based Formulations",
+              "info": "<p>Using ingredients identified by their synergistic ability to support our desired goals, we create scientifically structured formulations.<\/p>"
             }
           },
           "f035be07-19db-427e-b139-9ba15c9e4ba1": {
@@ -1727,23 +1732,23 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/building_76b9b05f-6704-4852-a624-d27ec92fa21c.png",
               "title": "Manufacturing Protocols",
-              "info": "<p>With exacting standards for quality, purity, safety, and efficacy, we evaluate each ingredient independently,\u0003 and select optimal pairings  to achieve the desired goal.<\/p>"
+              "info": "<p>In accordance with the quality standards established by our team, we have developed strict production protocols to ensure consistent quality standards. <\/p>"
             }
           },
           "949dbfd0-48bf-4c26-a6cb-e8d14a6e801e": {
             "type": "member",
             "settings": {
-              "image": "shopify:\/\/shop_images\/micro_f73adf33-0078-4440-b0f8-1be10ac3208e.png",
+              "image": "shopify:\/\/shop_images\/CBMD_Infographic_04.png",
               "title": "3rd Party Lab Tested",
-              "info": "<p>Our medical experience,  our scientific approach,  and high-quality CBD come  together in our proprietary  formulas, developed to optimally address individual needs.<\/p>"
+              "info": "<p>All final products undergo outside analysis for potency, stability, microbial contamination, and the presence of pesticides and heavy metals. <\/p>"
             }
           },
           "045a92b8-0242-46cf-a7ba-da5238551460": {
             "type": "member",
             "settings": {
               "image": "shopify:\/\/shop_images\/pills_d47ce137-5b66-43d1-999d-d9193ba451c8.png",
-              "title": "Proper Dosing  Recommendations",
-              "info": "<p>With exacting standards for quality, purity, safety, and efficacy, we evaluate each ingredient independently,\u0003 and select optimal pairings  to achieve the desired goal.<\/p>"
+              "title": "Dosing Recommendations",
+              "info": "<p>We base each formulation on the research, not build cost, so any dosing suggestion is likewise made on the strength of physiological evidence. <\/p>"
             }
           }
         },
@@ -1762,12 +1767,87 @@
       "bn-team-rounded-left": {
         "type": "bn-team-rounded-left",
         "settings": {
-          "subtitle": "Want to hear more?",
-          "title": "Our brand promise to clinicians",
-          "copy": "<p>Healthcare providers are in a unique position to support patients and facilitate smart decisions around the safety of the products they use.<\/p>",
+          "subtitle": "Colleague to colleague.",
+          "title": "Our commitment to clinicians.",
+          "copy": "<p>Every day we look at CBD through a scientific lens. As we encourage and further these conversations with others in healthcare, we move toward a more responsible approach to CBD. If you are a healthcare provider and have questions or thoughts for us, please reach out.<\/p>",
           "btn_link": "shopify:\/\/pages\/contact",
           "btn_text": "Talk with us",
           "image": "shopify:\/\/shop_images\/Image_f48d7874-df26-4227-8a68-008fc49b5a94.png"
+        }
+      },
+      "a-product-template": {
+        "type": "a-product-template",
+        "settings": {
+          "show_share_buttons": true,
+          "show_vendor": true,
+          "show_sku": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "dropdown",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": true,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 0,
+          "show_price_in_button": false,
+          "show_payment_button": true,
+          "image_size": "large",
+          "stack_images": true,
+          "show_thumbnails": true,
+          "enable_image_zoom": true,
+          "enable_video_looping": false,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "reviews_enabled": false,
+          "featured_image_size": "large"
+        }
+      },
+      "a-product-tag-icons": {
+        "type": "a-product-tag-icons",
+        "settings": {
+        }
+      },
+      "a-product-tabs": {
+        "type": "a-product-tabs",
+        "settings": {
+        }
+      },
+      "a-product-dosing": {
+        "type": "a-product-dosing",
+        "settings": {
+        }
+      },
+      "a-ratings": {
+        "type": "a-ratings",
+        "settings": {
+        }
+      },
+      "a-certified": {
+        "type": "a-certified",
+        "settings": {
+        }
+      },
+      "a-faq": {
+        "type": "a-faq",
+        "settings": {
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "collections_to_show": "all",
+          "image_size": "normal",
+          "add_spacing": true,
+          "expand_collection": false,
+          "apply_overlay": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "show_shipping_estimator": true,
+          "shipping_estimator_default_country": "United States"
         }
       }
     },
