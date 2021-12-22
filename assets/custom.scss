@@ -268,13 +268,14 @@ section {
 .Button--cbd {
   font-family: Graphik;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 17px;
   color: #FFFFFF;
   text-transform: none;
   padding: 18px 43px;
   white-space: nowrap;
   letter-spacing: 0px;
-  /* min-width: 184px; */
+  min-width: 203px; 
+  height: 56px;
   transition: 0.3s; }
   @media (max-width: 731px) {
     .Button--cbd {
@@ -597,10 +598,7 @@ section {
           height: 100%;
           display: block;
           width: auto;
-          -o-object-fit: cover;
-             object-fit: cover;
-          -o-object-position: right;
-             object-position: right; }
+}
           @media (max-width: 731px) {
             .shopify-section--banner section .banner_background .banner_backgroundImageWrapper .banner_backgroundImage {
               width: 50%;
