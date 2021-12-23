@@ -799,6 +799,7 @@
     top: 50%;
     right: 6.5625%;
     max-width: 24.3rem;
+    height: 480px
 }
 
 .video-section-content {
@@ -806,7 +807,7 @@
     background: #fff;
     padding: 40px 50px;
     width: 30rem;
-    height:30rem;
+    height:35rem;
 
 }
 
