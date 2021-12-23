@@ -116,7 +116,7 @@
   font-family: Graphik;
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 44px;
   line-height: 48px;
   letter-spacing: -0.03em; }
 
@@ -285,8 +285,12 @@ section {
   background: #EB161E; }
   .Button--red:hover {
     background: #000000; }
-  .Button--red:focus {
-    background: #6C6C6C; }
+    .Button--red:focus {
+      background: #6C6C6C; }
+      .Button--gray {
+        background: #333333; }
+      .Button--gray:hover {
+        background: #EB161E; }
 
 .Button--black {
   background: #000000; }
@@ -953,9 +957,13 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+
   @media (min-width: 732px) and (max-width: 1279px) {
     .Highlights_image_container {
-      padding: 56px 0px; } }
+      
+      padding: 56px 0px;
+     } }
+
   @media (max-width: 731px) {
     .Highlights_image_container {
       padding: 40px 0px 24px 0px; } }
@@ -995,14 +1003,14 @@ section {
     .Highlights_image_container .Highlights_item .Highlights_item_content .Highlights_subtitle {
       color: #000000; }
 
-@media (max-width: 731px) {
+@media (max-width: 767px) {
   .Highlights_image_right {
     display: block;
-    flex-direction: column-reverse; } }
+    flex-direction: column; } }
 
 .Highlights_image_right .Highlights_second {
   position: relative;
-  order: 2;
+  
   text-align: right;
   max-height: 835px; }
   .Highlights_image_right .Highlights_second > :first-child {
@@ -2350,8 +2358,9 @@ section {
     .cbmd_book_container {
       display: block; } }
   .cbmd_book_container .book_cover_area {
+    margin-left: 5%;
     order: 1;
-    width: 50%; }
+    width: 30%; }
     @media (min-width: 732px) and (max-width: 1279px) {
       .cbmd_book_container .book_cover_area {
         margin: 56px auto 0;
@@ -2515,14 +2524,17 @@ section {
   .cbmd_book_container .book_contents_area {
     order: 2;
     padding-right: 109px;
-    padding-left: 63px;
-    width: 50%; }
+    padding-left: 65px;
+    font-size: 1rem;
+    width: 40%;
+   }
     @media (min-width: 732px) and (max-width: 1279px) {
       .cbmd_book_container .book_contents_area {
-        width: 100%;
+        
+        width: 70%;
         padding-left: 0px;
         padding-right: 0px; } }
-    @media (max-width: 731px) {
+    @media (max-width: 767px) {
       .cbmd_book_container .book_contents_area {
         width: 100%;
         padding-left: 0px;
