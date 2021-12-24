@@ -358,6 +358,9 @@
   font-size: 3.3rem;
   line-height: 3.3rem;
   letter-spacing: -0.03em;
+}
+
+.title-offset {
   margin-top: -3rem;
 }
 

@@ -228,7 +228,7 @@
     margin: 0 auto;
 }
 
-.Highlights_container {
+.Highlights_container_3 {
     padding: 6.15rem 36px 3.2rem;
     display: flex;
     align-items: center;
@@ -239,7 +239,7 @@
 }
 
 @media (max-width: 991px) {
-    .Highlights_container {
+    .Highlights_container_3 {
         padding-left: 24px;
         padding-right: 24px;
         flex-direction: column-reverse;
@@ -536,7 +536,6 @@
     object-fit: cover;
     -o-object-position: right;
     object-position: right;
-    width: 100%;
     position: absolute;
     top: 0;
     right: 0;
